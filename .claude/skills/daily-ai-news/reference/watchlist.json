@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "version": "1.5",
+    "lens": "ai-tech-only",
+    "target_story_count": 5,
+    "roundup_update_cap": 3,
+    "dedup_window_days": 7,
+    "tier_descent": "top-up-to-target",
+    "bloomberg_enabled": false,
+    "note": "tickers are used at V2 (Bloomberg ticker-tagged news + market-data enrichment). For V1.5 (web stream) the skill matches on `keywords` + `cn_terms`, NOT tickers. Dual-listed names carry both tickers per the maintainer decision."
+  },
+  "tiers": {
+    "1": [
+      { "company": "Nvidia",            "tickers": ["NVDA US"],            "keywords": ["Nvidia", "Jensen Huang", "Blackwell", "Rubin", "Vera", "CUDA", "GeForce", "GPU"],                 "cn_terms": ["英伟达"] },
+      { "company": "Tesla",             "tickers": ["TSLA US"],            "keywords": ["Tesla", "FSD", "Full Self-Driving", "Optimus", "Dojo", "robotaxi", "Elon Musk"],                  "cn_terms": ["特斯拉"] },
+      { "company": "Microsoft",         "tickers": ["MSFT US"],            "keywords": ["Microsoft", "Copilot", "Azure", "Azure AI", "MAI", "Mustafa Suleyman"],                          "cn_terms": ["微软"] },
+      { "company": "Amazon",            "tickers": ["AMZN US"],            "keywords": ["Amazon", "AWS", "Bedrock", "Trainium", "Anthropic", "Alexa", "Nova"],                            "cn_terms": ["亚马逊"] },
+      { "company": "Oracle",            "tickers": ["ORCL US"],            "keywords": ["Oracle", "OCI", "Oracle Cloud"],                                                                "cn_terms": ["甲骨文"] },
+      { "company": "Alphabet",          "tickers": ["GOOGL US"],           "keywords": ["Google", "Alphabet", "DeepMind", "Gemini", "Waymo", "TPU", "Sundar Pichai"],                     "cn_terms": ["谷歌"] },
+      { "company": "Apple",             "tickers": ["AAPL US"],            "keywords": ["Apple", "Apple Intelligence", "Siri", "Tim Cook"],                                              "cn_terms": ["苹果"] },
+      { "company": "Alibaba",           "tickers": ["BABA US", "9988 HK"], "keywords": ["Alibaba", "Qwen", "Alibaba Cloud", "Aliyun", "Tongyi"],                                          "cn_terms": ["阿里巴巴", "通义千问", "阿里云"] },
+      { "company": "Meta Platforms",    "tickers": ["META US"],            "keywords": ["Meta", "Facebook", "Instagram", "Llama", "Reality Labs", "Mark Zuckerberg", "Superintelligence Labs"], "cn_terms": [] },
+      { "company": "AMD",               "tickers": ["AMD US"],             "keywords": ["AMD", "Instinct", "MI300", "MI400", "Lisa Su", "Ryzen AI"],                                     "cn_terms": ["超威"] }
+    ],
+    "2": [
+      { "company": "Berkshire Hathaway", "tickers": ["BRK/B US"],          "keywords": ["Berkshire Hathaway", "Warren Buffett"],                                                         "cn_terms": ["伯克希尔"] },
+      { "company": "Goldman Sachs",      "tickers": ["GS US"],             "keywords": ["Goldman Sachs"],                                                                                "cn_terms": ["高盛"] },
+      { "company": "Palantir",           "tickers": ["PLTR US"],           "keywords": ["Palantir", "AIP", "Foundry", "Gotham", "Alex Karp"],                                            "cn_terms": [] },
+      { "company": "Oklo",               "tickers": ["OKLO US"],           "keywords": ["Oklo", "Aurora", "small modular reactor", "SMR", "nuclear"],                                    "cn_terms": [] },
+      { "company": "Netflix",            "tickers": ["NFLX US"],           "keywords": ["Netflix"],                                                                                      "cn_terms": ["奈飞"] },
+      { "company": "Affirm",             "tickers": ["AFRM US"],           "keywords": ["Affirm", "BNPL", "Max Levchin"],                                                                "cn_terms": [] },
+      { "company": "TSMC",               "tickers": ["TSM US", "2330 TT"], "keywords": ["TSMC", "Taiwan Semiconductor", "2nm", "3nm", "CoWoS"],                                           "cn_terms": ["台积电"] },
+      { "company": "Tencent",            "tickers": ["700 HK"],            "keywords": ["Tencent", "Hunyuan", "WeChat", "Weixin"],                                                       "cn_terms": ["腾讯", "混元", "微信"] },
+      { "company": "Xiaomi",             "tickers": ["1810 HK"],           "keywords": ["Xiaomi", "MiMo", "HyperOS", "Lei Jun"],                                                         "cn_terms": ["小米"] },
+      { "company": "Micron Technology",  "tickers": ["MU US"],             "keywords": ["Micron", "HBM", "HBM3E", "HBM4", "DRAM"],                                                       "cn_terms": ["美光"] }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 ---
 name: daily-ai-news
-description: Generate a daily Thai-language AI/tech news brief that MONITORS a fixed 20-company watchlist in two priority tiers. Surface up to 5 significant, AI/tech-relevant stories from the last 24 hours (rolling window, Asia/Bangkok), prioritizing Tier-1 companies and descending to Tier 2 only to top up to 5; deduplicate URLs against the last 7 days; enrich each story with three expert perspectives (professor / AI specialist / professional programmer); commit it to this repository via the GitHub connector; and push a TL;DR to LINE. Use this when the user asks for a "daily AI news brief", a "สรุปข่าว AI วันนี้", triggers this skill by name, or when it runs on schedule via Claude Web Routine.
+description: Generate a daily Thai-language AI/tech news brief that MONITORS a configured company watchlist (defined in `reference/watchlist.json`) across priority tiers. Surface up to 5 significant, AI/tech-relevant stories from the last 24 hours (rolling window, Asia/Bangkok), prioritizing Tier-1 companies and descending to Tier 2 only to top up to 5; deduplicate URLs against the last 7 days; enrich each story with three expert perspectives (professor / AI specialist / professional programmer); commit it to this repository via the GitHub connector; and push a TL;DR to LINE. Use this when the user asks for a "daily AI news brief", a "สรุปข่าว AI วันนี้", triggers this skill by name, or when it runs on schedule via Claude Web Routine.
 ---
 
 # Daily AI News Brief — Watchlist Edition
 
 End-to-end routine that produces **one Markdown article per day** at `articles/YYYY-MM-DD-brief.md`, commits it via the GitHub connector, then notifies LINE. Runs entirely inside Claude (Web / Routine) — **no shell, no git CLI, no Bash**.
 
-This edition is **entity-driven**: instead of "any AI news," it monitors a fixed universe of **20 companies** defined in `reference/watchlist.json`, split into **Tier 1 (primary)** and **Tier 2 (fallback)**. Each day it surfaces up to 5 **significant, AI/tech-relevant** stories — taking Tier 1 first and descending to Tier 2 only to top up to 5.
+This edition is **entity-driven**: instead of "any AI news," it monitors a configured universe of companies defined in `reference/watchlist.json`, split into **Tier 1 (primary)** and **Tier 2 (fallback)**. Each day it surfaces up to 5 **significant, AI/tech-relevant** stories — taking Tier 1 first and descending to Tier 2 only to top up to 5.
 
 ## Versioning
 
@@ -64,7 +64,7 @@ Do **not** invent values, and do **not** treat placeholders like `{{GITHUB_OWNER
    - Print: `ABORT: GitHub connector is not connected. Enable the GitHub MCP connector in Claude settings and re-run.`
    - **Stop immediately.** Do not research, do not write any files.
 2. **Resolve env.** Walk the resolution order for each variable. `Read` `reference/defaults.json` exactly once and cache it.
-3. **Load the watchlist.** `Read` `reference/watchlist.json`. Validate it parses and has `tiers.1` and `tiers.2`. Cache `WATCHLIST` and `_meta` (`target_story_count`, `roundup_update_cap`, `dedup_window_days`, `tier_descent`, `bloomberg_enabled`). If it is missing or unparseable → abort with a clear log.
+3. **Load the watchlist.** `Read` `reference/watchlist.json`. Validate it parses and has `tiers.1` and `tiers.2`. Cache `WATCHLIST` and `_meta` (`target_story_count`, `roundup_update_cap`, `dedup_window_days`, `tier_descent`, `bloomberg_enabled`). **`watchlist.json` is the SINGLE SOURCE OF TRUTH** for the monitored universe (companies, tiers, tickers, keywords, cn_terms) AND its tuning knobs (`_meta`) — the skill reads these, never hardcodes them; to change the universe or any knob, edit `watchlist.json` only, no skill edit needed. If it is missing or unparseable → abort with a clear log.
 4. **Print a resolution table** so failures are obvious:
    ```
    Env resolution:
@@ -85,7 +85,7 @@ Open `reference/trusted-sources.md` (the outlet allow-list) and `WATCHLIST` (the
 
 ### 1a. Load recent URLs (rolling N-day dedup)
 
-Read the last `dedup_window_days` (default **7**) briefs — `articles/{TODAY−1}-brief.md` … `articles/{TODAY−7}-brief.md` — via the GitHub connector's `get_file_contents`. For each found file, extract every URL with `\[[^\]]+\]\((https?://[^)]+)\)` plus plain URLs. Build a set `RECENT_URLS`. Missing files (skipped days, first runs) are fine — just skip them. Lowercase host for comparison; keep the full URL otherwise.
+Read the last `_meta.dedup_window_days` briefs (number set in watchlist.json; do not hardcode) — `articles/{TODAY−1}-brief.md` … `articles/{TODAY−7}-brief.md` — via the GitHub connector's `get_file_contents`. For each found file, extract every URL with `\[[^\]]+\]\((https?://[^)]+)\)` plus plain URLs. Build a set `RECENT_URLS`. Missing files (skipped days, first runs) are fine — just skip them. Lowercase host for comparison; keep the full URL otherwise.
 
 Print: `Recent URL count (7d): N`.
 
@@ -172,7 +172,7 @@ Before writing `sources.md`, re-check every selected story against `now − 24h`
 
 ### 1c. Selection — tiers, top-up, roundup (the core algorithm)
 
-Let `TARGET = _meta.target_story_count` (default 5).
+Let `TARGET = _meta.target_story_count` (value set in watchlist.json).
 
 1. From **Tier 1** candidates that passed all four gates, group by company. Rank companies by significance (most material first). Select **one slot per company**, strongest first, up to `TARGET`.
 2. **Top-up descent.** If fewer than `TARGET` slots are filled, take **Tier 2** candidates (gathered in 1b), apply the same four gates, and top up — strongest first, one slot per company — until you reach `TARGET` or run out of significant items. *(`tier_descent = "top-up-to-target"`.)*

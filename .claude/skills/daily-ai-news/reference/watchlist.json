@@ -1,4 +1,11 @@
 {
+  "_about": "SINGLE SOURCE OF TRUTH for the daily-ai-news watchlist - defines BOTH the monitored company universe (`tiers`) AND the run-tuning knobs (`_meta`). SKILL.md only points here and reads these values; it hardcodes nothing. To change the universe or behaviour, edit THIS file only - no skill edit needed.",
+  "_schema": {
+    "tiers.1": "PRIMARY watchlist - searched first.",
+    "tiers.2": "FALLBACK watchlist - used only to top up to _meta.target_story_count when Tier 1 is short.",
+    "company_entry": "{ company: display name, tickers: [Bloomberg ticker(s); used at V2 only; dual-listed names carry both], keywords: [EN names/aliases/product names - these drive V1.5 web search], cn_terms: [Chinese aliases for Asia names; [] if none] }",
+    "how_to_edit": "Add a company = append an object to tiers.1 or tiers.2. Move tiers = cut/paste between the arrays. Retune = change a number in _meta. Keep the keys exactly as shown."
+  },
   "_meta": {
     "version": "1.5",
     "lens": "ai-tech-only",

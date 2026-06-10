@@ -12,6 +12,9 @@ on:
     branches: [main]
     paths:
       - 'articles/*-brief.md'
+  schedule:
+    # 00:10 UTC = 07:10 Asia/Bangkok — fires after the Routine commits the brief
+    - cron: '10 0 * * *'
   workflow_dispatch:
     inputs:
       file:
@@ -23,8 +26,8 @@ permissions:
 
 jobs:
   notify:
-    # Skip if the commit message opts out
-    if: ${{ !contains(github.event.head_commit.message, '[skip line]') }}
+    # Skip if the commit message opts out (head_commit is null for schedule/dispatch runs — always allow those)
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip line]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -38,12 +41,17 @@ jobs:
           GH_SHA: ${{ github.sha }}
           GH_REPO: ${{ github.repository }}
           INPUT_FILE: ${{ github.event.inputs.file }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           set -euo pipefail
 
           # 1. Resolve which article to notify for.
           if [ -n "${INPUT_FILE:-}" ]; then
             FILE="$INPUT_FILE"
+          elif [ "${EVENT_NAME}" = "schedule" ]; then
+            # On scheduled runs there's no push context — look for today's brief by date.
+            TODAY=$(TZ=Asia/Bangkok date +%Y-%m-%d)
+            FILE="articles/${TODAY}-brief.md"
           else
             # Changed files on this commit; works for first commit too.
             FILE=$(git show --name-only --format= HEAD \

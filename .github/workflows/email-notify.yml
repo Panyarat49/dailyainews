@@ -1,24 +1,36 @@
 name: Email notify on new brief
 
-# Watches main for new daily briefs and emails the FULL brief (rendered to
-# HTML) via SMTP (Gmail by default). Replaces the old LINE delivery — email has no
-# 5000-char limit, so the complete brief is sent with no truncation.
+# Watches main for new daily briefs and emails each (rendered to HTML) via SMTP
+# (Gmail by default). Email has no 5000-char limit, so the full brief is sent.
 #
-# The Routine only commits the markdown brief; delivery lives here because
-# the Routine's tools can't open an authenticated SMTP/HTTP connection.
+# There are now TWO briefs per day:
+#   articles/<date>-ainews.md     (general AI news  — skill: daily-ai-news)
+#   articles/<date>-watchlist.md  (watchlist monitor — skill: daily-ai-watchlist)
+# Each is emailed separately (distinct H1 subjects). send_email.py is unchanged —
+# it renders whatever markdown brief it's handed; this workflow just loops it
+# over every brief changed in the push.
+#
+# The local routine commits the markdown brief(s) and pushes; delivery lives here
+# because the routine's tools can't open an authenticated SMTP connection.
+#
+# CHANGED for the two-brief refactor (review):
+#   - paths: *-ainews.md + *-watchlist.md (was *-brief.md)
+#   - resolve+send loop over ALL briefs changed in the push (was single file)
+#   - fetch-depth: 0 so multi-commit pushes diff correctly
+#   - dropped the daily `schedule:` trigger — the local routine pushes via real git
+#     creds, so `push` fires reliably; a schedule on top would double-send. Re-add
+#     only if a host that commits via GITHUB_TOKEN (which doesn't trigger push) is used.
 
 on:
   push:
     branches: [main]
     paths:
-      - 'articles/*-brief.md'
-  schedule:
-    # 00:10 UTC = 07:10 Asia/Bangkok — fires after the Routine commits the brief
-    - cron: '10 0 * * *'
+      - 'articles/*-ainews.md'
+      - 'articles/*-watchlist.md'
   workflow_dispatch:
     inputs:
       file:
-        description: 'Path of the brief file to email (defaults to most-recent / today)'
+        description: 'Specific brief path to email (default: all briefs changed in HEAD / today)'
         required: false
 
 permissions:
@@ -26,13 +38,13 @@ permissions:
 
 jobs:
   notify:
-    # Skip if the commit message opts out (head_commit is null for schedule/dispatch runs — always allow those)
+    # Skip if the commit message opts out (head_commit is null for dispatch — always allow that)
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip email]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -41,37 +53,45 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet markdown
 
-      - name: Resolve brief file
+      - name: Resolve brief file(s)
         id: resolve
         env:
           INPUT_FILE: ${{ github.event.inputs.file }}
           EVENT_NAME: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
         run: |
           set -euo pipefail
+          BRIEF_RE='^articles/[0-9]{4}-[0-9]{2}-[0-9]{2}-(ainews|watchlist)\.md$'
 
           if [ -n "${INPUT_FILE:-}" ]; then
-            FILE="$INPUT_FILE"
-          elif [ "${EVENT_NAME}" = "schedule" ]; then
-            # No push context on scheduled runs — look for today's brief by date.
-            TODAY=$(TZ=Asia/Bangkok date +%Y-%m-%d)
-            FILE="articles/${TODAY}-brief.md"
+            CAND="$INPUT_FILE"
+          elif [ "${EVENT_NAME}" = "push" ]; then
+            if [ -z "${BEFORE:-}" ] || [ "${BEFORE}" = "0000000000000000000000000000000000000000" ]; then
+              CAND=$(git show --name-only --format= "${AFTER}")          # new branch / first push
+            else
+              CAND=$(git diff --name-only "${BEFORE}" "${AFTER}")        # all files across the push range
+            fi
+            CAND=$(echo "$CAND" | grep -E "$BRIEF_RE" || true)
           else
-            # Changed files on this commit; works for the first commit too.
-            FILE=$(git show --name-only --format= HEAD \
-              | grep -E '^articles/[0-9]{4}-[0-9]{2}-[0-9]{2}-brief\.md$' \
-              | head -1 || true)
+            # workflow_dispatch with no input → today's two briefs
+            TODAY=$(TZ=Asia/Bangkok date +%Y-%m-%d)
+            CAND=$(printf 'articles/%s-ainews.md\narticles/%s-watchlist.md\n' "$TODAY" "$TODAY")
           fi
 
-          if [ -z "${FILE:-}" ] || [ ! -f "$FILE" ]; then
+          # keep only files that exist; dedup; stable order
+          RESOLVED=$(printf '%s\n' "$CAND" | awk 'NF' | sort -u | while IFS= read -r f; do [ -f "$f" ] && echo "$f"; done)
+
+          if [ -z "${RESOLVED}" ]; then
             echo "No matching brief file — nothing to email."
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          echo "Brief: $FILE"
+          echo "Briefs to email:"; echo "${RESOLVED}"
           echo "found=true" >> "$GITHUB_OUTPUT"
-          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+          echo "files=$(echo "${RESOLVED}" | paste -sd' ' -)" >> "$GITHUB_OUTPUT"
 
-      - name: Send email
+      - name: Send email(s)
         if: steps.resolve.outputs.found == 'true'
         env:
           MAIL_HOST: ${{ secrets.MAIL_HOST }}
@@ -82,7 +102,7 @@ jobs:
           MAIL_TO: ${{ secrets.MAIL_TO }}
           GH_SHA: ${{ github.sha }}
           GH_REPO: ${{ github.repository }}
-          FILE: ${{ steps.resolve.outputs.file }}
+          FILES: ${{ steps.resolve.outputs.files }}
         run: |
           set -euo pipefail
 
@@ -92,5 +112,8 @@ jobs:
             exit 0
           fi
 
-          PERMALINK="https://github.com/${GH_REPO}/blob/${GH_SHA}/${FILE}"
-          python3 .github/scripts/send_email.py "$FILE" "$PERMALINK"
+          for FILE in $FILES; do
+            PERMALINK="https://github.com/${GH_REPO}/blob/${GH_SHA}/${FILE}"
+            echo "Emailing ${FILE} ..."
+            python3 .github/scripts/send_email.py "${FILE}" "${PERMALINK}"
+          done

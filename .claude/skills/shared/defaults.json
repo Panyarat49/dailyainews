@@ -1,0 +1,15 @@
+{
+  "_comment": "Shared non-secret defaults for BOTH brief skills (daily-ai-news + daily-ai-watchlist). Read by the engine (shared/engine.md) Step 0. Secrets NEVER live here. GITHUB_* point at the working repo; the local runner uses them only to form the commit permalink (the runner does the actual git commit). Email SENDING is the teammate's scope and is configured outside the skills (see _email_handoff) — the skills are write-only and never send.",
+  "GITHUB_OWNER": "Panyarat49",
+  "GITHUB_REPO": "dailyainews",
+  "GITHUB_BRANCH": "main",
+  "dedup_window_days": 7,
+  "_email_handoff": {
+    "_comment": "Contract for the teammate's email sender. The skills produce committed Markdown briefs; the sender consumes them. NOT read by the skills.",
+    "source_files": ["articles/{DATE}-ainews.md", "articles/{DATE}-watchlist.md"],
+    "subject": "the H1 (# ...) of each brief",
+    "body": "the brief Markdown (render to HTML or send as text)",
+    "link": "commit-pinned permalink: https://github.com/Panyarat49/dailyainews/blob/{SHA}/{path}",
+    "recipients": "configured by teammate (env/secret on the send side, not here)"
+  }
+}

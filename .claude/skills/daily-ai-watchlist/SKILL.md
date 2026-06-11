@@ -27,8 +27,9 @@ Cache `WATCHLIST` and `_meta` (`target_story_count`, `roundup_update_cap`,
 SINGLE SOURCE OF TRUTH** for the monitored universe (companies, tiers, tickers,
 keywords, cn_terms) AND its tuning knobs — read these, never hardcode; to change the
 universe or a knob, edit `watchlist.json` only. If missing/unparseable → abort.
-Let `TARGET = _meta.target_story_count`. Use `_meta.dedup_window_days` as the engine's
-dedup window.
+Use `_meta.dedup_window_days` as the engine's dedup window. **Story counts follow the
+shared `STORY_COUNT` policy** (`shared/defaults.json`: min 3 / prefer 4 / max 5 — aim 4–5,
+floor 3), NOT a single target. (`_meta.target_story_count` is superseded by `STORY_COUNT`.)
 
 ## SCOPE — what qualifies
 Only stories about a company in `WATCHLIST`, that are AI/tech-relevant AND significant.
@@ -55,26 +56,29 @@ normal day; Tier-2 days add a few.
 - **Gate C — AI/tech relevance.** A genuine AI or technology development involving the
   company (model/product, compute/chips, cloud/AI infra, AI research, AI-driven
   business move, AI regulation). A non-AI corporate story → drop.
-- **Gate D — Significance (qualitative checklist).** Must match a material event type:
-  model/product launch or major update · M&A, strategic investment, or funding ·
+- **Gate D — Significance (ranking + fill, NOT a hard drop).** Significant events rank
+  FIRST: model/product launch or major update · M&A, strategic investment, or funding ·
   major partnership/customer/contract · chips/compute/data-center capex or capacity ·
   earnings/guidance **with an AI angle** · regulatory/legal/antitrust/export-control
   touching AI · exec/org change in an AI unit · security/safety/major outage · notable
-  research/benchmark. **Not** significant (drop): routine analyst rating/price-target
-  changes, recycled rumor, opinion/listicles, minor feature tweaks, generic commentary.
+  research/benchmark. To reach the `STORY_COUNT` floor/target you MAY then **fill with
+  less-major but genuinely AI/tech-relevant** on-watchlist items. Still **drop outright**:
+  recycled rumor, pure opinion/listicles, and generic non-AI commentary — filler must
+  still be real AI/tech news about a watchlist company.
 
-## SELECTION — tiers, top-up, roundup
-1. From **Tier 1** candidates passing all gates, group by company, rank by significance,
-   select **one slot per company**, strongest first, up to `TARGET`.
-2. **Top-up descent.** If fewer than `TARGET` slots filled, take **Tier 2** candidates
-   (same gates), top up — strongest first, one slot per company — until `TARGET` or out
-   of significant items. (`tier_descent = "top-up-to-target"`.)
-3. **Roundup block.** If a selected company has **≥2** significant updates today, keep it
-   as **one slot** rendered as a roundup (see heading), capped at `roundup_update_cap`
-   (default 3), strongest first.
-4. Fewer than `TARGET` significant across both tiers → ship what you have. Never pad.
-5. **0** stories → one-line stub naming the blocking gate (A/B/C/D/W). The empty-day
-   signal is information.
+## SELECTION — tiers, top-up, roundup, fill
+Counts follow shared `STORY_COUNT` (min 3 / prefer 4 / max 5).
+1. From **Tier 1** candidates passing the gates, group by company, rank by significance,
+   select **one slot per company**, strongest first, up to `max`.
+2. **Top-up descent.** If fewer than `prefer` (4) slots filled, take **Tier 2** candidates
+   (same gates), top up — strongest first, one slot per company. (`tier_descent = "top-up-to-target"`.)
+3. **Fill to 4–5 (floor 3).** If still short, **backfill with less-major but genuinely
+   AI/tech-relevant on-watchlist items** (Gate C + W pass) across both tiers until you reach
+   4–5, **never below 3**. Search harder first (per-company gap-fill, Thai + CN angles).
+4. **Roundup block.** A company with **≥2** items today → **one slot** rendered as a roundup
+   (see heading), capped at `roundup_update_cap` (default 3), strongest first.
+5. Only a genuinely dead 24h ships **<3** (flag in sources.md) or **0** (stub naming the
+   blocking gate). Never reach past 24h or pad with off-topic items. Never exceed `max`.
 Record `TIERS_USED` (`1` or `1+2`) for sources.md and the runner's commit tag.
 **Priority order:** (1) tier (Tier 1 above Tier 2), (2) significance, (3) breadth.
 

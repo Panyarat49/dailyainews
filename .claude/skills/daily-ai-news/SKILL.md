@@ -26,12 +26,13 @@ anywhere in the world. Not bounded to a company list. Still must be:
 - a real **AI/tech** story (model/product, compute/chips, AI infra/cloud, AI research
   or benchmark, AI-driven business/regulatory move, major incident/outage) — not
   generic non-tech news; and
-- **significant**: model/product launch or major update, M&A / funding, major
-  partnership or contract, chips/compute/data-center capacity, earnings/guidance with
-  an AI angle, regulation/legal/antitrust/export-control touching AI, notable
-  research/benchmark, security/safety/outage, or a major exec/org change in an AI unit.
-- **Not** significant (drop): routine analyst rating/price-target changes, recycled
-  rumor, opinion/listicles, minor feature tweaks, generic market commentary.
+- **significance = ranking, not a hard drop**: the major events (launch/major update,
+  M&A/funding, partnership/contract, chips/data-center capacity, earnings with an AI
+  angle, regulation, notable research/benchmark, security/outage, AI-unit exec change)
+  rank FIRST. To reach `STORY_COUNT` (4–5, floor 3) you may then fill with less-major
+  but genuinely AI/tech-relevant stories (incl. minor launches/updates, smaller funding).
+- **Always drop** (never fill with these): recycled rumor, pure opinion/listicles, and
+  generic non-AI / non-tech commentary.
 
 ## SEARCH_STRATEGY
 
@@ -44,14 +45,19 @@ Map each surfaced story to a publisher on `trusted-sources.md`; discard off-list
 
 ## SELECTION
 
-Select **up to 5** stories that passed engine Gates A + B, then verify each (engine
-1b-ver, Tier-1 preferred). Preferences, in order:
+Fill to the shared `STORY_COUNT` policy: land at **4–5**, **try hard never below 3**
+(`shared/defaults.json`: min 3 / prefer 4 / max 5). Verify each (engine 1b-ver, Tier-1
+preferred). Rank, in order:
 1. **Significance** (launches / M&A / regulation outrank incremental updates).
 2. **Breadth** — prefer distinct companies/topics over stacking one story.
 3. **Source mix** — aim for ≥1 Thai-language source and ≥3 international when supply allows.
 4. Prefer primary announcements over commentary; Tier 1 over Tier 2 for the same story.
-Story 1 is the day's single most material item; the TL;DR mirrors the top three.
-Ship fewer than 5 (even 0 → stub) rather than padding.
+
+Take the significant items first, then **backfill with relevant-but-less-major AI/tech
+stories** (still real + within 24h + on a trusted source) to reach 4–5. If short of 3,
+**search harder** (more queries / outlets / Thai + CN angles) before settling. Only a
+genuinely dead 24h ships <3 (flag it) or 0 (stub) — never pad with older or off-topic
+items. Story 1 is the day's most material item; the TL;DR mirrors the top three.
 
 ## HEADING_FORMAT
 

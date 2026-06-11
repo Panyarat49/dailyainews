@@ -4,6 +4,7 @@
   "GITHUB_REPO": "dailyainews",
   "GITHUB_BRANCH": "main",
   "dedup_window_days": 7,
+  "story_count": { "min": 3, "prefer": 4, "max": 5, "_note": "Aim 4-5, hard floor 3, cap 5. Fill toward it by relaxing significance (relevant in-window items), NEVER by relaxing the 24h freshness window." },
   "_email_handoff": {
     "_comment": "Contract for the teammate's email sender. The skills produce committed Markdown briefs; the sender consumes them. NOT read by the skills.",
     "source_files": ["articles/{DATE}-ainews.md", "articles/{DATE}-watchlist.md"],

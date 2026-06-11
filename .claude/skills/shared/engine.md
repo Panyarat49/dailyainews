@@ -52,6 +52,12 @@ The skill that loaded this engine supplies these **bindings** (named in its SKIL
 - **DEDUP_WINDOW** — the last `dedup_window_days` (default **7**) briefs matching
   `DEDUP_GLOB`. Dedup is **per-stream**: the general and watchlist briefs never
   dedup against each other.
+- **STORY_COUNT** — count policy from `CONFIG.story_count` (`min` 3 / `prefer` 4 /
+  `max` 5). Every brief should land at **`prefer`–`max` (4–5)** and **try hard never to
+  go below `min` (3)**; never exceed `max`. You reach it by relaxing *significance*
+  (include relevant-but-less-major in-window items), **never** by relaxing *freshness*
+  (Gate A stays hard). See Step 1c. Runs on a 24h cadence, so WINDOW = the gap between
+  runs — every qualifying story is seen exactly once.
 - **CONFIG** — `.claude/skills/shared/defaults.json` (repo owner/repo/branch +
   knobs). Read once, cache.
 
@@ -130,14 +136,29 @@ Forbidden patterns from past runs:
 - ❌ Including an item dated last week because it resurfaced today. → drop.
 
 Before writing `sources.md`, re-check every selected story against `NOW − 24h` once
-more. Failures are dropped silently — no apology note, no inclusion-with-caveat. If 0
-remain, write the stub and stop after Step 5. **The empty-day signal is correct
-output; a padded brief erodes trust in every future run.**
+more. Failures are dropped silently. **"Never older" governs *freshness* only** — you
+still fill to `STORY_COUNT` (4–5, floor 3) with *relevant in-window* items per Step 1c;
+what you must never do is reach **past** the window to pad. If, after genuine effort,
+fewer than `min` (3) in-window items exist, ship what you have and flag the shortfall; if
+0, write the stub. **Padding with stale/off-topic items erodes trust; filling with
+relevant in-window items does not.**
 
-### 1c. Selection
-Run `SELECTION` (from SKILL.md) over the candidates that passed all gates. If fewer
-than the target qualify, **ship what you have** (even 1). Never pad. If **0** pass,
-write a one-line stub (Step 1d / Step 5) naming which gate blocked everything.
+### 1c. Selection — fill to STORY_COUNT (4–5, floor 3)
+Run `SELECTION` (from SKILL.md) over the candidates that passed Gates A + B (+ EXTRA_GATES).
+Land at **`prefer`–`max` (4–5)**; **try hard never below `min` (3)**.
+
+Fill in this order:
+1. Take the **significant** items first (rank by materiality / SKILL.md priority).
+2. **Backfill to 4–5 with merely AI/tech-relevant in-window items** — real, fresh
+   (within WINDOW), on a trusted source (and on-watchlist where applicable), just
+   *less major*. Relaxing the **significance** bar to fill is expected and fine.
+3. If still short of `min`, **search harder first** — more / different queries, more
+   trusted outlets, Thai + CN angles, watchlist per-company gap-fill — before settling.
+
+**Never** relax *freshness* to fill: do not reach past WINDOW, do not pad with stale,
+duplicate, or off-topic items (Gate A is hard — see 1b-hard). Only a genuinely dead
+WINDOW ships **< `min`** (note the shortfall in `sources.md`); **0** pass → one-line stub
+(Step 1d / Step 5) naming the blocking gate. Never exceed `max`.
 
 ### 1d. Write `sources.md`
 Overwrite `{ARTIFACT_DIR}/sources.md`. The per-story ledger is required so the runner

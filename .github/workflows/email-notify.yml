@@ -1,7 +1,7 @@
 name: Email notify on new brief
 
 # Watches main for new daily briefs and emails the FULL brief (rendered to
-# HTML) via Office 365 SMTP. Replaces the old LINE delivery — email has no
+# HTML) via SMTP (Gmail by default). Replaces the old LINE delivery — email has no
 # 5000-char limit, so the complete brief is sent with no truncation.
 #
 # The Routine only commits the markdown brief; delivery lives here because

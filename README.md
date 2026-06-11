@@ -19,7 +19,7 @@ The entire flow is executable from inside Claude — **no shell, no git CLI, no 
                                                         │
                                                         ▼
                                   send_email.py renders the FULL brief → HTML
-                                  → SMTP send via Office 365 (smtp.office365.com:587)
+                                  → SMTP send via Gmail (smtp.gmail.com:587)
                                   (using repo secrets MAIL_USERNAME / MAIL_PASSWORD / MAIL_TO)
 ```
 
@@ -104,16 +104,16 @@ Cloud Environment on the Routine is **not required** — `defaults.json` covers 
 
 | Secret | Example | Where to set |
 |---|---|---|
-| `MAIL_USERNAME` | `you@yourcompany.com` (Office 365 login / default From) | **Repo → Settings → Secrets and variables → Actions → New repository secret** |
-| `MAIL_PASSWORD` | mailbox password or app password | same place |
-| `MAIL_TO` | `recipient@yourcompany.com` (comma-separate for several) | same place |
+| `MAIL_USERNAME` | `you@gmail.com` (the sending account / default From) | **Repo → Settings → Secrets and variables → Actions → New repository secret** |
+| `MAIL_PASSWORD` | app password for that account (not the normal login password) | same place |
+| `MAIL_TO` | `recipient@example.com` (comma-separate for several) | same place |
 | `MAIL_FROM` | optional — defaults to `MAIL_USERNAME` | same place |
-| `MAIL_HOST` | optional — defaults to `smtp-mail.outlook.com` (personal Outlook); use `smtp.office365.com` for a business M365 account | same place |
+| `MAIL_HOST` | optional — defaults to `smtp.gmail.com`; use `smtp-mail.outlook.com` (personal Outlook) or `smtp.office365.com` (M365 business) | same place |
 | `MAIL_PORT` | optional — defaults to `587` (STARTTLS) | same place |
 
 The workflow at [`.github/workflows/email-notify.yml`](./.github/workflows/email-notify.yml) reads these directly. If `MAIL_USERNAME` / `MAIL_PASSWORD` / `MAIL_TO` aren't all set, the workflow emits a warning and exits cleanly — commits still land, just no email.
 
-> **Office 365 note:** the sending mailbox must have **Authenticated SMTP (SMTP AUTH)** enabled, and if the account uses MFA you must generate an **app password** and store that as `MAIL_PASSWORD`. Many tenants disable SMTP AUTH by default — an admin may need to enable it for the mailbox.
+> **App password note:** `MAIL_PASSWORD` must be an **app password**, not the account's normal login password. For Gmail, enable 2-Step Verification, then create an app password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords). (Outlook personal accounts now largely reject basic-auth SMTP, which is why Gmail is the default.)
 
 See [`.env.example`](./.env.example) for inline notes on each var.
 
@@ -166,7 +166,7 @@ python3 .github/scripts/send_email.py articles/<YYYY-MM-DD>-brief.md "https://ex
 
 - **"GitHub connector is not connected" on every run.** The connector authorization expired or was scoped to a different repo. Reconnect in **Settings → Connectors** and re-authorize for this repo.
 - **Commit lands but no email.** Email is dispatched by `.github/workflows/email-notify.yml` — check the Actions tab of the repo, not the Routine log. If the workflow didn't even fire, the push may have been a NO-OP (skill detected identical content and skipped the commit — intentional).
-- **SMTP login fails (`5.7.139` / `SmtpClientAuthentication is disabled`).** Office 365 SMTP AUTH is disabled for that mailbox. An admin must enable Authenticated SMTP; if MFA is on, use an **app password** as `MAIL_PASSWORD`.
+- **SMTP login fails (`535` / `Authentication unsuccessful`).** `MAIL_PASSWORD` isn't a valid app password, or basic-auth SMTP is disabled for that account. For Gmail: confirm 2-Step Verification is on and regenerate the app password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).
 - **Workflow ran but the step failed.** Open the run log — the Python sender prints the host/port and the failing exception. Common causes: wrong password, SMTP AUTH disabled, recipient rejected.
 - **Every WebFetch returns 403 from a single Routine run.** May be a transient tool issue; the skill auto-falls-back to `WEBFETCH_BLOCKED` (Tier 2 — WebSearch snippets), commits with `[verify=search]`, and the article carries a banner saying so. If it's persistent across many runs, the fix is at the Routine platform level (egress policy / `WebFetch` schema), not the skill.
 - **`WebFetch` tool signature is `(url, prompt)` only — can't open SMTP.** Not a bug. That's the tool shape in Claude Web Routine. Anything requiring an authenticated network connection (like email) must live outside the Routine — see the GH Actions workflow.

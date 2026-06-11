@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and send the daily-ai-news brief as an HTML email (Office 365 SMTP).
+"""Build and send the daily-ai-news brief as an HTML email (SMTP).
 
 Usage:
     send_email.py <article_path> <permalink>
@@ -14,7 +14,7 @@ Environment (required to send; ignored with --dry-run):
     MAIL_PASSWORD   Mailbox password or app password
     MAIL_TO         Recipient(s), comma-separated
     MAIL_FROM       Optional. Defaults to MAIL_USERNAME.
-    MAIL_HOST       Optional. Defaults to smtp.office365.com.
+    MAIL_HOST       Optional. Defaults to smtp.gmail.com.
     MAIL_PORT       Optional. Defaults to 587 (STARTTLS).
 """
 
@@ -143,11 +143,11 @@ def build_message(article_path: Path, permalink: str) -> EmailMessage:
 
 
 def send(msg: EmailMessage) -> None:
-    # Personal Outlook.com/Hotmail uses smtp-mail.outlook.com; Microsoft 365
-    # business accounts use smtp.office365.com. Override via MAIL_HOST if needed.
-    # NB: unset GitHub Actions secrets arrive as "" (not absent), so use `or`
-    # to fall back to defaults rather than os.environ.get(key, default).
-    host = os.environ.get("MAIL_HOST") or "smtp-mail.outlook.com"
+    # Default is Gmail (smtp.gmail.com). For Outlook personal use
+    # smtp-mail.outlook.com; for Microsoft 365 business use smtp.office365.com.
+    # Override via MAIL_HOST. NB: unset GitHub Actions secrets arrive as ""
+    # (not absent), so use `or` to fall back rather than .get(key, default).
+    host = os.environ.get("MAIL_HOST") or "smtp.gmail.com"
     port = int(os.environ.get("MAIL_PORT") or "587")
     username = os.environ["MAIL_USERNAME"]
     password = os.environ["MAIL_PASSWORD"]

@@ -1,0 +1,96 @@
+name: Email notify on new brief
+
+# Watches main for new daily briefs and emails the FULL brief (rendered to
+# HTML) via Office 365 SMTP. Replaces the old LINE delivery — email has no
+# 5000-char limit, so the complete brief is sent with no truncation.
+#
+# The Routine only commits the markdown brief; delivery lives here because
+# the Routine's tools can't open an authenticated SMTP/HTTP connection.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/*-brief.md'
+  schedule:
+    # 00:10 UTC = 07:10 Asia/Bangkok — fires after the Routine commits the brief
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Path of the brief file to email (defaults to most-recent / today)'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    # Skip if the commit message opts out (head_commit is null for schedule/dispatch runs — always allow those)
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip email]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet markdown
+
+      - name: Resolve brief file
+        id: resolve
+        env:
+          INPUT_FILE: ${{ github.event.inputs.file }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+
+          if [ -n "${INPUT_FILE:-}" ]; then
+            FILE="$INPUT_FILE"
+          elif [ "${EVENT_NAME}" = "schedule" ]; then
+            # No push context on scheduled runs — look for today's brief by date.
+            TODAY=$(TZ=Asia/Bangkok date +%Y-%m-%d)
+            FILE="articles/${TODAY}-brief.md"
+          else
+            # Changed files on this commit; works for the first commit too.
+            FILE=$(git show --name-only --format= HEAD \
+              | grep -E '^articles/[0-9]{4}-[0-9]{2}-[0-9]{2}-brief\.md$' \
+              | head -1 || true)
+          fi
+
+          if [ -z "${FILE:-}" ] || [ ! -f "$FILE" ]; then
+            echo "No matching brief file — nothing to email."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Brief: $FILE"
+          echo "found=true" >> "$GITHUB_OUTPUT"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Send email
+        if: steps.resolve.outputs.found == 'true'
+        env:
+          MAIL_HOST: ${{ secrets.MAIL_HOST }}
+          MAIL_PORT: ${{ secrets.MAIL_PORT }}
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          GH_SHA: ${{ github.sha }}
+          GH_REPO: ${{ github.repository }}
+          FILE: ${{ steps.resolve.outputs.file }}
+        run: |
+          set -euo pipefail
+
+          # Guard on secrets — skip (not fail) if mail isn't configured yet.
+          if [ -z "${MAIL_USERNAME:-}" ] || [ -z "${MAIL_PASSWORD:-}" ] || [ -z "${MAIL_TO:-}" ]; then
+            echo "::warning::MAIL_USERNAME / MAIL_PASSWORD / MAIL_TO not all set — add them in Settings -> Secrets and variables -> Actions. Skipping."
+            exit 0
+          fi
+
+          PERMALINK="https://github.com/${GH_REPO}/blob/${GH_SHA}/${FILE}"
+          python3 .github/scripts/send_email.py "$FILE" "$PERMALINK"

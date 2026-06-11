@@ -122,18 +122,24 @@ normalize it. Fall back to the URL-slug date only when no body is available (Tie
 trusted-source domain.
 
 ### 1b-gates. Gates — apply ALL before selection (drop on any failure)
-**Gate A — Rolling 24h freshness.** Publish time within WINDOW. `วันนี้` / `Today` /
-`N hours ago` (N ≤ 24) / explicit <24h date → pass. Older, or ambiguous/not-surfaced
-→ **drop, never guess**.
+**Gate A — Rolling 24h freshness (of the WRITE-UP).** The gate is on the **article's own
+publish time** — when the *write-up* was published — within WINDOW (`วันนี้` / `Today` /
+`N hours ago`, N ≤ 24 / explicit <24h date → pass). **The underlying event may be older:**
+a freshly-published (≤24h) article reporting a genuine **new development / situation
+update** on an older story PASSES — freshness is about when it was *reported*, not when the
+situation began. What fails: an article whose **own publish time is >24h** (a stale
+write-up), a verbatim rehash with no new development, or a date that's ambiguous/
+not-surfaced → **drop, never guess**.
 **Gate B — Not in `RECENT_URLS`.** URL-level dedup across the dedup window. Same URL =
 drop. A different article (different URL) on an evolving story is fair game.
 **`EXTRA_GATES`** — apply any additional gates this skill defines (see SKILL.md).
 
 ### 1b-hard. Gate A is a HARD gate — DO NOT bend it
 Forbidden patterns from past runs:
-- ❌ "Couldn't find enough from today, so I included older items." → **NO.** Ship fewer; never older.
-- ❌ "Most-recent indexed stories are from 3–5 days ago." → **NO.** "Most recent on the index" ≠ "within 24h." Try other queries / sources, then ship the stub.
-- ❌ Including an item dated last week because it resurfaced today. → drop.
+- ❌ "Couldn't find enough from today, so I included older **write-ups**." → **NO.** Fill with relevant in-window items (Step 1c); never include an article whose own publish time is >24h.
+- ❌ "Most-recent indexed stories are from 3–5 days ago." → **NO.** "Most recent on the index" ≠ "within 24h." Try other queries / sources, then fill / ship the stub.
+- ❌ Including an item **whose own write-up is dated last week** (stale publish time) just because the topic resurfaced. → drop.
+- ✅ ALLOWED: a **freshly-published (≤24h) update** on an older situation — Gate A is on the *write-up's* publish time, not the event's age. Test: *is the reporting new?* Genuine new development → keep; verbatim rehash or old article → drop.
 
 Before writing `sources.md`, re-check every selected story against `NOW − 24h` once
 more. Failures are dropped silently. **"Never older" governs *freshness* only** — you

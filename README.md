@@ -108,7 +108,7 @@ Cloud Environment on the Routine is **not required** — `defaults.json` covers 
 | `MAIL_PASSWORD` | mailbox password or app password | same place |
 | `MAIL_TO` | `recipient@yourcompany.com` (comma-separate for several) | same place |
 | `MAIL_FROM` | optional — defaults to `MAIL_USERNAME` | same place |
-| `MAIL_HOST` | optional — defaults to `smtp.office365.com` | same place |
+| `MAIL_HOST` | optional — defaults to `smtp-mail.outlook.com` (personal Outlook); use `smtp.office365.com` for a business M365 account | same place |
 | `MAIL_PORT` | optional — defaults to `587` (STARTTLS) | same place |
 
 The workflow at [`.github/workflows/email-notify.yml`](./.github/workflows/email-notify.yml) reads these directly. If `MAIL_USERNAME` / `MAIL_PASSWORD` / `MAIL_TO` aren't all set, the workflow emits a warning and exits cleanly — commits still land, just no email.

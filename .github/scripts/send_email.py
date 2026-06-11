@@ -145,8 +145,10 @@ def build_message(article_path: Path, permalink: str) -> EmailMessage:
 def send(msg: EmailMessage) -> None:
     # Personal Outlook.com/Hotmail uses smtp-mail.outlook.com; Microsoft 365
     # business accounts use smtp.office365.com. Override via MAIL_HOST if needed.
-    host = os.environ.get("MAIL_HOST", "smtp-mail.outlook.com")
-    port = int(os.environ.get("MAIL_PORT", "587"))
+    # NB: unset GitHub Actions secrets arrive as "" (not absent), so use `or`
+    # to fall back to defaults rather than os.environ.get(key, default).
+    host = os.environ.get("MAIL_HOST") or "smtp-mail.outlook.com"
+    port = int(os.environ.get("MAIL_PORT") or "587")
     username = os.environ["MAIL_USERNAME"]
     password = os.environ["MAIL_PASSWORD"]
 

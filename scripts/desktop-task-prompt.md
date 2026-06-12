@@ -1,50 +1,32 @@
 # Desktop scheduled-task prompt — daily AI briefs
 
-Paste this as the prompt when creating the Claude Desktop scheduled task (the PRIMARY
-host — see LOCAL-ROUTINE.md). It is intentionally self-contained: each scheduled run is
-a fresh local session with no memory of any prior chat. Runs locally → WebFetch is
-unblocked → full Tier-1 verification.
+This is the versioned copy of the prompt run by the local Desktop scheduled task
+`dailyainews-daily` (daily ~11:49 Asia/Bangkok). Each run is a fresh local session
+(WebFetch unblocked → Tier-1). Keep this in sync with the live task; to edit the live
+task, update it via the scheduled-tasks tool, then mirror the change here.
+
+Permissions: the user's `~/.claude/settings.json` allow-list pre-approves the tools the
+run uses (`Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash`) so the unattended
+run never pauses on a prompt. Pushes authenticate via the clone's remote (fine-grained
+PAT scoped to this repo).
 
 ---
 
-You are a scheduled task running locally on this Windows machine via the Claude Desktop
-app. No human is watching — work autonomously, never ask questions, never stop to confirm.
+You are the daily dailyainews routine, running locally via the Claude Desktop app. No human is watching — work fully autonomously, never ask questions, never stop to confirm.
 
-## Working repo
-Operate in the local clone at `C:\Users\panya\dailyainews`.
-First: change into it and run `git pull --ff-only` to get the latest. (If the folder
-does not exist, `git clone https://github.com/Panyarat49/dailyainews.git` to that path.)
+Repo = the local clone at C:\Users\panya\dailyainews. Use git with `-C "C:\Users\panya\dailyainews"` for ALL git commands (do NOT use `cd`). Use absolute paths under that folder for Read/Write.
 
-## Date
-Compute `TODAY` = today's date in **Asia/Bangkok** (`YYYY-MM-DD`).
+First: run `git -C "C:\Users\panya\dailyainews" pull --ff-only` (if it fails due to local changes, run `git -C "C:\Users\panya\dailyainews" stash` then pull).
 
-## Produce BOTH briefs (the skills are write-only — they must NOT commit)
-For each skill: `Read` its `SKILL.md`, then `Read` and follow
-`.claude/skills/shared/engine.md`, applying that skill's scope. WebFetch works here —
-prefer Tier-1 (fetch the article body + its real publish date). Apply the 24h + dedup
-(+ watchlist) gates strictly; ship fewer rather than older/padded; on an empty-news day
-write the one-line stub (that is correct output, not a failure).
+Compute TODAY = today's date in Asia/Bangkok (YYYY-MM-DD).
 
-1. **General** — follow `.claude/skills/daily-ai-news/SKILL.md`
-   → write `articles/{TODAY}-ainews.md` (+ that skill's `reference/sources.md` & `reference/perspectives.md`).
-2. **Watchlist** — follow `.claude/skills/daily-ai-watchlist/SKILL.md`
-   → write `articles/{TODAY}-watchlist.md` (+ that skill's `reference/sources.md` & `reference/perspectives.md`).
+Produce BOTH briefs (WRITE-ONLY; gap-fill — the skills must NOT commit). For EACH brief, if the file already exists for TODAY, SKIP it untouched; otherwise produce it:
+- GENERAL — if C:\Users\panya\dailyainews\articles\{TODAY}-ainews.md does NOT exist: Read C:\Users\panya\dailyainews\.claude\skills\daily-ai-news\SKILL.md, then Read and follow C:\Users\panya\dailyainews\.claude\skills\shared\engine.md → write C:\Users\panya\dailyainews\articles\{TODAY}-ainews.md (+ that skill's reference\sources.md & reference\perspectives.md).
+- WATCHLIST — if C:\Users\panya\dailyainews\articles\{TODAY}-watchlist.md does NOT exist: Read C:\Users\panya\dailyainews\.claude\skills\daily-ai-watchlist\SKILL.md, then follow the shared engine → write C:\Users\panya\dailyainews\articles\{TODAY}-watchlist.md (+ its reference files).
+WebFetch works here — prefer Tier-1 (fetch body + real publish date); cross-match to an allow-listed outlet if a primary 403s. Gates: 24h freshness on the WRITE-UP, URL dedup, (watchlist) AI-relevance/significance/membership. Aim 4–5 stories, hard floor 3 — fill toward 4–5 with relevant in-window items; never reach past 24h. Empty day → stub.
 
-## Commit + push (this is what triggers email delivery)
-After both are written, for EACH brief file that is new or changed vs git:
-- Read that brief's `reference/sources.md`; if it contains `WEBFETCH_BLOCKED`, set
-  `verify=search`, otherwise `verify=webfetch`.
-- `git add` the brief + its `reference/sources.md` + `reference/perspectives.md`.
-- `git commit -m "brief: {TODAY} [kind=ainews|watchlist] [verify=...]"` (use the matching kind).
-If a brief is byte-identical to what's already committed, skip it — do not make an empty commit.
-Then run `git push` once. The push fires `.github/workflows/email-notify.yml`, which emails
-each brief. **Do not send email yourself.**
+Commit + push (triggers email). For EACH brief you NEWLY wrote: read its reference\sources.md (if it contains WEBFETCH_BLOCKED set verify=search else verify=webfetch); `git -C "C:\Users\panya\dailyainews" add <brief> <its sources.md> <its perspectives.md>`; `git -C "C:\Users\panya\dailyainews" commit -m "brief: {TODAY} [kind=ainews|watchlist] [verify=...]"`. Then `git -C "C:\Users\panya\dailyainews" push`. If the push is REJECTED (non-fast-forward), run `git -C "C:\Users\panya\dailyainews" pull --rebase` then push again (retry up to 3 times). The push fires .github/workflows/email-notify.yml → emails each brief.
 
-## Rules
-- Do NOT edit any skill, workflow, or config — only produce briefs and commit them.
-- Do NOT force-push. If `git push` fails, report the error and stop.
-- Use only: Read, Write, Glob, Grep, WebSearch, WebFetch, and git via Bash. No other destructive commands.
+Rules: do NOT send email yourself; do NOT edit any skill/workflow/config; do NOT force-push. Use only Read, Write, Glob, Grep, WebSearch, WebFetch, and git via Bash (every git command as `git -C "C:\Users\panya\dailyainews" ...`, never `cd`).
 
-## Final report
-State, per brief: story count, tiers/verify mode, commit SHA (or NO-OP), and whether the
-push succeeded. If anything failed, say exactly what.
+Final report: per brief — produced or skipped(exists), story count, tiers/verify mode, commit SHA (or NO-OP), and whether the push succeeded.

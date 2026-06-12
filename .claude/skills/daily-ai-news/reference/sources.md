@@ -2,27 +2,23 @@
 
 Generated: 2026-06-11 (Asia/Bangkok)
 Runtime: WEBFETCH_OK
-Freshness window: rolling 24h (Asia/Bangkok)
+Freshness window: rolling 24h (Asia/Bangkok) — write-up publish time
 Dedup against: last 7 ainews briefs (0 URLs loaded — first ainews run)
-Source mix: 1 international (OpenAI Primary). No Thai-language source surfaced within 24h this run.
+Story count: 4 (target 4–5, floor 3 — met). Grok via Tier-1 fetch; others Tier-2 (Primary newsroom, surfaced via search/screening).
 
 ## Selected stories
-1. **OpenAI เปิดให้ใช้ Oracle Universal Credits ซื้อโมเดล OpenAI + Codex ผ่าน OCI**
-   - Publisher: OpenAI
-   - URL: https://openai.com/index/openai-on-oracle-cloud/
-   - Published: 2026-06-10 (announcement; surfaced in search dated 10–11 มิ.ย. 2026)
-   - FreshnessCheck: ✅ within last 24h — announced 10 มิ.ย. 2026, corroborated across multiple independent search results
-   - DedupCheck: ✅ URL not in last-7-day ainews set (first ainews run)
-   - Verification: Tier 2 — WebSearch snippet. openai.com is an allow-listed Primary, but returned **HTTP 403** to WebFetch (site-level bot block, not a runtime block — example.com fetched fine). Summary paraphrases only the search snippet.
-   - Summary: Oracle Cloud Infrastructure (OCI) customers will be able to apply eligible Oracle Universal Credits toward OpenAI models and Codex in the coming weeks, accessing them under their existing Oracle cloud commitment / purchasing workflow.
+1. **อดีตวิศวกร xAI ฟ้องเรื่องความปลอดภัย Grok** — TechCrunch · https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/ · Published 2026-06-10 · Freshness ✅ (body fetched) · Dedup ✅ · Verification: **Tier 1 — WebFetch** · legal/safety/governance.
+2. **Anthropic $200M + 2 policy frameworks** — Anthropic · https://www.anthropic.com/news · Published 2026-06-10 (AP-syndicated; Techmeme 260610) · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (anthropic.com 403 to WebFetch) · AI regulation / economic policy.
+3. **OpenAI models + Codex via Oracle OCI credits** — OpenAI · https://openai.com/index/openai-on-oracle-cloud/ · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (openai.com 403) · cloud distribution / partnership.
+4. **TSMC record May revenue +30% (AI demand)** — TSMC · https://pr.tsmc.com/english/news · Published 2026-06-10 (May figures) · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (discovered via Bloomberg/DigiTimes screening → cited to TSMC Primary) · earnings/data with AI angle.
 
 ## Dropped
-- SpaceX IPO (priced 11 มิ.ย., trades 12 มิ.ย. as SPCX) — **Gate C** (not an AI/tech development; space/markets).
-- Apple Gemini-powered Siri / Claude on iPhone / iOS 27 Beta 1 — **Gate A** (>24h; 8 มิ.ย.).
-- Nvidia N1X / RTX Spark PC chip — **Gate A** (>24h; 1 มิ.ย., Computex).
-- Novo Nordisk × OpenAI drug-discovery deal — **Gate A** (stale; 14 เม.ย. 2026 — recycled by a "June-10" roundup).
-- Microsoft $10B Japan AI (SoftBank/Sakura) — **Gate A** (stale; 3 เม.ย. 2026).
-- NAVER × NVIDIA DSX / HyperCLOVA X — **Gate A** (>24h; 7 มิ.ย. 2026).
-- Alphabet $80B AI-buildout raise — **Gate A** (>24h; 1 มิ.ย.).
+- Meta "Muse Spark" — Gate A (Apr 8 write-up; stale).
+- NVIDIA+TSMC AI-in-fabs (cuLitho) — Gate A (May 31).
+- Nvidia RTX Spark / Rubin / Isaac GR00T — Gate A (Jun 1, Computex).
+- Microsoft Foundry Local / Windows Agent Framework — Gate A (Jun 2, Build).
+- ChatGPT memory "Dreaming V3" — Gate A (Jun 4; >24h).
+- Amazon–Corning ~$6B deal (Jun 10) — citation gate (only on Motley Fool, not allow-listed) → dropped despite fresh.
+- SpaceX IPO (Jun 11) — Gate C (not AI/tech).
 
-> Note: 1 story passed all gates this run. The strict rolling-24h + AI/tech + significance gates dropped 7 candidates (6 stale/old, 1 off-theme). Shipping 1 rather than padding — per the engine's hard freshness rule (1b-hard).
+> Aimed 4–5; landed 4 (floor met). Verification skewed Tier-2 — most Primary pages (openai/anthropic) + key wires (Reuters/AP/Bloomberg) are 403/inaccessible to the WebFetch agent; cited to allow-listed Primary newsrooms per screening→cross-match.

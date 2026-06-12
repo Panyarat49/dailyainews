@@ -45,8 +45,11 @@ The skill that loaded this engine supplies these **bindings** (named in its SKIL
 ## Definitions & invariants (stated once, here)
 
 - **NOW** — current instant, Asia/Bangkok (UTC+7).
-- **WINDOW** — rolling freshness window `[NOW − 24h, NOW]`. "Within 24h" / "fresh"
-  everywhere means inside WINDOW. **Hard gate (Gate A).**
+- **WINDOW** — rolling freshness window `[NOW − freshness_window_days, NOW]` (default
+  **7 days**, from `CONFIG.freshness_window_days`). "Within WINDOW" / "fresh" / "recent"
+  everywhere means inside it. **Hard gate (Gate A).** (Widened from 24h → 7d so quiet or
+  deduped days still fill 4–5 from the week's significant, not-yet-covered stories;
+  freshest-first. To go back to strict daily, set `freshness_window_days: 1`.)
 - **TODAY** — NOW's calendar date `YYYY-MM-DD`; used for `OUTPUT_PATH`, the article
   title, and the commit message the runner will write.
 - **DEDUP_WINDOW** — the last `dedup_window_days` (default **7**) briefs matching
@@ -56,8 +59,8 @@ The skill that loaded this engine supplies these **bindings** (named in its SKIL
   `max` 5). Every brief should land at **`prefer`–`max` (4–5)** and **try hard never to
   go below `min` (3)**; never exceed `max`. You reach it by relaxing *significance*
   (include relevant-but-less-major in-window items), **never** by relaxing *freshness*
-  (Gate A stays hard). See Step 1c. Runs on a 24h cadence, so WINDOW = the gap between
-  runs — every qualifying story is seen exactly once.
+  (Gate A stays hard). See Step 1c. Runs daily but WINDOW = ~7 days; per-stream dedup
+  (last `dedup_window_days` briefs) means every qualifying story is published once.
 - **CONFIG** — `.claude/skills/shared/defaults.json` (repo owner/repo/branch +
   knobs). Read once, cache.
 
@@ -122,8 +125,8 @@ normalize it. Fall back to the URL-slug date only when no body is available (Tie
 trusted-source domain.
 
 ### 1b-gates. Gates — apply ALL before selection (drop on any failure)
-**Gate A — Rolling 24h freshness (of the WRITE-UP).** The gate is on the **article's own
-publish time** — when the *write-up* was published — within WINDOW (`วันนี้` / `Today` /
+**Gate A — Rolling freshness (WINDOW; default 7 days; of the WRITE-UP).** The gate is on the **article's own
+publish time** within WINDOW — when the *write-up* was published — within WINDOW (`วันนี้` / `Today` /
 `N hours ago`, N ≤ 24 / explicit <24h date → pass). **The underlying event may be older:**
 a freshly-published (≤24h) article reporting a genuine **new development / situation
 update** on an older story PASSES — freshness is about when it was *reported*, not when the
@@ -211,7 +214,7 @@ First draft in memory. Structure:
 > - {bullet 2}
 > - {bullet 3}
 
-## ข่าวเด่น 24 ชั่วโมงที่ผ่านมา
+## ข่าวเด่น AI ล่าสุด
 
 {HEADING_FORMAT for story 1}
 {2–4 sentences. Every factual claim traces to that story's URL.}
@@ -253,7 +256,7 @@ Weave the three perspectives into each story (no "persona:" labels). Append an
 > TL;DR
 > - …(mirror the top 3)…
 
-## ข่าวเด่น 24 ชั่วโมงที่ผ่านมา
+## ข่าวเด่น AI ล่าสุด
 {stories, each in HEADING_FORMAT, reporting + integrated perspectives}
 
 ## Action items

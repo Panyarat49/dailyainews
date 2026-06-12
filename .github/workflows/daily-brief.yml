@@ -11,7 +11,7 @@ name: daily-ai-news briefs (Actions backup)
 
 on:
   schedule:
-    - cron: "37 2 * * *"        # 02:37 UTC = 09:37 Asia/Bangkok (after the local 07:11 run)
+    - cron: "49 6 * * *"        # 06:49 UTC = 13:49 Asia/Bangkok (after the local 11:49 run)
   workflow_dispatch:
     inputs:
       force:

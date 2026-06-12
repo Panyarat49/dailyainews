@@ -3,6 +3,7 @@
   "GITHUB_OWNER": "Panyarat49",
   "GITHUB_REPO": "dailyainews",
   "GITHUB_BRANCH": "main",
+  "model": "claude-opus-4-8",
   "dedup_window_days": 7,
   "freshness_window_days": 7,
   "story_count": { "min": 3, "prefer": 4, "max": 5, "_note": "Aim 4-5, hard floor 3, cap 5. Fill toward it by relaxing significance (relevant in-window items), NEVER by relaxing the 24h freshness window." },

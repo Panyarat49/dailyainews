@@ -114,7 +114,7 @@ jobs:
             if git diff --cached --quiet; then continue; fi
             verify=webfetch
             if [ -f "$d/sources.md" ] && grep -q "WEBFETCH_BLOCKED" "$d/sources.md"; then verify=search; fi
-            git commit -q -m "brief: ${TODAY} [kind=${kind}] [verify=${verify}] [host=actions]"
+            git commit -q -m "brief: ${TODAY} [kind=${kind}] [verify=${verify}] [model=opus-4.8] [host=actions]"
             PRODUCED+=("$kind")
           done
 

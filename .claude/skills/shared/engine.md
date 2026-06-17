@@ -84,6 +84,35 @@ The skill that loaded this engine supplies these **bindings** (named in its SKIL
 
 ---
 
+## Step 0.5 — Universe pre-load (optional RSS acceleration)
+
+Before running SEARCH_STRATEGY, check for a pre-built RSS candidate file produced by
+the data pipeline (`pboat-data.yml` runs 05:57 Asia/Bangkok, ~1 h before this routine):
+
+**Check:** `.github/scripts/output/universe_{TODAY}_{BRIEF_KIND}.json`
+
+| Scenario | Action |
+|---|---|
+| File exists AND `generated_at` ≤ 4 h before NOW | **Use START_POOL.** Print: `Universe pre-load: N candidates from RSS funnel (generated_at: …)` |
+| File absent OR stale (> 4 h old) | **Skip.** Print: `Universe pre-load: not found — falling back to WebSearch` then proceed to Step 1 normally |
+
+Each candidate carries: `title`, `url`, `source` (real publisher domain), `publisher`,
+`on_allowlist`, `age_h`, `keywords_matched`, `score`. The funnel **pre-filters to
+`trusted-sources.md` by default**, so candidates should already be on the allowlist
+(`on_allowlist: true`) — but you re-check anyway (see gate 3 below); never assume.
+
+**When START_POOL is available:**
+1. `Read` the JSON. Parse `candidates[]` into START_POOL.
+2. Apply Gates A + B to each candidate immediately — drop stale (> 24 h), drop URLs already in `RECENT_URLS`.
+3. **Trusted-source gate (unchanged, still mandatory).** A story may only be **cited** if its domain is on `trusted-sources.md`. The funnel pre-filters to the allowlist, but verify each `source` yourself; if `--all-sources` was used (or a domain slips through), an off-allowlist item is **discovery-only** — locate the same story on a trusted outlet and cite THAT, or drop it. Never cite a `news.google.com` redirect or any off-allowlist domain directly.
+4. If START_POOL has **≥ 8 candidates** after gates → skip WebSearch calls (SEARCH_STRATEGY) and go straight to Step 1b-ver (WebFetch each surviving candidate).
+5. If START_POOL has **< 8 candidates** after gates → supplement with WebSearch per SEARCH_STRATEGY to fill gaps. Print: `START_POOL thin after gates (N items) — supplementing with WebSearch`.
+6. All engine quality gates (Gate A freshness, Gate B dedup, **trusted-source allowlist**, Tier-1 WebFetch verify) still apply to every story regardless of whether it came from START_POOL or WebSearch. This step is a *source substitution*, not a quality bypass.
+
+**This step is fully optional scaffolding.** If the JSON is absent (pipeline missed, first run, weekend manual trigger), Steps 1–6 proceed exactly as before. No error; no stub.
+
+---
+
 ## Step 1 — Research (fresh, deduplicated, in-scope)
 
 `SCOPE` (from SKILL.md) bounds *which stories qualify*. `trusted-sources.md` bounds

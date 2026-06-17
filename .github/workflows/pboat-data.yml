@@ -1,0 +1,103 @@
+name: pboat RSS universe funnel
+
+# ============================  WHAT THIS WORKFLOW IS  ============================
+# STEP 1 of the daily pipeline. It runs the RSS funnel (pboat_universe.py) in the cloud
+# and commits the pre-screened candidate JSON the Claude Routine reads an hour later.
+# It is pure Python — NO Claude/Anthropic API, NO mail secrets — so it's cheap and reliable.
+#
+#   [1] THIS workflow @05:57 BKK ─ runs pboat_universe.py ─▶ commits universe_{date}_{stream}.json
+#   [2] Claude Routine @07:00 BKK ─ reads that JSON (engine Step 0.5) ─▶ writes the briefs
+#   [3] promote-brief.yml ─ claude/* branch ─▶ main
+#   [4] email-notify.yml ─ send_email.py ─▶ inbox
+#
+# Commits use [skip email] so the JSON commit never triggers the email workflow.
+# ================================================================================
+#
+# Runs 05:57 Asia/Bangkok (22:57 UTC), ~1 hour before the Claude Routine (~07:00 BKK).
+#
+# WHY 22:57 UTC and not a round time:
+#   - GitHub Actions delays scheduled jobs hardest at the TOP OF THE HOUR (minute :00) —
+#     that's when the global cron stampede floods the queue. Pick an off-peak minute.
+#   - 06:00 BKK == 23:00 UTC, which is ITSELF a UTC top-of-hour — a double-congestion slot.
+#   - 22:57 UTC (= 05:57 BKK) enters the queue ~3 min BEFORE the 06:00 BKK stampede AND
+#     sits at UTC minute 57, away from the minute-:00 crush. Best of both.
+#   - Still leaves ~1 h of headroom before the 07:00 Routine reads the JSON.
+#
+# Pulls RSS from trusted outlets + Google News, keyword-filters for AI/tech stories and
+# watchlist companies, and commits two JSON candidate pools:
+#
+#   .github/scripts/output/universe_{YYYYMMDD}_ainews.json
+#   .github/scripts/output/universe_{YYYYMMDD}_watchlist.json
+#
+# The Claude Routine reads these in engine Step 0.5 as START_POOL, replacing the
+# initial WebSearch pass with a richer, RSS-sourced candidate set. Claude still
+# WebFetch-verifies every story — this is a pre-screen, not a trust bypass.
+#
+# Commits use [skip email] so email-notify.yml never fires on data commits.
+# This workflow has NO dependency on the Claude/Anthropic API — it runs purely Python.
+
+on:
+  schedule:
+    - cron: "57 22 * * *"      # 22:57 UTC = 05:57 Asia/Bangkok (3 min before the 06:00 queue stampede)
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Lookback window in hours (default 24)"
+        required: false
+        default: "24"
+      stream:
+        description: "Stream to generate: ainews | watchlist | both (default both)"
+        required: false
+        default: "both"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pboat-data
+  cancel-in-progress: false   # never cancel mid-run; let it finish
+
+jobs:
+  funnel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Bangkok
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet requests feedparser
+
+      - name: Run RSS funnel
+        run: |
+          HOURS="${{ github.event.inputs.hours || '24' }}"
+          STREAM="${{ github.event.inputs.stream || 'both' }}"
+          python .github/scripts/pboat_universe.py --hours "$HOURS" --stream "$STREAM"
+
+      - name: Commit universe JSONs
+        run: |
+          set -euo pipefail
+          git config user.name  "pboat-data-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .github/scripts/output/universe_*.json 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No new universe data to commit."
+            exit 0
+          fi
+
+          TODAY=$(TZ=Asia/Bangkok date +%Y-%m-%d)
+          git commit -m "data: pboat RSS universe ${TODAY} [skip email]"
+
+          # retry once via rebase if the remote moved
+          if ! git push; then
+            git pull --rebase && git push
+          fi
+          echo "Universe JSONs committed and pushed."

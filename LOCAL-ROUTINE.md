@@ -1,7 +1,15 @@
 # Local routine — dailyainews (Panyarat49/dailyainews)
 
-The **primary production host**: a Windows Task Scheduler job runs both brief skills
-on this machine each morning. Driver = [`scripts/run-daily-briefs.ps1`](scripts/run-daily-briefs.ps1).
+> **Status — alternate host.** The **live production host today is the Claude Web Routine**
+> (it commits to a `claude/*` branch → `promote-brief.yml` lands it on `main` → email fires).
+> See the README's **"Hosts"** table for the canonical end-to-end flow. This document covers
+> the **local Windows machine** option — use it only if you run the briefs from this PC instead
+> of (or as a backup to) the Web Routine.
+
+A Windows Task Scheduler job runs both brief skills on this machine each morning.
+Driver = [`scripts/run-daily-briefs.ps1`](scripts/run-daily-briefs.ps1). Because this host
+pushes straight to `main` with your **stored git credentials** (a real-credential push), the
+email workflow fires without needing the `promote-brief.yml` step.
 
 ## Why local? (the WebFetch-block circumvention)
 Claude's **`WebFetch` is 403-blocked inside the claude.ai Web Routine** — there the
@@ -10,8 +18,9 @@ article body). On **this machine egress is open**, so `WebFetch` works and the s
 run full **Tier-1** verification: fetch the real article, read its own publish
 timestamp, summarise from the body. Running locally is the simplest way to dodge the
 block while using **your Claude subscription** (no API key, no GitHub Actions secrets).
-*(GitHub Actions is also unblocked and always-on — kept as a documented backup in
-`ACTIONS-SETUP.md` — but local is the chosen primary.)*
+*(Trade-off: the live Web Routine host is always-on but Tier-2-only; this local host is
+Tier-1 but only runs when the PC is awake. The `daily-brief.yml` GitHub Actions job is the
+always-on gap-fill backup. See the README "Hosts" table for how the three fit together.)*
 
 ## Architecture (two workstreams, one shared engine)
 ```
@@ -30,6 +39,24 @@ block while using **your Claude subscription** (no API key, no GitHub Actions se
   see the hand-off contract below). The runner does NOT send email.
 - **Separate dedup streams:** general dedups vs prior `*-ainews.md`, watchlist vs prior
   `*-watchlist.md` — independent products.
+
+## RSS pre-screening (optional accelerator, runs in the cloud)
+A GitHub Actions funnel, [`pboat_universe.py`](.github/scripts/pboat_universe.py) driven by
+[`pboat-data.yml`](.github/workflows/pboat-data.yml), runs at **05:57 BKK** — before this
+local host wakes. It pulls RSS + Google News, keyword-filters for AI/tech and the
+`watchlist.json` companies, and commits a pre-screened candidate pool to
+`.github/scripts/output/universe_{DATE}_{ainews,watchlist}.json`.
+- **The local skills consume it automatically** via engine **Step 0.5**: if today's JSON is
+  present and fresh (≤4h), the skill loads it as the starting pool and skips most WebSearch
+  calls — then **still does full Tier-1 `WebFetch` verification** on every story (the local
+  host's whole reason for being). The funnel widens *sourcing*; it does not touch *verification*.
+- **Pure fallback by design:** if the JSON is absent (the cloud job didn't run, or the clone
+  hasn't pulled it yet), the skills proceed exactly as before with WebSearch. No error, no gap.
+- **Nothing to configure locally.** This is a cloud-side accelerator; the local runner is
+  unchanged. To preview what it produces, run `python3 .github/scripts/pboat_universe.py`
+  on any machine (deps: `requests feedparser`; no secrets needed).
+- Full design notes + maintenance: [`DEVLOG.md`](DEVLOG.md) and the README's
+  "RSS pre-screening" section.
 
 ## Prerequisites (one-time)
 1. **Claude Code installed and logged in** with your subscription (this machine already
@@ -90,10 +117,12 @@ The skills + runner stop at "committed brief." The email sender consumes:
 | Day skipped entirely | Machine was off/asleep at 07:15. Enable wake-to-run, or use the Actions backup. |
 
 ## Host comparison
-| | Local (this) | GitHub Actions | claude.ai Web Routine |
+| | claude.ai Web Routine | Local (this) | GitHub Actions backup |
 |---|---|---|---|
-| WebFetch | open → **Tier-1** | open → Tier-1 | **403-blocked** → Tier-2 only |
-| Always-on | no (machine must be up) | yes | yes |
-| Billing | your subscription | API/OAuth + secrets | subscription |
-| Secrets needed | none | repo secrets | none |
-| Status | **primary** | backup (`ACTIONS-SETUP.md`) | fallback (`ROUTINE-SETUP.md`) |
+| Status | **live (primary)** | alternate | gap-fill backup (`daily-brief.yml`) |
+| When | ~07:00 BKK | ~07:1x BKK (if PC is up) | 13:49 BKK, only if briefs missing |
+| WebFetch | **403-blocked** → Tier-2 only | open → **Tier-1** | open → Tier-1 |
+| Always-on | yes | no (machine must be up) | yes |
+| Billing | subscription | your subscription | API/OAuth + secrets |
+| How email fires | `claude/*` branch → `promote-brief.yml` (`PROMOTE_PAT`) → `main` | pushes to `main` with stored git creds | self-emails (its `GITHUB_TOKEN` push can't trigger email-notify) |
+| Secrets needed | `PROMOTE_PAT` + `MAIL_*` | `MAIL_*` only | `CLAUDE_CODE_OAUTH_TOKEN` + `MAIL_*` |

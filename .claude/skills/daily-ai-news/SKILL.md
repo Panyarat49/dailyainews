@@ -36,7 +36,12 @@ anywhere in the world. Not bounded to a company list. Still must be:
 
 ## SEARCH_STRATEGY
 
-Broad first, efficient. ~4–8 searches on a normal day:
+> **Check engine Step 0.5 first.** If `.github/scripts/output/universe_{TODAY}_ainews.json`
+> exists and is fresh (≤ 4 h old), load its `candidates[]` as START_POOL and skip or reduce
+> the searches below (see engine Step 0.5 for exact logic). Still WebFetch-verify each
+> candidate before writing — the JSON is a pre-screen, not a trust bypass.
+
+Broad first, efficient. ~4–8 searches on a **normal day** (skip if START_POOL ≥ 8 candidates):
 1. **Wide pass:** `AI news today`, `AI model / chip launch today`, Thai `ข่าว AI วันนี้`
    / `ปัญญาประดิษฐ์`, one CN `AI 新闻` if useful. Add a date hint (`qdr:d`) when supported.
 2. **Source-targeted top-ups:** `site:techcrunch.com AI`, `site:blognone.com AI`, etc.,

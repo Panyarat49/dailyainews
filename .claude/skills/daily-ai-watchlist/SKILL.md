@@ -38,6 +38,14 @@ Tickers are not used for selection; company **keywords / cn_terms** drive the se
 when `_meta.bloomberg_enabled = true`; ignore in V1.5.)*
 
 ## SEARCH_STRATEGY — wide first, then narrow
+
+> **Check engine Step 0.5 first.** If `.github/scripts/output/universe_{TODAY}_watchlist.json`
+> exists and is fresh (≤ 4 h old), load its `candidates[]` as START_POOL and skip or reduce
+> the searches below (see engine Step 0.5 for exact logic). The JSON is pre-filtered for
+> watchlist company keywords, so Gate W is likely already satisfied — still verify each
+> candidate with WebFetch and apply all gates before including. If START_POOL is thin (< 8
+> candidates after gates), supplement with the per-company gap-fill searches (steps 3–4 below).
+
 Do NOT blindly run one search per company. ~4 wide + up to ~6 gap-fill = under 10 on a
 normal day; Tier-2 days add a few.
 1. **Wide pass (~2–4 searches):** broad WebSearches for the day's significant AI/tech

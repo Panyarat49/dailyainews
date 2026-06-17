@@ -1,8 +1,8 @@
 # This folder holds the RSS funnel's output — the daily candidate pools that Claude reads.
 #
 # pboat_universe.py (STEP 1 of the pipeline) writes two files here each morning:
-#     universe_{YYYYMMDD}_ainews.json      (general AI/tech candidates)
-#     universe_{YYYYMMDD}_watchlist.json   (watchlist-company candidates)
+#     universe_{YYYY-MM-DD}_ainews.json      (general AI/tech candidates)
+#     universe_{YYYY-MM-DD}_watchlist.json   (watchlist-company candidates)
 #
 # The pboat-data.yml workflow commits them with [skip email]; the Claude Routine reads
 # today's file in engine Step 0.5. This .gitkeep just ensures the folder exists in git.

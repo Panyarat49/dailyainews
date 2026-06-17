@@ -51,8 +51,8 @@ was modified.
              └─ fetches 5 Google News AI queries + 2 Thai queries
              └─ fetches 10 Google News per-company queries (Tier-1 watchlist)
              └─ keyword-filters → deduplicates → scores by recency + keyword hits
-             └─ writes output/universe_{YYYYMMDD}_ainews.json     (top 40)
-             └─ writes output/universe_{YYYYMMDD}_watchlist.json  (top 40)
+             └─ writes output/universe_{YYYY-MM-DD}_ainews.json     (top 40)
+             └─ writes output/universe_{YYYY-MM-DD}_watchlist.json  (top 40)
              └─ commits with [skip email]
 
 07:11 BKK  Claude Routine wakes up, runs daily-ai-news skill:

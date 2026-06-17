@@ -26,8 +26,8 @@ name: pboat RSS universe funnel
 # Pulls RSS from trusted outlets + Google News, keyword-filters for AI/tech stories and
 # watchlist companies, and commits two JSON candidate pools:
 #
-#   .github/scripts/output/universe_{YYYYMMDD}_ainews.json
-#   .github/scripts/output/universe_{YYYYMMDD}_watchlist.json
+#   .github/scripts/output/universe_{YYYY-MM-DD}_ainews.json
+#   .github/scripts/output/universe_{YYYY-MM-DD}_watchlist.json
 #
 # The Claude Routine reads these in engine Step 0.5 as START_POOL, replacing the
 # initial WebSearch pass with a richer, RSS-sourced candidate set. Claude still

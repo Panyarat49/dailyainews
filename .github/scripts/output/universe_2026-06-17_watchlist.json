@@ -1,0 +1,722 @@
+{
+  "generated_at": "2026-06-17T16:22:37.515550+07:00",
+  "date": "2026-06-17",
+  "stream": "watchlist",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 24,
+    "items_raw": 955,
+    "items_after_dedup": 935,
+    "items_after_keyword": 752,
+    "items_after_trusted": 102,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "The new Siri makes one of Apple's most convenient OS features a cumbersome mess",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/the-new-siri-makes-one-of-apples-most-convenient-os-features-a-cumbersome-mess/5256591",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 22:47:37 +0200",
+      "age_h": 12.6,
+      "has_timestamp": true,
+      "description": "HANDS ON That new AI-juiced Siri that Apple rolled out last week at WWDC was supposed to set a new paradigm for on-device AI. But don't believe the hype coming out of Tim Cook's final big event. After a week-long test drive, it seems like Apple just crammed Google AI Overviews on top of the most use",
+      "keywords_matched": [
+        "siri",
+        "apple",
+        "google",
+        "tim cook"
+      ],
+      "match_count": 4,
+      "score": 4.15
+    },
+    {
+      "title": "There's no such thing as an agentic CPU",
+      "url": "https://www.theregister.com/systems/2026/06/16/there-is-no-one-cpu-to-rule-them-all-agents-otherwise/5255964",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 +0200",
+      "age_h": 17.4,
+      "has_timestamp": true,
+      "description": "OPINION Do AI agents need a new kind of CPU? That's what Arm, Nvidia, and a growing number of chip designers would have you believe.  Arm named its first datacenter silicon the \"AGI CPU.\" Nvidia CEO Jensen Huang described Vera as a \"CPU for agents,\" and AWS's Graviton 5 marketing is chock full of re",
+      "keywords_matched": [
+        "jensen huang",
+        "vera",
+        "aws",
+        "nvidia"
+      ],
+      "match_count": 4,
+      "score": 3.75
+    },
+    {
+      "title": "Why Weibo’s tiny VibeThinker-3B has the AI world arguing over benchmarks again",
+      "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Wed, 17 Jun 2026 00:32:19 GMT",
+      "age_h": 8.8,
+      "has_timestamp": true,
+      "description": "On Sunday, a team of nine researchers at  Sina Weibo  — the Chinese social media giant better known for its microblogging platform than for cutting-edge artificial intelligence — quietly posted a  14-page technical report  to arXiv that sent shockwaves through the AI research community. Their claim:",
+      "keywords_matched": [
+        "deepmind",
+        "anthropic",
+        "google"
+      ],
+      "match_count": 3,
+      "score": 3.67
+    },
+    {
+      "title": "'A signal of where power sits': Trump and world leaders joined by OpenAI, Anthropic, Google at G7",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE9yRkF4ZWRCUXlTM3JoR0RKVDE4Q1VfS2xNdHBZODdUTjNrcF9OVVFlMXpvZHg5REFaYy1IdGxvSkhGTGlkcWU2WjNZWEY4N0VZZWdyNWtDMG5BN3RaamlfcXlEYzl0M1Npc1ZZN0dkYXphQzVrU1RGMFk3ZE92eGZsSkJVMDd3bUJMRUhB0gGTAUFVX3lxTE9QVktTTi1feHFDS21EU2ozTTV1UTdoNS1JdEVJMURhQWxjdVVudnVMZUplWGQ5N21Yd0ZfcFZsTE9JOWxNVWNnT3JlLXRkWTU5T2R2cFdaREgwUlg2MTd3TDJjTXctRVdJRVhsX1h3NHhTYldvUzFRZUh2RUR2THpKcmJndXl1c0hWNHZRblRFVG14UQ?oc=5",
+      "source": "cnbc.com",
+      "publisher": "CNBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Wed, 17 Jun 2026 07:09:54 GMT",
+      "age_h": 2.2,
+      "has_timestamp": true,
+      "description": "'A signal of where power sits': Trump and world leaders joined by OpenAI, Anthropic, Google at G7    CNBC",
+      "keywords_matched": [
+        "anthropic",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 3.42
+    },
+    {
+      "title": "Run a Self-Managed Oracle Database in AWS with Autonomous AI Database Serverless",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVdmQTV4TlU5TnNERUdlYnRaaElxclhLLVpGcVZZWWVpZi1qTFdsQlhBYnBSemZWWVRLMXFmYnRpVVpkM21kVWx4S0ExaDM2SkVrY3czS2FUUzRBU2FGbGV4cWVUR1M4SDM0MVRSTEM5WThqeTNfT0IydE5sRkQyazg0UnU0Tm00SkJOT0h4Zw?oc=5",
+      "source": "blogs.oracle.com",
+      "publisher": "Oracle Blogs",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Wed, 17 Jun 2026 06:22:30 GMT",
+      "age_h": 3.0,
+      "has_timestamp": true,
+      "description": "Run a Self-Managed Oracle Database in AWS with Autonomous AI Database Serverless    Oracle Blogs",
+      "keywords_matched": [
+        "aws",
+        "oracle"
+      ],
+      "match_count": 2,
+      "score": 3.35
+    },
+    {
+      "title": "Oracle AI Database@AWS Achieves Oracle MAA Platinum Certification and Delivers Sub 200 Microsecond Latency",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdndnRGpoNjFQZHVUcUd1MWY2R1owVTVYaGY1dHl2bk1FT3pWMngtZ25USk93eUVpa2t1OFFYLWNzUlh4YlR6TnVTRnllblVFWm1kVGVnSUw2clhxVHg5RHdpVHhZS3FwaHIzek9rZ3huWVZhcmVZZno5VXVDUldrTXNpNThjQXNNS0d6bWZ1Zw?oc=5",
+      "source": "blogs.oracle.com",
+      "publisher": "Oracle Blogs",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Wed, 17 Jun 2026 05:25:13 GMT",
+      "age_h": 4.0,
+      "has_timestamp": true,
+      "description": "Oracle AI Database@AWS Achieves Oracle MAA Platinum Certification and Delivers Sub 200 Microsecond Latency    Oracle Blogs",
+      "keywords_matched": [
+        "aws",
+        "oracle"
+      ],
+      "match_count": 2,
+      "score": 3.27
+    },
+    {
+      "title": "AP Exclusive: Nvidia’s Jensen Huang says society needs ‘new social norms’ in the age of AI",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTHJEWURVbXBpUTM4S28zR3NTNEVpRndlM3hSdUMzRURzb004bEVrcHlUTC1aMWVhUmxPT3hUVEFhR1B4NUY3VEJqT29wMzdOSUZRQUQyRXgtZUxTSEoteXAyR0Y3S2sxa2FFOWphMjRFbzBqUHZnbEZvNXFOMEkya2RzZGo3dmtWaVc1eDFrSkN2MGpNWXJZUFlOa3I?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Wed, 17 Jun 2026 01:37:00 GMT",
+      "age_h": 7.8,
+      "has_timestamp": true,
+      "description": "AP Exclusive: Nvidia’s Jensen Huang says society needs ‘new social norms’ in the age of AI    AP News",
+      "keywords_matched": [
+        "jensen huang",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.95
+    },
+    {
+      "title": "Nvidia’s Jensen Huang discusses AI policy, manufacturing and Trump relationship",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQjhFVVowbEsyQzNhRTBRX2pJa04ya3VMVkFBT21zaXpaSzBWcWdiT1BCYk1aenBpNFZScmRtU1V3bFRlY0xMSF92REY5SFlCMnUxVnRuWTdQWlBQaVdoWDBEeDZIX2FUQ0Z0WS1SeE1TYnBvc2JES1hLUzF2dUhreXpCUGxPSWpXcThyVUdrOEtGR1pXZl9IS3JHcjdSQm1JWEhpSkR1allsTURFd2luZmxGYTBIS0VyZTVKR3ljWG9ESU5JNnNkYXJJemIwNXRH?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Wed, 17 Jun 2026 01:21:00 GMT",
+      "age_h": 8.0,
+      "has_timestamp": true,
+      "description": "Nvidia’s Jensen Huang discusses AI policy, manufacturing and Trump relationship    AP News",
+      "keywords_matched": [
+        "jensen huang",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.93
+    },
+    {
+      "title": "Copilot Cowork for Dynamics 365: Extending AI Across Sales & Service",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMlMwQkxheF9NSWVFNUNrM1pnc1E5M2x2cDdjOWJ6b2dsbDI2Z3U2eTYzTi16UlRIeUNWN05MRmRpWW1NNTVhUlNMR1ZYOUJBemJQeHdNbUtsanZVNzBQU2dIOHQwNUUyMDNYRmh4YjlUbUZaS0xBQ2JEckFGSmdCNnA1X09DZTEwM2tOS2lvY3VfTERtQkd3SXFyUjMwRW9BbW9zWS1obWw?oc=5",
+      "source": "microsoft.com",
+      "publisher": "Microsoft",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Tue, 16 Jun 2026 22:18:49 GMT",
+      "age_h": 11.1,
+      "has_timestamp": true,
+      "description": "Copilot Cowork for Dynamics 365: Extending AI Across Sales & Service    Microsoft",
+      "keywords_matched": [
+        "copilot",
+        "microsoft"
+      ],
+      "match_count": 2,
+      "score": 2.67
+    },
+    {
+      "title": "Scaling the UK government’s AI vision",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR1k4dFhCNEpPbkQwY0hYSWtoSVJnQm5JdG94VEJrSFE3V1E0aHpBRkVScFdrcmNxTFROTFp0N2poZGJzam5SNW5DUldiZktlSHpOSTVpT21tWDE4WTFBMFM3RGl5a2lzZEVwUlhWbFltSmdzd0tmX0RQdDVDUzJFb3VZUXBqaElycEZ5YmMwSWlzREYwYUZ5YzVPbXFZWHIyMzRRclo1LUE4NE1YbWhzZEduNk9EekNBVmswdzY4ekp1TEE?oc=5",
+      "source": "blog.google",
+      "publisher": "blog.google",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Wed, 17 Jun 2026 07:03:32 GMT",
+      "age_h": 2.3,
+      "has_timestamp": true,
+      "description": "Scaling the UK government’s AI vision    blog.google",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.61
+    },
+    {
+      "title": "Unlocking UK house-building with AI-accelerated planning",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWWlRV0Vjdmx6eXZlMWZMMDlkRV9FS3VmeWpkWnhDNGs2cXU1SWJYcTNBRzdIajdDUndBZU5jc1J6aDlrb1dfc0VQS3d1N05mXzNDTWhjTm1VRUNUemV2THg1djg5aXFmWnk5dUhWcG1ab2pTOERWbjEzVTdSa3JVWTJDVzJZeWJoMVQ3WHVaaw?oc=5",
+      "source": "deepmind.google",
+      "publisher": "Google DeepMind",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 21:31:18 GMT",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "Unlocking UK house-building with AI-accelerated planning    Google DeepMind",
+      "keywords_matched": [
+        "deepmind",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.61
+    },
+    {
+      "title": "The new Siri makes one of Apple's most convenient OS features a cumbersome mess",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQN3ZOVWRaVUJXdFN6Yk5aNERfcWh0ZlJhYnM3TGZaY2ZSVnlZM3BaVHR2aHBvTVhlc0Y2dmo4czRtWjNHekx0VnlOckYyQU9JTU1pWVdfVDFVUU1DbmFMektWeV82bk1UeTdSVWVkRFF2MllZazFpQklDeHZWVTVxcTBrcF9kZV9KMW5fZFNxM0lMb0hXd2Z2cDhuRXp6UnJIYUpTXzV6SmMtWUUwbXdIVllrcjR4VTNxamk4TC1jLXg1MnZ0eHdrSDdGY3FFMHVz?oc=5",
+      "source": "theregister.com",
+      "publisher": "The Register",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 20:47:37 GMT",
+      "age_h": 12.6,
+      "has_timestamp": true,
+      "description": "The new Siri makes one of Apple's most convenient OS features a cumbersome mess    The Register",
+      "keywords_matched": [
+        "siri",
+        "apple"
+      ],
+      "match_count": 2,
+      "score": 2.55
+    },
+    {
+      "title": "ELCA collaborates with Microsoft to Expand its Sovereign Cloud Options in Switzerland with Locally Operated Services Built on Microsoft Azure Local and Microsoft 365 Local",
+      "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPV01UUlpSdXl3VXA5Tkl5TzJ1c2NHYk55ZHBxRVhDUnk5Y3RqRHVMWXNmQWZPbzlFUVRpcElZTU1uMS1JSEVWNFRYX3JEeUtvTERxWVZPM3lfTlRUd0tCbTQ4SzhSdzc2RnNuRlk3cF82YmNHTEFUNFJCVktxZjBLUlFLZ0JDdlhHRFh4bVpwWnpPZGkyT3YyODNoVkNBUFhBMkZPNGJGZ2tHbS1hN3B6OXVqUHd6ZFU0MExFSWozeTFNaWNiNVdjejgwQ2taQmxXN2FWTjZVUk9laXZweW9hZjBWWVBoelRJVThtR1drN2EwWXlrT2hXQmZ0Q1FjWXFZOVlfYXhOWW5aaVc3eXNZdGlNRUZkVll0YkN2bFpxbFFmRF9ZU3dmRXdMZHBIOS1LNWxmbGVjeld5M0tUS2FEVw?oc=5",
+      "source": "news.microsoft.com",
+      "publisher": "Microsoft Source",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Tue, 16 Jun 2026 18:37:53 GMT",
+      "age_h": 14.7,
+      "has_timestamp": true,
+      "description": "ELCA collaborates with Microsoft to Expand its Sovereign Cloud Options in Switzerland with Locally Operated Services Built on Microsoft Azure Local and Microsoft 365 Local    Microsoft Source",
+      "keywords_matched": [
+        "azure",
+        "microsoft"
+      ],
+      "match_count": 2,
+      "score": 2.38
+    },
+    {
+      "title": "All the latest news on Android 17, Wear OS 7, and Android XR",
+      "url": "https://www.theverge.com/tech/950936/google-android-17-wear-os-android-xr",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-16T14:30:00-04:00",
+      "age_h": 14.9,
+      "has_timestamp": true,
+      "description": "Google’s Android 17 update includes highlights like new floating “Bubble” app windows for easier multitasking, a Screen Reaction recording mode, and a 50/50 split gaming mode for foldable phones. Meanwhile, Wear OS 7 brings Live Updates and better battery life for smart watches, and it prepares conn",
+      "keywords_matched": [
+        "gemini",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.36
+    },
+    {
+      "title": "Amazon backs AI start-up developing models to simulate physical world",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQV0ZUemNUU1Z6ZnZzVXgwYk1VejM0NWx1NU51b0hVNTZBdjl1MlUwMGJGcFFWSmtmZVFJNy0zLTlrX0M3aGRtcGJ2TS0wcHRpclVSb0VCMVh1d2lBa2x0X3g5T0Z5RkVXSVNDMGtOc1c1U3poMTRhQTl5eEprandwcWtjNms?oc=5",
+      "source": "ft.com",
+      "publisher": "Financial Times",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Wed, 17 Jun 2026 04:01:41 GMT",
+      "age_h": 5.3,
+      "has_timestamp": true,
+      "description": "Amazon backs AI start-up developing models to simulate physical world    Financial Times",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.36
+    },
+    {
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 +0000",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades. The launch is also accompanied by a Pixel Drop that brings Google’s latest AI models to its devices.",
+      "keywords_matched": [
+        "gemini",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "The DIY era of smartwatches has begun - Google and Apple already have me hooked",
+      "url": "https://www.zdnet.com/article/apple-and-google-ai-widgets-and-shortcuts/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Tue, 16 Jun 2026 18:01:08 GMT",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "Google's Create My Widget and Apple's new Shortcuts feature prove we're in a DIY era of automation.",
+      "keywords_matched": [
+        "apple",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "June Pixel Drop: New features for creators, Gemini upgrades and more",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY2Y4Z2xoTmhsMUVoRWRTZTZ6eG1YV2J3VU54QkhFOWtwYTd6emI1bUtfdi1sMmNURmxidl9HNGtkVUJSRnhLMGsyYTVSRC1VTWRDcnNhSXNaTW0zRm1aaFNnR0FwdG9telkwaWxxOE0zY0xWSXFMOWRDeVdtRFZfbjFVQm4?oc=5",
+      "source": "blog.google",
+      "publisher": "blog.google",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 18:03:19 GMT",
+      "age_h": 15.3,
+      "has_timestamp": true,
+      "description": "June Pixel Drop: New features for creators, Gemini upgrades and more    blog.google",
+      "keywords_matched": [
+        "gemini",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORTVCQWRfRlBqT0d1UWtBUGUtaU84MWhESHJKeHA2eHBJNzI3amk1c1VYNmdCbFA5dUNib0FnbF9SUEd3S0xGX0pfVGlCQmdwQmMyODZkSEhjQzJ4amhuSVA1T09TbFdWZjR4blFrRXhDdG5FRW9vdGFwT3NIVTBGNkN6Mld4MjNPM1VzT0dwVm5NWVlBSkttbUJtYnlrYmQwak1hMTFjQW5oTXpYYzJSbWJFSmozSVE?oc=5",
+      "source": "techcrunch.com",
+      "publisher": "TechCrunch",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 GMT",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "Android 17 launches with new multitasking tools as Google expands Gemini features    TechCrunch",
+      "keywords_matched": [
+        "gemini",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "The best Costco deals to compete with Prime Day: TVs, Apple devices, and more",
+      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-costco-deals-2026/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Tue, 16 Jun 2026 17:47:16 GMT",
+      "age_h": 15.6,
+      "has_timestamp": true,
+      "description": "Skip Amazon Prime Day. Check out the best early Costco deals live right now on premium electronics, smartwatches, and home essentials with bonus warranties.",
+      "keywords_matched": [
+        "apple",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 2.3
+    },
+    {
+      "title": "Startup Backed by Ex-Google CEO Debuts Industrial Robot With LG",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSmx0UW1XN3Y2N0JsVG90cTBKUG5MQ2Z1T0tIWHY1b29LdVlYcm1vYWJYTnBLSVV1bDh2eVFUU0VYVHI5OVNqcF9JSnVVbzVFMWs3VVQwT2FkZEdXaUdiR0RLR28tOUlJWkRSbW0tenlBNUpLOUZMVnU0RW1pVUxocWpXdWotd0EzeEZLa0otZExqdVZlMWN6eWU2aVhsam9MOHgxTFBxYzJyX18wZHdlZnAwYWo?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Wed, 17 Jun 2026 03:07:00 GMT",
+      "age_h": 6.3,
+      "has_timestamp": true,
+      "description": "Startup Backed by Ex-Google CEO Debuts Industrial Robot With LG    Bloomberg.com",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.27
+    },
+    {
+      "title": "Android 17 ออกตัวจริง กูเกิลบอกเป็นจุดเปลี่ยนจาก OS สู่ Intelligence System",
+      "url": "https://www.blognone.com/node/150921",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 02:28:32 +0000",
+      "age_h": 6.9,
+      "has_timestamp": true,
+      "description": "Android 17 ออกตัวจริง กูเกิลบอกเป็นจุดเปลี่ยนจาก OS สู่ Intelligence System \n\n   \n     Body \n                กูเกิลออก Android 17 ตัวจริง โดยจะเริ่มอัพเกรดให้กับอุปกรณ์ตระกูล Pixel ก่อนเช่นเคย และซอร์สโค้ดของ Android 17 ก็เผยแพร่ใน Android Open Source Project (AOSP) แล้ว \n ฟีเจอร์เด่นของ Android 17 ",
+      "keywords_matched": [
+        "gemini"
+      ],
+      "match_count": 1,
+      "score": 2.23
+    },
+    {
+      "title": "Musk's SpaceX overtakes Amazon to become world's fifth most valuable firm",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxMXR6QXdrd3J1QTd0UUUzM1FvVEZVM2p1eGpFYkFOWE9HRFkzaEJHcWU2d05SVjBCXzNVZ3gwdklvbllnZ0RXRXJ5UGtFR2lRMnU3eWFXTlZSUQ?oc=5",
+      "source": "bbc.com",
+      "publisher": "BBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Wed, 17 Jun 2026 01:27:26 GMT",
+      "age_h": 7.9,
+      "has_timestamp": true,
+      "description": "Musk's SpaceX overtakes Amazon to become world's fifth most valuable firm    BBC",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.14
+    },
+    {
+      "title": "Oracle AI World 2026",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3EwaTJ5Q2t4MFk4dGwxVV9yT09ldmxrRkZjN3NUU2RORGJmaDduUE5mRENjZU5GbnpmOWxRS2F4aGhaOFJwNk9BSk9kRTlXV3RVTkoyUExYV2s0MVRBandORHlIN0FNNlpMMXg2cnFOQ01vbzJrRzZwWmpielg1bGpDSFFUb0NlX1Q0MDJFc1A1czh3RnhaVG1xYXBpb2tlcHF1WA?oc=5",
+      "source": "oracle.com",
+      "publisher": "Oracle",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Oracle\" OR \"OCI\") AI news",
+      "published_raw": "Wed, 17 Jun 2026 01:02:08 GMT",
+      "age_h": 8.3,
+      "has_timestamp": true,
+      "description": "Oracle AI World 2026    Oracle",
+      "keywords_matched": [
+        "oracle"
+      ],
+      "match_count": 1,
+      "score": 2.11
+    },
+    {
+      "title": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13U21YTzRLVnFZSE8zS3hqUThVUjN4OThaa2tSdHNwMXFkZms2QXd5ZUJORGQ4MXNKUGtNSURXYUp0RElYLVhtbUo1bHNJZXB6Rnp5VFlJa1dEY2R6VDNtcENpZ2ItX2g5S1JLaw?oc=5",
+      "source": "blogs.nvidia.com",
+      "publisher": "NVIDIA Blog",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Tue, 16 Jun 2026 15:24:14 GMT",
+      "age_h": 18.0,
+      "has_timestamp": true,
+      "description": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0    NVIDIA Blog",
+      "keywords_matched": [
+        "blackwell",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.1
+    },
+    {
+      "title": "HSBC, Google AI Partnership Set to Add Over $100 Million Gains",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTkhUVHZVOTBIWFlWUkZPOE4yTV9VVWRSR0V6QjB4eENpUDRabWswS2g4d2t0R1I1UHltVlptZnJYc1g3WV9mYm9Qc3FEeWE4SC1oaGVuS3hXdmdiZy1nQmt5ZUFPdzUxdTYwMDNnNUs2MmJwZkVGb2RXUXBxUFNIRFJFelgyNjlqdmNSd3RmWFlDUU5SUjJZdWM5dkRyc0VDd3ZxVUg2bWNXMUVteS1qRQ?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Wed, 17 Jun 2026 00:52:00 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "HSBC, Google AI Partnership Set to Add Over $100 Million Gains    Bloomberg.com",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.09
+    },
+    {
+      "title": "HSBC, Google AI Partnership Set to Add Over $100 Million Gains",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLWZTUmgzc2Z0Z3dPdFlmdlZkUTkwN1pZOUwtd2xaUVdjSjdiVXJaWnlsMnNFN1VqRFNIaW5xZjlKTllnczF4OWgwczJ2YkNCTDhoNkhleTRyenpySjQzSFIwMzdRSWZ0N0QtOUpodE1paUhCQ25aZzhKZGZGUUxIc002elh1SVdsM01nN3JoSzF5YUpJOVF4M3dKVmluakNGRTN2RGtaWE5tZ19NcjM5dklFVkxxNURLVFRhNA?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Wed, 17 Jun 2026 00:52:00 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "HSBC, Google AI Partnership Set to Add Over $100 Million Gains    Bloomberg.com",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.09
+    },
+    {
+      "title": "Microsoft faces down sueball, capacity problems in series of challenges",
+      "url": "https://www.theregister.com/systems/2026/06/16/microsoft-faces-down-sueball-capacity-problems-in-series-of-challenges/5256175",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 17:01:00 +0200",
+      "age_h": 18.4,
+      "has_timestamp": true,
+      "description": "Microsoft is facing AI-related issues on multiple fronts. Disgruntled investors have flung a sueball at the company over its Copilot claims, while it is reportedly turning to other cloud vendors to help with AI-induced scalability issues at its coding collaboration tentacle, GitHub. The sueball is a",
+      "keywords_matched": [
+        "copilot",
+        "microsoft"
+      ],
+      "match_count": 2,
+      "score": 2.07
+    },
+    {
+      "title": "Copilot Cowork is now generally available",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYl95X2hIN1lFYnFNM0EtVUtOWlJrQWp2Q25CWDFlR3VxdFF4dlZxY3FQX0V0emd5dFQ3UDZjWWRQNUpnR3VpNzRLUUpENXBvYVprQ1RhQkw0SkVwcmZDR0pHbFhQNVR5RHlhRjNuak5NWU9jclBXTkpVeXU0NUlMeHc0T3pMYXpuT1Z6azNNcjJlT294dzQyaUxFNHhTekNhQjNWOXppNA?oc=5",
+      "source": "microsoft.com",
+      "publisher": "Microsoft",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Tue, 16 Jun 2026 15:00:00 GMT",
+      "age_h": 18.4,
+      "has_timestamp": true,
+      "description": "Copilot Cowork is now generally available    Microsoft",
+      "keywords_matched": [
+        "copilot",
+        "microsoft"
+      ],
+      "match_count": 2,
+      "score": 2.07
+    },
+    {
+      "title": "This 55-inch Fire TV on Amazon costs just $280 - and I can actually recommend it",
+      "url": "https://www.zdnet.com/article/amazon-fire-tv-omni-qled-4k-amazon-prime-day-deal-2026/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Wed, 17 Jun 2026 00:14:00 GMT",
+      "age_h": 9.1,
+      "has_timestamp": true,
+      "description": "You can snag a 55-inch Amazon Fire TV Omni QLED Series with this early Prime Day deal.",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.04
+    },
+    {
+      "title": "HSBC partners with Google Cloud to expand AI usage",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZ3NyYncxbWk3WUdISWx2N0ZJNHJ5M0RxallIRVpuQmVPVW9zQUJ0R1dwZXJQTHRSQWs2MXMwMUVvc0tHZlktZEJvclRjVzRzUjZZS3hnek1iZUtGcU4wVlEwSkZ2RTY0ZHhzRUhxaGVuR3JzUFE1MUFSMWo3VGVLMzcyM1EzUHNCWGNsRk9xbmlMZ19UWFdfRmdJdURxU0IxSnc?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 23:23:31 GMT",
+      "age_h": 10.0,
+      "has_timestamp": true,
+      "description": "HSBC partners with Google Cloud to expand AI usage    Reuters",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 1.97
+    },
+    {
+      "title": "HSBC partners with Google Cloud to expand AI usage",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSW15WnRpRHhSVHlyWkVBV0lSbGRLYmhDbU1ITjViOGxHN0pZNTFFTXJjTnc2ckVrTENWUjR3R1A2ZnMwMkc5WGNNSzFNVDY1aWJYQUhsaGRYNlFpUU5XMFhTZ2JxR3B4M3ZKd2tWLUcxMXR4RjltOERSZFQ0ZzNyX05LM1lrNW1jdDRjTERfQjlMLVRtT0E?oc=5",
+      "source": "channelnewsasia.com",
+      "publisher": "CNA",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Tue, 16 Jun 2026 23:04:25 GMT",
+      "age_h": 10.3,
+      "has_timestamp": true,
+      "description": "HSBC partners with Google Cloud to expand AI usage    CNA",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 1.94
+    },
+    {
+      "title": "Amazon has discounted a Lenovo IdeaPad for 73% off, and it's actually worth considering",
+      "url": "https://www.zdnet.com/article/lenovo-ideapad-1i-amazon-prime-day-deal-2026/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Tue, 16 Jun 2026 22:42:00 GMT",
+      "age_h": 10.7,
+      "has_timestamp": true,
+      "description": "Over at Amazon, the Lenovo IdeaPad 1i has dropped to $300, making it one of the best laptop deals available on the platform.",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 1.91
+    },
+    {
+      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 22:34:17 +0000",
+      "age_h": 10.8,
+      "has_timestamp": true,
+      "description": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 1.9
+    },
+    {
+      "title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBydlhJYmhCUjRzTEZoOHhvVUpDZVVxS0JrbVI5Q2gtZDM1Uk5kVVJUT2pfNjhrb2c1OEhNdXhWZWZMSEc3RXNGcTh2OVhOcmJCVUJSS0N3?oc=5",
+      "source": "blogs.nvidia.com",
+      "publisher": "NVIDIA Blog",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Tue, 16 Jun 2026 22:36:15 GMT",
+      "age_h": 10.8,
+      "has_timestamp": true,
+      "description": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses    NVIDIA Blog",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 1.9
+    },
+    {
+      "title": "Apple plans to change its Hide My Email privacy feature that could make it less effective",
+      "url": "https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 22:09:32 +0000",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "In the coming weeks, Apple will move anonymously generated emails addresses to a different domain.",
+      "keywords_matched": [
+        "apple"
+      ],
+      "match_count": 1,
+      "score": 1.87
+    },
+    {
+      "title": "AMD's Mext buy shows how AI could solve the RAM shortage it created",
+      "url": "https://www.theregister.com/systems/2026/06/16/amds-mext-buy-shows-how-ai-could-solve-the-ram-shortage-it-created/5257352",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 00:09:32 +0200",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "With no end in sight to the memory crunch, AMD thinks that AI, the main cause of the shortage, could be part of the solution. This week, the House of Zen acquired predictive memory startup Mext for an undisclosed sum, setting the stage for a world where bots decide which data to put into RAM and whi",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 1.87
+    },
+    {
+      "title": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI’s Optical Backbone",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WS0FoN0tfREdIeXVZQzEtMV9WMEJHSEZWVXl6djF5aHNGMXlBLWt6c3FfUGpSUVRlRk5JY0FRMXA3Vk10TTVETVJ0UGlhQ2s4OFE0MWp1ZnJ6SHZaNDRFa2RpdTVOZWs?oc=5",
+      "source": "blogs.nvidia.com",
+      "publisher": "NVIDIA Blog",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Tue, 16 Jun 2026 22:13:42 GMT",
+      "age_h": 11.1,
+      "has_timestamp": true,
+      "description": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI’s Optical Backbone    NVIDIA Blog",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 1.87
+    },
+    {
+      "title": "AMD's Mext buy shows how AI could solve the RAM shortage it created",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM1NJWUkzTnhxYlJXMnBYQnBfMVJ2U193amlhR0ppeUpvMkVncEQxREd5V2lqQkU3TG1KTURiTzlnWGlhR3M4U2FuSEozOHpZRzlOb3JsX2IyUUJVaExKOUpqdks5M1ZKdXZrMlpNYmNrU2VSN1FnV2J2WWpIS1RiaUowdHJvVl84aXh3LVFCN2FQV0JYcUFRYVJXQkdWeDdLWkFxVmlwTXpuZ1FJdFpFeGo2cVVzWXlxbzh6Ukt3?oc=5",
+      "source": "theregister.com",
+      "publisher": "The Register",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"AMD\" OR \"Instinct\") AI news",
+      "published_raw": "Tue, 16 Jun 2026 22:09:32 GMT",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "AMD's Mext buy shows how AI could solve the RAM shortage it created    The Register",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 1.87
+    },
+    {
+      "title": "Nvidia’s Huang pledges AI will boost manufacturing jobs. A test will come in Texas",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV29DNFB5S19MZXh2Y3l6Ry1vVmM3Z3hwdm1nSFlBRDFobmNjSVRORzloTU94SmNjTmpPTk1KNFpYNmhIWjFfcVhCZlg2X2pNb0NYXzV5bFhOdGd0VEM1S0p1VzhId29vTkhER3lnRm9pSXduQkh2VjJxY2h2eFoza0ZzNG9EOEpubWpuRWlhcEFETndvOFUtMkFkTUZYS3k0a0g3cmtxZFo?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Tue, 16 Jun 2026 22:06:00 GMT",
+      "age_h": 11.3,
+      "has_timestamp": true,
+      "description": "Nvidia’s Huang pledges AI will boost manufacturing jobs. A test will come in Texas    AP News",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 1.86
+    }
+  ]
+}

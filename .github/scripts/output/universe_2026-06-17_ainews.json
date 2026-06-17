@@ -1,0 +1,732 @@
+{
+  "generated_at": "2026-06-17T16:22:16.484878+07:00",
+  "date": "2026-06-17",
+  "stream": "ainews",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 21,
+    "items_raw": 519,
+    "items_after_dedup": 518,
+    "items_after_keyword": 347,
+    "items_after_trusted": 71,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "Why Weibo’s tiny VibeThinker-3B has the AI world arguing over benchmarks again",
+      "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Wed, 17 Jun 2026 00:32:19 GMT",
+      "age_h": 8.8,
+      "has_timestamp": true,
+      "description": "On Sunday, a team of nine researchers at  Sina Weibo  — the Chinese social media giant better known for its microblogging platform than for cutting-edge artificial intelligence — quietly posted a  14-page technical report  to arXiv that sent shockwaves through the AI research community. Their claim:",
+      "keywords_matched": [
+        "openai",
+        "anthropic",
+        "deepmind",
+        "ai",
+        "artificial intelligence"
+      ],
+      "match_count": 5,
+      "score": 5.27
+    },
+    {
+      "title": "Z.ai’s open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks for 1/6th the cost",
+      "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Tue, 16 Jun 2026 21:26:01 GMT",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "Today, Chinese AI startup Z.ai (formerly Zhipu AI)  announced the immediate release of GLM-5.2 , a 753-billion parameter open-weights large language model (LLM) engineered specifically to dominate \"long-horizon\" autonomous coding and engineering tasks.   Available immediately on  Hugging Face , the ",
+      "keywords_matched": [
+        "gpt",
+        "ai",
+        "large language model",
+        "llm",
+        "autonomous"
+      ],
+      "match_count": 5,
+      "score": 5.01
+    },
+    {
+      "title": "There's no such thing as an agentic CPU",
+      "url": "https://www.theregister.com/systems/2026/06/16/there-is-no-one-cpu-to-rule-them-all-agents-otherwise/5255964",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 +0200",
+      "age_h": 17.4,
+      "has_timestamp": true,
+      "description": "OPINION Do AI agents need a new kind of CPU? That's what Arm, Nvidia, and a growing number of chip designers would have you believe.  Arm named its first datacenter silicon the \"AGI CPU.\" Nvidia CEO Jensen Huang described Vera as a \"CPU for agents,\" and AWS's Graviton 5 marketing is chock full of re",
+      "keywords_matched": [
+        "ai",
+        "agi",
+        "nvidia",
+        "chip",
+        "agentic"
+      ],
+      "match_count": 5,
+      "score": 4.55
+    },
+    {
+      "title": "AMD's Mext buy shows how AI could solve the RAM shortage it created",
+      "url": "https://www.theregister.com/systems/2026/06/16/amds-mext-buy-shows-how-ai-could-solve-the-ram-shortage-it-created/5257352",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 00:09:32 +0200",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "With no end in sight to the memory crunch, AMD thinks that AI, the main cause of the shortage, could be part of the solution. This week, the House of Zen acquired predictive memory startup Mext for an undisclosed sum, setting the stage for a world where bots decide which data to put into RAM and whi",
+      "keywords_matched": [
+        "ai",
+        "machine learning",
+        "amd"
+      ],
+      "match_count": 3,
+      "score": 3.47
+    },
+    {
+      "title": "Hyosung opens first AI data center in Seoul with Singapore’s STT GDC",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4tRTJqQ2oxRmxFSnNjZC1uUjdHVEQ2c1NlOTBzRjZsMkRUZHNseVRYaS15OWR0WGY2ckhIRXlIcHNFNVdFZUpkcXgtU2gtSEdjWDRFSGJzcw?oc=5",
+      "source": "koreaherald.com",
+      "publisher": "The Korea Herald",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI data center cloud computing",
+      "published_raw": "Wed, 17 Jun 2026 05:48:43 GMT",
+      "age_h": 3.6,
+      "has_timestamp": true,
+      "description": "Hyosung opens first AI data center in Seoul with Singapore’s STT GDC    The Korea Herald",
+      "keywords_matched": [
+        "ai",
+        "data center"
+      ],
+      "match_count": 2,
+      "score": 3.3
+    },
+    {
+      "title": "Android 17 ออกตัวจริง กูเกิลบอกเป็นจุดเปลี่ยนจาก OS สู่ Intelligence System",
+      "url": "https://www.blognone.com/node/150921",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 02:28:32 +0000",
+      "age_h": 6.9,
+      "has_timestamp": true,
+      "description": "Android 17 ออกตัวจริง กูเกิลบอกเป็นจุดเปลี่ยนจาก OS สู่ Intelligence System \n\n   \n     Body \n                กูเกิลออก Android 17 ตัวจริง โดยจะเริ่มอัพเกรดให้กับอุปกรณ์ตระกูล Pixel ก่อนเช่นเคย และซอร์สโค้ดของ Android 17 ก็เผยแพร่ใน Android Open Source Project (AOSP) แล้ว \n ฟีเจอร์เด่นของ Android 17 ",
+      "keywords_matched": [
+        "gemini",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.03
+    },
+    {
+      "title": "ส่งออก 'ญี่ปุ่น' เดือน พ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tZk15bVV4TkNIdkpvQUdJOXJybEpWeTYyb0MwY1pBbE9OeEltRnNGUzlDSXMzeWRtc2F0V2thSnRteHkwQjNCWDJhTkdXeGhReFlUVVJjeHFtRDFlQVA3Sm90Z2M?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Wed, 17 Jun 2026 01:59:00 GMT",
+      "age_h": 7.4,
+      "has_timestamp": true,
+      "description": "ส่งออก 'ญี่ปุ่น' เดือน พ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI    bangkokbiznews",
+      "keywords_matched": [
+        "ai",
+        "ชิป"
+      ],
+      "match_count": 2,
+      "score": 2.98
+    },
+    {
+      "title": "AP Exclusive: Nvidia’s Jensen Huang says society needs ‘new social norms’ in the age of AI",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTHJEWURVbXBpUTM4S28zR3NTNEVpRndlM3hSdUMzRURzb004bEVrcHlUTC1aMWVhUmxPT3hUVEFhR1B4NUY3VEJqT29wMzdOSUZRQUQyRXgtZUxTSEoteXAyR0Y3S2sxa2FFOWphMjRFbzBqUHZnbEZvNXFOMEkya2RzZGo3dmtWaVc1eDFrSkN2MGpNWXJZUFlOa3I?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 01:37:00 GMT",
+      "age_h": 7.8,
+      "has_timestamp": true,
+      "description": "AP Exclusive: Nvidia’s Jensen Huang says society needs ‘new social norms’ in the age of AI    AP News",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.95
+    },
+    {
+      "title": "RISE ผนึก Harvard Business Impact เปิดตัว ‘HBR Spark’ อาวุธลับพัฒนาผู้นำให้ชนะทุกเกมในยุค AI [Advertorial]",
+      "url": "https://thestandard.co/rise-harvard-hbr-spark-ai-leaders/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Wed, 17 Jun 2026 09:00:39 +0000",
+      "age_h": 0.4,
+      "has_timestamp": true,
+      "description": "เบื้องหลังการประกาศทิศทางองค์กรว่ากำลังก้าวสู่การเป็น AI-First กลับพบว่ามีองค์กรจำนวนมากที่ตอบไม่ได้ว่าตอนนี้อยู่ขั้นไหนของ AI และควรพัฒนาอะไรต่อ \n   \n จากผลสำรวจ Global Leadership Development Study ปี 2025 ของ Harvard Business Publishing ซึ่งสำรวจผู้นำกว่า 1,100 คนใน 14 ประเทศ พบว่า มีผู้นำเพียง 36",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.77
+    },
+    {
+      "title": "“หากผิดกฎหมายยินดียกเลิก” ไชยชนก-รักชนก คุยอะไรกันในห้องประชุมรัฐสภา ท่ามกลางปมร้อน TH-AI Passport",
+      "url": "https://thestandard.co/chaiyanok-rakchanok-th-ai-passport-cancel/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Wed, 17 Jun 2026 08:35:31 +0000",
+      "age_h": 0.8,
+      "has_timestamp": true,
+      "description": "สังคมจับตาภาพที่ปรากฏขึ้นในระหว่างการประชุมร่วมกันของรัฐสภาวาระพิจารณาพิธีสารและกรอบความตกลงทางการค้าเสรีระหว่างประเทศ เมื่อ ไชยชนก ชิดชอบ สส. บุรีรัมย์ เลขาธิการพรรคภูมิใจไทย ในฐานะรัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (DE) ได้เข้าไปพูดคุยกับ รักชนก ศรีนอก สส. แบบบัญชีรายชื่อ พรรคประชาช",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.73
+    },
+    {
+      "title": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI’s Optical Backbone",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WS0FoN0tfREdIeXVZQzEtMV9WMEJHSEZWVXl6djF5aHNGMXlBLWt6c3FfUGpSUVRlRk5JY0FRMXA3Vk10TTVETVJ0UGlhQ2s4OFE0MWp1ZnJ6SHZaNDRFa2RpdTVOZWs?oc=5",
+      "source": "blogs.nvidia.com",
+      "publisher": "NVIDIA Blog",
+      "on_allowlist": true,
+      "feed_name": "GNews:chip semiconductor GPU AI",
+      "published_raw": "Tue, 16 Jun 2026 22:13:42 GMT",
+      "age_h": 11.1,
+      "has_timestamp": true,
+      "description": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI’s Optical Backbone    NVIDIA Blog",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.67
+    },
+    {
+      "title": "Nvidia’s Huang pledges AI will boost manufacturing jobs. A test will come in Texas",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV29DNFB5S19MZXh2Y3l6Ry1vVmM3Z3hwdm1nSFlBRDFobmNjSVRORzloTU94SmNjTmpPTk1KNFpYNmhIWjFfcVhCZlg2X2pNb0NYXzV5bFhOdGd0VEM1S0p1VzhId29vTkhER3lnRm9pSXduQkh2VjJxY2h2eFoza0ZzNG9EOEpubWpuRWlhcEFETndvOFUtMkFkTUZYS3k0a0g3cmtxZFo?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Tue, 16 Jun 2026 22:06:00 GMT",
+      "age_h": 11.3,
+      "has_timestamp": true,
+      "description": "Nvidia’s Huang pledges AI will boost manufacturing jobs. A test will come in Texas    AP News",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.66
+    },
+    {
+      "title": "Z.ai’s open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks for 1/6th the cost",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPOWdHTVgtOTZYbHBKN1licHR2ajVhSnRJaVdoVWdRSW82SU5SVnJYNnhFYXlIRDlISDZJNm9xMUprb0JfekZpTUZSVENCay1vVDBkeTlhaEcwZU41Z2JSQUYtWHBHbVJBX2FmYlp0RDYwY3ZUU2EtaVM3eFk4anVBdXItNy1jczI2Z1kxSDFobnFtWTF6U2lxMEpaa1JXZWRkUFhORmtrNFV1TldvMmxFNUM3cjRMN2tDMkpmc3FxMG9QUnI4X3U0ZnQ5SFdGZHJyczRF?oc=5",
+      "source": "venturebeat.com",
+      "publisher": "VentureBeat",
+      "on_allowlist": true,
+      "feed_name": "GNews:LLM large language model",
+      "published_raw": "Tue, 16 Jun 2026 21:26:01 GMT",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "Z.ai’s open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks for 1/6th the cost    VentureBeat",
+      "keywords_matched": [
+        "gpt",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.61
+    },
+    {
+      "title": "Critical Copilot vulnerability allowed hackers to steal 2FA code from users",
+      "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
+      "source": "arstechnica.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Ars Technica",
+      "published_raw": "Tue, 16 Jun 2026 11:15:46 +0000",
+      "age_h": 22.1,
+      "has_timestamp": true,
+      "description": "Last Tuesday, Microsoft patched a vulnerability it rated as max critical in its M365 Copilot AI platform. On Monday, the researchers who discovered the vulnerability and reported it to Microsoft revealed how their proof-of-concept exploit could retrieve 2FA codes and other sensitive data from emails",
+      "keywords_matched": [
+        "copilot",
+        "ai",
+        "llm"
+      ],
+      "match_count": 3,
+      "score": 2.56
+    },
+    {
+      "title": "Developers build the best tools for developers – and are now defanging the AI menace",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/17/developers-build-the-best-tools-for-developers-and-are-now-defanging-the-ai-menace/5255316",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 08:31:00 +0200",
+      "age_h": 2.9,
+      "has_timestamp": true,
+      "description": "Forty years ago, while working for a tiny subsidiary of a gigantic telco, I stumbled through pre-Git source code management and tried to avoid explosively devolving into a mess of conflicts after every merge. Thankfully, modern practices make it possible to work in massive, distributed teams, swarmi",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.56
+    },
+    {
+      "title": "Around a fifth of Steam Next Fest demos have a generative AI disclosure",
+      "url": "https://www.engadget.com/2195840/around-a-fifth-of-steam-next-fest-demos-have-a-generative-ai-disclosure/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Tue, 16 Jun 2026 20:50:17 +0000",
+      "age_h": 12.5,
+      "has_timestamp": true,
+      "description": "We'll see how players react.",
+      "keywords_matched": [
+        "ai",
+        "generative ai"
+      ],
+      "match_count": 2,
+      "score": 2.56
+    },
+    {
+      "title": "TSMC says panel packaging won't replace CoWoS anytime soon for the largest future AI processors — wafer-level tech can scale to 58 massive dies in one package",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-says-panel-packaging-wont-replace-cowos-anytime-soon-for-the-largest-future-ai-processors-wafer-level-tech-can-scale-to-58-massive-dies-in-one-package",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Tue, 16 Jun 2026 11:00:00 +0000",
+      "age_h": 22.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/uMZ5kNphxA2Ut6whdLaSQV.png",
+      "keywords_matched": [
+        "ai",
+        "wafer",
+        "tsmc"
+      ],
+      "match_count": 3,
+      "score": 2.53
+    },
+    {
+      "title": "Intel's long-lost data center prototype 'Arctic Sound' Xe-HP multi-tile GPU surfaces in new engineering sample — Company's cancelled AI processor features 32GB of HBM2E",
+      "url": "https://www.tomshardware.com/pc-components/gpus/intels-cancelled-arctic-sound-xe-hp-multi-tile-gpu-surfaces-in-new-engineering-sample-companys-long-lost-data-center-prototype-features-32gb-of-hbm2e",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Tue, 16 Jun 2026 10:30:00 +0000",
+      "age_h": 22.9,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "ai",
+        "gpu",
+        "data center"
+      ],
+      "match_count": 3,
+      "score": 2.49
+    },
+    {
+      "title": "Europe frets about US AI as tech world flocks to France for G7, VivaTech",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaGJlYzY2N3Jyd1RDa0Via3M0cEJENE9HUUZwak84TXVETmVMOVI2dTVha1d4TFF1Z2pYeDVkNVd3OGVvQ0VlRU9YRGhWaUN0eWJaTEdXSXJqRngxLVR4VGFnd1J6cWRRVWFqV2tzc1ZWazBtQ0tYQmVVYXRDT0oxSXVtU2tEVnlSVzFFZWc0eEpOUGZRaEpxTkFKQUs4UFNaUDlDQnNZT3hjZw?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 05:04:00 GMT",
+      "age_h": 4.3,
+      "has_timestamp": true,
+      "description": "Europe frets about US AI as tech world flocks to France for G7, VivaTech    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.44
+    },
+    {
+      "title": "AI ดันลงทุนดาต้าเซนเตอร์ 'ซีเมนส์' ชี้ดีมานด์ไฟพุ่ง 10 เท่า แนะไทยพัฒนาคน-อินฟราฯ รับโอกาส",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83YzVWY3NSVzhyLWFjM3g5a09UWW5kdEs1cWVhRnFna2JFOVNoUl9SY3QwU054cm5JTDhEbTZPRE5UMlU0cTAxR3diOGdzSnlKc1U1VG1Zc3RoZw?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Wed, 17 Jun 2026 04:41:15 GMT",
+      "age_h": 4.7,
+      "has_timestamp": true,
+      "description": "AI ดันลงทุนดาต้าเซนเตอร์ 'ซีเมนส์' ชี้ดีมานด์ไฟพุ่ง 10 เท่า แนะไทยพัฒนาคน-อินฟราฯ รับโอกาส    bangkokbiznews",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.41
+    },
+    {
+      "title": "Huawei’s big comeback tests limits of US chip controls",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDlFR2piMGpHNlNwdU42NXh5WGNabXBLVlNUSlR2eWFySEpScjdPS1o0MndnM0Z0Mlp5RjRqRm5wWGhuYXdOSFc4UVhKc20yVnBHYW53Q3JTYms5TW1qTFFucFBXU0dTOGlXTEwxSmhaSFFvM3Y4d0VxanN0bllZMDdURms?oc=5",
+      "source": "ft.com",
+      "publisher": "Financial Times",
+      "on_allowlist": true,
+      "feed_name": "GNews:chip semiconductor GPU AI",
+      "published_raw": "Wed, 17 Jun 2026 04:03:41 GMT",
+      "age_h": 5.3,
+      "has_timestamp": true,
+      "description": "Huawei’s big comeback tests limits of US chip controls    Financial Times",
+      "keywords_matched": [
+        "chip"
+      ],
+      "match_count": 1,
+      "score": 2.36
+    },
+    {
+      "title": "Qualcomm wants to be the chip inside whatever replaces your smartphone, and it just announced two products toward that end",
+      "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 18:22:24 +0000",
+      "age_h": 15.0,
+      "has_timestamp": true,
+      "description": "Qualcomm CEO Cristiano Amon said Tuesday that the company is working on over 40 different AI wearable devices — including jewelry, earbuds with cameras, pins, and watches — a sign of how aggressively the chipmaker is betting that the next major computing platform won't be a phone.",
+      "keywords_matched": [
+        "ai",
+        "chip"
+      ],
+      "match_count": 2,
+      "score": 2.35
+    },
+    {
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 +0000",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades. The launch is also accompanied by a Pixel Drop that brings Google’s latest AI models to its devices.",
+      "keywords_matched": [
+        "gemini",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "Wear OS 7 arrives to Pixel watches with Gemini AI and live updates",
+      "url": "https://www.engadget.com/2195052/wear-os-7-comes-to-pixel-watches/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Tue, 16 Jun 2026 18:00:00 +0000",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "Wear OS 7 is now live for Pixel watches, with a new interface, notifications and Gemini features.",
+      "keywords_matched": [
+        "gemini",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.32
+    },
+    {
+      "title": "Stanford's DeLM cuts multi-agent task costs 50% — without a central orchestrator",
+      "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Tue, 16 Jun 2026 17:47:53 GMT",
+      "age_h": 15.6,
+      "has_timestamp": true,
+      "description": "One of the assumptions behind today’s AI frameworks is that agents require a “boss” at the center; this orchestrator runs the show, routes requests, and makes sure the whole system doesn’t descend into chaos.   That assumption may be wrong, and the cost of carrying it could be measured in inference ",
+      "keywords_matched": [
+        "ai",
+        "inference"
+      ],
+      "match_count": 2,
+      "score": 2.3
+    },
+    {
+      "title": "Sixty percent of US consumers say ‘AI’ in brand messaging is a turnoff, survey finds",
+      "url": "https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 16:49:44 +0000",
+      "age_h": 16.5,
+      "has_timestamp": true,
+      "description": "WordPress VIP’s latest survey suggests consumers are wary of AI-generated answers even as companies increasingly view AI search as an important referral channel.",
+      "keywords_matched": [
+        "ai",
+        "ai search"
+      ],
+      "match_count": 2,
+      "score": 2.22
+    },
+    {
+      "title": "Hyosung opens data center in Seoul in partnership with STT GDC",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pWHlNWG5iOUxvNFZPd01UOEtVRTNOZDk1dGJuM3hoYXYxV2NMcXhtZnNpeUdSSU52TFpiR3NrdDBob0VHVGJTS3h4cXBYRVQ4eUdvWm1oZWJlUQ?oc=5",
+      "source": "en.yna.co.kr",
+      "publisher": "Yonhap News Agency",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI data center cloud computing",
+      "published_raw": "Wed, 17 Jun 2026 02:06:10 GMT",
+      "age_h": 7.3,
+      "has_timestamp": true,
+      "description": "Hyosung opens data center in Seoul in partnership with STT GDC    Yonhap News Agency",
+      "keywords_matched": [
+        "data center"
+      ],
+      "match_count": 1,
+      "score": 2.19
+    },
+    {
+      "title": "Microsoft faces down sueball, capacity problems in series of challenges",
+      "url": "https://www.theregister.com/systems/2026/06/16/microsoft-faces-down-sueball-capacity-problems-in-series-of-challenges/5256175",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 17:01:00 +0200",
+      "age_h": 18.4,
+      "has_timestamp": true,
+      "description": "Microsoft is facing AI-related issues on multiple fronts. Disgruntled investors have flung a sueball at the company over its Copilot claims, while it is reportedly turning to other cloud vendors to help with AI-induced scalability issues at its coding collaboration tentacle, GitHub. The sueball is a",
+      "keywords_matched": [
+        "copilot",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.07
+    },
+    {
+      "title": "Singapore’s May non-oil exports surge 38.4% on AI-led electronics boom",
+      "url": "https://www.channelnewsasia.com/singapore/nodx-export-may-growth-oil-trade-6172811",
+      "source": "channelnewsasia.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "CNA Tech",
+      "published_raw": "Wed, 17 Jun 2026 08:30:00 +0800",
+      "age_h": 8.9,
+      "has_timestamp": true,
+      "description": "The rise was largely fuelled by strong demand for integrated circuits, disk media products and PCs.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.06
+    },
+    {
+      "title": "กางภารกิจ ‘กรมทรัพย์สินทางปัญญา’ ดัน AI-Sandbox สกัดทุจริต รับโจทย์ OECD",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tRnNpTUxHb2FuU19NMThGZjRJMFd3VUVpSmJfdnNVdW03bWtjeHc3ck5xLU1ZLUkyYWY3M0htN0Y5c0djUjBud1RZdlMyaldxeVc2NDNn?oc=5",
+      "source": "thansettakij.com",
+      "publisher": "thansettakij",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Wed, 17 Jun 2026 00:00:00 GMT",
+      "age_h": 9.4,
+      "has_timestamp": true,
+      "description": "กางภารกิจ ‘กรมทรัพย์สินทางปัญญา’ ดัน AI-Sandbox สกัดทุจริต รับโจทย์ OECD    thansettakij",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.02
+    },
+    {
+      "title": "เปิดตัว Surface Pro และ Surface Laptop รุ่นปี 2026 ใช้ชิป Snapdragon X2",
+      "url": "https://www.blognone.com/node/150919",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Tue, 16 Jun 2026 23:39:08 +0000",
+      "age_h": 9.7,
+      "has_timestamp": true,
+      "description": "เปิดตัว Surface Pro และ Surface Laptop รุ่นปี 2026 ใช้ชิป Snapdragon X2 \n\n   \n     Body \n                ไมโครซอฟท์เปิดตัว Surface Pro (12th Edition) และ Surface Laptop (8th Edition) รุ่นปี 2026 สำหรับฝั่งคอนซูเมอร์ ใช้ชิป Qualcomm Snapdragon X2 หลังจาก  เปิดตัวรุ่นธุรกิจ ใช้ชิป Intel Core Ultra 3  ",
+      "keywords_matched": [
+        "ชิป"
+      ],
+      "match_count": 1,
+      "score": 1.99
+    },
+    {
+      "title": "“กับดัก” เลิกจ้างเพราะ AI จะไปต่อกันอย่างไรดี",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81YXNkNlY1Q3BvUHpzaFpHb1A0dWJ6NWhsMkRWbWdSMVBVY3pFejdLYnBQcXdXMEFoMHl5UW8za2Z0R0tRdzRDc3A3UmMwUzlfWGZMNDVuVkpZbU9oUGwwb0lwa2hOU0tscENtM2FMWQ?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Tue, 16 Jun 2026 22:45:00 GMT",
+      "age_h": 10.6,
+      "has_timestamp": true,
+      "description": "“กับดัก” เลิกจ้างเพราะ AI จะไปต่อกันอย่างไรดี    bangkokbiznews",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.92
+    },
+    {
+      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Tue, 16 Jun 2026 22:34:17 +0000",
+      "age_h": 10.8,
+      "has_timestamp": true,
+      "description": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 1.9
+    },
+    {
+      "title": "Insight: Fast-tracked power plants fuel AI boom, with little public scrutiny",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUZxc09sd2xKN09WUkpMa3NWYWg3Z2EweGxkTm4yanRDZEFjZDZ4U1UxWFlaWWlDMjJwVHpWQmp1aG45S0tCaTRLcF9hRU5zMzk0enBHQWIwMjJvaXBDYnNjbjRvOThRT3lNY1JhcWY4NmRqY1ViOV9ldnRlWVdyZXlXdllxM0UyRThVY1BpYVBNRGRGdmVKZFEtd1Nwb1R2cHE1SDBQX18tbzJLS0lDaUI4aS1xRWpHaUE?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI regulation policy",
+      "published_raw": "Tue, 16 Jun 2026 22:05:43 GMT",
+      "age_h": 11.3,
+      "has_timestamp": true,
+      "description": "Insight: Fast-tracked power plants fuel AI boom, with little public scrutiny    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.86
+    },
+    {
+      "title": "Evan Spiegel doesn't want you to call Snap Specs AI glasses",
+      "url": "https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Tue, 16 Jun 2026 21:15:58 +0000",
+      "age_h": 12.1,
+      "has_timestamp": true,
+      "description": "Snap CEO Evan Spiegel sat with us to discuss the Snap Specs, privacy, parental controls and more. Spoiler: He says \"computing\" a lot.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.79
+    },
+    {
+      "title": "Qualcomm said to be circling AI chip biz Tenstorrent in $10B RISC-V power play",
+      "url": "https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/5256084",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 13:15:00 +0200",
+      "age_h": 22.1,
+      "has_timestamp": true,
+      "description": "Qualcomm is reportedly moving to buy AI chip firm Tenstorrent, an acquisition that could prove a major boost to the RISC-V ecosystem. This comes from The Information, which cites an anonymous source claiming that a deal valued at $8 billion to $10 billion is under discussion. According to the report",
+      "keywords_matched": [
+        "ai",
+        "chip"
+      ],
+      "match_count": 2,
+      "score": 1.76
+    },
+    {
+      "title": "The new Siri makes one of Apple's most convenient OS features a cumbersome mess",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/the-new-siri-makes-one-of-apples-most-convenient-os-features-a-cumbersome-mess/5256591",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 22:47:37 +0200",
+      "age_h": 12.6,
+      "has_timestamp": true,
+      "description": "HANDS ON That new AI-juiced Siri that Apple rolled out last week at WWDC was supposed to set a new paradigm for on-device AI. But don't believe the hype coming out of Tim Cook's final big event. After a week-long test drive, it seems like Apple just crammed Google AI Overviews on top of the most use",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.75
+    },
+    {
+      "title": "AMD’s massive SP7 socket for EPYC Venice and Intel’s gargantuan 9,324-pin socket for Diamond Rapids appear at Computex — SP7 and LGA9324-1 sockets will power the next generation of AI servers",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amds-massive-sp7-socket-for-epyc-venice-and-intels-gargantuan-9-324-pin-socket-for-diamond-rapids-appear-at-computex-sp7-and-lga9324-1-sockets-will-power-the-next-generation-of-ai-servers",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Tue, 16 Jun 2026 11:06:33 +0000",
+      "age_h": 22.3,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/uMZ5kNphxA2Ut6whdLaSQV.png",
+      "keywords_matched": [
+        "ai",
+        "amd"
+      ],
+      "match_count": 2,
+      "score": 1.74
+    },
+    {
+      "title": "Python dev saved from disaster by intuition... and AI",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/python-dev-saved-from-disaster-by-intuition-and-ai/5256632",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 22:15:06 +0200",
+      "age_h": 13.1,
+      "has_timestamp": true,
+      "description": "Python developer Roman Imankulov nearly took the bait. The fact that he didn't can be chalked up to human intuition and AI code vetting. A person claiming to be a recruiter from a small crypto startup got in touch through LinkedIn, looking for help with what she described as proof-of-concept code th",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.71
+    },
+    {
+      "title": "Intel-born networking tech resurfaces as InfiniBand alternative for DoE supers",
+      "url": "https://www.theregister.com/hpc/2026/06/16/intel-born-networking-tech-resurfaces-as-infiniband-alternative-for-doe-supers/5256535",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Tue, 16 Jun 2026 22:03:59 +0200",
+      "age_h": 13.3,
+      "has_timestamp": true,
+      "description": "When it comes to networking supercomputers, Nvidia's InfiniBand rules the roost, but a new competitor is sneaking into the space with its own solution. This week the Department of Energy powered on a new cluster at Lawrence Livermore National Laboratory, and gluing it all together is Intel spinoff C",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 1.69
+    }
+  ]
+}

@@ -22,11 +22,11 @@ judgement and writing instead of hunting around the web.
   3. KEYWORD keep only AI/tech (ainews) or watchlist-company (watchlist) items; drop noise
   4. TRUSTED drop any publisher not on shared/trusted-sources.md  (default; --all-sources keeps them)
   5. SCORE   rank by recency + keyword-hit count
-  6. WRITE   top ~40 per stream → output/universe_{YYYYMMDD}_{ainews,watchlist}.json
+  6. WRITE   top ~40 per stream → output/universe_{YYYY-MM-DD}_{ainews,watchlist}.json
 
-Output files (one per stream):
-    .github/scripts/output/universe_{YYYYMMDD}_ainews.json      (general AI/tech)
-    .github/scripts/output/universe_{YYYYMMDD}_watchlist.json   (watchlist companies)
+Output files (one per stream; date is dashed to match the engine's {TODAY}):
+    .github/scripts/output/universe_{YYYY-MM-DD}_ainews.json      (general AI/tech)
+    .github/scripts/output/universe_{YYYY-MM-DD}_watchlist.json   (watchlist companies)
 
 NOT a trust bypass: Claude still WebFetch-verifies every story and re-applies all engine
 gates (freshness ≤24h, 7-day dedup, trusted-source allowlist) before it appears in a brief.
@@ -560,7 +560,9 @@ def main(argv: list[str] | None = None) -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     now_bkk = datetime.now(BKK)
-    date_str = now_bkk.strftime("%Y%m%d")
+    # Dashed YYYY-MM-DD — MUST match the engine's {TODAY} (Step 0.5 looks for
+    # universe_{TODAY}_{stream}.json) and the article filenames (articles/{TODAY}-{stream}.md).
+    date_str = now_bkk.strftime("%Y-%m-%d")
 
     # Load watchlist + the trusted-source allowlist once
     watchlist_keywords = load_watchlist_keywords(WATCHLIST_PATH)

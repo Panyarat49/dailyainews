@@ -60,10 +60,33 @@ jobs:
 
           git checkout main
 
+          # If any of today's brief files already exist on main, this is a re-run
+          # (e.g. context reset spawned a second session). Suppress email on the
+          # second promote so the reader isn't spammed with duplicate deliveries.
+          ALREADY_ON_MAIN=false
+          for f in $FILES; do
+            if [ -f "$f" ]; then
+              ALREADY_ON_MAIN=true
+              break
+            fi
+          done
+
           for f in $FILES; do
             git checkout "${SOURCE_SHA}" -- "$f"
             echo "Copied: $f"
           done
 
-          git commit -m "brief: promote ${SOURCE_BRANCH} → main"
+          if git diff --cached --quiet; then
+            echo "Content identical to main — nothing to commit."
+            exit 0
+          fi
+
+          if [ "$ALREADY_ON_MAIN" = "true" ]; then
+            COMMIT_MSG="brief: promote ${SOURCE_BRANCH} → main [skip email]"
+            echo "Briefs already existed on main — suppressing duplicate email delivery."
+          else
+            COMMIT_MSG="brief: promote ${SOURCE_BRANCH} → main"
+          fi
+
+          git commit -m "$COMMIT_MSG"
           git push origin main

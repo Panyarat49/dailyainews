@@ -1,0 +1,739 @@
+{
+  "generated_at": "2026-06-18T06:30:04.822381+07:00",
+  "date": "2026-06-18",
+  "stream": "ainews",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 21,
+    "items_raw": 496,
+    "items_after_dedup": 489,
+    "items_after_keyword": 310,
+    "items_after_trusted": 69,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "อดีต-ปัจจุบัน-อนาคต จากจุดเริ่มต้น ‘บอร์ดเอไอ’ ถึง ‘บอร์ดเซมิคอนดักเตอร์แห่งชาติ’ ของ 3 ยุคนายกฯ สู่เป้าหมายฮับ ‘ชิปเมดอินไทยแลนด์’ ในปี 2593",
+      "url": "https://thestandard.co/thailand-chip-hub-ai-semiconductor/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Wed, 17 Jun 2026 09:49:57 +0000",
+      "age_h": 13.7,
+      "has_timestamp": true,
+      "description": "ย้อนกลับไปช่วงต้นปี 2567 จุดเริ่มต้นสำคัญของการวางรากฐานเทคโนโลยีแห่งอนาคตเกิดขึ้นเมื่อกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (ดีอี) ได้ดำเนินการปรับปรุงคณะกรรมการขับเคลื่อนแผนปฏิบัติการด้านปัญญาประดิษฐ์แห่งชาติเพื่อพัฒนาประเทศไทย (National AI Committee) โดยในขณะนั้นมี เศรษฐา ทวีสิน นายกรัฐมนตรี เป็นปร",
+      "keywords_matched": [
+        "ai",
+        "เอไอ",
+        "ปัญญาประดิษฐ์",
+        "ชิป",
+        "เซมิคอนดักเตอร์"
+      ],
+      "match_count": 5,
+      "score": 4.86
+    },
+    {
+      "title": "Nvidia-backed optics vendor to boost wafer output by 4x to meet AI interconnect demand",
+      "url": "https://www.theregister.com/networks/2026/06/17/nvidia-backed-optics-vendor-to-boost-wafer-output-by-4x-to-meet-ai-interconnect-demand/5257909",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 20:12:38 +0200",
+      "age_h": 5.3,
+      "has_timestamp": true,
+      "description": "As AI systems grow larger, optics are playing a larger part in their design – so much so that at Computex earlier this month, Nvidia CEO Jensen Huang proclaimed the technology would make Marvell the next trillion dollar company. Now, Nvidia-backed photonics vendor Coherent plans to boost indium phos",
+      "keywords_matched": [
+        "ai",
+        "nvidia",
+        "wafer",
+        "fab"
+      ],
+      "match_count": 4,
+      "score": 4.76
+    },
+    {
+      "title": "[Sensor Tower] ตลาดแอปแชท AI ยังเติบโตสูง - ChatGPT ส่วนแบ่งต่ำกว่า 50% เป็นครั้งแรก",
+      "url": "https://www.blognone.com/node/150923",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 11:19:02 +0000",
+      "age_h": 12.2,
+      "has_timestamp": true,
+      "description": "[Sensor Tower] ตลาดแอปแชท AI ยังเติบโตสูง - ChatGPT ส่วนแบ่งต่ำกว่า 50% เป็นครั้งแรก \n\n   \n     Body \n                บริษัทวิจัยตลาดแอป Sensor Tower รายงานภาพรวมแอป AI สำหรับปี 2026 โดย ChatGPT ยังเป็นแอปแชทอันดับ 1 จำนวนผู้ใช้งานเป็นประจำทุกเดือนที่ราว 1.1 พันล้านคน ตามด้วยอันดับ 2 Gemini 662 ล้าน",
+      "keywords_matched": [
+        "claude",
+        "chatgpt",
+        "gemini",
+        "ai"
+      ],
+      "match_count": 4,
+      "score": 4.18
+    },
+    {
+      "title": "SMI says Nvidia is driving its consumer PCIe 6.0 roadmap, not AMD and Intel — RTX Spark agentic AI platform fuels a hunger for storage bandwidth",
+      "url": "https://www.tomshardware.com/pc-components/ssds/silicon-motions-client-pcie-6-x-roadmap-is-driven-by-nvidia-not-by-amd-and-intel-rtx-spark-agentic-ai-platform-could-fuel-a-hunger-for-storage-bandwidth",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 10:30:00 +0000",
+      "age_h": 13.0,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/uMZ5kNphxA2Ut6whdLaSQV.png",
+      "keywords_matched": [
+        "ai",
+        "nvidia",
+        "amd",
+        "agentic"
+      ],
+      "match_count": 4,
+      "score": 4.12
+    },
+    {
+      "title": "Why Weibo’s tiny VibeThinker-3B has the AI world arguing over benchmarks again",
+      "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Wed, 17 Jun 2026 00:32:19 GMT",
+      "age_h": 23.0,
+      "has_timestamp": true,
+      "description": "On Sunday, a team of nine researchers at  Sina Weibo  — the Chinese social media giant better known for its microblogging platform than for cutting-edge artificial intelligence — quietly posted a  14-page technical report  to arXiv that sent shockwaves through the AI research community. Their claim:",
+      "keywords_matched": [
+        "openai",
+        "anthropic",
+        "deepmind",
+        "ai",
+        "artificial intelligence"
+      ],
+      "match_count": 5,
+      "score": 4.08
+    },
+    {
+      "title": "\"Dangerous\" AI models are coming no matter what",
+      "url": "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/",
+      "source": "arstechnica.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Ars Technica",
+      "published_raw": "Wed, 17 Jun 2026 17:50:46 +0000",
+      "age_h": 5.7,
+      "has_timestamp": true,
+      "description": "Late last week, Anthropic took its new  Claude Fable 5 and Mythos 5  AI models offline following a United States government export-control directive barring “any foreign national” from using the services. The company has been in  talks with the White House  since Friday but has yet to secure an agre",
+      "keywords_matched": [
+        "anthropic",
+        "claude",
+        "ai"
+      ],
+      "match_count": 3,
+      "score": 3.93
+    },
+    {
+      "title": "Google bets on Gemini to reinvent the smart home speaker",
+      "url": "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 16:30:09 +0000",
+      "age_h": 7.0,
+      "has_timestamp": true,
+      "description": "Google is betting generative AI can breathe new life into the smart speaker. The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions.",
+      "keywords_matched": [
+        "gemini",
+        "ai",
+        "generative ai"
+      ],
+      "match_count": 3,
+      "score": 3.82
+    },
+    {
+      "title": "Estonia intends to recognize AI agents with digital IDs",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/estonia-intends-to-recognize-ai-agents-with-digital-ids/5258087",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 01:12:47 +0200",
+      "age_h": 0.3,
+      "has_timestamp": true,
+      "description": "Estonia plans to allow AI agents to have their own digital identities so they can act on behalf of people in a way that can be verified and audited. The initiative, backed by the country's Eesti.ai advisory board, calls for the development of ID codes that AI agents can use to take actions, subject ",
+      "keywords_matched": [
+        "ai",
+        "agentic"
+      ],
+      "match_count": 2,
+      "score": 3.57
+    },
+    {
+      "title": "Z.ai ออกโมเดล GLM-5.2 รองรับงานเขียนโค้ดที่ใช้เวลายาวนาน Context ได้ถึง 1M โทเค็น",
+      "url": "https://www.blognone.com/node/150927",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 11:37:04 +0000",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "Z.ai ออกโมเดล GLM-5.2 รองรับงานเขียนโค้ดที่ใช้เวลายาวนาน Context ได้ถึง 1M โทเค็น \n\n   \n     Body \n                Z.ai ออกโมเดลปัญญาประดิษฐ์โอเพนซอร์สรุ่นใหม่  GLM-5.2  โดยมีจุดเด่นเรื่องความสามารถทำงานต่อเนื่องที่ใช้เวลายาวนานมากได้ เรียกว่า Long-Horizon Task เหนือกว่ารุ่นก่อนหน้า GLM-5.1 ที่ ทำได",
+      "keywords_matched": [
+        "ai",
+        "ปัญญาประดิษฐ์",
+        "โมเดล"
+      ],
+      "match_count": 3,
+      "score": 3.41
+    },
+    {
+      "title": "NEA’s Tiffany Luck says enterprises are still figuring out their AI ROI",
+      "url": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 20:17:38 +0000",
+      "age_h": 3.2,
+      "has_timestamp": true,
+      "description": "Tokenmaxxing was the hottest trend in Silicon Valley earlier this year, with CEOs encouraging employees to push AI usage as far as it would go. Then the bill came due. Uber reportedly blew through its annual AI budget in a few months, some companies cut Claude licenses for parts of their org, and Me",
+      "keywords_matched": [
+        "claude",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.33
+    },
+    {
+      "title": "Epic Games details how it's embracing generative AI in Unreal Engine",
+      "url": "https://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Wed, 17 Jun 2026 20:09:14 +0000",
+      "age_h": 3.3,
+      "has_timestamp": true,
+      "description": "Epic Games is making generative AI a big part of upcoming versions of Unreal Engine.",
+      "keywords_matched": [
+        "ai",
+        "generative ai"
+      ],
+      "match_count": 2,
+      "score": 3.32
+    },
+    {
+      "title": "Smelly config files will make your agents waste tokens, researchers warn",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/17/smelly-config-files-will-make-your-agents-waste-tokens-researchers-warn/5257951",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 21:32:16 +0200",
+      "age_h": 4.0,
+      "has_timestamp": true,
+      "description": "If you're exposing your agent to a strong odor, it's time to clean up your instructions. Risky or poorly structured code patterns are known as \"code smells,\" and it turns out coding agent directives can be similarly redolent, leading to wasted tokens and worse output. Coding agents rely on configura",
+      "keywords_matched": [
+        "anthropic",
+        "claude"
+      ],
+      "match_count": 2,
+      "score": 3.27
+    },
+    {
+      "title": "World leaders want American AI. They just don’t want America to be able to turn it off.",
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 19:01:19 +0000",
+      "age_h": 4.5,
+      "has_timestamp": true,
+      "description": "French President Macron and Indian PM Modi raised alarms at the G7 summit that the U.S. could cut off access to American AI overnight  — a fear the Anthropic blackout just made real.",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.22
+    },
+    {
+      "title": "Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem",
+      "url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Wed, 17 Jun 2026 19:00:00 GMT",
+      "age_h": 4.5,
+      "has_timestamp": true,
+      "description": "When  Anthropic  quietly released  Claude Design  in April as a \" research preview ,\" it generated the kind of instant traction most product teams dream about: more than one million users in its first week. It also generated a problem. The tool consumed tokens so voraciously that a PCWorld reviewer ",
+      "keywords_matched": [
+        "anthropic",
+        "claude"
+      ],
+      "match_count": 2,
+      "score": 3.22
+    },
+    {
+      "title": "Anthropic becomes first AI startup to join the Frontier carbon removal coalition",
+      "url": "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 18:30:56 +0000",
+      "age_h": 5.0,
+      "has_timestamp": true,
+      "description": "Anthropic has joined the Frontier coalition, which received another $915M in pledges to fund carbon removal projects.",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.18
+    },
+    {
+      "title": "Anthropic got hit by export rules nobody understands",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-17T14:28:50-04:00",
+      "age_h": 5.0,
+      "has_timestamp": true,
+      "description": "Anthropic has spent much of this week fighting to get its newest AI models back online after the Trump administration  abruptly ordered  the company to cut access for all foreign nationals, including users inside the US and its own employees, forcing Anthropic to block access to Fable 5 and Mythos 5",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.18
+    },
+    {
+      "title": "US pulls the 'kill-switch' on Anthropic's Fable 5 AI models, sending global allies scrambling — European and Canadian leaders alarm allies over sudden export bans",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-pulls-the-kill-switch-on-anthropics-fable-5-ai-models-sending-global-allies-scrambling-european-and-canadian-leaders-alarm-allies-over-sudden-export-bans",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 17:36:41 +0000",
+      "age_h": 5.9,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/YeutDv8zJmhi7xH35MSt8Z.jpg",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.11
+    },
+    {
+      "title": "US pulls the 'kill-switch' on Anthropic's Fable 5 AI models, sending global allies scrambling — European and Canadian leaders alarm allies over sudden export bans",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQMEoxb3BnNThrUTBNZk1nbF9DNUYtYTFyZjZLbU1DX1IzY2trSno1bVgtNVpSZFY2S1JXVzBfSnRqOW1tYXgwbVBnVUJVYzBqVElHZFFwUFhxOUNPaUI5Y2pXYkhPTVgxSzJoY09BUUtTWmllWE02U0h3TzhNb1JXVXQzRV9BNjg0dU0zSWxNUXp1bEt3M01TQi1RUldGME1uZjF2WkpScWJ3MGlQbUVuaUIzekZUU0JkWWdFNU1FZVd0amlnXy1La1VJbGhBNlhkM3BVcnVGRDR5ZWtOdUNEdzhmY0lHZk9xbDMtSzVpaWRyY3lfY1RzdkhTRUJwNl90NmJBS3Z2aXI0QVhUREFTR3RtNlppZGlJWkhjY3ppMnkzVm9FSG1YNFRQZ19WXzN4NU1HZzVHWG9UM1hjYWFBUE92VTBiQQ?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 17:36:41 GMT",
+      "age_h": 5.9,
+      "has_timestamp": true,
+      "description": "US pulls the 'kill-switch' on Anthropic's Fable 5 AI models, sending global allies scrambling — European and Canadian leaders alarm allies over sudden export bans    Tom's Hardware",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.11
+    },
+    {
+      "title": "Two-thirds of Americans think AI is advancing too quickly",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-17T13:20:24-04:00",
+      "age_h": 6.2,
+      "has_timestamp": true,
+      "description": "According to the  latest Pew Research poll , 49 percent of Americans report using chatbots at least occasionally, but 63 percent think the tech is advancing too quickly. Overall, use of AI chatbots has increased dramatically since 2024, when only 33 percent reported using them. Specifically, ChatGPT",
+      "keywords_matched": [
+        "chatgpt",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.08
+    },
+    {
+      "title": "Uncle Sam bets $500M that Alphabet spinoff's AI can dig up new semiconductor materials",
+      "url": "https://www.theregister.com/systems/2026/06/17/uncle-sam-bets-500m-that-alphabet-spinoffs-ai-can-dig-up-new-semiconductor-materials/5257854",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 19:05:19 +0200",
+      "age_h": 6.4,
+      "has_timestamp": true,
+      "description": "In order to move more semiconductor manufacturing onshore, the US needs to depend less on foreign-sourced materials. Now, the government is giving an Alphabet spinoff $500 million in CHIPS Act funds to find domestic minerals, molecules, and chemicals needed for this process. SandboxAQ (that’s AI and",
+      "keywords_matched": [
+        "ai",
+        "semiconductor"
+      ],
+      "match_count": 2,
+      "score": 3.07
+    },
+    {
+      "title": "Vibe-decoding the White House-Anthropic fight over Fable",
+      "url": "https://www.theverge.com/column/951516/trump-anthropic-feud-mythos-fable-white-house",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-17T12:27:00-04:00",
+      "age_h": 7.0,
+      "has_timestamp": true,
+      "description": "CEO of Anthropic Dario Amodei attends a working lunch with G7 leaders, G7 outreach partners, and global tech CEOs on innovation and AI, during the G7 Summit on June 17th, 2026, in Evian-les-Bains, France. | Photo: Anna Moneymaker / Getty Images\t \n \n  Hello and welcome to  Regulator , an email for  V",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.02
+    },
+    {
+      "title": "How Musicians Can Get Paid for Training AI",
+      "url": "https://spectrum.ieee.org/ai-music-attribution",
+      "source": "spectrum.ieee.org",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "IEEE Spectrum",
+      "published_raw": "Wed, 17 Jun 2026 15:04:23 +0000",
+      "age_h": 8.4,
+      "has_timestamp": true,
+      "description": "Musicians are accustomed to getting paid each time their creative work is used. Across vinyl/CD sales, streams, radio, cover versions, and those numerous niches like karaoke, there are agreements in place about what “use” means. Underlying this is a simple economic principle: The more something is u",
+      "keywords_matched": [
+        "ai",
+        "generative ai"
+      ],
+      "match_count": 2,
+      "score": 2.9
+    },
+    {
+      "title": "AWS hypes continuous agentic DevOps, puts Kiro in your pocket",
+      "url": "https://www.theregister.com/devops/2026/06/17/aws-hypes-continuous-agentic-devops-puts-kiro-in-your-pocket/5256365",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Wed, 17 Jun 2026 17:00:00 +0200",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "AWS today introduced new and enhanced agents aimed at DevOps and code security at its New York Summit, including previews of Continuum for identifying and fixing application vulnerabilities, and an iOS mobile app for its Kiro coding tool. Matt Wood, chief AI and technology officer, said in a press b",
+      "keywords_matched": [
+        "ai",
+        "agentic"
+      ],
+      "match_count": 2,
+      "score": 2.89
+    },
+    {
+      "title": "AI is hurting Apple in more ways than one: it may force iPhone price increases",
+      "url": "https://techcrunch.com/2026/06/17/ai-is-hurting-apple-in-more-ways-than-one-it-may-force-iphone-price-increases/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 23:28:21 +0000",
+      "age_h": 0.0,
+      "has_timestamp": true,
+      "description": "CEO Tim Cook said in a recent interview that the situation is \"unsustainable.\"",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.8
+    },
+    {
+      "title": "AI search grounded in Facebook posts? What could go wrong?",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNLUNnZ3JVWU5DNTRCYUtNbXVHOFRPU1p6S1hQN1lIMkxWOHNoWnNlcW1JV3lzZURycWhfT3hNbmJma0VHQWhUUVNNXzg0UnFkUzBNeERvYjN2SHp4MDRWUE9XSWJ5VWJYaWlma1pzRGw0ZGpjbWR0MDdicFdXUEtQN1kxZ1pYRXpJWFFfR1VDTlA?oc=5",
+      "source": "theverge.com",
+      "publisher": "The Verge",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 13:30:00 GMT",
+      "age_h": 10.0,
+      "has_timestamp": true,
+      "description": "AI search grounded in Facebook posts? What could go wrong?    The Verge",
+      "keywords_matched": [
+        "ai",
+        "ai search"
+      ],
+      "match_count": 2,
+      "score": 2.77
+    },
+    {
+      "title": "French president urges US to share cutting-edge AI and democracies to cooperate on regulation",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeEthanlWb0x3bXcteVRGODdpR3p2by11eldKVzNMVWdldndDSDBHOWsxUkVMVmlnVEt0YzV2UXFTQTB6bGtiLW1pcVllMi1WXzdid2lZeUlBbTRGYXNzNFBXSXQxN2VycGo5eHZhM212d1Z3a0FtX2xXN01XWHNnbXpZY3EtUlgwaThnaA?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 22:18:00 GMT",
+      "age_h": 1.2,
+      "has_timestamp": true,
+      "description": "French president urges US to share cutting-edge AI and democracies to cooperate on regulation    AP News",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.7
+    },
+    {
+      "title": "AWS enters the context layer race with a graph that learns from agents, not manual curation",
+      "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Wed, 17 Jun 2026 22:10:38 GMT",
+      "age_h": 1.3,
+      "has_timestamp": true,
+      "description": "Building a context layer between enterprise data stores and AI agents is bespoke work, with no standard service to automate or maintain the graphs over time. Amazon is making a direct play to change that.  Amazon on Wednesday entered the space, announcing a series of three products it's positioning ",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.69
+    },
+    {
+      "title": "Nvidia reveals AI robots that taught themselves to install GPUs into motherboards — video shows robot ‘solve high-precision tasks like… installing GPUs all by itself’",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-reveals-ai-robots-that-taught-themselves-to-install-gpus-into-motherboards-video-shows-robot-solve-high-precision-tasks-like-installing-gpus-all-by-itself",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 12:06:48 +0000",
+      "age_h": 11.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/56vqMYLDaKRHPhHZgbADFR.jpg",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.65
+    },
+    {
+      "title": "Nvidia reveals AI robots that taught themselves to install GPUs into motherboards — video shows robot ‘solve high-precision tasks like… installing GPUs all by itself’",
+      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPRFIzWDlOVUxzWF9MekZEV1pCZXpndUE4X2tVN1ZmX25XYzhNaVZENXF6ZnppOHBwdTlIQmR2Mml6TVZzckFDM0kzbnplUHRIVHVZVDkyeGZVQ2NxLXg3Q1plNmNxQkp0Mk9vd0JyX09lTFQxUDVLT3pjRFkyOG5JVHY0NXpfZnItS09YWS03bWw2Yzc3VFc3S3pFRjFYckJvanhPY3FGckMyOUFjd2xnX0EwNEd3Sl9fVXVkRjJ6bXNhYmZQc29VUmdPY0xzSFQwdlJtUDdndjV3djNnM2lONHlBT0FtRnFob042RVhvUWNOU3ZON2YzeWh2bFJ4cjVXUzIwZ1hsRDhJM3RxSy12Y0pRbnRHODdsMlFQR1ltVHA0cVFIQzZhcXd0WHJPQnN6cFNrTW5YWFh4ZzR6SGRnZVBybUlMT0QzRnc5OQ?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 12:06:48 GMT",
+      "age_h": 11.4,
+      "has_timestamp": true,
+      "description": "Nvidia reveals AI robots that taught themselves to install GPUs into motherboards — video shows robot ‘solve high-precision tasks like… installing GPUs all by itself’    Tom's Hardware",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 2.65
+    },
+    {
+      "title": "Chi-Hua Chien saw Facebook coming — now he says the real AI winners won’t be selling AI",
+      "url": "https://techcrunch.com/2026/06/17/chi-hua-chien-saw-facebook-coming-now-he-says-the-real-ai-winners-wont-be-selling-ai/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 21:30:50 +0000",
+      "age_h": 2.0,
+      "has_timestamp": true,
+      "description": "Chi-Hua Chien has spent more than two decades as a venture capitalist, but he thinks like a cultural anthropologist.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.63
+    },
+    {
+      "title": "Rhode Island joins states issuing AI rules for lawyers",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVWRVU0piQy1sRTBhaERjb0xUaEVpNU00V0RRY3hMbjA0WkVXcS12cDZuUE1ueFdzTUFFLXIya1gxNFZBenVxSEtVNUlUT3FraUtBY0ZoekRNMkw3U3o2UUxiUnlsVnlKanF3NzV1UzdFYlpUR29EaWUzaWtkQW1lZEpET1NobHBZLUdGNTl1U3RwNTdFQTAzMFFlWG1oYlFPMGwzWktn?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 21:02:53 GMT",
+      "age_h": 2.5,
+      "has_timestamp": true,
+      "description": "Rhode Island joins states issuing AI rules for lawyers    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.59
+    },
+    {
+      "title": "Intel's fab roadmap examined — Arizona, Ohio, Ireland, and the two deadlines deciding 14A process node",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/intels-fab-roadmap-examined",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 20:46:27 +0000",
+      "age_h": 2.7,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/C4FAi2KzwaGLUrBqzX5aBM.png",
+      "keywords_matched": [
+        "fab"
+      ],
+      "match_count": 1,
+      "score": 2.58
+    },
+    {
+      "title": "ChatGPT now has a hub for scheduled tasks",
+      "url": "https://www.engadget.com/2196844/chatgpt-now-has-a-hub-for-scheduled-tasks/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Wed, 17 Jun 2026 20:44:59 +0000",
+      "age_h": 2.7,
+      "has_timestamp": true,
+      "description": "TIL you can schedule prompts in ChatGPT.",
+      "keywords_matched": [
+        "chatgpt"
+      ],
+      "match_count": 1,
+      "score": 2.58
+    },
+    {
+      "title": "U.S. gov't asks court to dismiss NAACP lawsuit against Elon Musk's xAI over use of unpermitted gas turbines — DOJ says Grok model running at Colossus 2 ‘supports mission-critical operations’",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/u-s-govt-asks-court-to-dismiss-naacp-lawsuit-against-elon-musks-xai-over-use-of-unpermitted-gas-turbines-doj-says-grok-model-running-at-colossus-2-supports-mission-critical-operations",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 11:00:00 +0000",
+      "age_h": 12.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "xai",
+        "grok"
+      ],
+      "match_count": 2,
+      "score": 2.56
+    },
+    {
+      "title": "จุดเริ่มต้น 'บอร์ดเอไอ' ถึง ‘บอร์ดเซมิคอนดักเตอร์แห่งชาติ’ ของ 3 ยุคนายกฯ",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15bGFqYnhvRzhJMG5aVFNFMk1CY1AzMWRIUjNpYWFDWkhXYkxma3BsbE8yR0thcmRyNTIwd3RobjZtdC1EUE9ZRm0zT2VMOVMySy1XZEswTzJFNEMxSmhINkk3Z2dOd2tKOVE?oc=5",
+      "source": "thestandard.co",
+      "publisher": "thestandard.co",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Wed, 17 Jun 2026 09:50:30 GMT",
+      "age_h": 13.7,
+      "has_timestamp": true,
+      "description": "จุดเริ่มต้น 'บอร์ดเอไอ' ถึง ‘บอร์ดเซมิคอนดักเตอร์แห่งชาติ’ ของ 3 ยุคนายกฯ    thestandard.co",
+      "keywords_matched": [
+        "เอไอ",
+        "เซมิคอนดักเตอร์"
+      ],
+      "match_count": 2,
+      "score": 2.46
+    },
+    {
+      "title": "Anthropic's design assistant now works better with its coding agent",
+      "url": "https://www.engadget.com/2196329/anthropics-design-assistant-now-works-better-with-its-coding-agent/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Wed, 17 Jun 2026 19:00:00 +0000",
+      "age_h": 4.5,
+      "has_timestamp": true,
+      "description": "Anthropic's tools are getting chummy with each other.",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 2.42
+    },
+    {
+      "title": "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names",
+      "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 17:43:07 +0000",
+      "age_h": 5.8,
+      "has_timestamp": true,
+      "description": "World models are the next big thing in AI beyond LLMs and, with this round, Odyssey has cemented itself as one of the startups to watch.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.32
+    },
+    {
+      "title": "Legal AI startup Eve hit with patent infringement lawsuit",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeC13U1l6NkhycTZLUllMeU91VFB1RTZSdHF0LXY2MHc5dzZRa3lvckQ3LUNYV19MZzBnLXV1aF91Tl9RSElRTi1sbEotMVpuYV9rREhJa05jMmR1eU5DTUFxdXRxVEZJdk13MUZJc1hoQTVVbnlRczJLTVJFa3U4V0NWOVNrWVVJLVRncXdKVVlQaS1zWEoweGl4Tk5BajMyWHhHSFliNXVRNDhaOXFRS3BnWQ?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Wed, 17 Jun 2026 17:37:44 GMT",
+      "age_h": 5.9,
+      "has_timestamp": true,
+      "description": "Legal AI startup Eve hit with patent infringement lawsuit    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.31
+    },
+    {
+      "title": "Only 16 percent of Americans think AI will have a positive impact on society, a new study shows",
+      "url": "https://techcrunch.com/2026/06/17/only-16-percent-of-americans-think-ai-will-have-a-positive-impact-on-society-a-new-study-shows/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Wed, 17 Jun 2026 17:00:01 +0000",
+      "age_h": 6.5,
+      "has_timestamp": true,
+      "description": "Although Wall Street loves AI, every day Americans are significantly less optimistic about the industry, a new report from Pew Research shows.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.26
+    },
+    {
+      "title": "Nvidia releases RTX Remix 1.5 with new RTX IO compression reducing mod file sizes by up to 37% — update also adds Smooth Normals and 'RTX Remix Skills' Agents",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-releases-rtx-remix-1-5-with-new-rtx-io-compression-reducing-mod-file-sizes-by-up-to-37-percent-update-also-adds-smooth-normals-and-rtx-remix-skills-agents",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Wed, 17 Jun 2026 15:33:55 +0000",
+      "age_h": 7.9,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 2.14
+    }
+  ]
+}

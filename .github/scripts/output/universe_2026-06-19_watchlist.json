@@ -1,0 +1,722 @@
+{
+  "generated_at": "2026-06-19T06:32:09.400749+07:00",
+  "date": "2026-06-19",
+  "stream": "watchlist",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 24,
+    "items_raw": 928,
+    "items_after_dedup": 894,
+    "items_after_keyword": 731,
+    "items_after_trusted": 99,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 18:22:13 +0000",
+      "age_h": 5.2,
+      "has_timestamp": true,
+      "description": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+      "keywords_matched": [
+        "aws",
+        "nvidia",
+        "amazon"
+      ],
+      "match_count": 3,
+      "score": 3.97
+    },
+    {
+      "title": "I put Siri AI through the same tests I use for ChatGPT and Gemini on MacOS 27 - here's how it did",
+      "url": "https://www.zdnet.com/article/new-siri-ai-apple-intelligence-test-on-mac/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 15:00:48 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "I tried the new Siri on my Mac, and although it's off to a promising start, Apple still has more work to do.",
+      "keywords_matched": [
+        "gemini",
+        "apple",
+        "siri"
+      ],
+      "match_count": 3,
+      "score": 3.69
+    },
+    {
+      "title": "Google Home Speaker vs. Amazon Echo Dot Max: I compared the $99 smart hubs by the specs",
+      "url": "https://www.zdnet.com/article/google-home-speaker-vs-amazon-echo-dot-max/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 21:13:31 GMT",
+      "age_h": 2.3,
+      "has_timestamp": true,
+      "description": "Both Google and Amazon have generative AI-powered smart speakers for under $100, so which one stands out?",
+      "keywords_matched": [
+        "amazon",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 3.41
+    },
+    {
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 19:59:22 +0000",
+      "age_h": 3.5,
+      "has_timestamp": true,
+      "description": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "keywords_matched": [
+        "deepmind",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 3.31
+    },
+    {
+      "title": "The best early Amazon Prime Day deals so far",
+      "url": "https://www.theverge.com/gadgets/944084/best-early-prime-day-deals",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-18T14:54:32-04:00",
+      "age_h": 4.6,
+      "has_timestamp": true,
+      "description": "﻿The products pictured here aren’t on sale, but we certainly hope they will be soon. | Image: Alex Parkin / The Verge\t \n \n Amazon’s  earlier-than-usual Prime Day  doesn’t begin until June 23rd, but there are several even earlier deals on must-have products that you can check out right now. To name s",
+      "keywords_matched": [
+        "apple",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 3.22
+    },
+    {
+      "title": "20 อินไซต์สำคัญ คนทำธุรกิจบน IG ต้องรู้ ไม่มีคลิป Reels = ไวรัลยาก สรุปจาก Instagram Press Luncheon 2026",
+      "url": "https://techsauce.co/news/20-instagram-insights-2026-for-sme",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Thu, 18 Jun 2026 16:14:18 +0700",
+      "age_h": 14.3,
+      "has_timestamp": true,
+      "description": "หลายแบรนด์ในไทยยังคงติดภาพจำเดิมๆ ว่า Instagram เป็นเพียงพื้นที่โพสต์รูปคุมโทน หรือเป็นแพลตฟอร์มของ Gen Z แต่ตัวเลขล่าสุดจากงาน Instagram Press Luncheon 2026 ของ Meta กำลังให้ภาพใหม่ที่แตกต่างออกไปอย่างสิ้นเชิง   คุณแพร ดำรงค์มงคลกุล Country Director ประจำ Facebook ประเทศไทย  ใช้คำว่า Instagram วันน",
+      "keywords_matched": [
+        "meta",
+        "instagram",
+        "facebook"
+      ],
+      "match_count": 3,
+      "score": 3.21
+    },
+    {
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQzZoSDM3a1Q1QVlyNzN4YWFrX3Z0V0JTTlFSaTRpdVdFVHhnVU5xaXNudURJRG51Q0drbVlvNkNFTnM0R3BsR0xVZEw3WkRzMW1pcjNlTTQ2WGdVblhMYzNMeGNITnA0ZFNoTEs5RS1HZDFBTXJvZWVTeVZTajZ0MGRuSXhNN2N5bm5qcUM2UC0zU1RTQ0NhR2RfUXNrSjVoSFJGTWtGTk8?oc=5",
+      "source": "techcrunch.com",
+      "publisher": "TechCrunch",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Thu, 18 Jun 2026 18:22:13 GMT",
+      "age_h": 5.2,
+      "has_timestamp": true,
+      "description": "Amazon hopes to challenge Nvidia more directly by selling its AI chips    TechCrunch",
+      "keywords_matched": [
+        "nvidia",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 3.17
+    },
+    {
+      "title": "Copilot searched your mailbox. LiteLLM handed out admin keys. Run this 5-check audit before your stack is next",
+      "url": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 17:42:49 GMT",
+      "age_h": 5.8,
+      "has_timestamp": true,
+      "description": "Two AI tools broke in the same way in the same two weeks, and four research teams proved it. The pattern underneath every disclosure is one sentence: enterprise AI accepts external input with no trust boundary.   On June 15, Varonis disclosed  SearchLeak (CVE-2026-42824) , a proof-of-concept exfiltr",
+      "keywords_matched": [
+        "copilot",
+        "microsoft"
+      ],
+      "match_count": 2,
+      "score": 3.12
+    },
+    {
+      "title": "Committed skeptic finds himself warming to new Amazon AI products that actually don't suck",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/committed-skeptic-finds-himself-warming-to-new-amazon-ai-products-that-actually-dont-suck/5258414",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 19:30:00 +0200",
+      "age_h": 6.0,
+      "has_timestamp": true,
+      "description": "If you live long enough, you'll wake up one day and find that you're living in a world you no longer understand. Lately there are things happening with AI in a couple of disparate parts of Amazon that brought that lesson home in a big way. The first is that, late last year, they acquired Bee, an AI ",
+      "keywords_matched": [
+        "aws",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 3.1
+    },
+    {
+      "title": "Apple confirms price increases are coming - how much will it cost you?",
+      "url": "https://www.zdnet.com/article/apple-product-price-increases-iphone/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 16:34:00 GMT",
+      "age_h": 7.0,
+      "has_timestamp": true,
+      "description": "In a Wall Street Journal interview, Apple CEO Tim Cook confirmed plans to raise product prices due to the supply pressure and cost increases on memory and storage chips.",
+      "keywords_matched": [
+        "tim cook",
+        "apple"
+      ],
+      "match_count": 2,
+      "score": 3.02
+    },
+    {
+      "title": "AWS Summit New York 2026: New ways to make AI agents more effective at work",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KTDh2dkU3QXlVUUpadEp2T2puakNnMndfYTVzVVhlSEVJQzNuLTRlU0dRUEE3OTRIUlZ1bDdGck8wMS16U0VDN29BSmVQRGJhaGp4RUd6VS10ZXl0emZKOWZTR0NhaVpWRTBMNURNNl9hMmRH?oc=5",
+      "source": "aboutamazon.com",
+      "publisher": "About Amazon",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 16:21:21 GMT",
+      "age_h": 7.2,
+      "has_timestamp": true,
+      "description": "AWS Summit New York 2026: New ways to make AI agents more effective at work    About Amazon",
+      "keywords_matched": [
+        "aws",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 3.0
+    },
+    {
+      "title": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLVhPWUhPTlQ3aVJKWVkySl9SZm1XWWp4SUhHWlY3TERIQnVHb1dhNVZZWmFpSjJ1Q0cyaHF2cFdfTkJ1eEZNRGlGLUtVUkcyVWR1NXNrd2NrM09XQWlBVTRYWXdxaUhlYUI4X3BLdGNXV3dsNlNvbXlSSkxobGpLR0hRb2NseV9SU3RIUlB1Ym9vVklIdUxfQi12bEdERkRYZGQ1bTU2T0s4ck56X0JLazZR0gG3AUFVX3lxTFBMRUdVMlppNktLUXo3UmEtd0hxUTNKMk1BTk9NMDFVdWRWMEJlc19kazd0ZDBvb0x5Y3ROMlVnQV9TQWFGSkJ0ekpXcUtzVHZuQnNLZk1DWDFIZVZZLUpnVllkTXBWUDNLQm9qV012NFdJZ1Z3aXFSVnpFQkV2QVo4RzJlcnR5cW5fZ1dNWFdyRzIycjNlb0hpemJ2aXB0TWxHNlgxcVllZ2NVQ0tHeXlUeTBweDZ2TQ?oc=5",
+      "source": "about.fb.com",
+      "publisher": "meta.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Meta\" OR \"Facebook\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 05:59:04 GMT",
+      "age_h": 17.6,
+      "has_timestamp": true,
+      "description": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook    meta.com",
+      "keywords_matched": [
+        "meta",
+        "instagram",
+        "facebook"
+      ],
+      "match_count": 3,
+      "score": 2.93
+    },
+    {
+      "title": "Amazon in Talks to Sell Custom AI Chips in Bid to Undercut Nvidia",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU3VCZ1BuMy1ydHA5U0xMbUZIdEUzZDh0dXozVVBRSlJSbHFyWHFtQmVPbWFaeVhXODlMamhmLVJvZ2JmWlBoSzdWTnJfZFlzbU9jNFpqSHVYOU9Xd3h5RFIta2syS2F5d281TV9WNjRCV3EyMzdGY2x2eUozNkxvbFFqYWxWTzMtSWlpdlEwa3VUWWlaTWJfT2VyNC1zQjlLNmNSbGNvZlVfUk5TN2pVQThHajkwUQ?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Thu, 18 Jun 2026 15:06:06 GMT",
+      "age_h": 8.4,
+      "has_timestamp": true,
+      "description": "Amazon in Talks to Sell Custom AI Chips in Bid to Undercut Nvidia    Bloomberg.com",
+      "keywords_matched": [
+        "nvidia",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 2.9
+    },
+    {
+      "title": "Amazon Is in Talks to Sell Nvidia Rival Chips to Other Companies",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTEx3aGRXMlpDUzA4bm8tdW9xUENVanhBWFdpay0xVDNvcnM1Wm1RTjdFWk1PMGZ2OGdVYVBvbXFrR3VVenJ4ekZOQllkQjBnVlM0MkZUX3N1emxxYlhIUk9MS0pXNVVveXRIc1hUOXluempndzIyZ09pTlU1VU1kRXpqcUwzekUwR0xRTkVJRHBQTUQ2dklSU29fd0EyMWdMbXVCa0pReGJsYk0tRnhTbWxQMDNwS0Q0QkNWUG9WUXgzd1BTa3Iwd0kxQjRJNi15LUtIUERPLU8?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Thu, 18 Jun 2026 15:06:06 GMT",
+      "age_h": 8.4,
+      "has_timestamp": true,
+      "description": "Amazon Is in Talks to Sell Nvidia Rival Chips to Other Companies    Bloomberg.com",
+      "keywords_matched": [
+        "nvidia",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 2.9
+    },
+    {
+      "title": "I put Siri AI through the same tests I use for ChatGPT and Gemini on MacOS 27 - here's how it did",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWd0pjNGRrbDJ6OWpCRDRjQmt3SFhfbEdla3k2SHZkejVHejZWQWFxYUdiY1FaUDlKYWNNdlZ3TEFQaWgwajk1Z04xalpJZHFGQnBqRF9HNzdjd01seW1xWWhfQm5pYWtmZkJkYUlqMlc4RnJDUkZObHFKNE11Zw?oc=5",
+      "source": "zdnet.com",
+      "publisher": "ZDNET",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Apple\" OR \"Apple Intelligenc",
+      "published_raw": "Thu, 18 Jun 2026 15:00:00 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "I put Siri AI through the same tests I use for ChatGPT and Gemini on MacOS 27 - here's how it did    ZDNET",
+      "keywords_matched": [
+        "gemini",
+        "siri"
+      ],
+      "match_count": 2,
+      "score": 2.89
+    },
+    {
+      "title": "Apple boss Tim Cook says prices to rise due to memory chip costs",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHMUFiLVBVQVhqRlhQSW5qRFU3aTFTcEt3YXBIaG5vejVBNmlvNVBqc2ZoMHppUEU0Wk1yTllLQl9OSDNTeTZJUlAwU3RHTHpfaWVqUWp4d1dWdw?oc=5",
+      "source": "bbc.com",
+      "publisher": "BBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Apple\" OR \"Apple Intelligenc",
+      "published_raw": "Thu, 18 Jun 2026 14:03:27 GMT",
+      "age_h": 9.5,
+      "has_timestamp": true,
+      "description": "Apple boss Tim Cook says prices to rise due to memory chip costs    BBC",
+      "keywords_matched": [
+        "tim cook",
+        "apple"
+      ],
+      "match_count": 2,
+      "score": 2.81
+    },
+    {
+      "title": "Anthropic's Claude Code Artifacts update brings live, shared dashboards and interactive workspaces to enterprises",
+      "url": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 23:18:59 GMT",
+      "age_h": 0.2,
+      "has_timestamp": true,
+      "description": "Anthropic announced a potentially game-changing new feature for users of Claude Code on the Claude Team and Enterprise subscription plans:  Artifacts .   This update turns a Claude Code session's work into a live, interactive, and shareable, custom HTML webpage, allowing a Claude Code user to plug i",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 2.78
+    },
+    {
+      "title": "How we’re securing internal systems against increasingly capable and imperfectly aligned AI",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBwbVhyR04tNjU3OFI5RHI4TWVqQjVxeUQ5OTVTSHkybWpPc3UwRkhWVnRfRkFSTUZEREhadFE0TWpkZnFYMGJFR1BsVGJhaXQwSkw3eDhPR1lYM1lRX2doTS1rajFzQXV3eXVBWS1IQQ?oc=5",
+      "source": "deepmind.google",
+      "publisher": "Google DeepMind",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Thu, 18 Jun 2026 13:01:46 GMT",
+      "age_h": 10.5,
+      "has_timestamp": true,
+      "description": "How we’re securing internal systems against increasingly capable and imperfectly aligned AI    Google DeepMind",
+      "keywords_matched": [
+        "deepmind",
+        "google"
+      ],
+      "match_count": 2,
+      "score": 2.72
+    },
+    {
+      "title": "2,000 retired Google Pixel phones get a second life as a private cloud",
+      "url": "https://www.theregister.com/on-prem/2026/06/18/2000-retired-google-pixel-phones-get-a-second-life-as-a-private-cloud/5258035",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 23:39:28 +0200",
+      "age_h": 1.9,
+      "has_timestamp": true,
+      "description": "Once you're done with your smartphone, it either ends up in a drawer, on the growing second-hand market, or perhaps in a recycle bin. However, it's a computer and, when combined with others like it, can offer real processing power. Computer scientists at the University of California, San Diego, work",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.64
+    },
+    {
+      "title": "AI Across Industries: How AMD Technologies Are Powering the Next Wave of Enterprise Transformation",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVGVRZG8tbEpVdlhKMl85aHpMdW5JZGU1NG9NODVha1NFZThOUzlOZjJQVmZkR1A0SDZral9zOE9vZmhfNW1YOXhJZ0l4dk12LVhEMUE2OGt5YzBNM2t5cHF3Ymx2M3kwRHhJbDh1Yi03aE5OSDNPZ0gwc1hrd2llZnFfSkd1WUpZYU1pTjM0eFB2X0xpenE2TGtpS0htTDdsVjdReklwLVF5eGQzaW8zRTdjQVhleGlBQ2hOZ3J0R0dzdExMU3NueDdlajh5X0gt?oc=5",
+      "source": "amd.com",
+      "publisher": "AMD",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"AMD\" OR \"Instinct\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 21:41:00 GMT",
+      "age_h": 1.9,
+      "has_timestamp": true,
+      "description": "AI Across Industries: How AMD Technologies Are Powering the Next Wave of Enterprise Transformation    AMD",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 2.64
+    },
+    {
+      "title": "Apple CEO Tim Cook warns AI-driven price increases are unavoidable — says company is trying its best but 'the situation has become unsustainable'",
+      "url": "https://www.tomshardware.com/laptops/apple-ceo-tim-cook-warns-ai-driven-price-increases-are-unavoidable-says-company-is-trying-its-best-but-the-situation-has-become-unsustainable",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Thu, 18 Jun 2026 11:45:06 +0000",
+      "age_h": 11.8,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/uMZ5kNphxA2Ut6whdLaSQV.png",
+      "keywords_matched": [
+        "tim cook",
+        "apple"
+      ],
+      "match_count": 2,
+      "score": 2.62
+    },
+    {
+      "title": "Apple CEO Tim Cook warns AI-driven price increases are unavoidable — says company is trying its best but 'the situation has become unsustainable'",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPSlhhTzdydUVCTUs1cEdUX1JMNmlQYXNVdGNHdHJHYVVSQTJyeTh4TXNQWnZRSGJCWjRRZWdCMWpBZkxELU1JMC1UWVpZSDZ1ekkyVzY0b0dyX29CbHNiNlNvT2x3dmQ1ZEhVMFRvNHVkUTFuVDNGZW5XVVEwLTNMZUZtdTIxUUQxR3hRdEZwUndmakZ1WXhNTXg2MDk2bUFMWU1jN1VpNlI1SFRKQVRrYldUYjFNMGtvN0dYUWoxSndpU2dINFJ4Ql9CcnVTWkFuWTN5ajMxR0xDZFpyTURvckQ3SXdOODM3SS0xRDlyVHZoQmVwbEhzSnF3ZEF1ZXJKWnNqTTM0akVPdw?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Apple\" OR \"Apple Intelligenc",
+      "published_raw": "Thu, 18 Jun 2026 11:45:06 GMT",
+      "age_h": 11.8,
+      "has_timestamp": true,
+      "description": "Apple CEO Tim Cook warns AI-driven price increases are unavoidable — says company is trying its best but 'the situation has become unsustainable'    Tom's Hardware",
+      "keywords_matched": [
+        "tim cook",
+        "apple"
+      ],
+      "match_count": 2,
+      "score": 2.62
+    },
+    {
+      "title": "Meta signs new AI computing deals with data center firm Crusoe, Bloomberg News reports",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY2hGMmJVYWZybndVbUpRZWtXdzlOdlpWQmZWTjd1Z1RIT3JLZEc5aFJSLXNjR0xVeXlybzFrTGpDclZOV043cEtkR1RaOGtDYzhrNWVaQmdTeFctUmtsV2NDcnBNNDZiLVJITHF2RDg0V0RTQlc4dGIxMEJrdUlUb0Ztd0RVeF9NWXJyVEZmMy05UkF5QVpzTTBqbVJKSVIwaXNFbnpsMGNtS3FzdVRnWEFnYWVlQjZpR1Vrc1pEZw?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Meta\" OR \"Facebook\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 21:27:56 GMT",
+      "age_h": 2.1,
+      "has_timestamp": true,
+      "description": "Meta signs new AI computing deals with data center firm Crusoe, Bloomberg News reports    Reuters",
+      "keywords_matched": [
+        "meta"
+      ],
+      "match_count": 1,
+      "score": 2.62
+    },
+    {
+      "title": "I'm a smart home reviewer, and these are the only deals I'm shopping this Prime Day",
+      "url": "https://www.zdnet.com/article/amazon-prime-day-2026-security-camera-deals/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 21:11:31 GMT",
+      "age_h": 2.3,
+      "has_timestamp": true,
+      "description": "It's Amazon Prime Day, and smart home deals are everywhere. But don't fall for any deal: these are the ones worth your time and money.",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.61
+    },
+    {
+      "title": "Amazon SVP on AI strategy: Aim to compete with Anthropic in coming year",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcWNSTWc3VjJuMjlJYlhoUUdsNVZYbEs3N0FZSTJxUEdwaVljWXVSV1dfRGhmalhkQlBxTnFsbFBrVmd4LV9BdG5XVzNzTnhqcTYzajZnTi0wbXRfMVE4U0VxNXg5QXVmVENkdEtzcnZGRzdKeDRtSXRrVGZPTk5YRHdpam5aTEd6UzhNeE1fN0NIRWlTenh4ZjNqX0RyY09FUG05SFFTTHgtMUQ2TWozZVZyOA?oc=5",
+      "source": "cnbc.com",
+      "publisher": "CNBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 11:38:33 GMT",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "Amazon SVP on AI strategy: Aim to compete with Anthropic in coming year    CNBC",
+      "keywords_matched": [
+        "anthropic",
+        "amazon"
+      ],
+      "match_count": 2,
+      "score": 2.61
+    },
+    {
+      "title": "Five Agentic Applications Transforming Supply Chain Execution",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VZUNVNVZGMFNZaDlzSXk1OW9mNEpZenVEX24zcGM2cW9fUVdwbUl6Rlp0TWg2QnNaYmJqUUVteWp1Q0wtOEVDU2x6anJwYk1GT2MwRmgwNzIzV3BqRUJMcmd1TWZxaGNpMEZyQw?oc=5",
+      "source": "blogs.oracle.com",
+      "publisher": "Oracle Blogs",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Oracle\" OR \"OCI\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 21:02:57 GMT",
+      "age_h": 2.5,
+      "has_timestamp": true,
+      "description": "Five Agentic Applications Transforming Supply Chain Execution    Oracle Blogs",
+      "keywords_matched": [
+        "oracle"
+      ],
+      "match_count": 1,
+      "score": 2.59
+    },
+    {
+      "title": "Google has discontinued the Nest Home Mini and Nest Audio",
+      "url": "https://www.engadget.com/2197748/google-has-discontinued-the-nest-home-mini-and-nest-audio/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 20:33:02 +0000",
+      "age_h": 3.0,
+      "has_timestamp": true,
+      "description": "On to the next one.",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.55
+    },
+    {
+      "title": "I recommend these Garmin smartwatches for almost every situation (and price range)",
+      "url": "https://www.zdnet.com/article/garmin-smartwatch-deals-roundup-prime-day/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 20:19:50 GMT",
+      "age_h": 3.2,
+      "has_timestamp": true,
+      "description": "Plus, many of Garmin's signature smartwatches are on sale ahead of Amazon Prime Day.",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.53
+    },
+    {
+      "title": "Meta Strikes New AI Computing Deals With Data Center Firm Crusoe",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMkVNUTk2aWYyQk1wLWlUengxWHg4M1g1ZmdBZTcwSkN6cHlxQmpmNkhwTjhFYXZwZldrOXlYMDU0YkFXYVdTNzdsUUR1VnRQbEdjSC1PSjZPbV9DTGVfOG5CdWF5ZnNDSmlWSTRBZk5zZ0tjVzFrNHVlQkdxTjBGRldQb1BNdkRNVUloR0dZLWlmMnJJSDJ1VUpiaEVPQTlJNnE1R1RycjViNFZ2QzlTdmpDbjVWZw?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Meta\" OR \"Facebook\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 20:13:46 GMT",
+      "age_h": 3.3,
+      "has_timestamp": true,
+      "description": "Meta Strikes New AI Computing Deals With Data Center Firm Crusoe    Bloomberg.com",
+      "keywords_matched": [
+        "meta"
+      ],
+      "match_count": 1,
+      "score": 2.52
+    },
+    {
+      "title": "Apple patches high-severity eavesdropping vulnerability in Beats Studio Buds",
+      "url": "https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/",
+      "source": "arstechnica.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Ars Technica",
+      "published_raw": "Thu, 18 Jun 2026 19:41:35 +0000",
+      "age_h": 3.8,
+      "has_timestamp": true,
+      "description": "Apple has updated its Beats Studio Buds wireless earbuds to patch a high-severity vulnerability that could be exploited by nearby hackers to eavesdrop on users. \n The vulnerability,  CVE-2025-20701 , allowed improper authentication in the firmware running on the Bluetooth-related chips, enabling peo",
+      "keywords_matched": [
+        "apple"
+      ],
+      "match_count": 1,
+      "score": 2.48
+    },
+    {
+      "title": "New Forrester study shows customers who unified with Microsoft Security benefited from 124% ROI",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTlRKcHZxWDg0OE01cnRnUTRmV0lUNEFma3lyLTRORDVibS1iSVRXWnFwckdYbU4tcFVEZVhEMTBib3NiZXRNMnRfSk9uMWxwVlZfYzNrMWpsN1UxLVMtMnR0MnJoRlhtZDRiMUJsRlU3OGR1LWh4Mk5iVTZjQ0o5djNYbmhsTVNoTmV3MDdpYU15Q25JcWRzZUpLYkNBYTlveGJHWTA1NUlNWm1qNjl2NUlKMWIxdjcycGl4V3k1Z1I0b0VTVXV1SG9NcUtIek5pMmdXOGc0Q1Z6Qmp5c1dkQlVIckI2eFU?oc=5",
+      "source": "microsoft.com",
+      "publisher": "Microsoft",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Thu, 18 Jun 2026 19:36:08 GMT",
+      "age_h": 3.9,
+      "has_timestamp": true,
+      "description": "New Forrester study shows customers who unified with Microsoft Security benefited from 124% ROI    Microsoft",
+      "keywords_matched": [
+        "microsoft"
+      ],
+      "match_count": 1,
+      "score": 2.48
+    },
+    {
+      "title": "Amazon investigating engineers who criticized AI data center expansion",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPN3BCZGNwWWowRVJKSUd5R2p1aWlqQU5sOV92bkIwTmJKZ2VyMmVxMFJkdHdDQWVxSnRxbVlBLXNfeW9JQVNnbEI3SEd6bjNUcTNYdDdUSlFPbVBLTll4SVFZcm5zN2NEWTE2cEhLcm9PVS1zaXNsZy1LMEdud3VFeG9Fd1pfUdIBiwFBVV95cUxPN0dUQUhRVWhaTHNaeGNRckNiRGtOM3QxakZ6WjFlSE5nQV9wejdfVTJfWkNkbXAzUW54b0twNXREUEhIYVVEMXdHZ2hGaU1EczZJdTVvbnZWYXliM3U0ZmNGYmpXeGpEOW1aSXJWRU5oNnFnOGN0OFhtX1Y5ZTdfN2JaaXlZXzBXcFBr?oc=5",
+      "source": "cnbc.com",
+      "publisher": "CNBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 19:45:42 GMT",
+      "age_h": 3.8,
+      "has_timestamp": true,
+      "description": "Amazon investigating engineers who criticized AI data center expansion    CNBC",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.48
+    },
+    {
+      "title": "Meta’s AI Workers Are Revolting, Peter Thiel’s Secret Society, and SBF’s Plea to Trump",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdjBheE1rdUR3YVJKanNoU1FFOHZJa2NEWk50TVphdXY0V1I3TTltRi1FcGE2XzdodE1yYjFyaVlBUDhyd0tzUEU5MmkxTWxVMDNkQW1iMTBpaFNkQVBlTTNMbE9Nbkp5NUItSnNSRk5vSDZVc052UExEaWdrRE1qcjJGUmRfTDZiWHNlYU5tdW1sbGlyRzVxdVR0UjMwNy1COHdVRkFPVWlPRS05UEtpekpyOXR4MW0yb0lxX015RQ?oc=5",
+      "source": "wired.com",
+      "publisher": "WIRED",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Meta\" OR \"Facebook\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 19:29:00 GMT",
+      "age_h": 4.1,
+      "has_timestamp": true,
+      "description": "Meta’s AI Workers Are Revolting, Peter Thiel’s Secret Society, and SBF’s Plea to Trump    WIRED",
+      "keywords_matched": [
+        "meta"
+      ],
+      "match_count": 1,
+      "score": 2.46
+    },
+    {
+      "title": "Google’s Secret Warrant Fight Over DOJ Pipe Bomb Probe Revealed",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZllRY3BfWXJ4bGlHejc1NkhDN25XLV9qSUI5UHhDNHZON2ZmRlVoWkFHaUMzOGExRTFIeUNtQm1oU0h3dlR6NnVfU2pSdml6Y05sOWxkSjlPU3BBZWpuZWU3b2EwZkR6em1VbjJYdkVZbmdYUTdnNDh5Y09ESDFlb0tVenFqa1lpUndJekhBYTQzak5sN1VYRV8tZUZ1WFpqSjYyMkZkZGlVN1MzRnNaTGpQb3o?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Thu, 18 Jun 2026 18:50:37 GMT",
+      "age_h": 4.7,
+      "has_timestamp": true,
+      "description": "Google’s Secret Warrant Fight Over DOJ Pipe Bomb Probe Revealed    Bloomberg.com",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.41
+    },
+    {
+      "title": "Instagram now lets you add a unique caption to each carousel slide",
+      "url": "https://www.engadget.com/2197622/instagram-now-lets-you-add-a-unique-caption-to-each-carousel-slide/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 18:41:56 +0000",
+      "age_h": 4.8,
+      "has_timestamp": true,
+      "description": "Instagram carousels can now be up to 20 slides with 20 unique captions.",
+      "keywords_matched": [
+        "instagram"
+      ],
+      "match_count": 1,
+      "score": 2.4
+    },
+    {
+      "title": "Copilot Cowork เข้าสถานะ GA, ปรับวิธีคิดเงินตามปริมาณ, เตรียมเพิ่มโมเดลใหม่ Cowork1",
+      "url": "https://www.blognone.com/node/150930",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 23:32:07 +0000",
+      "age_h": 24.0,
+      "has_timestamp": true,
+      "description": "Copilot Cowork เข้าสถานะ GA, ปรับวิธีคิดเงินตามปริมาณ, เตรียมเพิ่มโมเดลใหม่ Cowork1 \n\n   \n     Body \n                ไมโครซอฟท์ประกาศให้บริการ Copilot Cowork เต็มรูปแบบ (general availability) หลัง เปิดตัวครั้งแรกในเดือนมีนาคม 2026  \n Copilot Cowork เป็นการฝัง Claude Cowork ของ Anthropic เข้ามาใน Mic",
+      "keywords_matched": [
+        "copilot",
+        "anthropic",
+        "microsoft"
+      ],
+      "match_count": 3,
+      "score": 2.4
+    },
+    {
+      "title": "Wall Street recovers from Fed slump, and the next step for Amazon's AI chip ambitions",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdkgxdDVrZFJuR2ZMbU9sLVIxRzBFMzEtRF9zUXhCUjFReUdUSHFpTDdtQzUydTZIUmx4R2hkM29qczdaRTVUYXhiMlR5dmtQUm1IQUVjU0ZfMERwTUFWYk1ZZHB2NHhnR3pRajBOSHByd2tka0daSXBiQ2hEdlFDbDRuMEcwSkFJa3RjWg?oc=5",
+      "source": "cnbc.com",
+      "publisher": "CNBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Thu, 18 Jun 2026 18:35:10 GMT",
+      "age_h": 4.9,
+      "has_timestamp": true,
+      "description": "Wall Street recovers from Fed slump, and the next step for Amazon's AI chip ambitions    CNBC",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.39
+    },
+    {
+      "title": "How to pay with Google Wallet using your Samsung Galaxy Watch",
+      "url": "https://www.engadget.com/2197517/how-to-pay-with-google-wallet-samsung-galaxy-watch/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 18:30:00 +0000",
+      "age_h": 5.0,
+      "has_timestamp": true,
+      "description": "You don't have to have a Pixel Watch to use Google Wallet. Here's how to set it up on your Galaxy Watch.",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.38
+    },
+    {
+      "title": "Apple opens up third-party app stores in Brazil",
+      "url": "https://www.engadget.com/2197562/apple-opens-up-third-party-app-stores-in-brazil/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 18:07:56 +0000",
+      "age_h": 5.4,
+      "has_timestamp": true,
+      "description": "Third-party iOS app stores are coming to Brazil.",
+      "keywords_matched": [
+        "apple"
+      ],
+      "match_count": 1,
+      "score": 2.35
+    },
+    {
+      "title": "Before SpaceX IPO, investors in China secretly acquired stakes",
+      "url": "https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/",
+      "source": "arstechnica.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Ars Technica",
+      "published_raw": "Thu, 18 Jun 2026 17:42:18 +0000",
+      "age_h": 5.8,
+      "has_timestamp": true,
+      "description": "A businessman with ties to Chinese military contractors was among the overseas investors who acquired stakes in SpaceX while it was still a private company. An entity linked to the Qatari royal family also took a stake. \n The new details come from a  private investor list  obtained by ProPublica tha",
+      "keywords_matched": [
+        "elon musk"
+      ],
+      "match_count": 1,
+      "score": 2.32
+    }
+  ]
+}

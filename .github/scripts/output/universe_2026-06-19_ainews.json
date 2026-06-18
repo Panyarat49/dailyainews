@@ -1,0 +1,740 @@
+{
+  "generated_at": "2026-06-19T06:31:52.272692+07:00",
+  "date": "2026-06-19",
+  "stream": "ainews",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 21,
+    "items_raw": 488,
+    "items_after_dedup": 487,
+    "items_after_keyword": 333,
+    "items_after_trusted": 72,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 19:59:22 +0000",
+      "age_h": 3.5,
+      "has_timestamp": true,
+      "description": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "keywords_matched": [
+        "openai",
+        "deepmind",
+        "ai",
+        "transformer",
+        "ai policy"
+      ],
+      "match_count": 5,
+      "score": 5.71
+    },
+    {
+      "title": "Noam Shazeer หนึ่งในหัวหน้าทีม Gemini ประกาศย้ายไปทำงานที่ OpenAI",
+      "url": "https://www.blognone.com/node/150933",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Thu, 18 Jun 2026 12:08:02 +0000",
+      "age_h": 11.4,
+      "has_timestamp": true,
+      "description": "Noam Shazeer หนึ่งในหัวหน้าทีม Gemini ประกาศย้ายไปทำงานที่ OpenAI \n\n   \n     Body \n                Noam Shazeer หนึ่งในหัวหน้า Gemini ของกูเกิล  ประกาศ ว่าเขาตัดสินใจย้ายไปทำงานที่ OpenAI โดยยอมรับว่าเป็นการตัดสินใจที่ยากลำบาก และภูมิใจกับทีมงานของกูเกิลตลอดช่วงที่ผ่านมา \n Shazeer เริ่มทำงานกับกูเกิ",
+      "keywords_matched": [
+        "openai",
+        "gemini",
+        "llm",
+        "transformer",
+        "ปัญญาประดิษฐ์",
+        "โมเดล"
+      ],
+      "match_count": 6,
+      "score": 5.05
+    },
+    {
+      "title": "OpenAI เปิดตัว LifeSciBench ชุดทดสอบ AI 750 โจทย์วิจัยชีววิทยาระดับผู้เชี่ยวชาญ ที่แม้แต่โมเดลเก่งสุดยังสอบผ่านแค่ 36%",
+      "url": "https://techsauce.co/ai/openai-lifescibench-life-science-ai-benchmark",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Thu, 18 Jun 2026 14:25:03 +0700",
+      "age_h": 16.1,
+      "has_timestamp": true,
+      "description": "GPT-Rosalind โมเดลที่ OpenAI ปั้นขึ้นมาเพื่องานวิทยาศาสตร์ชีวภาพโดยเฉพาะ ทำคะแนนนำโมเดลแนวหน้าทุกตัวในการทดสอบชุดใหม่ที่ชื่อ LifeSciBench แต่ตัวเลขนั้นกลับเล่าความจริงอีกด้านหนึ่ง เพราะมันสอบผ่านโจทย์วิจัยจริงไปได้เพียง 36.1% เท่านั้น พูดง่าย ๆ คือจากโจทย์ระดับผู้เชี่ยวชาญ 10 ข้อ AI ที่เก่งที่สุดในเ",
+      "keywords_matched": [
+        "openai",
+        "gpt",
+        "ai",
+        "benchmark",
+        "โมเดล"
+      ],
+      "match_count": 5,
+      "score": 4.66
+    },
+    {
+      "title": "New AI optimization framework beats Claude Code and Codex by 2.5x on the same compute budget",
+      "url": "https://venturebeat.com/orchestration/new-ai-optimization-framework-beats-claude-code-and-codex-by-2-5x-on-the-same-compute-budget",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 18:13:54 GMT",
+      "age_h": 5.3,
+      "has_timestamp": true,
+      "description": "Imagine your engineering team just deployed an AI agent to search through internal company documents and answer employee questions. It works perfectly in development, but in production, it consistently hallucinates or misses key constraints. Fixing this is rarely a simple patch. It requires a tediou",
+      "keywords_matched": [
+        "claude",
+        "ai",
+        "ai agent"
+      ],
+      "match_count": 3,
+      "score": 3.96
+    },
+    {
+      "title": "I put Siri AI through the same tests I use for ChatGPT and Gemini on MacOS 27 - here's how it did",
+      "url": "https://www.zdnet.com/article/new-siri-ai-apple-intelligence-test-on-mac/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 15:00:48 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "I tried the new Siri on my Mac, and although it's off to a promising start, Apple still has more work to do.",
+      "keywords_matched": [
+        "chatgpt",
+        "gemini",
+        "ai"
+      ],
+      "match_count": 3,
+      "score": 3.69
+    },
+    {
+      "title": "Adobe embeds agentic AI workflows across Creative Cloud, shifting from media generation to production orchestration",
+      "url": "https://venturebeat.com/orchestration/adobe-embeds-agentic-ai-workflows-across-creative-cloud-shifting-from-media-generation-to-production-orchestration",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 14:33:04 GMT",
+      "age_h": 9.0,
+      "has_timestamp": true,
+      "description": "Adobe has announced  a major expansion of its \"creative agent\" across its flagship Creative Cloud suite and upgraded Firefly AI studio.   Available in public beta starting today across Premiere Pro, Photoshop, Illustrator, InDesign, and Frame.io, the agent is designed to serve everyone from individu",
+      "keywords_matched": [
+        "ai",
+        "generative ai",
+        "agentic"
+      ],
+      "match_count": 3,
+      "score": 3.65
+    },
+    {
+      "title": "Anthropic's Claude Code Artifacts update brings live, shared dashboards and interactive workspaces to enterprises",
+      "url": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 23:18:59 GMT",
+      "age_h": 0.2,
+      "has_timestamp": true,
+      "description": "Anthropic announced a potentially game-changing new feature for users of Claude Code on the Claude Team and Enterprise subscription plans:  Artifacts .   This update turns a Claude Code session's work into a live, interactive, and shareable, custom HTML webpage, allowing a Claude Code user to plug i",
+      "keywords_matched": [
+        "anthropic",
+        "claude"
+      ],
+      "match_count": 2,
+      "score": 3.58
+    },
+    {
+      "title": "Optical Module อาวุธลับของ AI Data Center กับโอกาสลงทุนในคอขวดใหม่ของโลกเทคโนโลยี",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hRGNZN1NnTWZUMVhkeUtwcnRucHpxeC1LdldtLUN6STVrWU5tSzhpR2xwdkpJSGJDVWNlUG93UmJpOEJ1WEVYRkF0a0N2NDYtUFQ4b3dYc2ZOQnc2ZkE5ZlhKOTBfOTNrZ2N6Y1FB?oc=5",
+      "source": "thestandard.co",
+      "publisher": "thestandard.co",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Thu, 18 Jun 2026 21:36:14 GMT",
+      "age_h": 1.9,
+      "has_timestamp": true,
+      "description": "Optical Module อาวุธลับของ AI Data Center กับโอกาสลงทุนในคอขวดใหม่ของโลกเทคโนโลยี    thestandard.co",
+      "keywords_matched": [
+        "ai",
+        "data center"
+      ],
+      "match_count": 2,
+      "score": 3.44
+    },
+    {
+      "title": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
+      "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 21:20:13 +0000",
+      "age_h": 2.2,
+      "has_timestamp": true,
+      "description": "Startup Baseten is reportedly close to finalizing a $1.5 billion round at a $13 billion as the “inference gold rush\" marches on.",
+      "keywords_matched": [
+        "ai",
+        "inference"
+      ],
+      "match_count": 2,
+      "score": 3.42
+    },
+    {
+      "title": "ส่งออก 'ญี่ปุ่น' เดือนพ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE94TGRTMENwX2ozUERpOUpFeWtVTjdZQ0trVm9rR3J2M1lpMTVvNE4xU2pjaExPTmVVSnJrM3NPQzNRREVvOHZNOVVCR1B1WjU5eFZMaWlQbw?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Thu, 18 Jun 2026 21:26:04 GMT",
+      "age_h": 2.1,
+      "has_timestamp": true,
+      "description": "ส่งออก 'ญี่ปุ่น' เดือนพ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI    bangkokbiznews",
+      "keywords_matched": [
+        "ai",
+        "ชิป"
+      ],
+      "match_count": 2,
+      "score": 3.42
+    },
+    {
+      "title": "Google Home Speaker vs. Amazon Echo Dot Max: I compared the $99 smart hubs by the specs",
+      "url": "https://www.zdnet.com/article/google-home-speaker-vs-amazon-echo-dot-max/",
+      "source": "zdnet.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "ZDNet",
+      "published_raw": "Thu, 18 Jun 2026 21:13:31 GMT",
+      "age_h": 2.3,
+      "has_timestamp": true,
+      "description": "Both Google and Amazon have generative AI-powered smart speakers for under $100, so which one stands out?",
+      "keywords_matched": [
+        "ai",
+        "generative ai"
+      ],
+      "match_count": 2,
+      "score": 3.41
+    },
+    {
+      "title": "Copilot Cowork เข้าสถานะ GA, ปรับวิธีคิดเงินตามปริมาณ, เตรียมเพิ่มโมเดลใหม่ Cowork1",
+      "url": "https://www.blognone.com/node/150930",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Wed, 17 Jun 2026 23:32:07 +0000",
+      "age_h": 24.0,
+      "has_timestamp": true,
+      "description": "Copilot Cowork เข้าสถานะ GA, ปรับวิธีคิดเงินตามปริมาณ, เตรียมเพิ่มโมเดลใหม่ Cowork1 \n\n   \n     Body \n                ไมโครซอฟท์ประกาศให้บริการ Copilot Cowork เต็มรูปแบบ (general availability) หลัง เปิดตัวครั้งแรกในเดือนมีนาคม 2026  \n Copilot Cowork เป็นการฝัง Claude Cowork ของ Anthropic เข้ามาใน Mic",
+      "keywords_matched": [
+        "anthropic",
+        "claude",
+        "copilot",
+        "โมเดล"
+      ],
+      "match_count": 4,
+      "score": 3.2
+    },
+    {
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 18:22:13 +0000",
+      "age_h": 5.2,
+      "has_timestamp": true,
+      "description": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+      "keywords_matched": [
+        "ai",
+        "nvidia"
+      ],
+      "match_count": 2,
+      "score": 3.17
+    },
+    {
+      "title": "This robotic self-driving toilet comes to you",
+      "url": "https://www.theverge.com/tech/952441/yueban-xiaoban-self-driving-autonomous-toilet",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-18T14:08:17-04:00",
+      "age_h": 5.4,
+      "has_timestamp": true,
+      "description": "During a  recent expo in Shanghai  that focuses on elderly care, assistive devices, and rehabilitation medicine, a Chinese company called Yueban debuted a smart toilet that does something we haven't seen before; it comes to you. The autonomous self-driving Xiaoban toilet was designed to improve acce",
+      "keywords_matched": [
+        "autonomous",
+        "self-driving"
+      ],
+      "match_count": 2,
+      "score": 3.15
+    },
+    {
+      "title": "Copilot searched your mailbox. LiteLLM handed out admin keys. Run this 5-check audit before your stack is next",
+      "url": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Thu, 18 Jun 2026 17:42:49 GMT",
+      "age_h": 5.8,
+      "has_timestamp": true,
+      "description": "Two AI tools broke in the same way in the same two weeks, and four research teams proved it. The pattern underneath every disclosure is one sentence: enterprise AI accepts external input with no trust boundary.   On June 15, Varonis disclosed  SearchLeak (CVE-2026-42824) , a proof-of-concept exfiltr",
+      "keywords_matched": [
+        "copilot",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 3.12
+    },
+    {
+      "title": "The AI tipping point: where enterprise AI runs at scale",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/the-ai-tipping-point-where-enterprise-ai-runs-at-scale/5258147",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 17:00:00 +0200",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "When enterprises first began building AI strategies, the default assumption was straightforward: AI would run in the hyperscaler cloud. The APIs were ready, GPU capacity was building out, and the inertia of a decade of public cloud investment pointed in one direction. Broadcom’s Private Cloud Outloo",
+      "keywords_matched": [
+        "ai",
+        "gpu"
+      ],
+      "match_count": 2,
+      "score": 2.89
+    },
+    {
+      "title": "Alibaba's cloud arm opens 5th Japan data center, adding new AI services",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaDFTQTBIdjM2QmF2YTIxSjZqUTh0VFRudlRNYTlZOEVFQWJFbFBaMW54MWtKZFZoTmxmWlhJZXljdHdySExZbnRoYmdVYzh2Q3pYbkNVN19iZzBDazVqNURZQmlRWkxRSV9ZWEpEQWhUbEdzMGlTY2ZsU0pCUVhkUnk3eDZMQjRLcm5qNzhXNzRZcnNGUnh4NEJVcE9fRjdsc3Z3VWh5U245RDIzQS1YR0kyMEJjZEhSLUJlajEwX05USks0VXk4ZkwxazF4NEtMMlR5NQ?oc=5",
+      "source": "asia.nikkei.com",
+      "publisher": "Nikkei Asia",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI data center cloud computing",
+      "published_raw": "Thu, 18 Jun 2026 15:03:00 GMT",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "Alibaba's cloud arm opens 5th Japan data center, adding new AI services    Nikkei Asia",
+      "keywords_matched": [
+        "ai",
+        "data center"
+      ],
+      "match_count": 2,
+      "score": 2.89
+    },
+    {
+      "title": "รู้จัก ‘Loop Engineering’ เลิกพิมพ์สั่ง AI ทีละคำ เปลี่ยนมาออกแบบลูปให้ AI ทำงานเองจนจบ",
+      "url": "https://techsauce.co/ai/loop-engineering-agentic-ai-beyond-prompt-engineering",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Thu, 18 Jun 2026 12:12:40 +0700",
+      "age_h": 18.3,
+      "has_timestamp": true,
+      "description": "Boris Cherny หัวหน้าทีม Claude Code แห่ง Anthropic พูดประโยคหนึ่งที่สรุปความเปลี่ยนแปลงของวงการ AI ปีนี้ได้คมที่สุด นั่นคือ 'ผมไม่พิมพ์สั่ง Claude เองอีกแล้ว แต่ผมมีลูปคอยสั่ง Claude ให้แทน' ประโยคสั้น ๆ นี้คือหัวใจของเทรนด์ที่กำลังร้อนแรงในชื่อ Loop Engineering หรือการออกแบบวงรอบการทำงาน (Loop) ให้",
+      "keywords_matched": [
+        "anthropic",
+        "claude",
+        "ai"
+      ],
+      "match_count": 3,
+      "score": 2.87
+    },
+    {
+      "title": "Adobe adds its AI assistant to Premiere, Illustrator and InDesign",
+      "url": "https://techcrunch.com/2026/06/18/adobe-adds-its-ai-assistant-to-premiere-illustrator-and-indesign/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 13:00:00 +0000",
+      "age_h": 10.5,
+      "has_timestamp": true,
+      "description": "Adobe is updating its Firefly AI assistant with new chops, and adding it to Premiere, Illustrator, InDesign and Frame.io.",
+      "keywords_matched": [
+        "ai",
+        "ai assistant"
+      ],
+      "match_count": 2,
+      "score": 2.72
+    },
+    {
+      "title": "Adobe brings its Firefly AI Assistant inside of Premiere, Photoshop and Illustrator",
+      "url": "https://www.engadget.com/2197079/adobe-brings-its-firefly-ai-assistant-inside-of-premiere-photoshop-and-illustrator/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 13:00:00 +0000",
+      "age_h": 10.5,
+      "has_timestamp": true,
+      "description": "Adobe has added its Firefly AI tool to some of its most important apps.",
+      "keywords_matched": [
+        "ai",
+        "ai assistant"
+      ],
+      "match_count": 2,
+      "score": 2.72
+    },
+    {
+      "title": "สะเทือนวงการ AI! \"โนม ชาซีร์\" ผู้ร่วมพัฒนา Google Gemini ย้ายซบ OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mb1dqRXhqRVNNdGtSWGdiU212dy1vaUxobHR1STE0eEtoUGVxaG95cktRUlVxZk9fanVLTnRCWWpEcy1raTZraEtJSjRhdkxpZDNkNXlicmVZUlU?oc=5",
+      "source": "thairath.co.th",
+      "publisher": "Thairath.co.th",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Thu, 18 Jun 2026 03:12:26 GMT",
+      "age_h": 20.3,
+      "has_timestamp": true,
+      "description": "สะเทือนวงการ AI! \"โนม ชาซีร์\" ผู้ร่วมพัฒนา Google Gemini ย้ายซบ OpenAI    Thairath.co.th",
+      "keywords_matched": [
+        "openai",
+        "gemini",
+        "ai"
+      ],
+      "match_count": 3,
+      "score": 2.71
+    },
+    {
+      "title": "AssetWise presents Marketing Oops! Summit 2026 เปิดฉากยิ่งใหญ่ เปลี่ยน Insight สู่ Action รับยุค Agentic AI พานักการตลาดชนะเกมการตลาดยุคใหม่",
+      "url": "https://thestandard.co/assetwise-marketing-oops-summit-ai/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Thu, 18 Jun 2026 12:26:34 +0000",
+      "age_h": 11.1,
+      "has_timestamp": true,
+      "description": "กรุงเทพฯ 11 มิถุนายน 2569, Marketing Oops! เปิดฉากงาน AssetWise presents Marketing Oops! Summit 2026 ภายใต้ธีม “Intelligence in Action” ณ  ศูนย์การประชุมแห่งชาติสิริกิติ์  ตอกย้ำบทบาทเวทีการตลาด ธุรกิจ และเทคโนโลยีแห่งปี ที่ปีนี้ยกระดับจากงานสัมมนาสู่ Experience Platform เต็มรูปแบบ เพื่อพานักการตลาด",
+      "keywords_matched": [
+        "ai",
+        "agentic"
+      ],
+      "match_count": 2,
+      "score": 2.67
+    },
+    {
+      "title": "The White House Is Making Up Its Rules for AI in Real Time",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbDU3SmY4RmNjZUYxVFowZ1pfZ2VYSjFVbHNjTVU5LTV4MWJQVnNSaThKckpFbEZOTVZyT3hOZUJiUHlnRW5lcUFRVzdDN0tpVENCV2o5SkNfMU5HajNkaFVQejBNb1hvYWpiUGdCbHRSVFlXZG5NQkZnLWFhLVpuYnN3?oc=5",
+      "source": "wired.com",
+      "publisher": "WIRED",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI regulation policy",
+      "published_raw": "Thu, 18 Jun 2026 21:03:00 GMT",
+      "age_h": 2.5,
+      "has_timestamp": true,
+      "description": "The White House Is Making Up Its Rules for AI in Real Time    WIRED",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.59
+    },
+    {
+      "title": "Snap spins off AI video team into new company, Dotmo, due to costs",
+      "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 20:30:00 +0000",
+      "age_h": 3.0,
+      "has_timestamp": true,
+      "description": "The Snapchat maker is spinning off yet another internal unit. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.55
+    },
+    {
+      "title": "Chinese makers of DRAM modules, SSDs have a serious advantage over American and Taiwanese suppliers, says SMI SVP — state guidance secures local DRAM and SSD supply while the Big Three chase AI margins",
+      "url": "https://www.tomshardware.com/pc-components/ssds/chinese-makers-of-dram-modules-ssds-have-a-serious-advantage-over-american-and-taiwanese-suppliers-says-smi-svp-state-guidance-secures-local-dram-and-ssd-supply-while-the-big-three-chase-ai-margins",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Thu, 18 Jun 2026 10:30:00 +0000",
+      "age_h": 13.0,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/uMZ5kNphxA2Ut6whdLaSQV.png",
+      "keywords_matched": [
+        "ai",
+        "dram"
+      ],
+      "match_count": 2,
+      "score": 2.52
+    },
+    {
+      "title": "The skills people still perform better than AI, according to workplace experts",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVXdOa29HNXR4czhJbHc2TU9IMFhsS0UxZk1vWmFQdXl6VmlZTjNjUmhjZ0padUFxdkZGN0NrdDVtYmlkUk1iZVNneUxOcEt1UU1McWhsbVdiV0JMTHFjNS1WM2VEWG15Z0ZlUUdIblotZFVVVXNoYXNXeU5HUzlpZDVSTVg5R19ETFlWc1JnY3cyTFFEQlpyeWFjemN6alpldjd4VG9MWFhPdw?oc=5",
+      "source": "apnews.com",
+      "publisher": "AP News",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Thu, 18 Jun 2026 20:12:36 GMT",
+      "age_h": 3.3,
+      "has_timestamp": true,
+      "description": "The skills people still perform better than AI, according to workplace experts    AP News",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.52
+    },
+    {
+      "title": "Rivian faces a class action lawsuit over self-driving in its early vehicles",
+      "url": "https://www.engadget.com/2197702/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Thu, 18 Jun 2026 19:42:36 +0000",
+      "age_h": 3.8,
+      "has_timestamp": true,
+      "description": "Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof.",
+      "keywords_matched": [
+        "self-driving"
+      ],
+      "match_count": 1,
+      "score": 2.48
+    },
+    {
+      "title": "BCE Reaches Deal to Provide Cohere With AI Computing Power",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQmd4enNiYVdHd2N0QXBzbUE0ZHRsZWdMckhHa1BacmFmRUdpY28wcjBzcFZ2bW9wLWFvNHM1OWFQUDAwOXhFZlk4c3NZRE44Nldyc28yZVlnRUo5NF9Gb2NELTVrVF9PMVNBb2d6OFJnMTN4Qkg4M3ZoeFY3bUg4cXUtOVc4YTd6M1RTNzEwdXhqZHhfYXI4ZGUwbGg4MXRpZkFiTW5VeXlORXZUb3ByQkdlcXdMakNsbFRCMDJVTUcwaUE?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI data center cloud computing",
+      "published_raw": "Thu, 18 Jun 2026 10:00:00 GMT",
+      "age_h": 13.5,
+      "has_timestamp": true,
+      "description": "BCE Reaches Deal to Provide Cohere With AI Computing Power    Bloomberg.com",
+      "keywords_matched": [
+        "cohere",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.48
+    },
+    {
+      "title": "Rivian owners file lawsuit alleging false promises on self-driving features",
+      "url": "https://techcrunch.com/2026/06/18/rivian-owners-file-lawsuit-alleging-false-promises-on-self-driving-features/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 19:31:45 +0000",
+      "age_h": 4.0,
+      "has_timestamp": true,
+      "description": "Plaintiffs in the class action complaint allege Rivian falsely promised for years it would bring hands-free driving to its first-generation R1 vehicles.",
+      "keywords_matched": [
+        "self-driving"
+      ],
+      "match_count": 1,
+      "score": 2.47
+    },
+    {
+      "title": "Almost half of U.S. singles feel negatively about AI in dating, Match says",
+      "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 18:51:46 +0000",
+      "age_h": 4.7,
+      "has_timestamp": true,
+      "description": "About 47% of singles look negatively at the use of AI in dating -- but, many dating app users are open to AI helping with profile punch-ups and conversation starters.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.41
+    },
+    {
+      "title": "Semiconductor firms, data centres in Singapore step up efforts to cut water use",
+      "url": "https://www.channelnewsasia.com/singapore/semiconductors-wafer-fabrication-data-centres-water-6192621",
+      "source": "channelnewsasia.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "CNA Tech",
+      "published_raw": "Thu, 18 Jun 2026 16:55:11 +0800",
+      "age_h": 14.6,
+      "has_timestamp": true,
+      "description": "The data centre and chipmaking industries are highly water-intensive, requiring large volumes for chip manufacturing and cooling operations.",
+      "keywords_matched": [
+        "chip",
+        "semiconductor"
+      ],
+      "match_count": 2,
+      "score": 2.38
+    },
+    {
+      "title": "Midjourney pivots from AI image generation to body scanning medical spa where patients bathe in 'golden light'",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/midjourney-pivots-from-ai-image-generation-to-body-scanning-medical-spa-where-patients-bathe-in-golden-light/5258429",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 20:18:25 +0200",
+      "age_h": 5.2,
+      "has_timestamp": true,
+      "description": "A San Francisco startup best known for its AI-generation software is making a bizarre leap into medical imaging, and trying to says it hopes draw curiosity-seekers into its new spa to get scanned. On Wednesday, Midjourney announced the establishment of Midjourney Medical, which it admitted was a bit",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.37
+    },
+    {
+      "title": "UK Cabinet Office hiring AI and innovation 'influencer' to build 'AI-first culture' in civil service",
+      "url": "https://www.theregister.com/public-sector/2026/06/18/uk-cabinet-office-hiring-ai-and-innovation-influencer-to-build-ai-first-culture-in-civil-service/5257817",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 10:30:00 +0200",
+      "age_h": 15.0,
+      "has_timestamp": true,
+      "description": "The UK Cabinet Office is looking for an AI and Innovation Director who can develop civil servants' use of artificial intelligence and change the way the civil service works. The task of persuading public sector workers to love AI involves \"re-imagining the future workforce and business model\" for th",
+      "keywords_matched": [
+        "ai",
+        "artificial intelligence"
+      ],
+      "match_count": 2,
+      "score": 2.35
+    },
+    {
+      "title": "Singapore music studios feel the squeeze as clients turn to AI-generated content",
+      "url": "https://www.channelnewsasia.com/singapore/music-studios-artificial-intelligence-impact-budgets-6192431",
+      "source": "channelnewsasia.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "CNA Tech",
+      "published_raw": "Thu, 18 Jun 2026 16:29:00 +0800",
+      "age_h": 15.0,
+      "has_timestamp": true,
+      "description": "Some firms say project budgets have fallen by up to 60 per cent as artificial intelligence becomes increasingly common in music and voiceovers.",
+      "keywords_matched": [
+        "ai",
+        "artificial intelligence"
+      ],
+      "match_count": 2,
+      "score": 2.35
+    },
+    {
+      "title": "“กับดัก” เลิกจ้างเพราะ AI จะไปต่อกันอย่างไรดี",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81YXNkNlY1Q3BvUHpzaFpHb1A0dWJ6NWhsMkRWbWdSMVBVY3pFejdLYnBQcXdXMEFoMHl5UW8za2Z0R0tRdzRDc3A3UmMwUzlfWGZMNDVuVkpZbU9oUGwwb0lwa2hOU0tscENtM2FMWQ?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Thu, 18 Jun 2026 18:06:26 GMT",
+      "age_h": 5.4,
+      "has_timestamp": true,
+      "description": "“กับดัก” เลิกจ้างเพราะ AI จะไปต่อกันอย่างไรดี    bangkokbiznews",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.35
+    },
+    {
+      "title": "AI data centers just got a government-mandated fast lane to the grid",
+      "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 17:49:23 +0000",
+      "age_h": 5.7,
+      "has_timestamp": true,
+      "description": "FERC told grid operators to give data centers a fast lane for interconnections, but it failed to address electricity supply shortages.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.33
+    },
+    {
+      "title": "Committed skeptic finds himself warming to new Amazon AI products that actually don't suck",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/committed-skeptic-finds-himself-warming-to-new-amazon-ai-products-that-actually-dont-suck/5258414",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Thu, 18 Jun 2026 19:30:00 +0200",
+      "age_h": 6.0,
+      "has_timestamp": true,
+      "description": "If you live long enough, you'll wake up one day and find that you're living in a world you no longer understand. Lately there are things happening with AI in a couple of disparate parts of Amazon that brought that lesson home in a big way. The first is that, late last year, they acquired Bee, an AI ",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.3
+    },
+    {
+      "title": "‘Queer Eye’s’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
+      "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Thu, 18 Jun 2026 16:55:04 +0000",
+      "age_h": 6.6,
+      "has_timestamp": true,
+      "description": "Karamo Brown, famous for his pep talks on Netflix’s “Queer Eye,” has jumped into the wellness and AI space with his new app, Kē. After spending a year and a half focusing on his own journey—from fitness and nutrition to meditation, sobriety, relationships, and personal growth—Brown wants to help oth",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.25
+    },
+    {
+      "title": "Japan bank lobby warns of potential service disruptions due to AI-enabled cyberattacks",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeEsyOXlNZ1hlb2FRM2NxcGVPd3VBYmt2S0pfbmFYZDkxbDVwczZzMkUyWmhIY0J3bGtHVnJMcVppRFFXbExzWXRCYWJzYTIzZklXYmhMSG9qUkJOY3V2WFBIRTVnT1U1NEk4cjVOWmNEMUZ4bnl2YlhZWEJSM3NGQURyMTRwY1g0MkFVMkw1c1lLdHQwaFhPYUVTVC1MYzBVcmtZVENGaWtFNEtEdHVSOUZ6c1AzZFhnN1kxb05XYlBLV2Z3Rl92X19HaWotUQ?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Thu, 18 Jun 2026 16:20:47 GMT",
+      "age_h": 7.2,
+      "has_timestamp": true,
+      "description": "Japan bank lobby warns of potential service disruptions due to AI-enabled cyberattacks    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.2
+    },
+    {
+      "title": "Amazon employees say they’re facing termination for backing data center limits",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-18T12:00:00-04:00",
+      "age_h": 7.5,
+      "has_timestamp": true,
+      "description": "When three Amazon software engineers testified earlier this month at Seattle City Council hearings about data centers, they started their testimony by citing a city law barring employment discrimination over political speech. Now, they're accusing their employer of breaking that law by retaliating a",
+      "keywords_matched": [
+        "data center"
+      ],
+      "match_count": 1,
+      "score": 2.18
+    }
+  ]
+}

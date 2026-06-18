@@ -6,6 +6,47 @@
 
 ---
 
+## 2026-06-19 — WebFetch-block wiring: funnel snippets become first-party Tier-2 evidence
+
+**Problem.** The active writer is the claude.ai cloud Routine, where `WebFetch` is
+403-blocked → every brief landed `[verify=search]` with the degraded banner. The RSS
+funnel (`pboat_universe.py`, runs in Actions where egress is **open**) already writes a
+`description` snippet + `published_raw` timestamp per candidate — everything a blocked run
+needs for a real Tier-2 — **but the engine never told the writer those fields existed**, so
+it fell back to live WebSearch (also flaky in a blocked host) instead of using the snippet
+it already had on disk. The fix is a pure `engine.md` wiring change — **no script/workflow
+or funnel-output change** (the JSON already carries the fields).
+
+### What changed (`.claude/skills/shared/engine.md` only)
+| Section | Change |
+|---|---|
+| Step 0.5 — field list | Documents `description`, `published_raw`, `has_timestamp`; notes the funnel runs in an **unblocked** runner, so these are first-party evidence even when this routine's `WebFetch` is blocked. |
+| Step 0.5 — item 4 | After gates, **branch on the WebFetch probe**: `WEBFETCH_OK` → Tier-1 WebFetch; `WEBFETCH_BLOCKED` → **Tier-2 directly from the funnel** (`source` + `published_raw` + `description`), do **not** fall back to WebSearch. A blocked run is now a real citeable brief, not a stub. |
+| §1b-ver — Tier-2 row | Renamed "Tier 2 — Snippet (funnel ▸ or WebSearch)"; the snippet may come from the funnel (**preferred**, needs no egress) or WebSearch. |
+| §1b-ver — provenance/date | Freshness date hierarchy now body → **funnel `published_raw`** → slug; a funnel `candidates[]` entry is sufficient citation provenance on its own (no longer "must appear in a WebSearch result"). |
+| Step 1d — sources.md template | Verification enum adds `Tier 2 — funnel snippet`. |
+| Step 2 — degraded banner | Two wordings: funnel-snippet (normal blocked path) vs WebSearch-snippet; pick the one matching where the evidence came from. |
+| Error-handling table | `WEBFETCH_BLOCKED` row: prefer the funnel snippet over WebSearch. |
+
+**Effect.** The cloud writer no longer depends on `WebFetch` *or* `WebSearch` for the core:
+a blocked run summarizes from the funnel's first-party RSS snippet + real timestamp.
+`WebFetch` becomes a Tier-1 *upgrade* when available, never a hard dependency. Commit still
+tags `[verify=search]` when no WebFetch happened (accurate), but the brief is real, not a
+degraded stub.
+
+**Not changed.** `pboat_universe.py` output shape, the workflows, email chain, story-count
+targets, freshness/dedup gates, trusted-sources allowlist, perspectives, article format.
+
+### Maintenance notes
+- The engine is the single source of truth for these mechanics (per its Editability rule);
+  the two `SKILL.md` Step 0.5 callouts just point here and were left unchanged.
+- Open follow-up (NOT done here): the funnel is **hardcoded-list-driven** (14 `DIRECT_FEEDS`
+  + a few Google-News topic queries) vs. cafeinvest's **catalog-driven** `sources_catalog.json`
+  (235 sources, per-source `site:` sweep). Same funnel *pattern*, narrower active gather.
+  Aligning to a catalog is an optional coverage upgrade, tracked separately.
+
+---
+
 ## 2026-06-17 — RSS Universe Funnel (Option A hybrid upgrade)
 
 **Goal:** Replace Claude's manual WebSearch pass with a richer, RSS-sourced candidate

@@ -1,33 +1,71 @@
-# Sources — 2026-06-11 (watchlist)
+# Sources — 2026-06-19 (watchlist)
 
-Generated: 2026-06-11 (Asia/Bangkok)
-Runtime: WEBFETCH_OK
-Freshness window: rolling 24h (Asia/Bangkok) — write-up publish time
-Dedup against: last 7 watchlist briefs (0 URLs loaded — first watchlist run)
-Tiers used: 1+2 | Story count: 4 slots (target 4–5, floor 3 — met). Mostly Tier-2 (Primary newsrooms, screening→cross-match).
+Generated: 2026-06-19 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
+Freshness window: rolling 24h (Asia/Bangkok)
+Dedup against: last 7 watchlist briefs (URLs loaded from 2026-06-12, 2026-06-16, 2026-06-17, 2026-06-18)
+Source mix: 3 international primary (TechCrunch ×2, VentureBeat ×1), 1 Citation (ZDNet)
+Tiers used: 1 | Story count: 4 slots (target 4–5, floor 3 — met)
 
 ## Significance ledger
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Oracle | 1 | ✅✅✅ | record earnings (cloud +47%) + AI clinical-trial system + OpenAI-OCI | yes (roundup, slot 1) |
-| AMD | 1 | ✅ | EPYC Venice first benchmarks (Zen6/256c/2nm) | yes (slot 3) |
-| TSMC | 2 | ✅ | record May revenue +30% (AI demand) | yes (slot 2) |
-| Micron | 2 | ◻ fill | board appointment (AI-infra exec) | yes (slot 4 — fill) |
-| Nvidia/MSFT/Apple/Google/Meta | 1 | — | only Computex/Build news (Jun 1–2) | no (Gate A >24h) |
+| Amazon | 1 | ✅✅ | chips now offered to 3rd-party data centers — $50B market; strategic direction shift | yes (slot 1) |
+| Alphabet | 1 | ✅✅ | Noam Shazeer (Gemini co-lead, Transformer co-inventor) departed for OpenAI | yes (slot 2) |
+| Microsoft | 1 | ✅✅ | Copilot security exploit (mailbox access) + LiteLLM admin key leak — trust boundary | yes (slot 3) |
+| Apple | 1 | ✅ | Tim Cook confirms AI RAM costs driving iPhone price pressure — "unsustainable" | yes (slot 4 — fill) |
+| Nvidia | 1 | — | no fresh Tier-1-cited direct URL in watchlist universe | no (no citable URL) |
+| Meta | 1 | — | Reddit/Reuters URLs only via news.google.com redirect (not citable) | no (Gate — uncitable URL) |
+| OpenAI | — | — | off-watchlist (Shazeer story attributed to Alphabet as the talent loss) | no (Gate W) |
 
 ## Tier-descent record
-Tier 1 yielded 2 significant (Oracle, AMD); descended to Tier 2 (TSMC, Micron) to fill toward 4–5.
+Tier 1 yielded 4 significant slots. TIERS_USED = 1. Tier 2 not needed.
 
 ## Selected stories
-1. **Oracle — record FY26 Q4 + AI clinical-trial + OpenAI-OCI** (ROUNDUP, 3 updates) · Oracle https://www.oracle.com/news/ + OpenAI https://openai.com/index/openai-on-oracle-cloud/ · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (oracle.com Primary; SEC 8-K orcl-20260610 corroborates) · earnings + AI product + partnership.
-2. **TSMC — record May revenue +30%** · TSMC https://pr.tsmc.com/english/news · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (screening Bloomberg/DigiTimes → TSMC Primary) · data with AI angle.
-3. **AMD — EPYC Venice first benchmarks** · AMD https://www.amd.com/en/blogs/2026/agentic-ai-needs-rack-scale-cpu-performance-amd-epyc.html · Published **2026-06-09** (fill — within daily window; oldest item) · Freshness ⚠️ ~2d · Dedup ✅ · Verification: **Tier 2 — snippet** (amd.com Primary; Tom's Hardware corroborates) · chips/compute.
-4. **Micron — board appointment (AI-infra exec)** · Micron https://www.micron.com/about/newsroom · Published **2026-06-09** (fill — minor) · Freshness ⚠️ ~2d · Dedup ✅ · Verification: **Tier 2 — snippet** · exec/org change.
+
+1. **Amazon — AWS ขายชิป AI ให้ Data Centers บุคคลที่สาม — Andy Jassy Eyes $50B**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/
+   - Published: Thu, 18 Jun 2026 18:22:13 +0000
+   - FreshnessCheck: ✅ age_h: 5.2h
+   - DedupCheck: ✅ URL not in last-7-day watchlist set
+   - Verification: Tier 2 — funnel snippet (WEBFETCH_BLOCKED)
+   - Summary: AWS in talks to sell Trainium/Inferentia chips to third-party data centers; CEO Jassy sees $50B opportunity to challenge Nvidia directly.
+
+2. **Alphabet — Noam Shazeer (Gemini co-lead) ออกจาก Google DeepMind เข้าร่วม OpenAI**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/
+   - Published: Thu, 18 Jun 2026 19:59:22 +0000
+   - FreshnessCheck: ✅ age_h: 3.5h
+   - DedupCheck: ✅ URL not in last-7-day watchlist set
+   - Verification: Tier 2 — funnel snippet (WEBFETCH_BLOCKED)
+   - Summary: Noam Shazeer, Transformer co-inventor and Google DeepMind Gemini co-lead, joined OpenAI ahead of its IPO — a major talent loss for Alphabet.
+
+3. **Microsoft — Copilot ถูก exploit เข้าถึง mailbox + LiteLLM ปล่อย admin keys**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin
+   - Published: Thu, 18 Jun 2026 (age_h: 5.8h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day watchlist set
+   - Verification: Tier 2 — funnel snippet (WEBFETCH_BLOCKED)
+   - Summary: Security researchers found Copilot could be exploited to search user mailboxes; LiteLLM separately exposed admin API keys — raises questions about trust boundaries in enterprise AI tooling.
+
+4. **Apple — Tim Cook ยืนยัน AI ดันต้นทุน RAM ขึ้นราคา iPhone "ไม่ยั่งยืน"**
+   - Publisher: ZDNet
+   - URL: https://www.zdnet.com/article/apple-product-price-increases-iphone/
+   - Published: Wed, 18 Jun 2026 (age_h: 7.0h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day watchlist set (Jun 17 watchlist used TechCrunch/The Verge WSJ coverage; this is a fresh Jun 18 ZDNet article)
+   - Verification: Tier 2 — funnel snippet (WEBFETCH_BLOCKED)
+   - Summary: Tim Cook confirmed in a WSJ interview that AI features requiring more RAM are creating cost pressure that makes current iPhone pricing "unsustainable"; this is continued coverage of the same WSJ interview but a fresh article.
+   - Note: Jun 17 watchlist covered the same WSJ interview via TechCrunch + The Verge. ZDNet Jun 18 is a distinct URL with fresh framing — accepted as backfill under Gate B.
 
 ## Dropped
-- Nvidia (RTX Spark/Rubin/Isaac GR00T/Nemotron) — Gate A (Jun 1, Computex).
-- Microsoft (Foundry Local / WAF) — Gate A (Jun 2, Build).
-- Apple / Google / Meta / Alibaba / Tencent — no fresh (≤24h) AI development surfaced.
-- Amazon–Corning ~$6B deal (Jun 10, fresh) — citation gate (only Motley Fool, not allow-listed). Strong candidate; re-add if an allow-listed source is found.
-
-> Slots 3–4 (AMD, Micron) are 2026-06-09 fills to reach the 4–5 target on a thin watchlist day — flagged here per the engine's freshness honesty. A full scheduled run earlier in the day / with more Tier-1 fetches would likely surface more 06-10/06-11 items (and recover Amazon via a cited outlet).
+- news.google.com redirect URLs (Reuters/Meta-Crusoe, BBC/Tim Cook, CNBC/Amazon SVP, DeepMind blog) — not directly citable; engine rule
+- Bloomberg (Amazon chip story) — Screening source; discovery only
+- Meta/Crusoe AI deal — only via news.google.com redirect; no open allow-listed outlet in funnel
+- Nvidia (no fresh direct URLs in watchlist funnel for today's stories)
+- Amazon Prime Day, Instagram Stories, Google Wallet tutorial — Gate C fail (not AI/tech)
+- Google Nest discontinued — Gate C (no AI angle)
+- Apple Beats Bluetooth vulnerability — Gate C (security, not AI/tech development)
+- Wired (White House AI rules) — Screening source; discovery only

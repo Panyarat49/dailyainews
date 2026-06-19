@@ -1,0 +1,715 @@
+{
+  "generated_at": "2026-06-20T06:20:19.745865+07:00",
+  "date": "2026-06-20",
+  "stream": "ainews",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 21,
+    "items_raw": 442,
+    "items_after_dedup": 433,
+    "items_after_keyword": 301,
+    "items_after_trusted": 47,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "Tensordyne makes a big bet on log math to beat Nvidia",
+      "url": "https://www.theregister.com/systems/2026/06/19/tensordyne-makes-a-big-bet-on-log-math-to-beat-nvidia/5258662",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Fri, 19 Jun 2026 17:30:00 +0200",
+      "age_h": 7.8,
+      "has_timestamp": true,
+      "description": "AI infrastructure startup Tensordyne has taped out its first commercial accelerator, with fabrication on TSMC's 3nm process already underway. Developed in collaboration with Juniper Networks and Broadcom, Tensordyne's systems promise higher throughput and lower power consumption than GPUs. It claims",
+      "keywords_matched": [
+        "ai",
+        "nvidia",
+        "tsmc",
+        "ai infrastructure"
+      ],
+      "match_count": 4,
+      "score": 4.55
+    },
+    {
+      "title": "7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes",
+      "url": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Fri, 19 Jun 2026 21:14:19 GMT",
+      "age_h": 2.1,
+      "has_timestamp": true,
+      "description": "Your AI agent did exactly what it was designed to do. The framework underneath it just handed an attacker a shell on the box that holds your OpenAI key, your database credentials, and your CRM tokens.  That is not a hypothetical. In a few months, three of the most widely deployed AI agent frameworks",
+      "keywords_matched": [
+        "openai",
+        "ai",
+        "ai agent"
+      ],
+      "match_count": 3,
+      "score": 4.22
+    },
+    {
+      "title": "Fine-tuning forgets. RAG leaks context. Hypernetworks build the model your agent needs on demand.",
+      "url": "https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
+      "source": "venturebeat.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "VentureBeat",
+      "published_raw": "Fri, 19 Jun 2026 16:30:50 GMT",
+      "age_h": 6.8,
+      "has_timestamp": true,
+      "description": "Enterprise teams keep watching the same thing happen. An AI agent demos beautifully, goes to production, and stalls: it runs for a short stretch, then needs a human to top up its context and check its output, and the promised efficiency drains into supervision. The agent did the work; you did the wa",
+      "keywords_matched": [
+        "ai",
+        "fine-tuning",
+        "ai agent"
+      ],
+      "match_count": 3,
+      "score": 3.83
+    },
+    {
+      "title": "Post-silicon era gets closer as industry giants crack the 2D transistor scaling bottleneck with breakthrough tech — imec, ASML, and TSMC fab complementary 2D-material transistors at 50nm pitch on a 300mm wafer",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/imec-asml-and-tsmc-build-complementary-2d-material-transistors-at-50nm-pitch-on-a-300mm-wafer",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 13:13:07 +0000",
+      "age_h": 10.1,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/C4FAi2KzwaGLUrBqzX5aBM.png",
+      "keywords_matched": [
+        "wafer",
+        "fab",
+        "tsmc"
+      ],
+      "match_count": 3,
+      "score": 3.56
+    },
+    {
+      "title": "Encryption, spyware, and now Mythos: History shows why cyber export control doesn’t work",
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Fri, 19 Jun 2026 22:40:14 +0000",
+      "age_h": 0.7,
+      "has_timestamp": true,
+      "description": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic’s cybersecurity model Mythos.",
+      "keywords_matched": [
+        "anthropic",
+        "export control"
+      ],
+      "match_count": 2,
+      "score": 3.54
+    },
+    {
+      "title": "ส่งออก 'ญี่ปุ่น' เดือนพ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tZk15bVV4TkNIdkpvQUdJOXJybEpWeTYyb0MwY1pBbE9OeEltRnNGUzlDSXMzeWRtc2F0V2thSnRteHkwQjNCWDJhTkdXeGhReFlUVVJjeHFtRDFlQVA3Sm90Z2M?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Fri, 19 Jun 2026 12:10:02 GMT",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "ส่งออก 'ญี่ปุ่น' เดือนพ.ค. พุ่งแรงสุดรอบ 3 ปี โต 17% รับดีมานด์ชิป AI    bangkokbiznews",
+      "keywords_matched": [
+        "ai",
+        "ชิป"
+      ],
+      "match_count": 2,
+      "score": 2.67
+    },
+    {
+      "title": "CEO of Chinese Anthropic rival tells Elon Musk that China will have a Fable 5-class AI model before next year —  it ‘won’t take that long’ says Jie Tang in response to Musk's prediction of a Q1 target",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 11:38:05 +0000",
+      "age_h": 11.7,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.63
+    },
+    {
+      "title": "CEO of Chinese Anthropic rival tells Elon Musk that China will have a Fable 5-class AI model before next year — it ‘won’t take that long’ says Jie Tang in response to Musk's prediction of a Q1 target",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPTnJ4OG1SWEswTVF2MnB1MmpVS0N0NTlzZkZOS2JIZGlHOU9lRkZCVjdjT1pGYjctMVBxT205ZFh5RjNGZXNTTE9aZTBQaHhFZVRzVXNRMmF2S0d6NF9YTm1ZUVFNSEVCb1JWb2E0NjNFbjZIUXdsNnV1bGJ2U0NOZjBvQUVmRFRoNU14Qlh2SDhOY1F2UmZnZ29Dci1aWlc0Zndlc1BNZkFxU19RSHpkWV9McDdLWFpIUFZxZkUxLVd4QnVRLWl1QTEwc0cyQnFCc3dUWnFXV0s2aWp1RHBQVEZVVEtyUXpHVXJMREJhSy1VYXlmVHFhellZMk1XZEZEd185T2NYNDNONXZzZU92UjBqWkU3am9kemtJNlY1SnBVN3Y3RzQ0OUtSb1NPOW53aFE?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Fri, 19 Jun 2026 11:38:05 GMT",
+      "age_h": 11.7,
+      "has_timestamp": true,
+      "description": "CEO of Chinese Anthropic rival tells Elon Musk that China will have a Fable 5-class AI model before next year — it ‘won’t take that long’ says Jie Tang in response to Musk's prediction of a Q1 target    Tom's Hardware",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.63
+    },
+    {
+      "title": "AMD will reinstate memory encryption on Ryzen 9000 CPUs through a BIOS update in July — TSME is coming back after 'valuable community feedback'",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-will-reinstate-memory-encryption-on-ryzen-9000-cpus-through-a-bios-update-in-july-tsme-is-coming-back-after-valuable-community-feedback",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 21:02:49 +0000",
+      "age_h": 2.3,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/h6PRM8bTimCTnNfoAYfjAi.jpg",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 2.61
+    },
+    {
+      "title": "Devs in the trenches are stressed from the mandate to automate everything, but Render thinks it can help",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/19/devs-in-the-trenches-are-stressed-from-the-mandate-to-automate-everything-but-render-thinks-it-can-help/5258595",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Fri, 19 Jun 2026 12:15:00 +0200",
+      "age_h": 13.1,
+      "has_timestamp": true,
+      "description": "On Thursday during a developer event held at San Francisco's St. Regis Hotel, the marketing stack failed. Literally. During an AI agent workflow demo on the fourth floor balcony, the wind toppled a tower of three cardboard promotional display cubes. One of these – maybe three or four feet per side –",
+      "keywords_matched": [
+        "ai",
+        "ai agent"
+      ],
+      "match_count": 2,
+      "score": 2.51
+    },
+    {
+      "title": "US energy regulator to order grid operators to expedite AI data center applications — says projects should bring their own power or cut usage during high demand",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/us-energy-regulator-to-order-grid-operators-to-expedite-ai-data-center-applications-says-projects-should-bring-their-own-power-or-cut-usage-during-high-demand",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 09:45:00 +0000",
+      "age_h": 13.6,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "ai",
+        "data center"
+      ],
+      "match_count": 2,
+      "score": 2.47
+    },
+    {
+      "title": "IEEE Rolls Out Large Language Models Virtual Training Course",
+      "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
+      "source": "spectrum.ieee.org",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "IEEE Spectrum",
+      "published_raw": "Fri, 19 Jun 2026 18:00:01 +0000",
+      "age_h": 5.3,
+      "has_timestamp": true,
+      "description": "Large language models  have moved out of the research lab and into engineers’ daily workflow. LLMs serve as reasoning engines that can orchestrate complex tasks including identifying vulnerabilities in source code and transforming fragmented project discussions into rigorous technical specifications",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.36
+    },
+    {
+      "title": "Norway imposes broad restrictions on AI for elementary school kids",
+      "url": "https://www.engadget.com/2198117/norway-imposes-broad-restrictions-on-ai-for-elementary-school-kids/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Fri, 19 Jun 2026 17:14:17 +0000",
+      "age_h": 6.1,
+      "has_timestamp": true,
+      "description": "Norway will reportedly ban young kids from using AI in schools.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.29
+    },
+    {
+      "title": "รัฐบาลตั้งบอร์ดเซมิคอนดักเตอร์แห่งชาติ ตั้งเป้า ‘ชิปเมดอินไทยแลนด์’ ภายในปี 2593",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92NWVNenJHRW1JS0RncjY0NGk4dzUwMjREQW9rNTc3RG52VGRhbE5iMTVXbUZYa0t3QkdQSjFKalZ1T3YtWll5clM0UHNhd3J5UUJ1LXBzV2I1MFVZUFNGT3k2aFBod2s2?oc=5",
+      "source": "thestandard.co",
+      "publisher": "thestandard.co",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Fri, 19 Jun 2026 06:36:13 GMT",
+      "age_h": 16.7,
+      "has_timestamp": true,
+      "description": "รัฐบาลตั้งบอร์ดเซมิคอนดักเตอร์แห่งชาติ ตั้งเป้า ‘ชิปเมดอินไทยแลนด์’ ภายในปี 2593    thestandard.co",
+      "keywords_matched": [
+        "ชิป",
+        "เซมิคอนดักเตอร์"
+      ],
+      "match_count": 2,
+      "score": 2.21
+    },
+    {
+      "title": "Is the US government’s Anthropic ban accidentally helping the brand?",
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Fri, 19 Jun 2026 16:08:17 +0000",
+      "age_h": 7.2,
+      "has_timestamp": true,
+      "description": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails.  Cybersecurity researchers have since signed an open letter calling t",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 2.2
+    },
+    {
+      "title": "Amazon workers who testified against AI data centers say they were intimidated by the company, monitored at work — employees face possible termination for violating company policy, speaking as representatives",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/amazon-workers-who-testified-against-ai-data-centers-say-they-were-intimidated-by-the-company-monitored-at-work-employees-face-possible-termination-for-violating-company-policy-speaking-as-representatives",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 15:55:04 +0000",
+      "age_h": 7.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.18
+    },
+    {
+      "title": "Billionaire Ambani wants AI in every call, app, and home",
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Fri, 19 Jun 2026 15:23:28 +0000",
+      "age_h": 7.9,
+      "has_timestamp": true,
+      "description": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.14
+    },
+    {
+      "title": "Bernie Sanders files bill proposing 50% public ownership of US AI firms and giving out $1,000 dividends — VP Vance says Trump supports giving the American people a stake in AI companies, prefers ‘pre-distribution’ over giving away cash",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bernie-sanders-files-bill-proposing-50-percent-public-ownership-of-us-ai-firms-and-giving-out-usd1-000-dividends-vp-vance-says-trump-supports-giving-the-american-people-a-stake-in-ai-companies-prefers-pre-distribution-over-giving-away-cash",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 14:50:06 +0000",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.09
+    },
+    {
+      "title": "Barret Zoph is out at OpenAI again after just five months",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-19T00:49:33-04:00",
+      "age_h": 18.5,
+      "has_timestamp": true,
+      "description": "Five months after returning to OpenAI, Barret Zoph - the company's head of enterprise AI sales - has departed,  The Verge  has learned.  \n Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, the competing AI company founded by former OpenAI CTO Mira M",
+      "keywords_matched": [
+        "openai",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.06
+    },
+    {
+      "title": "The film about Sam Altman has been dropped by Amazon MGM",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-19T10:15:29-04:00",
+      "age_h": 9.1,
+      "has_timestamp": true,
+      "description": "Luca Guadagnino's film about OpenAI CEO Sam Altman,  Artificial , has reportedly been dropped by Amazon MGM.  \n The film, which stars Andrew Garfield and covers the rollercoaster five days in 2023 spanning Altman's termination and reinstatement as CEO, had been in the works for  about a year . The c",
+      "keywords_matched": [
+        "openai"
+      ],
+      "match_count": 1,
+      "score": 2.04
+    },
+    {
+      "title": "ผลทดสอบชี้ Copilot วิเคราะห์ฟุตบอลโลก 2026 พลาดเป้าไปไกล สะท้อนมนุษย์ยังชนะ AI",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qSmpxX3NmOFY0UWN2Uml0TWhRT1lQb1FvME5FN3d2aUpqdWJwRWk5WWZpbWFaQ25yYkE1eVprUVBuOG56V0hBb05PRzlwb3FOYk1yWnJsZDJCRDRnMXc?oc=5",
+      "source": "thairath.co.th",
+      "publisher": "Thairath.co.th",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Fri, 19 Jun 2026 04:20:00 GMT",
+      "age_h": 19.0,
+      "has_timestamp": true,
+      "description": "ผลทดสอบชี้ Copilot วิเคราะห์ฟุตบอลโลก 2026 พลาดเป้าไปไกล สะท้อนมนุษย์ยังชนะ AI    Thairath.co.th",
+      "keywords_matched": [
+        "copilot",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.02
+    },
+    {
+      "title": "The CEO of Allbirds’ new AI biz has a plan, but no team",
+      "url": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Fri, 19 Jun 2026 13:00:00 +0000",
+      "age_h": 10.3,
+      "has_timestamp": true,
+      "description": "Call it a startup with a sole founder and a very large seed round, but what's next is less clear.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.94
+    },
+    {
+      "title": "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis",
+      "url": "https://www.engadget.com/2198001/amazon-mgm-wont-release-sam-altman-biopic/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Fri, 19 Jun 2026 12:58:10 +0000",
+      "age_h": 10.4,
+      "has_timestamp": true,
+      "description": "Luca Guadagnino's Sam Altman biopic has to find a new studio after Amazon dropped it.",
+      "keywords_matched": [
+        "openai"
+      ],
+      "match_count": 1,
+      "score": 1.93
+    },
+    {
+      "title": "เปิดงบแปร-แก้คอร์รัปชัน โจทย์หินสู่สภา กทม. โปร่งใส",
+      "url": "https://thestandard.co/bma-budget-transparency/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Fri, 19 Jun 2026 12:35:40 +0000",
+      "age_h": 10.7,
+      "has_timestamp": true,
+      "description": "ประเด็นธรรมาภิบาลและความโปร่งใสในระบบงบประมาณของกรุงเทพมหานคร ( กทม. ) ถูกหยิบยกมาถามบนเวที ‘Think Tank Bangkok ระดมสมองสู่อนาคตกรุงเทพฯ’ ที่เป็นการรวมตัวของ 3 ผู้สมัครผู้ว่าราชการกรุงเทพมหานคร, 4 ตัวแทนภาคประชาสังคม และ 5 ตัวแทนพันธมิตรสื่อมวลชน โดยมี Thai PBS เป็นเจ้าภาพหลัก \n   \n \n \n ประเด็นสำคัญ",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.91
+    },
+    {
+      "title": "Vercel debuts eve open source agent framework, tries to fix shadow AI with Passport",
+      "url": "https://www.theregister.com/devops/2026/06/19/vercel-debuts-eve-open-source-agent-framework-tries-to-fix-shadow-ai-with-passport/5258726",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Fri, 19 Jun 2026 14:35:00 +0200",
+      "age_h": 10.8,
+      "has_timestamp": true,
+      "description": "Vercel introduced an open source agent framework called eve at its Ship event in London this week, along with other new features including Passport, an attempt to put employee apps created with AI under enterprise control. Agents are dominating the AI conversation currently, and in particular custom",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.9
+    },
+    {
+      "title": "Amazon is investigating three employees who spoke out against building more AI data centers",
+      "url": "https://www.engadget.com/2197988/amazon-investigates-engineers-spoke-out-against-ai-data-center/",
+      "source": "engadget.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Engadget",
+      "published_raw": "Fri, 19 Jun 2026 12:05:13 +0000",
+      "age_h": 11.2,
+      "has_timestamp": true,
+      "description": "The engineers who spoke negatively about AI data centers at Seattle city hearings accuse Amazon of threatening their jobs over their testimonies.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.87
+    },
+    {
+      "title": "Rights groups brand Home Office's AI age guesser for asylum-seekers as biased and inaccurate",
+      "url": "https://www.theregister.com/security/2026/06/19/rights-groups-brand-home-offices-ai-age-guesser-for-asylum-seekers-as-biased-and-inaccurate/5258892",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Fri, 19 Jun 2026 13:02:46 +0200",
+      "age_h": 12.3,
+      "has_timestamp": true,
+      "description": "More than 60 rights groups have told the UK government to scrap plans to use AI-powered facial age estimation on asylum-seeking children, warning the technology is biased, inaccurate, and potentially unlawful. In an open letter sent to border security and asylum minister Alex Norris, 62 organization",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.77
+    },
+    {
+      "title": "SK Telecom named as the Korean carrier at the center of Anthropic's Mythos export controls controversy — access was revoked days before White House took Mythos and Fable 5 offline for all foreign nationals",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 10:54:58 +0000",
+      "age_h": 12.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/C4FAi2KzwaGLUrBqzX5aBM.png",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 1.77
+    },
+    {
+      "title": "AI Brain Fry ทำไมยิ่งใช้ AI ยิ่งรู้สึกล้า เจาะลึกภาวะสมองไหม้เกรียมที่คนทำงานยุคนี้กำลังเผชิญ",
+      "url": "https://thestandard.co/ai-brain-fry-worker-fatigue/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Fri, 19 Jun 2026 11:03:42 +0000",
+      "age_h": 12.3,
+      "has_timestamp": true,
+      "description": "ภาวะสมองล้าจากการทำงานกับ AI หรือ AI Brain Fry กำลังเป็นวิกฤตเงียบที่คนทำงานเผชิญร่วมกัน แม้ใช้ AI ทำงานเหมือนไม่ต้องใช้ความคิด แต่ขณะใช้ สมองจะเปิดระบบระวังภัย ทำให้ใช้พลังงานสูงและเกิดภาวะหมดไฟได้ง่าย แต่ถ้าเราเข้าใจกลไกและโอบกอดตัวเองได้ถูกจังหวะ เราจะเปลี่ยนจากภาวะที่สมองล้ามาเป็นการใช้ AI เป็นเ",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.77
+    },
+    {
+      "title": "AI-generated ads should be exempt from EU transparency rules, retail association says",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYXBKS05kZkNqTTFaQ2UtbnA4RlJTUWJTMTJ0MkFSVDRPbVlURzVGVXhRQ095V3dCYkFHak9NN3RhNWpxNXROeFBYWUxQTWxyNFhaSFZxOGlaWWRpYS1WWFE5Q1ByUWhnNWd2eTAwVVF2N2YyZFZXbnRFU0tod0ZsdUhZZHU1OHVpb2NKTldXV0RZZk9pN01GNWcxQldkekpza2pub0xKYmlyVlMxdzQyNGFLc1pRdFVOYUZwRjNPbm9iZ0NjTnVERXp2Vm8?oc=5",
+      "source": "reuters.com",
+      "publisher": "Reuters",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI regulation policy",
+      "published_raw": "Fri, 19 Jun 2026 10:44:14 GMT",
+      "age_h": 12.6,
+      "has_timestamp": true,
+      "description": "AI-generated ads should be exempt from EU transparency rules, retail association says    Reuters",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.75
+    },
+    {
+      "title": "ส่องกลยุทธ์ KBTG 2026 เมื่อ AI ต้องสร้าง Value จริง พร้อมปักธงสู่ Regional AI-Infused Tech Powerhouse",
+      "url": "https://techsauce.co/tech-and-biz/kbtg-2026-ai-business-value-trust-cyber-resilience",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Fri, 19 Jun 2026 17:28:58 +0700",
+      "age_h": 12.9,
+      "has_timestamp": true,
+      "description": "หลังจากหลายปีที่องค์กรทั่วโลกพูดเรื่อง AI ในฐานะเทคโนโลยีเปลี่ยนโลก ปี 2026 กำลังกลายเป็นปีที่คำถามเปลี่ยนไปอย่างชัดเจน จากเดิมที่ถามว่า AI ทำอะไรได้บ้าง กลายเป็นว่า AI สร้างมูลค่าทางธุรกิจได้จริงแค่ไหน และองค์กรจะวัดผลลัพธ์นั้นอย่างไร  โจทย์นี้คือแกนหลักที่  KBTG  อัปเดตทิศทางปี 2026 ให้ Techsauce ",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.72
+    },
+    {
+      "title": "'AI จะไม่แทนที่คุณ แต่จะนิยามคุณใหม่' ถอดวิสัยทัศน์กานติมา แห่ง AIS ว่าด้วยคน องค์กร และการอยู่รอดในโลกที่เครื่องมือเปลี่ยนทุกวัน",
+      "url": "https://techsauce.co/saucy-thoughts/ais-kantima-redefine-ai-not-replace",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Fri, 19 Jun 2026 17:07:47 +0700",
+      "age_h": 13.2,
+      "has_timestamp": true,
+      "description": "บนเวที Thailand HR TECH Conference & Exposition 2026 ภายใต้ธีม HUMAN.AI HARMONY: Leading the Intelligent Workplace คุณกานติมา เลอเลิศยุติธรรม รองประธานเจ้าหน้าที่บริหาร ด้านธุรกิจองค์กร บริษัท แอดวานซ์ อินโฟร์ เซอร์วิส จำกัด (มหาชน) หรือ AIS ทิ้งประโยคหนึ่งที่ทำเอาคนทั้งห้องเงียบลงไปชั่วขณะว่า    คว",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.7
+    },
+    {
+      "title": "Scammers in China sell $222 RTX 4090 with fake GPU die made out of plastic instead of real silicon — marked with 2030 production dates, the card didn't even have working VRAM",
+      "url": "https://www.tomshardware.com/pc-components/gpus/scammers-in-china-sell-usd222-rtx-4090-with-fake-gpu-die-made-out-of-plastic-instead-of-real-silicon-marked-with-2030-production-dates-the-card-didnt-even-have-working-vram",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Fri, 19 Jun 2026 09:29:20 +0000",
+      "age_h": 13.8,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "gpu"
+      ],
+      "match_count": 1,
+      "score": 1.65
+    },
+    {
+      "title": "ต้นทุนพี่แพง MSI เปิดราคาเครื่องเกมพกพา Claw 8 EX AI+ เกือบ 6 หมื่นบาท",
+      "url": "https://www.blognone.com/node/150938",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Thu, 18 Jun 2026 23:26:57 +0000",
+      "age_h": 23.9,
+      "has_timestamp": true,
+      "description": "ต้นทุนพี่แพง MSI เปิดราคาเครื่องเกมพกพา Claw 8 EX AI+ เกือบ 6 หมื่นบาท \n\n   \n     Body \n                เมื่อต้นเดือนนี้  MSI เปิดตัวเครื่องเกมพกพา Claw 8 EX AI+ ใช้ชิป Intel Arc G3 Extreme ตัวใหม่  แต่ไม่ยอมบอกราคาอย่างเป็นทางการ โดยมีข่าวแว่วมาว่าราคาจะอยู่ไม่เกิน 1,500 ดอลลาร์ หรือประมาณ 50,000 บ",
+      "keywords_matched": [
+        "ai",
+        "ชิป"
+      ],
+      "match_count": 2,
+      "score": 1.61
+    },
+    {
+      "title": "AI vs. ROI: ส่องกลยุทธ์ KBTG ปี 2026 ลงทุนเทคโนโลยีเพิ่มขึ้นทุกปี แม้โลก AI ก้าวสู่ยุค 'หมดเวลาลอง'",
+      "url": "https://www.blognone.com/node/150944",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Fri, 19 Jun 2026 08:30:26 +0000",
+      "age_h": 14.8,
+      "has_timestamp": true,
+      "description": "AI vs. ROI: ส่องกลยุทธ์ KBTG ปี 2026 ลงทุนเทคโนโลยีเพิ่มขึ้นทุกปี แม้โลก AI ก้าวสู่ยุค 'หมดเวลาลอง' \n\n   \n     Body \n                ท่ามกลางการก้าวกระโดดของ AI ที่พลิกโฉมทุกอุตสาหกรรม จากยุคแห่งการทดลอง มาวันนี้กลายเป็นยุคที่ใช้จริงในธุรกิจและวัดผลอย่างเข้มข้นด้วย ROI \n หนึ่งในตัวอย่างกลยุทธ์ด้าน A",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.57
+    },
+    {
+      "title": "KBTG ชี้ AI ผ่านช่วงทดลองแล้ว ต่อไปองค์กรต้องพิสูจน์ว่าจะสร้างคุณค่าทางธุรกิจได้อย่างไร",
+      "url": "https://brandinside.asia/kbtg-ai-technology-2026/",
+      "source": "brandinside.asia",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Brand Inside",
+      "published_raw": "Fri, 19 Jun 2026 08:30:57 +0000",
+      "age_h": 14.8,
+      "has_timestamp": true,
+      "description": "หากเมื่อ 2-3 ปีก่อน หลายองค์กรยังตั้งคำถามว่าจะนำ AI ไปใช้อะไรได้บ้าง วันนี้คำถามเปลี่ยนไปแล้ว เพราะเมื่อ AI กลายเป็นเทคโนโลยีที่ทุกองค์กรเข้าถึงได้ สิ่งที่ต้องพิสูจน์ต่อคือ การลงทุนเหล่านั้นสร้างผลลัพธ์ทางธุรกิจได้จริงหรือไม่  \n หนึ่งในกรณีที่น่าสนใจคือ ทิศทางของ ‘KBTG’ หรือ ‘กสิกร บิซิเนส-เทคโนโลย",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.57
+    },
+    {
+      "title": "The US says ASML’s top chip tool may be in China. ASML says it isn’t.",
+      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Fri, 19 Jun 2026 07:59:12 +0000",
+      "age_h": 15.3,
+      "has_timestamp": true,
+      "description": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
+      "keywords_matched": [
+        "chip"
+      ],
+      "match_count": 1,
+      "score": 1.52
+    },
+    {
+      "title": "Nutanix's Tech Day London 2026 offers infrastructure insights",
+      "url": "https://www.theregister.com/systems/2026/06/19/nutanixs-tech-day-london-2026-offers-infrastructure-insights/5258635",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Fri, 19 Jun 2026 10:00:00 +0200",
+      "age_h": 15.3,
+      "has_timestamp": true,
+      "description": "Your hybrid estate has grown more complicated since the last refresh cycle. Some workloads run in the public cloud, others never left the rack, and a few sit stuck in transition because nobody wants to be the person who broke the database. Add AI to the pile and the platform questions only get harde",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.52
+    },
+    {
+      "title": "ส่องสตาร์ทอัพไทย 3 ทีมจากโครงการ SPEAR-H แก้งาน ‘หลังบ้าน’ ของโรงพยาบาล เพื่อคืนเวลาให้กับหมอ",
+      "url": "https://techsauce.co/healthtech/healthtech-spearh-hospital-operations-ai",
+      "source": "techsauce.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Techsauce",
+      "published_raw": "Fri, 19 Jun 2026 14:58:26 +0700",
+      "age_h": 15.4,
+      "has_timestamp": true,
+      "description": "เวลาที่เราพูดถึง  'เทคโนโลยีทางการแพทย์'  ภาพแรกที่โผล่ขึ้นมามักเป็นหุ่นยนต์ผ่าตัด เครื่องสแกนราคาหลายสิบล้าน หรือ เทคโนโลยี AI แต่ปัญหาที่กัดกินระบบสาธารณสุขไทยอยู่ทุกวันกลับเป็นเรื่องที่มักถูกมองข้าม นั่นคืองานเอกสาร การเบิกจ่าย และการบริหารคนหน้างาน  บุคลากรการแพทย์ไทยจำนวนมากต้องแบ่งเวลาส่วนหนึ่",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.52
+    },
+    {
+      "title": "'Hype comes with the territory': CJ Hendry addresses Flower Market scalpers ahead of JuJu exhibit in Singapore",
+      "url": "https://www.channelnewsasia.com/living/cj-hendry-juju-world-flower-market-gardens-bay-6195061",
+      "source": "channelnewsasia.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "CNA Tech",
+      "published_raw": "Fri, 19 Jun 2026 15:46:00 +0800",
+      "age_h": 15.6,
+      "has_timestamp": true,
+      "description": "Ahead of JuJu World's debut in Singapore's Gardens by the Bay, the Australian artist spoke about creating JuJu with ChatGPT, why she wants art to be accessible and why, if people scalp, \"so be it\".",
+      "keywords_matched": [
+        "chatgpt"
+      ],
+      "match_count": 1,
+      "score": 1.5
+    }
+  ]
+}

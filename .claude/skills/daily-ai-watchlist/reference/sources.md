@@ -1,33 +1,75 @@
-# Sources — 2026-06-11 (watchlist)
+# Sources — 2026-06-20 (watchlist)
 
-Generated: 2026-06-11 (Asia/Bangkok)
-Runtime: WEBFETCH_OK
-Freshness window: rolling 24h (Asia/Bangkok) — write-up publish time
-Dedup against: last 7 watchlist briefs (0 URLs loaded — first watchlist run)
-Tiers used: 1+2 | Story count: 4 slots (target 4–5, floor 3 — met). Mostly Tier-2 (Primary newsrooms, screening→cross-match).
+Generated: 2026-06-20 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
+Freshness window: rolling 7d (Asia/Bangkok)
+Dedup against: last 7 watchlist briefs (21 URLs loaded from 4 files: 2026-06-16 through 2026-06-19)
+Source mix: 2 international (TechCrunch ×2, Engadget ×1), 1 Thai (Blognone ×1)
+Tiers used: Tier 1 only | Story count: 2 slots (⚠️ BELOW floor 3 — see shortfall note)
 
 ## Significance ledger
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Oracle | 1 | ✅✅✅ | record earnings (cloud +47%) + AI clinical-trial system + OpenAI-OCI | yes (roundup, slot 1) |
-| AMD | 1 | ✅ | EPYC Venice first benchmarks (Zen6/256c/2nm) | yes (slot 3) |
-| TSMC | 2 | ✅ | record May revenue +30% (AI demand) | yes (slot 2) |
-| Micron | 2 | ◻ fill | board appointment (AI-infra exec) | yes (slot 4 — fill) |
-| Nvidia/MSFT/Apple/Google/Meta | 1 | — | only Computex/Build news (Jun 1–2) | no (Gate A >24h) |
+| Amazon | 1 | ✅✅✅ | Anthropic export controls triggered by Amazon researchers; national security/AI regulation | yes (roundup, slot 1 — 3 items) |
+| Alphabet | 1 | ✅ | Google Home Speaker with Gemini for Home — consumer AI product launch/on sale | yes (slot 2) |
+| Nvidia | 1 | — | All candidate URLs are Google News redirects (cannot cite) | no |
+| Microsoft | 1 | — | All candidate URLs are Google News redirects (cannot cite) | no |
+| Oracle | 1 | — | No direct-URL funnel candidates found | no |
+| Tesla | 1 | — | No fresh AI/tech candidates in funnel | no |
+| Meta | 1 | — | No fresh AI/tech candidates in funnel | no |
+| AMD | 1 | — | No fresh AI/tech candidates with direct URL + snippet | no |
+| Apple | 1 | — | Covered Jun 17–19; no fresh story today | no (dedup) |
+| TSMC | 2 | — | All candidates via Google News redirect | no |
+| Tencent/Alibaba/Xiaomi | 2 | — | No candidates with direct URL + snippet | no |
+| Palantir/Netflix/Affirm/Oklo/GS/BH | 2 | — | No candidates found | no |
 
 ## Tier-descent record
-Tier 1 yielded 2 significant (Oracle, AMD); descended to Tier 2 (TSMC, Micron) to fill toward 4–5.
+Tier 1 yielded only 2 companies with viable candidates (Amazon, Alphabet). Tier 2 did not yield additional usable items. Shortage is caused by the intersection of WEBFETCH_BLOCKED (cannot resolve indirect URLs) + the majority of significant watchlist stories arriving via Google News redirect URLs that engine rules prohibit citing. Tier 2 descent was attempted but produced no additional eligible candidates.
 
 ## Selected stories
-1. **Oracle — record FY26 Q4 + AI clinical-trial + OpenAI-OCI** (ROUNDUP, 3 updates) · Oracle https://www.oracle.com/news/ + OpenAI https://openai.com/index/openai-on-oracle-cloud/ · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (oracle.com Primary; SEC 8-K orcl-20260610 corroborates) · earnings + AI product + partnership.
-2. **TSMC — record May revenue +30%** · TSMC https://pr.tsmc.com/english/news · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (screening Bloomberg/DigiTimes → TSMC Primary) · data with AI angle.
-3. **AMD — EPYC Venice first benchmarks** · AMD https://www.amd.com/en/blogs/2026/agentic-ai-needs-rack-scale-cpu-performance-amd-epyc.html · Published **2026-06-09** (fill — within daily window; oldest item) · Freshness ⚠️ ~2d · Dedup ✅ · Verification: **Tier 2 — snippet** (amd.com Primary; Tom's Hardware corroborates) · chips/compute.
-4. **Micron — board appointment (AI-infra exec)** · Micron https://www.micron.com/about/newsroom · Published **2026-06-09** (fill — minor) · Freshness ⚠️ ~2d · Dedup ✅ · Verification: **Tier 2 — snippet** · exec/org change.
+
+1. **Amazon (AMZN) — Roundup: Anthropic export controls + brand effect + worker retaliation**
+   - 1.1 Export controls analysis
+     - URL: https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/
+     - Publisher: TechCrunch | Published: Fri 19 Jun 2026 22:40:14 UTC (= Sat 20 Jun 2026 05:40:14 +0700)
+     - FreshnessCheck: ✅ age_h≈0.7 at funnel generation
+     - DedupCheck: ✅ URL not in last-7-day watchlist set
+     - Verification: Tier 2 — funnel snippet
+     - Gate W: Amazon keyword ("Amazon researchers") ✅ | Gate C: AI regulation ✅ | Gate D: significant (AI export control/national security) ✅
+     - Snippet: "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic's cybersecurity model Mythos."
+   - 1.2 Brand effect
+     - URL: https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/
+     - Publisher: TechCrunch | Published: Fri 19 Jun 2026 16:08:17 UTC (= Fri 19 Jun 2026 23:08:17 +0700)
+     - FreshnessCheck: ✅ age_h≈7.2 at funnel generation
+     - DedupCheck: ✅ URL not in last-7-day watchlist set
+     - Verification: Tier 2 — funnel snippet
+     - Gate W: Amazon keyword ("Amazon researchers") ✅ | Gate C: ✅ | Gate D: ✅
+     - Snippet: "the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5's guardrails. Cybersecurity researchers have since signed an open letter calling t[he ban counterproductive]"
+   - 1.3 Worker retaliation
+     - URL: https://www.engadget.com/2197988/amazon-investigates-engineers-spoke-out-against-ai-data-center/
+     - Publisher: Engadget | Published: Fri 19 Jun 2026 12:05:13 UTC (= Fri 19 Jun 2026 19:05:13 +0700)
+     - FreshnessCheck: ✅ age_h≈11.3 at funnel generation
+     - DedupCheck: ✅ URL not in last-7-day watchlist set
+     - Verification: Tier 2 — funnel snippet
+     - Gate W: Amazon keyword ✅ | Gate C: AI data center operations/labor ✅ | Gate D: fill level (AI infra governance)
+     - Snippet: "The engineers who spoke negatively about AI data centers at Seattle city hearings accuse Amazon of threatening their jobs over their testimonies."
+
+2. **Alphabet (GOOGL) — Google Home Speaker with Gemini for Home now on sale**
+   - URL: https://www.blognone.com/node/150943
+   - Publisher: Blognone | Published: Fri 19 Jun 2026 02:59:26 UTC (= Fri 19 Jun 2026 09:59:26 +0700)
+   - FreshnessCheck: ✅ age_h≈20.3 at funnel generation; within 7d window
+   - DedupCheck: ✅ URL not in last-7-day watchlist set
+   - Verification: Tier 2 — funnel snippet
+   - Gate W: Alphabet/Google keyword ✅ | Gate C: AI consumer product launch (Gemini for Home) ✅ | Gate D: fill level (product sales launch)
+   - Snippet: "กูเกิลประกาศเริ่มวางขาย ลำโพงอัจฉริยะ Google Home Speaker เวอร์ชันใหม่ ที่เปิดตัวในเดือนตุลาคม 2025 นานจนลืมไปแล้ว ในราคา 99.99 ดอลลาร์ สินค้าจะส่งมอบวันที่ 25 มิถุนายนนี้"
 
 ## Dropped
-- Nvidia (RTX Spark/Rubin/Isaac GR00T/Nemotron) — Gate A (Jun 1, Computex).
-- Microsoft (Foundry Local / WAF) — Gate A (Jun 2, Build).
-- Apple / Google / Meta / Alibaba / Tencent — no fresh (≤24h) AI development surfaced.
-- Amazon–Corning ~$6B deal (Jun 10, fresh) — citation gate (only Motley Fool, not allow-listed). Strong candidate; re-add if an allow-listed source is found.
 
-> Slots 3–4 (AMD, Micron) are 2026-06-09 fills to reach the 4–5 target on a thin watchlist day — flagged here per the engine's freshness honesty. A full scheduled run earlier in the day / with more Tier-1 fetches would likely surface more 06-10/06-11 items (and recover Amazon via a cited outlet).
+- **John Jumper (Nobel laureate) ออกจาก Google DeepMind ไป Anthropic** — ข่าวใหญ่ที่สุดของวัน แต่ทุก URL ในฟันเนล (Reuters, CNBC, Bloomberg) เป็น Google News redirect ซึ่ง engine rules ห้ามอ้างอิง; WebFetch และ WebSearch ถูกบล็อก → ไม่สามารถ resolve เป็น direct URL ได้
+- **Nvidia candidates** — ทุก URL ในฟันเนลเป็น Google News redirect หรือ Tom's Hardware image-only descriptions
+- **Microsoft candidates** — ทุก URL เป็น Google News redirect; WebFetch ถูกบล็อก
+- **Oracle** — ไม่มี candidates ที่ตรงกันในฟันเนลวันนี้
+- **TSMC** — URL ในฟันเนลเป็น Google News redirect
+
+## ⚠️ Coverage shortfall
+เหตุการณ์สำคัญที่สุดของวัน (John Jumper ออกจาก Google DeepMind ไป Anthropic) และเหตุการณ์ Nvidia/Microsoft อีกหลายรายการไม่สามารถรวมได้เนื่องจาก Google News redirect URL rule + WEBFETCH_BLOCKED ทำให้ได้ 2 slots เท่านั้น (ต่ำกว่า floor 3) ตาม engine: "ship the funnel-backed items you have rather than padding" — วันนี้เป็น corner case ที่ tool blockage รุนแรงเป็นพิเศษ ไม่ใช่วันที่ไม่มีข่าว

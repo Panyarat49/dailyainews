@@ -1,21 +1,17 @@
-# Perspectives — 2026-06-11 (watchlist)
+# Perspectives — 2026-06-20 (watchlist)
 
-## 1. Oracle — ผลประกอบการ + AI clinical trial + OCI/OpenAI
-**อาจารย์:** สอน "ห่วงโซ่ AI" — คลาวด์ (OCI) เป็นเครื่องยนต์รายได้ที่ขับด้วยดีล compute
-**ผู้เชี่ยวชาญ AI:** คลาวด์ +47% สะท้อนดีล compute ขนาดใหญ่ (เช่น OpenAI); จับตา backlog/capacity
-**โปรแกรมเมอร์:** ถ้าใช้ OCI ลองเครดิตทดสอบโมเดล OpenAI; ระวัง vendor lock-in
+## 1. Amazon — Anthropic Export Controls + Brand Effect + Worker Retaliation
 
-## 2. TSMC — รายได้ พ.ค. สถิติใหม่
-**อาจารย์:** ดัชนีชี้ทิศ capex AI ทั้งระบบ — อ่าน supply chain ไม่ใช่แค่ข่าวโมเดล
-**ผู้เชี่ยวชาญ AI:** กำลังผลิตชิปขั้นสูงยังเป็นคอขวด
-**โปรแกรมเมอร์:** วางแผน capacity/compute ล่วงหน้า
+**อาจารย์ (มหาวิทยาลัย):** กรณีที่ Amazon researchers พบช่องโหว่ใน Fable 5 แล้วรัฐบาลสั่งถอน Mythos ออกทั่วโลกคือ case study ที่ดีมากสำหรับสอน "dual accountability" ของนักวิจัย AI ด้านความมั่นคง — เมื่อรายงาน vulnerability แล้วนโยบายสาธารณะที่ตามมาอาจส่งผลกระทบที่ไม่ตั้งใจ เช่น ทำให้ฝ่ายป้องกันอ่อนแอกว่าฝ่ายโจมตีสุทธิ สามารถนำไปถก responsible disclosure ethics ใน AI security ได้
 
-## 3. AMD — เบนช์มาร์ก EPYC Venice
-**อาจารย์:** ตัวอย่างการอ่านเคลมเบนช์มาร์กของผู้ขายอย่างมีวิจารณญาณ
-**ผู้เชี่ยวชาญ AI:** "3.3x Vera" เป็นค่าประเมิน — รอ MLPerf/ตัวเลขอิสระ
-**โปรแกรมเมอร์:** ประเมิน TCO จริงของ rack-scale CPU ก่อนจัดซื้องาน agentic
+**ผู้เชี่ยวชาญด้าน AI:** สำหรับ Amazon ในฐานะ partner หลักของ Anthropic — การที่ internal researchers ของตัวเองเป็นตัวจุดชนวนการแบนนี้สร้าง ironic tension: AWS ลงทุนใน Anthropic แต่นักวิจัยของ AWS ทำให้โมเดลที่ลงทุนถูกถอนออก นี่เป็นตัวอย่างที่ดีของ multi-stakeholder conflict ใน frontier AI — organizational interest ของ Amazon และ Amazon-the-security-researcher ไม่จำเป็นต้องตรงกัน
 
-## 4. Micron — กรรมการใหม่สาย AI infra
-**อาจารย์:** การเสริมบอร์ดสะท้อนกลยุทธ์ระยะยาว (AI memory/HBM)
-**ผู้เชี่ยวชาญ AI:** HBM เป็นคอขวดสำคัญของระบบ AI — บุคลากรระดับบอร์ดมีผลทิศทาง
-**โปรแกรมเมอร์:** ผลกระทบเชิงกลยุทธ์มากกว่าระยะสั้น
+**โปรแกรมเมอร์มืออาชีพ:** กรณีที่นักวิศวกร Amazon ถูกสอบสวนเพราะให้การที่ city hearings เรื่อง AI data center เป็นสัญญาณให้ developer ทุกคนที่ทำงานในบริษัท AI ขนาดใหญ่ตระหนัก: การ speak out เกี่ยวกับ internal AI systems ต่อ public body มีความเสี่ยงด้าน employment ที่จับต้องได้ — ต้องรู้ whistleblower protection laws ในพื้นที่ที่ทำงาน
+
+## 2. Alphabet — Google Home Speaker with Gemini for Home
+
+**อาจารย์ (มหาวิทยาลัย):** Google Home Speaker รุ่นใหม่ที่ใช้ Gemini เป็นแกนกลางคือ case study ของ "incumbency advantage ที่ต้องพิสูจน์ใหม่" — Google เคยนำตลาด smart speaker ด้วย Google Home ดั้งเดิมก่อนจะเสียพื้นที่ให้ Amazon Echo ตอนนี้กลับมาด้วย LLM ที่ดีกว่า ใช้สอน technology adoption cycle และการเปลี่ยน platform leadership
+
+**ผู้เชี่ยวชาญด้าน AI:** ราคา $99.99 + delivery 25 มิ.ย. แสดงว่า Google พร้อม compete ใน mass market อีกครั้ง สิ่งที่ต้องติดตามคือ Gemini for Home จะเป็น on-device inference หรือ cloud-dependent และจะ handle Thai language ได้ดีแค่ไหน — ถ้า latency สูงหรือ Thai support บาง ตลาดไทยจะไม่รับ product นี้
+
+**โปรแกรมเมอร์มืออาชีพ:** Google Home SDK รุ่นใหม่ที่ integrate กับ Gemini API คือ platform น่าสนใจสำหรับ developer ที่สร้าง home automation หรือ ambient computing apps — ต้องตรวจ Home API documentation ว่า custom wake-word และ third-party skill integration ยังรองรับหรือถูกล็อคเป็น Gemini-only pipeline

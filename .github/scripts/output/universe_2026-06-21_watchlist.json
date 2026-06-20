@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-06-21T06:25:25.382457+07:00",
+  "date": "2026-06-21",
+  "stream": "watchlist",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 24,
+    "items_raw": 637,
+    "items_after_dedup": 601,
+    "items_after_keyword": 465,
+    "items_after_trusted": 19,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "John Jumper นักวิจัยรางวัลโนเบลของ DeepMind ลาออกไปทำงานที่ Anthropic",
+      "url": "https://www.blognone.com/node/150946",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Sat, 20 Jun 2026 08:41:27 +0000",
+      "age_h": 14.7,
+      "has_timestamp": true,
+      "description": "John Jumper นักวิจัยรางวัลโนเบลของ DeepMind ลาออกไปทำงานที่ Anthropic \n\n   \n     Body \n                เป็นข่าวต่ออีกวันเกี่ยวกับการลาออกของพนักงานด้าน AI คนสำคัญของกูเกิล คราวนี้คือ John Jumper รองประธานฝ่ายวิศวกรรมของ Google DeepMind ซึ่งเขา เปิดเผย ว่าเขาตัดสินใจลาออกจากบริษัท และจะพักผ่อนระยะเวล",
+      "keywords_matched": [
+        "gemini",
+        "deepmind",
+        "google",
+        "anthropic"
+      ],
+      "match_count": 4,
+      "score": 3.98
+    },
+    {
+      "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
+      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Sat, 20 Jun 2026 16:39:57 +0000",
+      "age_h": 6.8,
+      "has_timestamp": true,
+      "description": "Jumper isn't the only big name leaving Google DeepMind.",
+      "keywords_matched": [
+        "deepmind",
+        "google",
+        "anthropic"
+      ],
+      "match_count": 3,
+      "score": 3.83
+    },
+    {
+      "title": "Every new iOS 27 feature that’s worth knowing about",
+      "url": "https://techcrunch.com/2026/06/20/every-new-ios-27-feature-thats-worth-knowing-about/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Sat, 20 Jun 2026 15:00:00 +0000",
+      "age_h": 8.4,
+      "has_timestamp": true,
+      "description": "While it's not flashy like Apple’s new Siri AI and Apple Intelligence upgrades, there are still a number of additions to iOS 27 worth looking at.",
+      "keywords_matched": [
+        "siri",
+        "apple",
+        "apple intelligence"
+      ],
+      "match_count": 3,
+      "score": 3.7
+    },
+    {
+      "title": "Nvidia, Micron, Broadcom have cheap valuations despite big gains, and one Google decision could explain why",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPdDlKOFNlYWk1cWs3ZGdOZ3FwTGZfNF9QaEVTZVRfNG1qS3J4NkVnTUt5UkFfWXdGUjM1c3BzNDR0TEY3QWUxREZTakJEYVVud1BtWGROLWFkX2hWQWlRSktNX094cWpCY21RMWhISGhtM3NuZjhtc1pyOHpRclh2TUFXSFVDMWJCY3VrbDNqNUwzdHppMGxmY25OdTRXdXVLQlQzSzVjRmtDem5JSDVlVGNKZnN1VVRGOEYtVm44M1JiQlhXTnQ4QUxKSHNXc0ZwZkZPRllmOW1YMXhaelJha1R4enQ0R1ZHMVNkbTV2OHJFMnlTdmdCLVd6MzVaMWh6eTlvTzE3Tk_SAY4CQVVfeXFMUG9Iamd3Sjd4MUQyb1B4OE4xWGxIQzUxeEdabHJ1bjB5X1o4M2VBbU5oY3MtU0NpWXhxa3NlXzdiaVR0X2lsZVZwbkNHb2xNamJabEpINi1kNW9MWnh0Z0xmd0hITXFrZ1N3QS1ZenluZzY2TVczeEUzUHJhV3J1Mkt6dE9MRXFjUHpBYS1KWndNbldyZlQzUnZqZnlEQ0liY0FuTE1pdkVXSzN3UndFejY0RWZTUHpfTTJNZDNnMzZBVVRVNmpJVGs4NDI5cmx0VUYwMTNZOUVEYjUxQmlHUWllb3kxY1RpMGI3T3RDcld3WU11dXVqMkRHYUd0cHBqanRJa2JLWTlYeTE0QUhn?oc=5",
+      "source": "livemint.com",
+      "publisher": "Mint",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Sat, 20 Jun 2026 09:57:23 GMT",
+      "age_h": 13.5,
+      "has_timestamp": true,
+      "description": "Nvidia, Micron, Broadcom have cheap valuations despite big gains, and one Google decision could explain why    Mint",
+      "keywords_matched": [
+        "nvidia",
+        "google",
+        "micron"
+      ],
+      "match_count": 3,
+      "score": 3.28
+    },
+    {
+      "title": "Google DeepMind loses Nobel laureate John Jumper to Anthropic, its third senior researcher to depart in as many months",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRWlLb1RrbVJhTTJaWGJkMmVqeGVCT2pWbndjZGo4WVQtTWlhRVlZdTFrZm9Qc2J2WXUxdFVfRVJBaVF6OUJrYThJdVlKMkMyZUlrVk12Q2VOSlFIbjBkdGM0RUxiWXg3ZE9PN0l5TThyRzVoNk90cmFwaHJIODcyQngtRC04V1dEQXNFaWN4TFRJd0FzYXZldkFjZGtDOTRkYVUtaTM3c0JORkxEV1JBd3FueENEZmFMSVdXWUxOTGIzdnZy0gHKAUFVX3lxTE9RVHRLS2Y5TVlvb1BReVlFZlRwYjJnMmQ0aGE1ZFBWV3g0SFJBS2lJSDZ6VGxLUW93cEpfcWVpZWEtd0tKNTB0UVRyN25Gc3hEY00yNWpZLXZmb2k4SlNxVXotOHp3eTA4V1ZpTzl6REFrWkgtR2YzbC1TMGg4bDM1RWwxU3Rrd1VOd3lBSEZSLWNOM1JVeG5MTGt6SmRkbTVGMHFCdWpZVy1BbHBoaEw1OWtUSGlKdjI5TVBoRWF0TlE3czZsT1dELWc?oc=5",
+      "source": "livemint.com",
+      "publisher": "Mint",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Google\" OR \"Alphabet\") AI ne",
+      "published_raw": "Sat, 20 Jun 2026 09:18:30 GMT",
+      "age_h": 14.1,
+      "has_timestamp": true,
+      "description": "Google DeepMind loses Nobel laureate John Jumper to Anthropic, its third senior researcher to depart in as many months    Mint",
+      "keywords_matched": [
+        "deepmind",
+        "google",
+        "anthropic"
+      ],
+      "match_count": 3,
+      "score": 3.23
+    },
+    {
+      "title": "Get AMD's flagship Ryzen 7 9800X3D with 32GB of DDR5 memory and an MSI B850 Wi-Fi 7 motherboard at a discount — Micro Center bundles are now available on Amazon",
+      "url": "https://www.tomshardware.com/pc-components/get-amds-flagship-ryzen-7-9800x3d-with-32gb-of-ddr5-memory-and-an-msi-b850-wi-fi-7-motherboard-at-a-discount-micro-center-bundles-are-now-available-on-amazon",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 17:57:35 +0000",
+      "age_h": 5.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "amazon",
+        "amd"
+      ],
+      "match_count": 2,
+      "score": 3.14
+    },
+    {
+      "title": "Unlucky PC builder sent RTX 5070 from Amazon, gets DVD rewriter and a busted logic board from an early 2000's Kenwood AV receiver instead — $700 GPU turns out to be e-waste thanks to return scam",
+      "url": "https://www.tomshardware.com/pc-components/gpus/unlucky-pc-builder-sent-rtx-5070-from-amazon-gets-dvd-rewriter-and-a-busted-logic-board-from-an-early-2000s-kenwood-av-receiver-instead-usd700-gpu-turns-out-to-be-e-waste-thanks-to-return-scam",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 11:30:00 +0000",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "amazon",
+        "gpu"
+      ],
+      "match_count": 2,
+      "score": 2.61
+    },
+    {
+      "title": "The Atlantic created a searchable database of the music used to train AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-20T14:46:48-04:00",
+      "age_h": 4.6,
+      "has_timestamp": true,
+      "description": "Atlantic  reporter Alex Reisner recently uncovered  four datasets  of music being used to train  AI models  and made them  fully searchable  for the public. Two of the sets are absolutely enormous at 12 million and 9 million tracks. The other two are much smaller, but still represent a significant a",
+      "keywords_matched": [
+        "google"
+      ],
+      "match_count": 1,
+      "score": 2.42
+    },
+    {
+      "title": "Save $300 on this 1440p-ready gaming PC with 32GB DDR5 RAM — grab the Asus ROG GM700 with AMD's Ryzen 7 8700F and RX 9060 XT for just $1,199",
+      "url": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd300-on-this-1440p-ready-gaming-pc-with-32gb-ddr5-ram-grab-the-asus-rog-gm700-with-amds-ryzen-7-8700f-and-rx-9060-xt-for-just-usd1-199",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 15:25:58 +0000",
+      "age_h": 8.0,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 2.13
+    },
+    {
+      "title": "Musician and YouTuber Hainbach on ‘Breath of the Wild’ and Swiss Army Knives",
+      "url": "https://www.theverge.com/report/953116/experimental-musician-youtuber-hainbach-interview",
+      "source": "theverge.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Verge",
+      "published_raw": "2026-06-20T11:20:00-04:00",
+      "age_h": 8.1,
+      "has_timestamp": true,
+      "description": "Indulging in the “Dark Souls of synthesis.” | Image: Aleksander Stojanov / Hainbach\t \n \n Stefan Paul Goetsch, better known as Hainbach, is a German experimental composer, artist, and YouTuber who is perhaps most famous for making music with laboratory equipment and scientific instruments. He describ",
+      "keywords_matched": [
+        "nuclear"
+      ],
+      "match_count": 1,
+      "score": 2.12
+    },
+    {
+      "title": "China unifies tech sector to build grid-free orbiting satellite AI data centers, challenging Elon Musk's SpaceX — Beijing's forced chip and satellite alliance announced a week before Musk’s AI1 reveal",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 14:53:42 +0000",
+      "age_h": 8.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "elon musk"
+      ],
+      "match_count": 1,
+      "score": 2.09
+    },
+    {
+      "title": "Why Amazon hates 'human-in-the-loop' AI governance",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMmNSOEo4X05OTV9EWEpmQndOSEtmcktxOHFLQXBKUm4tSWVZMm9QVk9zOGxJM3dUOXE3NFpndnBDVUpENmVyNHdyQW5hc1hTZkYzZEotdHZGS2FkODlYd1ZHVHNQNUV6ekl5LS03QThuaGIyXzFJbGM3M2RLdUFvLU1rR0sxTnlyNHpReTBpVThGaXY0XzJTcGtNZFpuV201a2lMYV9Saw?oc=5",
+      "source": "theregister.com",
+      "publisher": "The Register",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Amazon\" OR \"AWS\") AI news",
+      "published_raw": "Sat, 20 Jun 2026 14:25:00 GMT",
+      "age_h": 9.0,
+      "has_timestamp": true,
+      "description": "Why Amazon hates 'human-in-the-loop' AI governance    The Register",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.05
+    },
+    {
+      "title": "The best UK Amazon Prime Day tech deals 2026 — epic savings on premium gaming PCs and laptops, peripherals, 3D printers at Currys, Argos, Scan and CCL, too",
+      "url": "https://www.tomshardware.com/pc-components/best-uk-amazon-prime-day-tech-deals",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 14:06:35 +0000",
+      "age_h": 9.3,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/x7cx73rGMsxxczmp6Tavv.jpg",
+      "keywords_matched": [
+        "amazon"
+      ],
+      "match_count": 1,
+      "score": 2.02
+    },
+    {
+      "title": "Intel and AMD's new ACE CPU extensions bring an efficient AI-oriented instruction set to x86 — a new design makes matrix multiplication more power- and density-efficient",
+      "url": "https://www.tomshardware.com/pc-components/cpus/intel-and-amds-new-ace-cpu-extensions-bring-an-efficient-ai-oriented-instruction-set-to-x86-a-new-design-makes-matrix-multiplication-more-power-and-density-efficient",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sat, 20 Jun 2026 12:00:00 +0000",
+      "age_h": 11.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/ZQiPPaXaAuQ4VrVEYnnR7G.png",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 1.85
+    },
+    {
+      "title": "Intel and AMD's new ACE CPU extensions bring an efficient AI-oriented instruction set to x86 — a new design makes matrix multiplication more power- and density-efficient",
+      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQdHpEamZ2OThvRURzLWNfRmsyMURWckRiSHNkMXdZRzNodVQ5LS1HR05OQTNNX0x1b0FGWnJEeU4tQmxpbzVxWXdiM1IxVzJFcnZvWlVoWFNYUk04Rm55SGFuNzlNOFQzUnVCcm9PeC1DLXVDYmREdjBHNUViVFM2cXQwWWZ4TzdMeHZqcERMT3JxQXMzbWpNMTBtUXVfeGVBV0dJVE1TMGdDaTJ3UGNKRHdhSnNKWmdCYllqN2w2UnlIZlc0U0I5UjEwcW5uWGhxYktKcDB1UGNPek9la09udFQweUpOMjJuTENFTHFjaEpUNHNveXViV1hmY0R3c05uTVNaNWZQbUhrQTZUS0FCeFZhbGdtTGVhRkQ2amJBX3dnZkEyZWVFamEtajF4Vkc5bmx0SURSbTU?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"AMD\" OR \"Instinct\") AI news",
+      "published_raw": "Sat, 20 Jun 2026 12:00:00 GMT",
+      "age_h": 11.4,
+      "has_timestamp": true,
+      "description": "Intel and AMD's new ACE CPU extensions bring an efficient AI-oriented instruction set to x86 — a new design makes matrix multiplication more power- and density-efficient    Tom's Hardware",
+      "keywords_matched": [
+        "amd"
+      ],
+      "match_count": 1,
+      "score": 1.85
+    },
+    {
+      "title": "Centrica drives a new wave of Power Platform innovation with Managed Environments and Copilot Studio",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaEw4VFp4NVh4NzZOMEd1NlNIRkllc3RWTFFfbjlhZjFKQlN5b1Q4eGN1ekxNY2FGQ1I2T2RwSFQ4QmxCZ0xLQ0tNREVDLUZlR3lNQkxfSjZKNC16emxRX1VEY0ZTS1k3YXJfdy1KQTRDaUNGNW9BRHVnajV0VXJQNkxReGloVFBTTnVBdA?oc=5",
+      "source": "microsoft.com",
+      "publisher": "Microsoft",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Sat, 20 Jun 2026 00:40:36 GMT",
+      "age_h": 22.7,
+      "has_timestamp": true,
+      "description": "Centrica drives a new wave of Power Platform innovation with Managed Environments and Copilot Studio    Microsoft",
+      "keywords_matched": [
+        "microsoft",
+        "copilot"
+      ],
+      "match_count": 2,
+      "score": 1.71
+    },
+    {
+      "title": "Chipmakers Renew Nerdy Performance Tussle That Nvidia’s Dominance Had Quashed",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdktrN19pWnkwc1RRU0hfcUJEWUlxNzdNV2EtdlJ6VVFTeDlhVUhIRjViNHVlSHhLRjNhLTNQdDhkY0pKQWVELVZ0WWZtTGxGZ3hZeG9PZTFZNmdKUDdxYWIxSnRPdjNzQmx4a2UxU3UyODV2b1pFV1JRekVHcktVenFkUDdzaFpxMjNFSmdSQ2N5YnZVTDdjcXFUczRBS05UXzJ0bW9aXy1OX3oxMnk3cmxXRGhReWp2YUROVm1FeUtaZ0NtbWxiMm90MA?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Nvidia\" OR \"Jensen Huang\") A",
+      "published_raw": "Sat, 20 Jun 2026 09:17:08 GMT",
+      "age_h": 14.1,
+      "has_timestamp": true,
+      "description": "Chipmakers Renew Nerdy Performance Tussle That Nvidia’s Dominance Had Quashed    Bloomberg.com",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 1.63
+    },
+    {
+      "title": "Windle International Kenya & Somalia reimagines education with Microsoft 365",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSzF6NTRDQW9tYU1SaWNqRlJNRzQySnhweU5TYUpzRnNfRzVyUlhGRWllSUw5UWc3T3dWQ2ZIZV83aXRSN0trbGVNQjFfRzNxcENYaFBMMXNlRUMxVEtPelE3cmt5bWRuUVBtY29wSXBiZmhaZ2NFMXBWN2VrNmFMUmZRaXZEaFQ2MndHYUUzR2NLZlBCY0ExZENFNjBiaU43UXRaUWZldmN0a3FoWG5yZA?oc=5",
+      "source": "microsoft.com",
+      "publisher": "Microsoft",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Microsoft\" OR \"Copilot\") AI ",
+      "published_raw": "Sat, 20 Jun 2026 02:02:46 GMT",
+      "age_h": 21.4,
+      "has_timestamp": true,
+      "description": "Windle International Kenya & Somalia reimagines education with Microsoft 365    Microsoft",
+      "keywords_matched": [
+        "microsoft"
+      ],
+      "match_count": 1,
+      "score": 1.02
+    },
+    {
+      "title": "Apple is late to the AI party and that may be a blessing",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQVWUwYVZPSmVmQmR2c3JJSTVybGNaY0lEOXhMYlZCckd1ZU9Rd1RWNVljOFcxMXVzdzYzbU1qb25PbTlRSmNybWFsM1lmS25HSk1UM2xBYjZZNm1tWGEyRm1yRFFxY0FZRThYZ2NfYjRqXzJGUWZFdFp0MVliOGZDLW1NQzFGQ2swSWRCT0JVOGEta3o5UDQ2Q2o5YWtDZm1jSS05dkcxZHkyTmxsSDgwTzUzamFNSGpaWjVmRlYxcllkelY4ZHJreGM2QV9adTQ0TTh5YlM0SWxMckN0Q19jZHI0dDV2VVU0V1N5S05JYkxHVUVRMG9wY0NoekExdVM00gGGAkFVX3lxTE1xWmZyRXdqMkdZRVo4RF81eWlZU2xQLTdPanQyTGdKT21icko1RGJtcDNFVC1LVXdTblZ5OEg4cUhtZVV3bFVfZ2ZkYXdyOEpvY0s5aWFmY1BlWFZpcm10TzFRZUVGWGVXS1ZBOUNpblBJcDBINkI1bFZ1RGJtWGNaazgwNE9uMGF0c2RwbktWM1N0enBsemJZdVpfb0p2NHZkYUlqR0l3N2ZwZUk2QTdaUklFY1V0VGpsdENVZUIzODR3WXhtRmY3MExzbl9TMi16aWtkM2VmWHZlbkRjSV9GQWdOa3FKMWVKblg1MDR5dU5QU3BWY3FhM0RQRTM1NVhKMThjZXc?oc=5",
+      "source": "livemint.com",
+      "publisher": "Mint",
+      "on_allowlist": true,
+      "feed_name": "GNews:(\"Apple\" OR \"Apple Intelligenc",
+      "published_raw": "Sat, 20 Jun 2026 01:30:50 GMT",
+      "age_h": 21.9,
+      "has_timestamp": true,
+      "description": "Apple is late to the AI party and that may be a blessing    Mint",
+      "keywords_matched": [
+        "apple"
+      ],
+      "match_count": 1,
+      "score": 0.98
+    }
+  ]
+}

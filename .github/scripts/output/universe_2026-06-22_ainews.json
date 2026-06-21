@@ -1,0 +1,455 @@
+{
+  "generated_at": "2026-06-22T06:27:45.410408+07:00",
+  "date": "2026-06-22",
+  "stream": "ainews",
+  "window_hours": 24,
+  "stats": {
+    "feeds_ok": 21,
+    "items_raw": 336,
+    "items_after_dedup": 329,
+    "items_after_keyword": 240,
+    "items_after_trusted": 25,
+    "trusted_filter": true
+  },
+  "candidates": [
+    {
+      "title": "อนาคตการลงทุน AI เมื่อผู้สร้างโมเดลตบเท้าเข้าสู่ตลาด",
+      "url": "https://thestandard.co/opinion-ai-modelers-market/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Sun, 21 Jun 2026 06:13:54 +0000",
+      "age_h": 17.2,
+      "has_timestamp": true,
+      "description": "ตลอดสองปีที่ทั่วโลกได้เริ่มใช้  ChatGPT  ธีม AI ก็กลายเป็นหนึ่งในธีมหลักที่สร้างผลตอบแทนให้นักลงทุนได้ดีต่อเนื่อง \n   \n ผู้ผลิตชิปอย่าง Nvidia ปรับขึ้นหลายเท่าจนมูลค่าตลาดทะลุ 4 ล้านล้านดอลลาร์ บริษัทเทคฯ ใหญ่หันตัวไปเป็น Hyperscalers ดึงเม็ดเงินลงทุนเข้าสู่ Data Center เร่งราคาหุ้นปรับตัวขึ้นสูง \n ",
+      "keywords_matched": [
+        "openai",
+        "anthropic",
+        "xai",
+        "chatgpt",
+        "ai",
+        "nvidia",
+        "data center",
+        "โมเดล"
+      ],
+      "match_count": 9,
+      "score": 4.57
+    },
+    {
+      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Sun, 21 Jun 2026 15:28:17 +0000",
+      "age_h": 8.0,
+      "has_timestamp": true,
+      "description": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "keywords_matched": [
+        "anthropic",
+        "ai"
+      ],
+      "match_count": 2,
+      "score": 2.93
+    },
+    {
+      "title": "True IDC ทุ่ม 6,000 ล้านบาท ปักหมุดดาต้าเซ็นเตอร์แห่งที่ 7 รับคลื่นลงทุน AI",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oS3E4eUxaak1FUF8tVVdGLWVSUks1ZXdaUWpqX3JCY3ZTSmxoR2JkZUJQQnRyTFZRNXJjY2k5SlBZSDI0YXlEU2wzZUhWYjBpSDhkUUlTVXpKdw?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Sun, 21 Jun 2026 15:01:56 GMT",
+      "age_h": 8.4,
+      "has_timestamp": true,
+      "description": "True IDC ทุ่ม 6,000 ล้านบาท ปักหมุดดาต้าเซ็นเตอร์แห่งที่ 7 รับคลื่นลงทุน AI    bangkokbiznews",
+      "keywords_matched": [
+        "ai",
+        "ดาต้าเซ็นเตอร์"
+      ],
+      "match_count": 2,
+      "score": 2.9
+    },
+    {
+      "title": "Anthropic's Mythos mess just keeps getting more complicated",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/22/anthropics-mythos-mess-just-keeps-getting-more-complicated/5258577",
+      "source": "theregister.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Register",
+      "published_raw": "Mon, 22 Jun 2026 01:00:00 +0200",
+      "age_h": 0.5,
+      "has_timestamp": true,
+      "description": "KETTLE It's been a week since the Trump administration established a de facto ban on Anthropic's Mythos derivative, Fable 5, and the more that comes out about the move the more it seems like Anthropic employees talking amongst themselves were on to something: Is the government just picking on the co",
+      "keywords_matched": [
+        "anthropic"
+      ],
+      "match_count": 1,
+      "score": 2.76
+    },
+    {
+      "title": "Dramatically redesigned GMKtec EVO-X3 shown bearing Lisa Su’s signature of approval — flagship AI mini PC workstation is built around AMD’s Ryzen AI Max+ 395 'Strix Halo' processor, again",
+      "url": "https://www.tomshardware.com/desktops/mini-pcs/dramatically-redesigned-gmktec-evo-x3-shown-bearing-lisa-sus-signature-of-approval-flagship-ai-mini-pc-workstation-is-built-around-amds-ryzen-ai-max-395-strix-halo-processor-again",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 12:46:59 +0000",
+      "age_h": 10.7,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/56vqMYLDaKRHPhHZgbADFR.jpg",
+      "keywords_matched": [
+        "ai",
+        "amd"
+      ],
+      "match_count": 2,
+      "score": 2.71
+    },
+    {
+      "title": "Age of Empires II’s goats used as AI building blocks to build a neural network — goaty experiment mocks the idea of chatbot consciousness, Microsoft AI researcher’s project makes an absurdist point about AI consciousness",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/age-of-empires-iis-goats-used-as-ai-building-blocks-to-build-a-neural-network-goaty-experiment-mocks-the-idea-of-chatbot-consciousness-microsoft-ai-researchers-project-makes-an-absurdist-point-about-ai-consciousness",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 11:00:00 +0000",
+      "age_h": 12.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/56vqMYLDaKRHPhHZgbADFR.jpg",
+      "keywords_matched": [
+        "ai",
+        "neural network"
+      ],
+      "match_count": 2,
+      "score": 2.56
+    },
+    {
+      "title": "Age of Empires II’s goats used as AI building blocks to build a neural network — goaty experiment mocks the idea of chatbot consciousness, Microsoft AI researcher’s project makes an absurdist point about AI consciousness",
+      "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxPUWRIeTllenNLcUxNM2gxVXJRc1QzcUc3bnNUUF95N084LVkzcHV6ejZGdWpncVU5OElZX3lOZ3liYWJYTGdqb0MxdTg0OHZXTzY5Q3hBWWszMXF1YjI2YVdBeDVmQkp5R19GRHhQYlVYS1BOTGw3Vm9iczZPSHRGdmlWbnRla1plQUVYaUdZdE5UazJqMFJjVmVUZGM1Vk9YSlBEc3Q4Z3dlc2VqaFFZVUdnREhqeE9lSWtJVnNBVzczbXRWblE4Zy1KWm5ld3RxQ0k1MDN0blB0MHFOaW9tTzlRV01KejBlSU05aGdvSF9nTVdZVm1qbGsydUZySFpFcWhEcmgwWWF6NTFpSmVLV3dRMmpBOVMydllIZ2hpX09uMkVqWU14R05zaEI2MWFrbGpMQWFQLWdLcDFqSEloYWo3OVpCVk9QNk5YVkNzQkRJRFFqVGd6a3ZIeVFWa1NHQU01Q2tuOTdCeXh4VFVxMU1NMXlpZTVTckpPZS1pY2gxLWF1ZlpBWEJ5eDBrV2F3cC1lWQ?oc=5",
+      "source": "tomshardware.com",
+      "publisher": "Tom's Hardware",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Sun, 21 Jun 2026 11:00:00 GMT",
+      "age_h": 12.5,
+      "has_timestamp": true,
+      "description": "Age of Empires II’s goats used as AI building blocks to build a neural network — goaty experiment mocks the idea of chatbot consciousness, Microsoft AI researcher’s project makes an absurdist point about AI consciousness    Tom's Hardware",
+      "keywords_matched": [
+        "ai",
+        "neural network"
+      ],
+      "match_count": 2,
+      "score": 2.56
+    },
+    {
+      "title": "Ubisoft co-founder Claude Guillemot dies in plane crash",
+      "url": "https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Sun, 21 Jun 2026 18:34:31 +0000",
+      "age_h": 4.9,
+      "has_timestamp": true,
+      "description": "Claude Guillemot, who founded Ubisoft with his four brothers, has died at the age of 69.",
+      "keywords_matched": [
+        "claude"
+      ],
+      "match_count": 1,
+      "score": 2.39
+    },
+    {
+      "title": "Brands using AI-generated influencers to promote products on social media",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUkVNRzhNUHEwbTVyRUYwTHZveVJ4Qy0wanVnYmFRQTNIZ0x3Nmk2dDcyWVJKMXk2dXJuMjNoY0JrTjlyM2Iwc2piYUdCMkZ0dVhVOWZVMkVZMFVzZWVrQXNlbVBrNjYwaTJJZ0RGMG5pMlAwWXJfZzFJdlJMQ2N3cTJHdGQzbTBRS0UtRDNqZnQxeUZPNzdkX09wMU0tS2s4Z2xDMl9LNGRTbF84UXgzbFlWQnV2bDVDUFg0dGg5RXh3UQ?oc=5",
+      "source": "theguardian.com",
+      "publisher": "The Guardian",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Sun, 21 Jun 2026 18:03:00 GMT",
+      "age_h": 5.4,
+      "has_timestamp": true,
+      "description": "Brands using AI-generated influencers to promote products on social media    The Guardian",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.35
+    },
+    {
+      "title": "ยศชนันสรุปผลเยือนเนเธอร์แลนด์-เบลเยียม ผนึก IMEC ดันไทยสู่ฮับชิปโฟโตนิกส์",
+      "url": "https://thestandard.co/yoschanan-imec-thailand-chip-hub/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Sun, 21 Jun 2026 05:57:31 +0000",
+      "age_h": 17.5,
+      "has_timestamp": true,
+      "description": "วันนี้ (21 มิถุนายน)  ศ.ดร.ยศชนัน วงศ์สวัสดิ์  รองนายกรัฐมนตรี และรัฐมนตรีว่าการกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม (อว.) สรุปภาพรวมการเดินทางในการปฏิบัติภารกิจที่ประเทศเนเธอร์แลนด์และเบลเยียมเพื่อแสวงหาความร่วมมือด้านวิทยาศาสตร์และเทคโนโลยี ตั้งแต่วันที่ 13-20 มิถุนายนดังนี้ \n   \n  เตร",
+      "keywords_matched": [
+        "ชิป",
+        "เซมิคอนดักเตอร์"
+      ],
+      "match_count": 2,
+      "score": 2.14
+    },
+    {
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "source": "techcrunch.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "TechCrunch",
+      "published_raw": "Sun, 21 Jun 2026 14:40:28 +0000",
+      "age_h": 8.8,
+      "has_timestamp": true,
+      "description": "Siri’s AI overhaul may have grabbed the headlines at WWDC, but some of Apple’s most useful AI features are arriving elsewhere in iOS 27.",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.07
+    },
+    {
+      "title": "Ingenious modder converts countertop ice machine into an RTX 3060 GPU cooler with a beer fridge thermostat — mod reduces temps by up to 62% in games, Cyberpunk 2077 runs at 22°C",
+      "url": "https://www.tomshardware.com/pc-components/gpus/ingenious-modder-converts-countertop-ice-machine-into-an-rtx-3060-gpu-cooler-with-a-beer-fridge-thermostat-mod-reduces-temps-by-up-to-62-percent-in-games-cyberpunk-2077-runs-at-22-c",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 14:40:14 +0000",
+      "age_h": 8.8,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/SxxNFHt95eGK37mKPhJpdZ.jpg",
+      "keywords_matched": [
+        "gpu"
+      ],
+      "match_count": 1,
+      "score": 2.07
+    },
+    {
+      "title": "Open-source Vulkan driver NVK gains experimental DLSS support — bringing Nvidia’s upscaling tech to Linux via imported CUDA binaries",
+      "url": "https://www.tomshardware.com/pc-components/gpu-drivers/open-source-nvidia-vulkan-driver-nvk-gains-experimental-dlss-support-by-importing-pre-baked-cuda-binaries",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 14:27:19 +0000",
+      "age_h": 9.0,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/C4FAi2KzwaGLUrBqzX5aBM.png",
+      "keywords_matched": [
+        "nvidia"
+      ],
+      "match_count": 1,
+      "score": 2.05
+    },
+    {
+      "title": "Concern over plans to replace free hospital park and ride with AI data centre",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xOE5UVXBnbGZOTDhRUnNueHZkSU9ZMXhWRVBRYjZGN0ZLSkQ4dDlIOHNOQmRXNGlJSHdwbTlwN1NlTXczVUhNTmNTYmtFVHg4emxDTml6dXFjdw?oc=5",
+      "source": "bbc.com",
+      "publisher": "BBC",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI data center cloud computing",
+      "published_raw": "Sun, 21 Jun 2026 14:20:57 GMT",
+      "age_h": 9.1,
+      "has_timestamp": true,
+      "description": "Concern over plans to replace free hospital park and ride with AI data centre    BBC",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 2.04
+    },
+    {
+      "title": "Ubisoft co-founder Claude Guillemot dies in plane crash —  French publisher established in 1986 became one of the biggest entertainment companies in the world",
+      "url": "https://www.tomshardware.com/video-games/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash-french-publisher-established-in-1986-became-one-of-the-biggest-entertainment-companies-in-the-world",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 14:04:20 +0000",
+      "age_h": 9.4,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/gM7E2WSDg2wgCFoaDPz9yK.jpg",
+      "keywords_matched": [
+        "claude"
+      ],
+      "match_count": 1,
+      "score": 2.02
+    },
+    {
+      "title": "โตไวหรือไปรอด? AI ไทยโตเร็ว แต่รากฐานดิจิทัลยังเปราะบาง",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNcGhNSUltclZ2bkNjZ25FRE12Uk01NW9iN3hJdFlHWnJkUmhBZW1pRGZXYUp4M3JzU2hVSF8xMlY3TEVDVGN1ZzJoYjU2QmcxVzduVVNBX2ROQQ?oc=5",
+      "source": "bangkokbiznews.com",
+      "publisher": "bangkokbiznews",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Sun, 21 Jun 2026 13:00:00 GMT",
+      "age_h": 10.5,
+      "has_timestamp": true,
+      "description": "โตไวหรือไปรอด? AI ไทยโตเร็ว แต่รากฐานดิจิทัลยังเปราะบาง    bangkokbiznews",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.92
+    },
+    {
+      "title": "Samsung and SK hynix bonuses for chip workers flagged as a national inflation risk — Bank of Korea projects full-year inflation significantly above its 2% target",
+      "url": "https://www.tomshardware.com/tech-industry/bank-of-korea-flags-samsung-and-sk-hynix-chip-bonuses-as-a-national-inflation-risk",
+      "source": "tomshardware.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Tom's Hardware",
+      "published_raw": "Sun, 21 Jun 2026 11:58:39 +0000",
+      "age_h": 11.5,
+      "has_timestamp": true,
+      "description": "https://cdn.mos.cms.futurecdn.net/C4FAi2KzwaGLUrBqzX5aBM.png",
+      "keywords_matched": [
+        "chip"
+      ],
+      "match_count": 1,
+      "score": 1.84
+    },
+    {
+      "title": "The ‘Mass Affluent’ Are Losing Their Allure for Wealth Managers Navigating AI",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUV5dFM3N2VfUGdCOU1lNFdLMkt4QkVSeldDREpBSHJIalh1QXRjczVUeXJRNWVOZ0ZqSzd1aVhDUWhHc1B5aVRycmwtOVFCanMxTkU1RWFrb2NyMlNvUXhCdF9oUFVuYndOaUthNWdpUWItQnFEb0FJR05jUW1VT3p0QWVOSzF1MzVHU2FmQl9hampxUTN1NW5aRmtrUUxpWWZ4UFBBSGwwN1M0S2Vv?oc=5",
+      "source": "bloomberg.com",
+      "publisher": "Bloomberg.com",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Sun, 21 Jun 2026 12:00:00 GMT",
+      "age_h": 11.5,
+      "has_timestamp": true,
+      "description": "The ‘Mass Affluent’ Are Losing Their Allure for Wealth Managers Navigating AI    Bloomberg.com",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.84
+    },
+    {
+      "title": "ณัฐพงษ์ จี้ ป.ป.ช. สอบ TH-AI Passport เอง ไม่ต้องรอคนร้อง ชี้นิ่งเฉยอาจเข้าข่ายละเว้นหน้าที่",
+      "url": "https://thestandard.co/natthaphong-pacc-th-ai-passport-probe/",
+      "source": "thestandard.co",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "The Standard",
+      "published_raw": "Sun, 21 Jun 2026 11:30:55 +0000",
+      "age_h": 11.9,
+      "has_timestamp": true,
+      "description": "วันนี้ (21 มิถุนายน) ที่รัฐสภา ณัฐพงษ์ เรืองปัญญาวุฒิ สส.บัญชีรายชื่อ และหัวหน้าพรรคประชาชน ในฐานะผู้นำฝ่ายค้านในสภาผู้แทนราษฎร ให้สัมภาษณ์ถึงการยื่นสำนักงานคณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ (ป.ป.ช.) ตรวจสอบโครงการ TH-AI Passport โดยณัฐพงษ์ยืนยันถึง พ.ร.บ.ฮั้วประมูล มาตรา 14 วรรคสอง ซึ่ง",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.81
+    },
+    {
+      "title": "Google Calendar เปิดให้กำหนดสีปฏิทินที่แตกต่างกันได้ถึง 200 สี แล้ว, AI Avatar ใน Google Vid รองรับภาษาไทย",
+      "url": "https://www.blognone.com/node/150952",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Sun, 21 Jun 2026 10:15:33 +0000",
+      "age_h": 13.2,
+      "has_timestamp": true,
+      "description": "Google Calendar เปิดให้กำหนดสีปฏิทินที่แตกต่างกันได้ถึง 200 สี แล้ว, AI Avatar ใน Google Vid รองรับภาษาไทย \n\n   \n     Body \n                Google Workspace อัปเดตของใหม่ให้ลูกค้าหลายอย่างดังนี้ \n  Google Voice  เพิ่มความสามารถจดโน้ตด้วย AI เมื่อมีการโทรด้วยเสียง ซึ่งเมื่อการสนทนาจบ Google Voice จะส",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.7
+    },
+    {
+      "title": "รัฐบาลตั้งบอร์ดเซมิคอนดักเตอร์แห่งชาติ ตั้งเป้า ‘ชิปเมดอินไทยแลนด์’ ภายในปี 2593",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92NWVNenJHRW1JS0RncjY0NGk4dzUwMjREQW9rNTc3RG52VGRhbE5iMTVXbUZYa0t3QkdQSjFKalZ1T3YtWll5clM0UHNhd3J5UUJ1LXBzV2I1MFVZUFNGT3k2aFBod2s2?oc=5",
+      "source": "thestandard.co",
+      "publisher": "thestandard.co",
+      "on_allowlist": true,
+      "feed_name": "GNews:ชิป เซมิคอนดักเตอร์ เอไอ",
+      "published_raw": "Sat, 20 Jun 2026 23:33:18 GMT",
+      "age_h": 23.9,
+      "has_timestamp": true,
+      "description": "รัฐบาลตั้งบอร์ดเซมิคอนดักเตอร์แห่งชาติ ตั้งเป้า ‘ชิปเมดอินไทยแลนด์’ ภายในปี 2593    thestandard.co",
+      "keywords_matched": [
+        "ชิป",
+        "เซมิคอนดักเตอร์"
+      ],
+      "match_count": 2,
+      "score": 1.61
+    },
+    {
+      "title": "หนุ่มโวยใครไม่รู้เอาภาพไปเจน AI มโนว่าสนิทสนม เตือนให้หยุดการกระทำ",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HSUw1VzFmRjVFWXp1NnJxZkxDX3hqRWNXNWdYMHNBckxkSEttV2R2akJwNFFwMVRVbnRXOFNNZVpzX1Rva3RjM1diRVpKMXVjamRrb0Q4TWpMYUFFUTJWWnlnOXNpOTg?oc=5",
+      "source": "mgronline.com",
+      "publisher": "ผู้จัดการออนไลน์",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Sun, 21 Jun 2026 04:25:00 GMT",
+      "age_h": 19.0,
+      "has_timestamp": true,
+      "description": "หนุ่มโวยใครไม่รู้เอาภาพไปเจน AI มโนว่าสนิทสนม เตือนให้หยุดการกระทำ    ผู้จัดการออนไลน์",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 1.22
+    },
+    {
+      "title": "Claude Guillemot หนึ่งในผู้ก่อตั้ง Ubisoft เสียชีวิตจากอุบัติเหตุเครื่องบินตก",
+      "url": "https://www.blognone.com/node/150950",
+      "source": "blognone.com",
+      "publisher": "",
+      "on_allowlist": true,
+      "feed_name": "Blognone",
+      "published_raw": "Sun, 21 Jun 2026 03:33:00 +0000",
+      "age_h": 19.9,
+      "has_timestamp": true,
+      "description": "Claude Guillemot หนึ่งในผู้ก่อตั้ง Ubisoft เสียชีวิตจากอุบัติเหตุเครื่องบินตก \n\n   \n     Body \n                Claude Guillemot หนึ่งในห้าพี่น้องตระกูล Guillemot ผู้ก่อตั้ง Ubisoft ในปี 1986 เสียชีวิตจากอุบัติเหตุเครื่องบินส่วนตัวตกในประเทศฝรั่งเศส \n สื่อฝรั่งเศส Ouest-France รายงานว่าเครื่องบิน Ces",
+      "keywords_matched": [
+        "claude"
+      ],
+      "match_count": 1,
+      "score": 1.14
+    },
+    {
+      "title": "New China Insights : ชาวจีนต้องปรับตัวกันอย่างไรในยุคของหุ่นยนต์และปัญญาประดิษฐ์",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FRGVaZlZybm5HZkVQQ05KaHh0cGJPVjFOUWNGNXVla245cGZRMG5uTzlNdm5OcHZ6emtJQkU4LUdtcjNvRkdoMXdIOS1oRTFhVW9fLWcycVhZQkhU?oc=5",
+      "source": "mgronline.com",
+      "publisher": "ผู้จัดการออนไลน์",
+      "on_allowlist": true,
+      "feed_name": "GNews:ข่าว AI ปัญญาประดิษฐ์",
+      "published_raw": "Sun, 21 Jun 2026 02:28:00 GMT",
+      "age_h": 21.0,
+      "has_timestamp": true,
+      "description": "New China Insights : ชาวจีนต้องปรับตัวกันอย่างไรในยุคของหุ่นยนต์และปัญญาประดิษฐ์    ผู้จัดการออนไลน์",
+      "keywords_matched": [
+        "ปัญญาประดิษฐ์"
+      ],
+      "match_count": 1,
+      "score": 1.05
+    },
+    {
+      "title": "AI may change the world. That doesn’t make it a good investment",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxObWVBZ1plZHpyOVh4THlKRDE5Mlcxc1JQZXlkMURoV0EydHZ1RHpsSTY4OHJKSnZ4VjBkT2tMdEJnX1U3Y2NVODlxM0dCUUwtZGQ0bF9ac2JWVGNrYndMcmRxZlVlQVYzZnBCTmNnWkJ6MkR1cDR4aUVyRVhYdnhUMjhTUkwybTNTc2EtRnFOSkhQZkhjWWxfTmhXM2lGR2UxeF9ycUN2dnJ0UG9WaHJVdjl1R1c1TzZlQ25GNVhCajFxcDdXV1gyUDBIMHlYWTlDTEE5Z0FuTGprU3lYZ0sxZHRRTllOVWNfMjctNEY1ZUxhWHVsSEdWNWZneUZzSVR1ZlQ4WF8xONIBjAJBVV95cUxOU1Nkek9nTF9aOG8wRDBUeTRFRnowVVVUSENpbFZWbXhqX0kyS3VwcnA2bzg4bk83YUs5eHpvTVRqR3VaUHE2V21LOGJJSlZiVkNHM0tzYWxYT290b0I4emxpMWRtR1JkYW5GOTRoODZXMkVSRWJqalRYbHZxTDBRSzhUSVhSbTZPNUhFQm9rN0Z0TUFRbXdrNl9zMG9CWGtCMGtTV1EtNDlwZHpjUEdQcDVwUk4yMmowWHhlV0JtU2ZjaWt4MzVqMS05SkpldS1EU2dGZ2R5WjZObE55eWxLVUFYMGJiTGxoaU90TW5CN3ZSMUZ1djFYU1VWYmt3clpyUE5sT1BjdG1qWmRf?oc=5",
+      "source": "livemint.com",
+      "publisher": "Mint",
+      "on_allowlist": true,
+      "feed_name": "GNews:AI artificial intelligence new",
+      "published_raw": "Sun, 21 Jun 2026 01:30:52 GMT",
+      "age_h": 21.9,
+      "has_timestamp": true,
+      "description": "AI may change the world. That doesn’t make it a good investment    Mint",
+      "keywords_matched": [
+        "ai"
+      ],
+      "match_count": 1,
+      "score": 0.98
+    }
+  ]
+}

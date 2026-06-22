@@ -3,41 +3,47 @@
 > _หมายเหตุ: รอบนี้ตรวจสอบข่าวจากฟีด RSS (snippet) ของสำนักข่าวต้นทาง เนื่องจาก WebFetch ถูกบล็อก_
 
 > TL;DR
-> - Amazon: คำถาม "ใครได้ประโยชน์" หลังรัฐบาลสหรัฐฯ คุมเข้ม Anthropic พันธมิตรโมเดลคนสำคัญของ Amazon
-> - Apple: ฟีเจอร์ AI ที่ใช้ได้จริงใน iOS 27 กระจายอยู่ทั่วระบบ ไม่ได้กระจุกที่ Siri
-> - Alphabet: Google Workspace อัปเดต AI (จดโน้ตใน Voice, AI Avatar ภาษาไทย) และ Google Meet ใช้งานบน Android Auto ได้แล้ว
+> - Amazon อยู่กลางดราม่าแบน Anthropic Fable 5/Mythos ครบหนึ่งสัปดาห์ — ทีม internal researchers เป็นจุดชนวนการแบนโมเดลที่บริษัทตัวเองลงทุน multi-stakeholder conflict ที่พิสูจน์ว่า single-vendor AI dependency คือ production risk จับต้องได้
+> - Apple ฝัง AI กระจายทั่ว iOS 27 นอกเหนือ Siri — ปรัชญา ambient intelligence ที่ซับซ้อนกว่า single assistant อย่างมีนัยสำคัญทางวิศวกรรม
+> - Alphabet อัปเดต Workspace (AI Avatar ภาษาไทย + จดโน้ตเสียงอัตโนมัติ) และ Google Meet บน Android Auto ในสัปดาห์เดียวกัน
 
-## ข่าวเด่น AI ล่าสุด
+## ข่าวเด่น Watchlist ล่าสุด
 
-### 1. Amazon (AMZN US · Tier 1) — รัฐบาลทรัมป์คุมเข้ม Anthropic ใครได้ประโยชน์ — [TechCrunch](https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/)
+### 1. Amazon (AMZN US · Tier 1) — Anthropic's Mythos mess just keeps getting more complicated — [The Register](https://www.theregister.com/ai-and-ml/2026/06/22/anthropics-mythos-mess-just-keeps-getting-more-complicated/5258577)
 
-พอดแคสต์ Equity ตอนใหม่ของ [TechCrunch](https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/) วิเคราะห์ว่าอะไรคือต้นเหตุที่แท้จริงเบื้องหลังมาตรการล่าสุดของรัฐบาลต่อ Anthropic และความเคลื่อนไหวนี้อาจส่งผลต่อระบบนิเวศ AI โดยรวมอย่างไร ประเด็นนี้เข้า watchlist ผ่าน Amazon ซึ่งเป็นผู้ลงทุนและพันธมิตรโมเดลรายสำคัญของ Anthropic
+ผ่านมาครบหนึ่งสัปดาห์นับจากที่รัฐบาลทรัมป์สั่งแบน Fable 5 โมเดลอนุพันธ์จาก Mythos ของ Anthropic และข้อมูลใหม่ที่ออกมายิ่งชี้ว่าสิ่งที่พนักงาน Anthropic พูดคุยภายในอาจถูกต้อง — รัฐบาลอาจมีเป้าหมายเฉพาะกับบริษัทมากกว่าที่ประกาศต่อสาธารณะ บริบทที่เชื่อมกับ Amazon โดยตรง: เป็น Amazon researchers ที่พบช่องโหว่ใน Fable 5 แล้วรายงานต่อรัฐบาล ทำให้บริษัทที่ลงทุนใน Anthropic กลายเป็นผู้ที่ตัดสินชะตาโมเดลของ partner ตัวเองโดยไม่ได้ตั้งใจ
 
-ในเชิงนโยบาย นี่เป็นกรณีศึกษาว่าการแทรกแซงต่อแล็บ AI รายหนึ่งส่งแรงกระเพื่อมไปถึงพันธมิตรเชิงพาณิชย์ได้อย่างไร เพราะ Amazon ลงทุนใน Anthropic อย่างหนัก การเปลี่ยนแปลงเชิงกำกับดูแลจึงกระทบทั้งทิศทางของโมเดลและบริการบนคลาวด์ที่อิงโมเดลเหล่านั้น สำหรับทีมวิศวกรรมที่พัฒนาอยู่บนโมเดลตระกูล Anthropic ผ่าน AWS ความไม่แน่นอนเชิงนโยบายเป็นเหตุผลให้ต้องติดตามใกล้ชิดและเตรียมแผนสำรอง
+นี่คือ multi-stakeholder conflict ที่หาได้ยากในโลก AI จริง — บริษัทเดียวอยู่ทั้งฝั่งนักลงทุน ฝั่ง security researcher และฝั่ง cloud provider ของโมเดลที่ถูกแบน สำหรับองค์กร AI ขนาดใหญ่ บทเรียนคือการวาง internal governance framework ที่แยก security research pipeline ออกจาก investment strategy ก่อนที่เหตุการณ์แบบนี้จะเกิดขึ้น สำหรับทีมที่ใช้ Anthropic API ผ่าน AWS Bedrock ใน production: นี่คือ empirical proof ว่า single-vendor dependency คือ fragility ที่วัดได้แล้ว — ถึงเวลาสร้าง model-agnostic abstraction layer ที่ switch ไป Azure OpenAI หรือ Vertex AI ได้จริงโดยไม่ต้อง refactor ใหญ่
 
-### 2. Apple (AAPL US · Tier 1) — ฟีเจอร์ AI ที่ใช้ได้จริงใน iOS 27 ไม่ใช่แค่ Siri — [TechCrunch](https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/)
+### 2. Apple (AAPL US · Tier 1) — Beyond Siri: ฟีเจอร์ AI ที่ใช้ได้จริงใน iOS 27 กระจายทั่วระบบ — [TechCrunch](https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/)
 
-แม้การยกเครื่อง Siri ด้วย AI จะเป็นพาดหัวหลักจากงาน WWDC แต่ [TechCrunch](https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/) ชี้ว่าฟีเจอร์ AI ที่มีประโยชน์ที่สุดบางส่วนของ Apple กลับกระจายอยู่ตามจุดต่าง ๆ ทั่ว iOS 27 ไม่ได้รวมศูนย์อยู่ที่ผู้ช่วยเสียงเพียงอย่างเดียว
+แม้การยกเครื่อง Siri จะเป็นพาดหัวหลักของ WWDC แต่ TechCrunch รายงานว่าฟีเจอร์ AI ที่มีประโยชน์ที่สุดบางส่วนของ Apple กระจายอยู่ทั่ว iOS 27 ตั้งแต่ keyboard ไปจนถึงกล้อง โดยไม่ได้กองอยู่ที่ผู้ช่วยเสียงเพียงอย่างเดียว — Apple กำลังเดินตามปรัชญา "ambient intelligence" ที่ฝัง AI เป็นโครงสร้างพื้นฐาน ไม่ใช่ฟีเจอร์ที่เด่นให้เห็น
 
-แนวทางนี้สะท้อนปรัชญา "AI ฝังในงานประจำ" ที่เน้นประโยชน์ใช้สอยมากกว่าฟีเจอร์เรือธงเดี่ยว ในเชิงเทคนิค ฟีเจอร์ที่ทำงานบนอุปกรณ์ (on-device) ของ Apple มักได้เปรียบเรื่องความเป็นส่วนตัวและความหน่วงต่ำ แต่ต้องแลกกับข้อจำกัดด้านขนาดโมเดลและชิป สำหรับนักพัฒนา iOS การที่ AI แทรกอยู่หลายจุดของ OS หมายถึง API และจุดเชื่อมต่อใหม่ที่ควรเริ่มสำรวจและทดสอบตั้งแต่รุ่นเบต้า
+จากมุมวิศวกรรม การกระจาย AI หลายจุดทั่วระบบซับซ้อนกว่า single assistant อย่างมีนัยสำคัญ — Apple ต้อง manage latency, privacy และ model quality ในบริบทที่แตกต่างกันหลายสิบบริบทพร้อมกัน ซึ่งตรงข้ามกับ assistant-first approach ของ Google/Microsoft ที่รวมศูนย์ผ่านโมเดลเดียว สำหรับ iOS developer: ควรดาวน์โหลด developer beta ตอนนี้และ map out API ใหม่นอกเหนือ Siri — ฟีเจอร์ AI ที่ฝังในระบบมักเปิด distribution channel และ use-case ใหม่สำหรับ third-party app ก่อนที่คู่แข่งจะตื่นตัว
 
 ### 3. Alphabet (GOOGL US · Tier 1) — อัปเดตสำคัญ 2 รายการ
 
-**3.1 Google Workspace อัปเดต AI — จดโน้ตใน Voice และ AI Avatar รองรับภาษาไทย — [Blognone](https://www.blognone.com/node/150952)**
+**3.1 Google Workspace: AI Avatar รองรับภาษาไทย + AI Note-taking ใน Voice — [Blognone](https://www.blognone.com/node/150952)**
 
-[Google Workspace](https://www.blognone.com/node/150952) ปล่อยอัปเดตหลายอย่าง ทั้งความสามารถจดโน้ตด้วย AI เมื่อโทรด้วยเสียงผ่าน Google Voice, การกำหนดสีปฏิทินได้ถึง 200 สีใน Google Calendar และการรองรับภาษาไทยสำหรับ AI Avatar ใน Google Vid การรองรับภาษาไทยถือเป็นก้าวด้านการเข้าถึง แต่ก็ชวนให้พิจารณาคุณภาพและอคติของโมเดลภาษาท้องถิ่น ส่วนฟีเจอร์จดโน้ตจากการโทรอาศัย ASR ผสมการสรุปความ ซึ่งความแม่นยำภาษาไทยและความเป็นส่วนตัวของบทสนทนาคือจุดที่ต้องประเมินก่อนใช้กับงานที่มีข้อมูลอ่อนไหว
+Google Workspace ปล่อยอัปเดตหลายรายการพร้อมกัน: Google Voice เพิ่มการจดโน้ตอัตโนมัติด้วย AI เมื่อจบการสนทนาด้วยเสียง, Google Calendar รองรับสีถึง 200 เฉด และ AI Avatar ใน Google Vid ขณะนี้รองรับภาษาไทยแล้ว — สัญญาณที่ชัดเจนว่า Google ลงทุนพัฒนา multilingual AI สำหรับภาษาในอาเซียนอย่างจริงจัง ฟีเจอร์ note-taking ผสม ASR กับ summarization ในท่อเดียว คุณภาพสำหรับภาษาไทยและ hallucination rate ของ summarizer ยังไม่มีข้อมูลจากผู้ใช้จริง ควรทดสอบก่อนนำไปใช้กับการประชุมที่มีข้อมูลสำคัญ สำหรับองค์กรที่ใช้ Workspace อยู่แล้ว: ต้นทุน adopt ต่ำมาก — แต่ต้องตรวจ retention policy ของข้อมูลเสียงในสัญญาก่อนเปิดใช้จริง
 
-**3.2 Google Meet รองรับการใช้งานในรถยนต์ผ่าน Android Auto แล้ว — [Blognone](https://www.blognone.com/node/150953)**
+**3.2 Google Meet รองรับการใช้งานบน Android Auto — [Blognone](https://www.blognone.com/node/150953)**
 
-[Google Meet](https://www.blognone.com/node/150953) รองรับการใช้งานในรถยนต์ระบบ Android Auto แล้ว ผู้ใช้สามารถกดเข้าร่วมประชุมจากหน้าจอรถได้เลย พร้อมแสดงตารางการประชุมนัดถัดไป แม้จะเป็นการขยายประสบการณ์ใช้งาน (UX) มากกว่าการเพิ่มความสามารถของโมเดล AI แต่ก็สะท้อนการผลักดัน Workspace ให้ครอบคลุมบริบทการใช้งานนอกโต๊ะทำงานมากขึ้น
+Google Meet เพิ่มการรองรับ Android Auto ให้สามารถกดปุ่มเข้าร่วม meeting จากหน้าจอรถยนต์ได้โดยตรง — ขยาย Meet ออกสู่ automotive platform ในฐานะส่วนหนึ่งของ ambient computing ecosystem ของ Google การออกแบบ voice-first UX ในบริบท safety-critical คือ engineering constraint ที่แตกต่างจาก desktop/mobile อย่างสิ้นเชิง และเป็นพื้นที่ที่ UX mistake มีผลกระทบเกินหน้าจอ สำหรับ developer ที่พัฒนา productivity tool: Android Auto เปิด distribution channel ใหม่สำหรับ commuting use-case — ควรตรวจ Android Auto API spec หาก app มี use-case กับ mobile-first workflow
+
+### 4. AMD (AMD US · Tier 1) — GMKtec EVO-X3 ได้ลายเซ็น Lisa Su — AI Mini PC บน Ryzen AI Max+ 395 'Strix Halo' — [Tom's Hardware](https://www.tomshardware.com/desktops/mini-pcs/dramatically-redesigned-gmktec-evo-x3-shown-bearing-lisa-sus-signature-of-approval-flagship-ai-mini-pc-workstation-is-built-around-amds-ryzen-ai-max-395-strix-halo-processor-again)
+
+Tom's Hardware รายงาน GMKtec EVO-X3 รุ่นใหม่ที่ออกแบบใหม่ทั้งหมดและได้รับการรับรองจาก Lisa Su (ลายเซ็นบนตัวเครื่อง) — mini PC workstation ระดับ flagship ที่ขับเคลื่อนด้วย AMD Ryzen AI Max+ 395 'Strix Halo' ซึ่งเป็น AMD's unified memory architecture flagship สำหรับ on-device AI inference
+
+Ryzen AI Max+ 395 กับ unified memory architecture ขนาดใหญ่ทำให้ local inference โมเดลขนาด 30B+ เป็นไปได้บน mini PC — เปลี่ยน baseline ของ on-premise AI workload สำหรับองค์กรที่ต้องการ data privacy หรือ air-gapped environment โดยไม่ต้องลงทุน server-grade hardware ลายเซ็น Lisa Su บนตัวเครื่องเป็นสัญญาณ marketing ที่ชัดเจนว่า AMD กำลัง position Ryzen AI ในฐานะ "AI chip สำหรับ creators และ developers" ไม่ใช่แค่ gaming สำหรับโปรแกรมเมอร์: ตรวจ ROCm + ONNX Runtime compatibility กับโมเดลที่ใช้งานอยู่ก่อน invest ใน hardware นี้
 
 ## Action items
-- **สำหรับอาจารย์/นักเรียน:** ใช้กรณีรัฐบาลสหรัฐฯ–Anthropic–Amazon เป็นตัวอย่างผลกระทบลูกโซ่ของการกำกับดูแล AI ต่อพันธมิตรเชิงพาณิชย์
-- **สำหรับผู้เชี่ยวชาญ AI:** ประเมินความแม่นยำของ ASR ภาษาไทยใน Google Voice และผลกระทบเชิงนโยบายต่อโมเดล Anthropic บน AWS ก่อนแนะนำใช้งานจริง
-- **สำหรับโปรแกรมเมอร์:** สำรวจจุดเชื่อมต่อ AI ใหม่ใน iOS 27 ตั้งแต่เบต้า และทบทวนแผนสำรองสำหรับบริการที่พึ่งพาโมเดล Anthropic ผ่าน Bedrock/AWS
+- **สำหรับอาจารย์/นักเรียน:** ใช้กรณี Amazon + Anthropic สอน dual accountability ของ AI security researchers และ unintended consequences ของ multi-stakeholder AI governance; นำ Apple iOS 27 เป็น case study "ambient intelligence" เทียบกับ assistant-first design ของ Google/Microsoft
+- **สำหรับผู้เชี่ยวชาญ AI:** ประเมิน multi-provider AI strategy ก่อน Anthropic/AWS Bedrock dependency กลายเป็นปัญหา; ทดสอบ AI Avatar ภาษาไทยใน Google Vid และตรวจ retention policy ก่อนใช้ในองค์กร; ติดตาม Ryzen AI Max+ benchmark สำหรับ on-premise inference planning
+- **สำหรับโปรแกรมเมอร์:** สร้าง model-agnostic abstraction layer สำหรับ AI API ที่ switch ระหว่าง Anthropic/OpenAI/Vertex ได้โดยไม่ต้อง refactor ใหญ่; ดาวน์โหลด iOS 27 developer beta และ map out Apple Intelligence APIs ใหม่; ตรวจ Android Auto API spec หากพัฒนา productivity tool สำหรับ commuting users
 
 ## การครอบคลุม watchlist
-> คัดจาก Tier 1 · บริษัทที่มีข่าวสำคัญวันนี้: Amazon, Apple, Alphabet · Tier 2 ไม่ถูกเรียกใช้
+> คัดจาก Tier 1 · บริษัทที่มีข่าวสำคัญวันนี้: Amazon, Apple, Alphabet, AMD · Tier 2 ไม่ถูกเรียกใช้
 
 ---
 _Generated by the `daily-ai-watchlist` skill on 2026-06-22 (Asia/Bangkok) · model claude-opus-4-8._

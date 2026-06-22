@@ -97,12 +97,25 @@ the data pipeline (`pboat-data.yml` runs 05:57 Asia/Bangkok, ~1 h before this ro
 | File absent OR stale (> 4 h old) | **Skip.** Print: `Universe pre-load: not found — falling back to WebSearch` then proceed to Step 1 normally |
 
 Each candidate carries: `title`, `url`, `source` (real publisher domain), `publisher`,
-`on_allowlist`, `age_h`, `keywords_matched`, `score`, **and — load-bearing when WebFetch
-is blocked — `description` (the outlet's own RSS snippet, ≤300 chars), `published_raw`
-(the feed's explicit publish timestamp), and `has_timestamp` (bool).** The funnel runs in
-GitHub Actions, where egress is **open**, so those three fields are real first-party
-evidence even on a run where *this* routine's own `WebFetch` is 403-blocked — that is what
-makes a blocked run still publishable (see item 4 + Step 1b-ver "Tier 2 — funnel snippet").
+`on_allowlist`, `age_h`, `keywords_matched`, `score`, **and the verification payload the
+funnel pre-fetched for you:**
+- **`body_text`** — the **full article body** (up to ~1,500 chars) the funnel extracted
+  with a real-browser User-Agent (and a Playwright fallback that also resolves
+  `news.google.com` redirect links to the real article). Present only on the top picks the
+  funnel enriched; `""` when extraction was blocked/skipped. **When non-empty this is
+  Tier-1-grade evidence — equivalent to a successful `WebFetch`, but already on disk.**
+- **`extract_status`** — `ok` (body_text is real full text), `blocked` (publisher 403'd
+  even the funnel → only the RSS snippet is available), or `skipped` (not in the enriched
+  top set).
+- **`description`** — the outlet's own RSS snippet (≤300 chars); the Tier-2 fallback when
+  `body_text` is empty.
+- **`published_raw`** + **`has_timestamp`** — the feed's explicit publish timestamp (bool).
+- **`resolved_url`** — the real article URL when the funnel resolved a Google News redirect.
+
+The funnel runs in GitHub Actions, where egress is **open**, so `body_text` is real
+first-party evidence **even on a run where *this* routine's own `WebFetch` is 403-blocked**
+— that is the WebFetch-403 bypass: prefer the pre-fetched body and you never need to fetch
+the article live (see item 4 + Step 1b-ver "Tier 1 — funnel body").
 The funnel **pre-filters to `trusted-sources.md` by default**, so candidates should already
 be on the allowlist (`on_allowlist: true`) — but you re-check anyway (see gate 3 below);
 never assume.
@@ -111,9 +124,10 @@ never assume.
 1. `Read` the JSON. Parse `candidates[]` into START_POOL.
 2. Apply Gates A + B to each candidate immediately — drop stale (> 24 h), drop URLs already in `RECENT_URLS`.
 3. **Trusted-source gate (unchanged, still mandatory).** A story may only be **cited** if its domain is on `trusted-sources.md`. The funnel pre-filters to the allowlist, but verify each `source` yourself; if `--all-sources` was used (or a domain slips through), an off-allowlist item is **discovery-only** — locate the same story on a trusted outlet and cite THAT, or drop it. Never cite a `news.google.com` redirect or any off-allowlist domain directly.
-4. If START_POOL has **≥ 8 candidates** after gates → skip WebSearch calls (SEARCH_STRATEGY) and go to Step 1b-ver. Then **branch on the `WebFetch` probe**:
-   - **`WEBFETCH_OK`** → `WebFetch` each surviving candidate for **Tier-1** (the body's own publish timestamp + headline). This is the target.
-   - **`WEBFETCH_BLOCKED`** → **do NOT fall back to WebSearch** (in a blocked host it is usually unavailable too, and the funnel is better anyway). Verify each candidate at **Tier-2 directly from the funnel**: its `source` is an allowlist-matched real publisher, `published_raw` + `has_timestamp` give the in-WINDOW timestamp, and `description` is the citeable snippet — all first-party RSS evidence gathered in an unblocked runner. Summarize **only** from `description`; never invent beyond it. A blocked run is therefore still a real, citeable brief (Tier-2 from funnel), not a degraded stub. (See Step 1b-ver row "Tier 2 — funnel snippet".)
+4. If START_POOL has **≥ 8 candidates** after gates → skip WebSearch calls (SEARCH_STRATEGY) and go to Step 1b-ver. Verify each surviving candidate in this priority order — **`body_text` first, before any live fetch**:
+   - **Candidate has `body_text` (`extract_status: ok`)** → verify from it as **Tier 1 — funnel body**: the body confirms the headline and (with `published_raw`) the in-WINDOW timestamp; summarize from the body. **No `WebFetch` needed** — this is the bypass, and it works identically whether the probe is `WEBFETCH_OK` or `WEBFETCH_BLOCKED`. Prefer this for every enriched pick.
+   - **No `body_text`, probe is `WEBFETCH_OK`** → `WebFetch` the trusted-outlet URL for Tier-1 (body's own timestamp + headline).
+   - **No `body_text`, probe is `WEBFETCH_BLOCKED`** → **do NOT fall back to WebSearch** (in a blocked host it is usually unavailable too). Verify at **Tier-2 directly from the funnel**: `source` is an allowlist-matched real publisher, `published_raw` + `has_timestamp` give the in-WINDOW timestamp, and `description` is the citeable snippet. Summarize **only** from `description`; never invent beyond it. Still a real, citeable brief (Tier-2 from funnel), not a degraded stub. (See Step 1b-ver "Tier 2 — funnel snippet".)
 5. If START_POOL has **< 8 candidates** after gates → supplement with WebSearch per SEARCH_STRATEGY to fill gaps (when WebFetch — and thus often WebSearch — is blocked, ship the funnel-backed items you have rather than padding). Print: `START_POOL thin after gates (N items) — supplementing with WebSearch`.
 6. All engine quality gates (Gate A freshness, Gate B dedup, **trusted-source allowlist**, Tier-1 WebFetch verify) still apply to every story regardless of whether it came from START_POOL or WebSearch. This step is a *source substitution*, not a quality bypass.
 
@@ -145,22 +159,29 @@ Label the runtime `WEBFETCH_OK` (2xx) or `WEBFETCH_BLOCKED` (403 / network error
 
 | Tier | Requirements | Allowed when |
 |---|---|---|
-| **Tier 1 — Full fetch** | `WebFetch` 2xx; body confirms headline + explicit publish date within WINDOW | `WEBFETCH_OK` |
-| **Tier 2 — Snippet (funnel ▸ or WebSearch)** | domain on trusted-sources; a substantive snippet carrying a timestamp resolvable to within WINDOW; summary paraphrases **only** that snippet. The snippet may come from the **RSS funnel** — a START_POOL candidate's `description` + `published_raw` (**preferred**: first-party, fetched in an unblocked runner, needs no egress from here) — **or** from a live WebSearch result. | always — and the **sole** non-Tier-1 path when `WEBFETCH_BLOCKED` (use the funnel snippet first) |
+| **Tier 1 — Funnel body** | START_POOL candidate has `body_text` (`extract_status: ok`); the body confirms headline + an in-WINDOW timestamp (`published_raw`); summary drawn from the body | **always** — needs no egress; **prefer this for every enriched pick** |
+| **Tier 1 — Full fetch** | `WebFetch` 2xx; body confirms headline + explicit publish date within WINDOW | `WEBFETCH_OK`, and only for picks **without** `body_text` |
+| **Tier 2 — Snippet (funnel ▸ or WebSearch)** | domain on trusted-sources; a substantive snippet carrying a timestamp resolvable to within WINDOW; summary paraphrases **only** that snippet. The snippet may come from the **RSS funnel** — a START_POOL candidate's `description` + `published_raw` (**preferred**: first-party, fetched in an unblocked runner, needs no egress from here) — **or** from a live WebSearch result. | when a pick has neither `body_text` nor a usable `WebFetch`; the **sole** non-Tier-1 path when `WEBFETCH_BLOCKED` (use the funnel snippet first) |
 | **Drop** | can't satisfy a tier above | — |
 
-**Tier 1 is the target.** Per selected story: confirm it's real & in-scope, find it
-on a trusted outlet, `WebFetch` that URL, use the body's own publish timestamp.
-Only if that fetch genuinely fails for *this* story, accept Tier 2 for it. Do not
-pre-emptively default to Tier 2. The runner tags the commit `[verify=search]` only
-when the whole run was forced to Tier 2 (`WEBFETCH_BLOCKED`); else `[verify=webfetch]`
-— record which in `sources.md` so the runner can read it.
+**Full-fidelity verification is the target, and the funnel body gets you there for free.**
+Per selected story: if it has `body_text`, verify and summarize from that body (Tier 1 —
+funnel body) and move on — no fetch. Otherwise, when `WEBFETCH_OK`, find it on a trusted
+outlet, `WebFetch` that URL, use the body's own publish timestamp. Only if neither a funnel
+body nor a live fetch is available for *this* story, accept Tier 2. Do not pre-emptively
+default to Tier 2.
+
+The runner reads the `Verification mode` line in `sources.md` and tags the commit:
+`[verify=funnel]` when the run was verified primarily from funnel bodies, `[verify=search]`
+when the whole run was forced to Tier-2 snippets (`WEBFETCH_BLOCKED`, no bodies), else
+`[verify=webfetch]`.
 
 **Freshness date — prefer the body, then the funnel timestamp, then the slug.** Use the
 body's explicit publish timestamp in any format (incl. Thai Buddhist-era พ.ศ. 2569 = 2026
-CE, Chinese dates); normalize it. When no body is available (Tier 2), use the funnel
-candidate's `published_raw` (the feed's own timestamp — authoritative) over the URL-slug
-date; fall back to the slug only when neither exists.
+CE, Chinese dates); normalize it. "The body" includes the funnel's `body_text` — read the
+timestamp from it just as you would from a live `WebFetch`. When no body is available
+(Tier 2), use the funnel candidate's `published_raw` (the feed's own timestamp —
+authoritative) over the URL-slug date; fall back to the slug only when neither exists.
 **Never** cite a URL whose provenance you can't point to: it must appear **either** in the
 RSS funnel's START_POOL (a `candidates[]` entry in `universe_*.json`) **or** in a live
 WebSearch result, for a trusted-source domain. A funnel entry is sufficient provenance on
@@ -220,6 +241,7 @@ and an operator can audit the run:
 
 Generated: {TODAY} (Asia/Bangkok)
 Runtime: {WEBFETCH_OK | WEBFETCH_BLOCKED}
+Verification mode: {funnel | webfetch | search}   # funnel = most picks verified from funnel body_text
 Model: {CONFIG.model}
 Freshness window: rolling {freshness_window_days}d (Asia/Bangkok)
 Dedup against: last {N} {BRIEF_KIND} briefs ({M} URLs loaded)
@@ -232,7 +254,7 @@ Dedup against: last {N} {BRIEF_KIND} briefs ({M} URLs loaded)
    - Published: {explicit timestamp or relative phrase as it appeared}
    - FreshnessCheck: ✅ within last 24h via {evidence}
    - DedupCheck: ✅ URL not in last-{N}-day set
-   - Verification: {Tier 1 — WebFetch | Tier 2 — funnel snippet | Tier 2 — WebSearch snippet}
+   - Verification: {Tier 1 — funnel body | Tier 1 — WebFetch | Tier 2 — funnel snippet | Tier 2 — WebSearch snippet}
    - Summary: {1–2 sentences, strictly from fetched body or snippet}
 2. ...
 
@@ -323,7 +345,7 @@ line each. Keep the whole brief skimmable on a phone.
 ## Step 5 — Output (write-only; the host commits)
 Write `ARTICLE_BODY` to `OUTPUT_PATH` with the `Write` tool. That is the deliverable.
 Do **not** commit, push, or send anything. The runner detects the change, commits
-`brief: {TOPIC} {TODAY} [kind={BRIEF_KIND}] [verify={webfetch|search}]`, pushes, and
+`brief: {TOPIC} {TODAY} [kind={BRIEF_KIND}] [verify={funnel|webfetch|search}]`, pushes, and
 the email sender delivers from the committed file. A run that produced an identical
 file to what's already on disk is fine — the runner will no-op the commit.
 

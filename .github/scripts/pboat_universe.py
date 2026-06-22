@@ -22,23 +22,35 @@ judgement and writing instead of hunting around the web.
   3. KEYWORD keep only AI/tech (ainews) or watchlist-company (watchlist) items; drop noise
   4. TRUSTED drop any publisher not on shared/trusted-sources.md  (default; --all-sources keeps them)
   5. SCORE   rank by recency + keyword-hit count
-  6. WRITE   top ~40 per stream → output/universe_{YYYY-MM-DD}_{ainews,watchlist}.json
+  6. ENRICH  fetch the FULL article body for the top ~12/stream (browser-UA requests, with a
+             Playwright headless-Chromium fallback that also resolves news.google.com links)
+  7. WRITE   top ~40 per stream → output/universe_{YYYY-MM-DD}_{ainews,watchlist}.json
 
 Output files (one per stream; date is dashed to match the engine's {TODAY}):
     .github/scripts/output/universe_{YYYY-MM-DD}_ainews.json      (general AI/tech)
     .github/scripts/output/universe_{YYYY-MM-DD}_watchlist.json   (watchlist companies)
 
-NOT a trust bypass: Claude still WebFetch-verifies every story and re-applies all engine
-gates (freshness ≤24h, 7-day dedup, trusted-source allowlist) before it appears in a brief.
-This script only replaces Claude's initial WebSearch discovery pass.
+The WebFetch-403 bypass: step 6 writes a `body_text` (full article text) into each enriched
+candidate. The engine reads that body straight from the committed JSON, so a publisher that
+403s Claude's WebFetch tool no longer degrades the brief — the verification can happen against
+the funnel-extracted body instead. Items that can't be extracted keep their RSS snippet
+(`description`), which the engine still cites at Tier-2.
+
+NOT a trust bypass: the engine re-applies all gates (freshness ≤24h, 7-day dedup,
+trusted-source allowlist) before any story appears in a brief. This script replaces Claude's
+initial WebSearch discovery pass and pre-fetches the bodies; it does not relax any gate.
 
 Usage:
-    python pboat_universe.py                 # both streams, trusted-only (default)
+    python pboat_universe.py                 # both streams, trusted-only, enrich top 12 (default)
     python pboat_universe.py --stream ainews
     python pboat_universe.py --hours 36      # widen the lookback window
     python pboat_universe.py --all-sources   # keep off-allowlist publishers (tagged, not dropped)
+    python pboat_universe.py --enrich-n 20   # fetch full bodies for the top 20/stream
+    python pboat_universe.py --no-enrich     # skip body extraction (RSS titles+snippets only)
+    python pboat_universe.py --no-playwright # requests-only extraction (no Chromium fallback)
 
 Deps (auto-installed on first run): requests feedparser
+Optional (for the redirect/403 fallback): playwright + chromium  (degrades gracefully if absent)
 """
 from __future__ import annotations
 
@@ -83,6 +95,16 @@ for _pkg in ("requests", "feedparser"):
 import requests   # noqa: E402
 import feedparser # noqa: E402
 
+# Playwright is OPTIONAL (the funnel still runs without it — requests-only extraction +
+# RSS-snippet fallback). It is what resolves news.google.com redirect links to the real
+# article and recovers full-text bodies from sites that 403 a plain `requests` fetch.
+try:
+    from playwright.sync_api import sync_playwright  # noqa: E402
+    PLAYWRIGHT_OK = True
+except Exception:
+    sync_playwright = None
+    PLAYWRIGHT_OK = False
+
 
 # ── paths ────────────────────────────────────────────────────────────────────
 
@@ -97,6 +119,14 @@ UA = {
                    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"),
     "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
     "Accept-Language": "en-US,en;q=0.9,th;q=0.5",
+}
+
+# Same browser identity, but an HTML Accept header for fetching article PAGES (not feeds).
+# This is the bypass: a real-browser UA gets a 200 from most publishers that 403 a bot.
+ARTICLE_HEADERS = {
+    "User-Agent": UA["User-Agent"],
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.8,th;q=0.6",
 }
 
 BKK = timezone(timedelta(hours=7))   # Asia/Bangkok UTC+7
@@ -270,6 +300,140 @@ def source_domain(url: str) -> str:
     return m.group(1).lower() if m else ""
 
 
+# ── full-text extraction (the WebFetch-403 bypass) ──────────────────────────
+# Mirrors P'Jah's funnel: the Python side fetches the article BODY with a real-browser
+# User-Agent (and a Playwright headless-Chromium fallback) and writes it into the universe
+# JSON. Claude then reads `body_text` from the committed JSON instead of calling the
+# WebFetch tool — so a publisher that 403s Claude's WebFetch no longer degrades the brief.
+
+def is_gnews(url: str) -> bool:
+    """A Google News RSS link is a news.google.com redirect, NOT the real article. Plain
+    `requests` usually can't follow it (the redirect is JS); Playwright can."""
+    return "news.google.com" in (url or "")
+
+
+def extract_article(url: str, max_chars: int = 1500, timeout: int = 12) -> str:
+    """Best-effort full-text grab for ONE article via browser-UA `requests`. Returns plain
+    text, or '' if blocked (403)/empty/JS-walled. Never raises."""
+    if not url:
+        return ""
+    try:
+        r = requests.get(url, headers=ARTICLE_HEADERS, timeout=timeout, allow_redirects=True)
+        if r.status_code != 200 or not r.text:
+            return ""
+        h = re.sub(r"(?is)<(script|style|noscript|nav|header|footer|aside|form)[^>]*>.*?</\1>",
+                   " ", r.text)
+        paras = re.findall(r"(?is)<p[^>]*>(.*?)</p>", h)
+        text = " ".join(strip_html(p) for p in paras) if paras else strip_html(h)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text[:max_chars]
+    except Exception:
+        return ""
+
+
+_PW_READY = False  # one-time Chromium availability check (lazy — only if we actually use PW)
+
+
+def ensure_chromium() -> None:
+    """Make sure a headless Chromium is installed (one-time ~150MB download). Flips
+    PLAYWRIGHT_OK off if it can't be made to work, so callers degrade to requests-only."""
+    global PLAYWRIGHT_OK, _PW_READY
+    if not PLAYWRIGHT_OK or _PW_READY:
+        return
+    try:
+        with sync_playwright() as p:
+            p.chromium.launch(headless=True).close()
+        _PW_READY = True
+    except Exception:
+        print("[setup] downloading Playwright Chromium (one-time ~150MB) ...", flush=True)
+        try:
+            subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"])
+            with sync_playwright() as p:
+                p.chromium.launch(headless=True).close()
+            _PW_READY = True
+        except Exception as e:
+            print(f"[setup] Chromium unavailable ({e}); Playwright extraction skipped.", flush=True)
+            PLAYWRIGHT_OK = False
+
+
+def pw_fetch(url: str, max_chars: int = 1500, timeout_ms: int = 30000) -> tuple[str, str, str]:
+    """Headless-Chromium fetch. Follows JS redirects (so a news.google.com link lands on the
+    REAL article), returns (body_text, resolved_url, published_or_empty). ('', '', '') on
+    failure. This is the recovery path for 403s and Google News redirects."""
+    if not PLAYWRIGHT_OK:
+        return "", "", ""
+    try:
+        with sync_playwright() as p:
+            b = p.chromium.launch(headless=True)
+            ctx = b.new_context(user_agent=UA["User-Agent"], locale="en-US")
+            pg = ctx.new_page()
+            try:
+                pg.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+                # a Google News redirect resolves via JS — give it a beat to land on the article
+                try:
+                    pg.wait_for_url(lambda u: "news.google.com" not in u, timeout=8000)
+                except Exception:
+                    pass
+                resolved = pg.url or ""
+                body = ""
+                for sel in ("article", "main", "[role=main]"):
+                    el = pg.query_selector(sel)
+                    if el:
+                        t = el.inner_text()
+                        if t and len(t) > 200:
+                            body = t
+                            break
+                if not body:
+                    body = pg.inner_text("body")
+                published = ""
+                for sel, attr in (('meta[property="article:published_time"]', "content"),
+                                  ('meta[itemprop="datePublished"]', "content"),
+                                  ('meta[name="date"]', "content"),
+                                  ("time[datetime]", "datetime")):
+                    el = pg.query_selector(sel)
+                    if el:
+                        v = el.get_attribute(attr)
+                        if v and v.strip():
+                            published = v.strip()
+                            break
+                body = re.sub(r"\s+", " ", body or "").strip()[:max_chars]
+                return body, resolved, published
+            finally:
+                b.close()
+    except Exception:
+        return "", "", ""
+
+
+def enrich_item(it: dict, use_playwright: bool = True) -> dict:
+    """Add full-text `body_text` to ONE candidate. Strategy:
+      • real publisher URL → try requests first (cheap); fall back to Playwright on 403/empty.
+      • news.google.com redirect → go straight to Playwright (requests can't follow it).
+    Sets body_text, extract_status (ok|blocked|skipped), and resolved_url. Never raises."""
+    url = it.get("url", "")
+    it.setdefault("resolved_url", "")
+    if not url:
+        it["body_text"], it["extract_status"] = "", "skipped"
+        return it
+
+    body = "" if is_gnews(url) else extract_article(url)
+    if body:
+        it["body_text"], it["extract_status"] = body, "ok"
+        return it
+
+    if use_playwright and PLAYWRIGHT_OK:
+        ensure_chromium()
+        pw_body, resolved, _pub = pw_fetch(url)
+        if resolved and "news.google.com" not in resolved:
+            it["resolved_url"] = resolved
+        if pw_body and len(pw_body) > 200:
+            it["body_text"], it["extract_status"] = pw_body, "ok"
+            return it
+
+    # nothing better than the RSS description — leave it for the engine's Tier-2 snippet path
+    it["body_text"], it["extract_status"] = "", "blocked"
+    return it
+
+
 # ── keyword matching ─────────────────────────────────────────────────────────
 
 _WB = r"[^\W_]"  # Unicode word character (letter or digit, not underscore/punct)
@@ -401,10 +565,13 @@ def run_stream(
     trusted_domains: set[str],
     trusted_only: bool = True,
     top_n: int = 40,
+    enrich_n: int = 12,
+    use_playwright: bool = True,
 ) -> dict:
     """
     Fetch, filter, score, and return the candidate pool for one stream.
     stream: "ainews" | "watchlist"
+    enrich_n: how many top-scored candidates get a full-text `body_text` (0 = none).
     """
     print(f"\n{'='*60}", flush=True)
     print(f"[{stream}] starting (window={hours}h)", flush=True)
@@ -505,12 +672,30 @@ def run_stream(
     candidates.sort(key=lambda x: x["score"], reverse=True)
     candidates = candidates[:top_n]
 
+    # ── Phase 4.5: full-text enrichment of the top picks (the WebFetch-403 bypass) ──
+    # Only the most likely finalists are fetched (like P'Jah) — fetching all 40 would be
+    # slow and mostly wasted on stories that won't be selected. Each enriched item gets a
+    # `body_text` so the engine can verify + summarize WITHOUT a live WebFetch.
+    n_enrich = min(enrich_n, len(candidates))
+    if n_enrich > 0:
+        print(f"[{stream}] enriching top {n_enrich} with full article text "
+              f"(playwright={'on' if (use_playwright and PLAYWRIGHT_OK) else 'off'}) ...", flush=True)
+        n_ok = 0
+        for it in candidates[:n_enrich]:
+            enrich_item(it, use_playwright=use_playwright)
+            if it.get("extract_status") == "ok":
+                n_ok += 1
+            time.sleep(0.3)  # be polite
+        print(f"[{stream}] enrichment: {n_ok}/{n_enrich} got full body "
+              f"({n_enrich - n_ok} fell back to RSS snippet)", flush=True)
+
     # ── Phase 5: clean up for JSON output ──
     output_items: list[dict] = []
     for it in candidates:
         output_items.append({
             "title":           it["title"],
             "url":             it["url"],
+            "resolved_url":    it.get("resolved_url", ""),
             "source":          it.get("source", ""),
             "publisher":       it.get("publisher", ""),
             "on_allowlist":    it.get("on_allowlist", False),
@@ -519,6 +704,8 @@ def run_stream(
             "age_h":           it.get("age_h"),
             "has_timestamp":   it.get("has_timestamp", False),
             "description":     it.get("description", "")[:300],
+            "body_text":       it.get("body_text", ""),
+            "extract_status":  it.get("extract_status", "skipped"),
             "keywords_matched": it.get("keywords_matched", [])[:8],  # trim for readability
             "match_count":     it.get("match_count", 0),
             "score":           it.get("score", 0.0),
@@ -537,6 +724,8 @@ def run_stream(
             "items_after_keyword": n_after_keyword,
             "items_after_trusted": n_after_trusted,
             "trusted_filter":      trusted_only,
+            "items_enriched":      sum(1 for it in output_items if it.get("extract_status") == "ok"),
+            "playwright":          bool(use_playwright and PLAYWRIGHT_OK),
         },
         "candidates": output_items,
     }
@@ -555,7 +744,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--all-sources", action="store_true",
                         help="Keep off-allowlist publishers too (still tagged on_allowlist). "
                              "Default: drop them so the pool only contains trusted outlets.")
+    parser.add_argument("--enrich-n", type=int, default=12,
+                        help="How many top-scored candidates per stream to fetch full body "
+                             "text for (default 12). 0 disables enrichment.")
+    parser.add_argument("--no-enrich", action="store_true",
+                        help="Skip full-text enrichment entirely (RSS titles+snippets only).")
+    parser.add_argument("--no-playwright", action="store_true",
+                        help="Don't use the Playwright fallback (requests-only extraction; "
+                             "Google News redirect links will fall back to the RSS snippet).")
     args = parser.parse_args(argv)
+    enrich_n = 0 if args.no_enrich else args.enrich_n
+    use_playwright = not args.no_playwright
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -573,6 +772,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[init] watchlist GNews queries: {len(watchlist_gnews)}", flush=True)
     print(f"[init] trusted-source domains loaded: {len(trusted_domains)} "
           f"(filter {'ON' if trusted_only else 'OFF — --all-sources'})", flush=True)
+    print(f"[init] enrichment: {'OFF' if enrich_n == 0 else f'top {enrich_n}/stream'} · "
+          f"playwright {'available' if (use_playwright and PLAYWRIGHT_OK) else 'OFF'}", flush=True)
 
     streams = ["ainews", "watchlist"] if args.stream == "both" else [args.stream]
 
@@ -585,6 +786,8 @@ def main(argv: list[str] | None = None) -> int:
             trusted_domains=trusted_domains,
             trusted_only=trusted_only,
             top_n=args.top,
+            enrich_n=enrich_n,
+            use_playwright=use_playwright,
         )
         out_path = OUTPUT_DIR / f"universe_{date_str}_{stream}.json"
         out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -72,7 +72,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install --quiet requests feedparser playwright
+        run: pip install --quiet requests feedparser openpyxl playwright
 
       - name: Install Chromium for Playwright
         # Used to fetch full article bodies and resolve news.google.com redirect links.
@@ -85,13 +85,14 @@ jobs:
           STREAM="${{ github.event.inputs.stream || 'both' }}"
           python .github/scripts/pboat_universe.py --hours "$HOURS" --stream "$STREAM"
 
-      - name: Commit universe JSONs
+      - name: Commit universe JSONs + Excel
         run: |
           set -euo pipefail
           git config user.name  "pboat-data-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add .github/scripts/output/universe_*.json 2>/dev/null || true
+          git add .github/scripts/output/universe_*.xlsx .github/scripts/output/universe-latest.xlsx 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "No new universe data to commit."

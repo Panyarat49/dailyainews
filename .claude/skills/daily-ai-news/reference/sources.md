@@ -1,24 +1,63 @@
-# Sources — 2026-06-11 (ainews)
+# Sources — 2026-06-22 (ainews)
 
-Generated: 2026-06-11 (Asia/Bangkok)
-Runtime: WEBFETCH_OK
-Freshness window: rolling 24h (Asia/Bangkok) — write-up publish time
-Dedup against: last 7 ainews briefs (0 URLs loaded — first ainews run)
-Story count: 4 (target 4–5, floor 3 — met). Grok via Tier-1 fetch; others Tier-2 (Primary newsroom, surfaced via search/screening).
+Generated: 2026-06-22 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (control probe https://example.com → 403; all live fetches 403)
+Model: claude-opus-4-8
+Freshness window: rolling 7d (Asia/Bangkok); every selected item additionally within last 24h
+Dedup against: last 7 ainews briefs (39 URLs loaded; 2026-06-15 → 2026-06-21)
+Source mix: 2 international (The Register, TechCrunch) + 3 Thai (The Standard ×2, Blognone). International supply thin this run — most Tom's Hardware funnel items carried image-only descriptions (no substantive snippet), so were not Tier-2-citeable in blocked mode.
+Universe pre-load: 25 candidates from RSS funnel (generated_at 2026-06-22T06:27:45+07:00, ~2.5h old). Verification forced to Tier-2 (funnel snippet) because this runtime's WebFetch is 403-blocked.
 
 ## Selected stories
-1. **อดีตวิศวกร xAI ฟ้องเรื่องความปลอดภัย Grok** — TechCrunch · https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/ · Published 2026-06-10 · Freshness ✅ (body fetched) · Dedup ✅ · Verification: **Tier 1 — WebFetch** · legal/safety/governance.
-2. **Anthropic $200M + 2 policy frameworks** — Anthropic · https://www.anthropic.com/news · Published 2026-06-10 (AP-syndicated; Techmeme 260610) · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (anthropic.com 403 to WebFetch) · AI regulation / economic policy.
-3. **OpenAI models + Codex via Oracle OCI credits** — OpenAI · https://openai.com/index/openai-on-oracle-cloud/ · Published 2026-06-10 · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (openai.com 403) · cloud distribution / partnership.
-4. **TSMC record May revenue +30% (AI demand)** — TSMC · https://pr.tsmc.com/english/news · Published 2026-06-10 (May figures) · Freshness ✅ · Dedup ✅ · Verification: **Tier 2 — snippet** (discovered via Bloomberg/DigiTimes screening → cited to TSMC Primary) · earnings/data with AI angle.
+1. **Anthropic's Mythos/Fable 5 ban keeps getting more complicated**
+   - Publisher: The Register (theregister.com)
+   - URL: https://www.theregister.com/ai-and-ml/2026/06/22/anthropics-mythos-mess-just-keeps-getting-more-complicated/5258577
+   - Published: Mon, 22 Jun 2026 01:00:00 +0200 (age ~0.5h at funnel build)
+   - FreshnessCheck: ✅ within last 24h via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet
+   - Summary: A week after the Trump administration imposed a de facto ban on Anthropic's Mythos derivative Fable 5, more details emerging about the move suggest internal Anthropic concerns were warranted; the piece questions the government's rationale.
+
+2. **Beyond Siri: practical AI features coming to iPhone in iOS 27**
+   - Publisher: TechCrunch (techcrunch.com)
+   - URL: https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/
+   - Published: Sun, 21 Jun 2026 14:40:28 +0000 (age ~8.8h)
+   - FreshnessCheck: ✅ within last 24h via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet
+   - Summary: Siri's AI overhaul grabbed the WWDC headlines, but some of Apple's most useful AI features in iOS 27 are arriving elsewhere across the OS.
+
+3. **Thailand–IMEC: deepening photonics/semiconductor cooperation (Netherlands & Belgium mission)**
+   - Publisher: The Standard (thestandard.co)
+   - URL: https://thestandard.co/yoschanan-imec-thailand-chip-hub/
+   - Published: Sun, 21 Jun 2026 05:57:31 +0000 (age ~17.5h)
+   - FreshnessCheck: ✅ within last 24h via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet
+   - Summary: Deputy PM and MHESI minister Yoschanan Wongsawat summarized a 13–20 June mission to the Netherlands and Belgium seeking science/tech cooperation, with IMEC ties aimed at positioning Thailand as a photonics-chip hub.
+
+4. **Google Workspace AI updates — AI note-taking in Voice, Thai-language AI Avatar in Google Vid**
+   - Publisher: Blognone (blognone.com)
+   - URL: https://www.blognone.com/node/150952
+   - Published: Sun, 21 Jun 2026 10:15:33 +0000 (age ~13.2h)
+   - FreshnessCheck: ✅ within last 24h via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet
+   - Summary: Google Workspace rolled out updates including AI note-taking on Google Voice calls, 200 calendar colors in Google Calendar, and Thai-language support for the AI Avatar in Google Vid.
+
+5. **Opposition leader urges NACC to probe the TH-AI Passport project**
+   - Publisher: The Standard (thestandard.co)
+   - URL: https://thestandard.co/natthaphong-pacc-th-ai-passport-probe/
+   - Published: Sun, 21 Jun 2026 11:30:55 +0000 (age ~11.9h)
+   - FreshnessCheck: ✅ within last 24h via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet
+   - Summary: Opposition leader Natthaphong Ruangpanyawut said he asked the NACC to investigate the TH-AI Passport project on its own initiative, citing anti-collusion-bidding law and warning that inaction could constitute dereliction of duty.
 
 ## Dropped
-- Meta "Muse Spark" — Gate A (Apr 8 write-up; stale).
-- NVIDIA+TSMC AI-in-fabs (cuLitho) — Gate A (May 31).
-- Nvidia RTX Spark / Rubin / Isaac GR00T — Gate A (Jun 1, Computex).
-- Microsoft Foundry Local / Windows Agent Framework — Gate A (Jun 2, Build).
-- ChatGPT memory "Dreaming V3" — Gate A (Jun 4; >24h).
-- Amazon–Corning ~$6B deal (Jun 10) — citation gate (only on Motley Fool, not allow-listed) → dropped despite fresh.
-- SpaceX IPO (Jun 11) — Gate C (not AI/tech).
-
-> Aimed 4–5; landed 4 (floor met). Verification skewed Tier-2 — most Primary pages (openai/anthropic) + key wires (Reuters/AP/Bloomberg) are 403/inaccessible to the WebFetch agent; cited to allow-listed Primary newsrooms per screening→cross-match.
+- https://thestandard.co/opinion-ai-modelers-market/ — Scope (pure opinion/investment column).
+- https://www.tomshardware.com/...evo-x3... , .../goaty... , .../nvk-dlss... , .../bank-of-korea-...-bonuses... — Tier-2 not satisfiable in blocked mode: funnel `description` was an image-URL only (no substantive snippet to paraphrase). Kept off rather than padded.
+- https://news.google.com/rss/articles/...True IDC... — Gate (provenance): news.google.com redirect; no direct bangkokbiznews URL fetchable in blocked mode + thin snippet.
+- https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot... , https://www.blognone.com/node/150950 — Scope: not AI/tech (keyword "claude" matched a person's name).
+- https://news.google.com/rss/articles/...Bloomberg... — Screening source (discovery only) + redirect; not citeable.
+- https://news.google.com/rss/articles/...BBC/Guardian/livemint... — thin (title-only) snippet via news.google.com redirect; not Tier-2-citeable in blocked mode.

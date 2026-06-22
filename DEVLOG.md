@@ -12,6 +12,12 @@ Three changes, all bringing pboat closer to the cafeinvest (pjah) design. Delive
 branch `fixed-403-rank-codex` (commits `da3fe58`, `6c48a0c`). pjah was read-only reference;
 nothing in that repo was changed.
 
+**Goal.** Close the three gaps the local routine couldn't cover: (1) deliver a **full-quality
+brief even when the writer's `WebFetch` is 403-blocked**, (2) give every story a **transparent
+relevance score exported to Excel** so the brief is written from the highest-rated items (not a
+flat discovery list), and (3) add a **Claude-independent cloud backup writer** so a Claude
+outage no longer means no brief.
+
 ### Issue 2 — Pre-fetch full article bodies (the real WebFetch-403 bypass)
 
 **Problem.** The 2026-06-19 change made a blocked run citeable, but only at **Tier-2 snippet**
@@ -104,6 +110,27 @@ only in-repo enabler is Issue 1's Excel-footer link + the `body_text` data it wr
   committed JSON's `body_text`. Commits to `main` → `email-notify.yml` delivers.
 - Sits between the ~07:00 Claude routine and the 13:49 Actions backup. The prompt lives in the
   Codex automation (not committed here yet; a `docs/PBOAT-CODEX-BACKUP.md` can be added later).
+
+### How it works now (the daily runtime flow)
+
+1. **05:57 BKK — `pboat-data.yml` → `pboat_universe.py`.** RSS + Google-News sweep →
+   keyword/noise filter → **cluster** near-identical headlines (corroboration) → tag trusted
+   domains + their role (primary/citation/screening) + watchlist company/tier → **multi-factor
+   score** → **enrich the top 12/stream** with full `body_text` (browser-UA requests, Playwright
+   for Google-News redirects + 403s). Commits `universe_<date>_<stream>.json` (now carrying
+   `body_text`, `score`, `score_breakdown`, `cluster_size`, the `scoring` README) **and**
+   `universe-latest.xlsx`.
+2. **~07:00 BKK — Claude routine.** Engine Step 0.5 reads the JSON: candidates are pre-ranked,
+   so it **leads selection with `score`** and verifies each pick from its `body_text`
+   (**Tier-1 funnel body — no WebFetch**, so the 403 block is moot). Writes the briefs, footer
+   links the Excel → email fires.
+3. **~09:00 BKK — Codex cloud backup.** If a brief is missing, writes it from the same JSON's
+   `body_text` and commits to `main` → email fires. (External automation; not in this repo.)
+4. **13:49 BKK — `daily-brief.yml`.** Final always-on floor if a brief is still missing; tags
+   the commit `[verify=funnel|webfetch|search]` from the engine's `Verification mode:` line.
+
+The new artifacts: per-stream JSON gains the body + ranking fields; **`universe-latest.xlsx`**
+is the human-readable ranked workbook (tabs: AI news all/top, Watchlist all/top, by company).
 
 **Not changed.** Email chain, freshness/dedup gates, trusted-sources allowlist, perspectives,
 article format, story-count targets, the two `SKILL.md` files.

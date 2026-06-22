@@ -6,6 +6,110 @@
 
 ---
 
+## 2026-06-22 — Full-text bypass + multi-factor ranking + ranked Excel + Codex backup
+
+Three changes, all bringing pboat closer to the cafeinvest (pjah) design. Delivered on
+branch `fixed-403-rank-codex` (commits `da3fe58`, `6c48a0c`). pjah was read-only reference;
+nothing in that repo was changed.
+
+### Issue 2 — Pre-fetch full article bodies (the real WebFetch-403 bypass)
+
+**Problem.** The 2026-06-19 change made a blocked run citeable, but only at **Tier-2 snippet**
+quality (≤300-char RSS `description`). pjah avoids 403 entirely because its *Python funnel*
+fetches the full article body (browser UA + Playwright) and commits it — so its writer never
+calls WebFetch. pboat's funnel only fetched RSS, so the writer still had to WebFetch each body
+(→ 403) or fall back to thin snippets.
+
+**Fix.** Port pjah's extraction into the funnel so `body_text` is committed in the universe JSON.
+
+`.github/scripts/pboat_universe.py`:
+| Chunk | Before | After |
+|---|---|---|
+| dependency bootstrap | imported `requests`, `feedparser` only | + optional Playwright import block setting `PLAYWRIGHT_OK` (degrades gracefully if absent) |
+| headers | one `UA` dict (RSS `Accept`) | + `ARTICLE_HEADERS` (HTML `Accept`, same browser UA) for fetching article *pages* |
+| new functions | — | `is_gnews()`, `extract_article()` (browser-UA requests), `ensure_chromium()`, `pw_fetch()` (headless Chromium; resolves `news.google.com` redirects to the real article), `enrich_item()` |
+| `run_stream()` | scored, sorted, wrote JSON | + **Phase 4.5**: enrich the top `enrich_n` (default 12) picks with `body_text`; output items gain `resolved_url`, `body_text`, `extract_status`; stats gain `items_enriched`, `playwright` |
+| `run_stream()` signature | `(…, top_n)` | `(…, top_n, enrich_n=12, use_playwright=True)` |
+| CLI flags | `--stream --hours --top --all-sources` | + `--enrich-n`, `--no-enrich`, `--no-playwright` |
+
+`.github/workflows/pboat-data.yml`:
+| Chunk | Before | After |
+|---|---|---|
+| deps install | `pip install requests feedparser` | `pip install requests feedparser playwright` + new step `python -m playwright install --with-deps chromium` |
+| job timeout | `timeout-minutes: 15` | `timeout-minutes: 25` (headroom for Chromium + per-article fetch) |
+
+`.claude/skills/shared/engine.md`:
+| Chunk | Before | After |
+|---|---|---|
+| Step 0.5 field list | listed `description`, `published_raw`, `has_timestamp` | + `body_text`, `extract_status`, `resolved_url`; explains body_text = Tier-1-grade evidence already on disk |
+| Step 0.5 item 4 | branch on WebFetch probe (OK→fetch, BLOCKED→snippet) | priority order: **`body_text` first** (verify from it, no WebFetch — works even when blocked) → else WebFetch (OK) → else funnel snippet (blocked) |
+| §1b-ver tier table | Tier-1 Full fetch / Tier-2 snippet | + **"Tier 1 — funnel body"** row (preferred, no egress); Full-fetch now only for picks lacking body_text |
+| sources.md template | `Runtime:` line | + `Verification mode: {funnel\|webfetch\|search}` line |
+| commit-tag note | `[verify={webfetch\|search}]` | `[verify={funnel\|webfetch\|search}]` |
+
+`.github/workflows/daily-brief.yml` (the Actions backup runner):
+| Chunk | Before | After |
+|---|---|---|
+| verify-tag logic | `verify=webfetch`; if `WEBFETCH_BLOCKED` in sources.md → `search` | reads the engine's `Verification mode:` line → `funnel\|webfetch\|search`; old heuristic kept as fallback |
+
+### Issue 1 — Multi-factor ranking in JSON + a ranked Excel workbook
+
+**Problem.** pboat's score was trivial (recency + keyword-hit count) and there was no Excel —
+unlike pjah, which ranks every story with a transparent multi-factor score and exports a
+multi-tab workbook. The writer also re-ranked from scratch instead of leading with the score.
+
+**Fix.** Port pjah's scoring structure (adapted to AI/tech) + an Excel exporter.
+
+`.github/scripts/pboat_universe.py`:
+| Chunk | Before | After |
+|---|---|---|
+| required deps | `("requests", "feedparser")` | `("requests", "feedparser", "openpyxl")` |
+| `score_item()` | `recency(0–2) + min(hits,5)*0.8` → returns `float`; signature `(item, matched)` | multi-factor: `recency(banded) + signal + source_role + corroboration + watchlist_tier` → returns `(score, breakdown)`; signature `(item, stream)` |
+| new scoring constants | — | `ROLE_W` (primary 2.0 / citation 1.2 / screening 0.5), `WL_TIER_W` (T1 +1.5 / T2 +0.8), `SCORING_README` |
+| clustering | — | `tokenize()` + `cluster()` → `cluster_size` = cross-outlet corroboration |
+| source roles | — | `load_source_roles()` + `source_role()` (parse trusted-sources.md sections A/A2→primary, B→citation, C→screening) |
+| watchlist tagging | flat keyword list only | + `load_watchlist_companies()` + `tag_watchlist()` → `matched_company`, `company_tier` |
+| Excel | — | `export_universe_xlsx()` + style constants → combined workbook |
+| `run_stream()` phases | Phase 3 scored inline; Phase 4 sorted | Phase 3 (no inline score) → **3.4 cluster** → **3.45 watchlist tag** → 3.5 trusted → **3.6 score (with source_role)** → Phase 4 sort |
+| `run_stream()` signature | `(…, trusted_domains, trusted_only, top_n, …)` | + `source_roles`, `watchlist_companies` |
+| output item fields | …`score` | + `source_role`, `cluster_size`, `matched_company`, `company_tier`, `score_breakdown` |
+| result top-level | `stats`, `candidates` | + `scoring` (the SCORING_README block) |
+| `main()` | loop streams → write JSON each | + loads `source_roles`/`watchlist_companies`; collects `results` dict; after loop writes `universe_<DATE>.xlsx` + `universe-latest.xlsx` (Excel failure never aborts the run) |
+
+`.github/workflows/pboat-data.yml`:
+| Chunk | Before | After |
+|---|---|---|
+| deps install | `requests feedparser playwright` | + `openpyxl` |
+| commit step | `git add …universe_*.json` | + `git add …universe_*.xlsx universe-latest.xlsx` |
+
+`.claude/skills/shared/engine.md`:
+| Chunk | Before | After |
+|---|---|---|
+| Step 0.5 field list | ranking not mentioned | + the ranking fields (`score`, `score_breakdown`, `cluster_size`, `source_role`, `matched_company`, `company_tier`) |
+| Step 0.5 | (no lead-with-score rule) | + **item 2b**: candidates are pre-ranked; **lead selection with `score`**, use `cluster_size` as corroboration, don't re-rank from scratch |
+| output template footer | skill footer only | + "full ranked universe (Excel)" link to `universe-latest.xlsx` (only when funnel JSON was used) |
+
+**Excel layout** (`universe-latest.xlsx`, same concept as pjah's `universe-latest.xlsx`):
+`AI news — all` (sorted by score) · `AI news — top` · `Watchlist — all` · `Watchlist — top` ·
+`Watchlist — by company`. Styled header, frozen row, auto-filter, clickable URLs.
+
+### Issue 3 — Codex cloud backup writer (no repo code change)
+
+A Claude-independent third writer, mirroring pjah's `docs/CAFEINVEST-CODEX-BACKUP.md`. It is an
+**external OpenAI Codex cloud automation**, so there is **no code in this repo** for it — the
+only in-repo enabler is Issue 1's Excel-footer link + the `body_text` data it writes from.
+- Schedule: **daily 09:00 Asia/Bangkok**, repo `Panyarat49/dailyainews`, branch `main`.
+- It gap-fills each stream independently (writes `articles/<DATE>-{ainews,watchlist}.md` only if
+  missing AND that stream's `universe_<DATE>_<stream>.json` exists), writing strictly from the
+  committed JSON's `body_text`. Commits to `main` → `email-notify.yml` delivers.
+- Sits between the ~07:00 Claude routine and the 13:49 Actions backup. The prompt lives in the
+  Codex automation (not committed here yet; a `docs/PBOAT-CODEX-BACKUP.md` can be added later).
+
+**Not changed.** Email chain, freshness/dedup gates, trusted-sources allowlist, perspectives,
+article format, story-count targets, the two `SKILL.md` files.
+
+---
+
 ## 2026-06-19 — WebFetch-block wiring: funnel snippets become first-party Tier-2 evidence
 
 **Problem.** The active writer is the claude.ai cloud Routine, where `WebFetch` is

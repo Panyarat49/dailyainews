@@ -9,15 +9,17 @@ The entire flow is executable from inside Claude — **no shell, no git CLI, no 
 ```
 05:57 Asia/Bangkok  ──▶  pboat-data.yml (GitHub Actions, pure Python — no API key)
                          RSS funnel: pboat_universe.py
-                         fetch RSS + Google News → keyword-filter → dedup → score
-                         → commits .github/scripts/output/universe_{DATE}_ainews.json
-                                                  + universe_{DATE}_watchlist.json   [skip email]
+                         fetch RSS + Google News → keyword-filter → dedup
+                           → multi-factor score → enrich top 12/stream with full body_text
+                         → commits universe_{DATE}_{stream}.json (body_text + ranking)
+                                                  + universe-latest.xlsx   [skip email]
                                                         │
-                                                        │  pre-screened candidate pool waits in the repo
+                                                        │  pre-ranked candidate pool (with full article bodies) waits in the repo
                                                         ▼
 07:00 Asia/Bangkok  ──▶  Claude Routine fires
                          engine Step 0.5: reads today's universe JSON as START_POOL
-                            ├─ JSON fresh (≤4h)  → skip WebSearch, WebFetch-verify the pool
+                            ├─ JSON fresh (≤4h)  → skip WebSearch, verify from body_text (Tier 1, no egress)
+                            │                       or live WebFetch for items the funnel didn't enrich
                             └─ JSON missing/stale → fall back to WebSearch (original flow)
                                                         │
                                                         ▼
@@ -74,7 +76,7 @@ The entire flow is executable from inside Claude — **no shell, no git CLI, no 
 │   └── scripts/
 │       ├── pboat_universe.py           # NEW — RSS funnel: fetch → filter → score → JSON
 │       ├── send_email.py               # renders brief → HTML, sends via SMTP
-│       └── output/                     # NEW — universe_{DATE}_{stream}.json land here
+│       └── output/                     # universe_{DATE}_{stream}.json + universe-latest.xlsx land here
 ├── articles/                           # committed briefs: YYYY-MM-DD-{ainews,watchlist}.md
 ├── DEVLOG.md                           # NEW — change history (start here for the RSS upgrade)
 ├── LOCAL-ROUTINE.md                    # how the alternate local-machine host runs the skills
@@ -92,7 +94,7 @@ The funnel front-loads that work in plain Python so Claude starts from a wide, a
 driven daily by [`.github/workflows/pboat-data.yml`](./.github/workflows/pboat-data.yml) at
 **05:57 Asia/Bangkok** — ~1 hour before the Routine.
 
-**What it does, in five steps:**
+**What it does:**
 
 1. **Fetch** — pulls ~14 direct RSS feeds (TechCrunch, The Verge, Blognone, Techsauce, …)
    plus Google News RSS searches (AI/tech, Thai, and one query per Tier-1 watchlist company).
@@ -105,16 +107,25 @@ driven daily by [`.github/workflows/pboat-data.yml`](./.github/workflows/pboat-d
    publisher is recovered from the feed's `<source>` element — so Google News redirect URLs resolve
    to the true domain. *(Run with `--all-sources` to keep off-allowlist items, tagged `on_allowlist:false`,
    for wider discovery.)*
-5. **Score** — ranks each survivor by recency + how many keywords it hit.
-6. **Write** — commits the top ~40 per stream to
-   `.github/scripts/output/universe_{DATE}_ainews.json` and `…_watchlist.json`,
+5. **Score** — multi-factor ranking: recency, keyword signal, source role (primary / citation /
+   screening), cross-outlet corroboration (`cluster_size` — how many outlets covered the same story),
+   and watchlist tier. This is exported to `universe-latest.xlsx` as a human-readable workbook
+   (tabs: AI news all/top, Watchlist all/top, by company) so the day's most significant stories
+   surface first before Claude even opens the pool.
+6. **Enrich** — for the top 12 candidates per stream, fetches the full article body (`body_text`)
+   using a browser-UA request (Playwright for Google News redirects that block plain requests).
+   This is the piece that makes WEBFETCH-blocked Claude sessions work at Tier-1 quality.
+7. **Write** — commits the top ~40 per stream to
+   `.github/scripts/output/universe_{DATE}_{stream}.json` (now with `body_text`, `score`,
+   `score_breakdown`, `cluster_size`, `source_role`) and `universe-latest.xlsx`,
    with `[skip email]` so no email fires.
 
 **How Claude uses it:** engine **Step 0.5** checks for today's JSON. If it's there and fresh
 (≤ 4 h old), Claude loads it as the starting candidate pool and skips most web searches —
-then **still WebFetch-verifies every story** (headline + publish timestamp) before writing.
+then **still verifies every story** before writing: from `body_text` (Tier-1 quality, no
+egress needed) when the funnel enriched it, or by live `WebFetch` for items it didn't.
 The JSON is a *pre-screen*, never a trust bypass: Gate A (freshness ≤ 24 h), Gate B (7-day dedup),
-the **trusted-source allowlist**, and Tier-1 verification all still run on every story.
+the **trusted-source allowlist**, and all verification gates still run on every story.
 
 **Two streams, two keyword sets:**
 
@@ -209,7 +220,7 @@ If `MAIL_USERNAME` / `MAIL_PASSWORD` / `MAIL_TO` aren't all set, the workflow **
 - **Mail secrets missing → skip cleanly.** The workflow emits a warning and exits 0; the commit still lands, just no email goes out.
 - **SMTP send fails → loud failure.** The workflow step exits non-zero so the run is marked failed in the Actions tab; no retry.
 - **No fabricated URLs.** Every cited URL is either fetched (Tier 1) or present in a live `WebSearch` result for a trusted-source domain (Tier 2). A URL never appears unless a search engine also returned it.
-- **Verification mode is visible.** Commit messages include `[verify=webfetch]` or `[verify=search]`; when the whole runtime is egress-blocked (`WEBFETCH_BLOCKED`), the article itself carries a banner.
+- **Verification mode is visible.** Commit messages include `[verify=funnel]` (normal scheduled run — Actions pre-fetched article bodies and Claude verified from them), `[verify=webfetch]` (egress-open session, live fetch), or `[verify=search]` (genuinely degraded, snippets only). When `WEBFETCH_BLOCKED`, the article shows one of three banners: a soft informational note when Actions bodies were available (Tier 1 quality), or an alarming note when only RSS snippets or WebSearch snippets were available.
 - **Idempotent.** Re-runs on the same day don't duplicate: identical content is a NO-OP, different content updates via SHA.
 - **Timezone is `Asia/Bangkok`** everywhere the date is computed.
 
@@ -272,7 +283,7 @@ See [`.env.example`](./.env.example) for inline notes on each var.
 
 Each day produces:
 
-- **Two new briefs on `main`:** `articles/YYYY-MM-DD-ainews.md` (general) and `articles/YYYY-MM-DD-watchlist.md` (watchlist), each committed `brief: {DATE} [kind=…] [verify=webfetch|search]`.
+- **Two new briefs on `main`:** `articles/YYYY-MM-DD-ainews.md` (general) and `articles/YYYY-MM-DD-watchlist.md` (watchlist), each committed `brief: {DATE} [kind=…] [verify=funnel|webfetch|search]`.
 - Regenerated per-skill working artifacts (`reference/sources.md`, `reference/perspectives.md`).
 - **Two emails** — one per brief — each the **full brief** rendered as HTML, with a permalink pinned to that commit's SHA (so the link never drifts if history is rewritten).
 
@@ -311,7 +322,7 @@ python3 .github/scripts/send_email.py articles/<YYYY-MM-DD>-ainews.md "https://e
 - **Commit lands but no email.** Email is dispatched by `.github/workflows/email-notify.yml` — check the Actions tab of the repo, not the Routine log. If the workflow didn't even fire, the push may have been a NO-OP (skill detected identical content and skipped the commit — intentional).
 - **SMTP login fails (`535` / `Authentication unsuccessful`).** `MAIL_PASSWORD` isn't a valid app password, or basic-auth SMTP is disabled for that account. For Gmail: confirm 2-Step Verification is on and regenerate the app password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).
 - **Workflow ran but the step failed.** Open the run log — the Python sender prints the host/port and the failing exception. Common causes: wrong password, SMTP AUTH disabled, recipient rejected.
-- **Every WebFetch returns 403 from a single Routine run.** May be a transient tool issue; the skill auto-falls-back to `WEBFETCH_BLOCKED` (Tier 2 — WebSearch snippets), commits with `[verify=search]`, and the article carries a banner saying so. If it's persistent across many runs, the fix is at the Routine platform level (egress policy / `WebFetch` schema), not the skill.
+- **Every WebFetch returns 403 from a single Routine run.** May be a transient tool issue; the skill auto-detects `WEBFETCH_BLOCKED`. On a normal scheduled run the RSS funnel will have pre-fetched full article bodies (`body_text`) via GitHub Actions (which runs in an open-egress environment), so quality stays Tier-1 — commits with `[verify=funnel]` and the brief shows a soft informational banner. Only if the funnel itself failed to enrich (`items_enriched = 0`) does the run degrade to snippets, committing `[verify=search]` with the alarming banner. If persistent 403s recur across many sessions, the fix is at the Routine platform level (egress policy / `WebFetch` schema), not the skill.
 - **`WebFetch` tool signature is `(url, prompt)` only — can't open SMTP.** Not a bug. That's the tool shape in Claude Web Routine. Anything requiring an authenticated network connection (like email) must live outside the Routine — see the GH Actions workflow.
 - **"No verifiable stories" in sources.md.** Means the candidate pool (RSS funnel and/or `WebSearch`) returned zero usable items from trusted-source domains. Genuinely quiet news day or search quota issue. Re-run later; don't loosen [`shared/trusted-sources.md`](./.claude/skills/shared/trusted-sources.md) just to fill the quota.
 - **The brief repeats yesterday's stories.** Check `Published:` in that skill's `reference/sources.md`. Tier-2 stories derive the date from the search snippet, which can be stale on slow news days.

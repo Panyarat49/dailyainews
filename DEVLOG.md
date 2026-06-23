@@ -6,6 +6,42 @@
 
 ---
 
+## 2026-06-23 — Smarter WebFetch banner: distinguish Actions-fetched bodies from degraded snippet runs
+
+**Problem.** The engine had two banner states — no banner (`WEBFETCH_OK`) or the alarming
+"RSS snippet" banner (`WEBFETCH_BLOCKED`). But on every scheduled run GitHub Actions pre-fetches
+full article bodies into `body_text` in the universe JSON. When Claude's own WebFetch was
+blocked, it was still verifying from Tier-1 article bodies already on disk — not degraded
+snippets — yet the banner falsely implied the opposite. The fix is a pure `engine.md` change;
+no script or workflow was touched.
+
+**Delivered on branch `claude/vigilant-ride-6pj4mq`** (commits `a000e65` brief, `f80c72b` engine fix).
+
+### What changed (`.claude/skills/shared/engine.md` only)
+
+**Step 2 — Verification-mode visibility** now has four cases instead of two:
+
+| State | Banner shown |
+|---|---|
+| `WEBFETCH_OK` (with or without funnel bodies) | none |
+| `WEBFETCH_BLOCKED` + `stats.items_enriched > 0` (funnel fetched full bodies — the normal scheduled path) | soft informational: _"WebFetch ถูกบล็อกใน Claude session นี้ แต่ GitHub Actions เข้าถึงบทความฉบับเต็มได้ — การตรวจสอบข่าวรอบนี้ใช้ข้อมูล Tier 1 จากบทความที่ดึงไว้ล่วงหน้าโดย Actions"_ |
+| `WEBFETCH_BLOCKED` + `items_enriched = 0` (only RSS snippets — genuinely degraded) | existing alarming banner |
+| No funnel, WebSearch snippets only | existing alarming banner |
+
+**Error-handling table** (`WEBFETCH_BLOCKED` row): now branches on `items_enriched`. If `> 0`,
+runner tags `[verify=funnel]` (not `[verify=search]`) and uses the soft banner. If `= 0`,
+existing degraded path applies.
+
+**Also produced today:** `articles/2026-06-23-ainews.md` (Anthropic Mythos NSA breach, Groq
+$650M, Google DeepMind A24, Thailand Siam Silica, Samsung ChatGPT Enterprise) and
+`articles/2026-06-23-watchlist.md` (Nvidia ISC 2026 roundup: Halos for Robotics + 35 Europe AI
+supercomputers + Vera Rubin; Alphabet $75M A24; Alibaba HappyHorse 1.1 #2; Microsoft Chevron
+power deal; Tesla Autopilot fatal crash pushback). Both verified at Tier 1 from funnel body_text.
+
+**Not changed.** Funnel script, workflows, email chain, article format, perspectives, story-count targets.
+
+---
+
 ## 2026-06-22 — Full-text bypass + multi-factor ranking + ranked Excel + Codex backup
 
 Three changes, all bringing pboat closer to the cafeinvest (pjah) design. Delivered on

@@ -295,16 +295,22 @@ Rules:
   snippet.
 - Thai-first prose; technical terms may stay in English.
 - **Verification-mode visibility:** the article body carries **exactly one** short
-  status blockquote directly under the H1 **only when the run is degraded**
-  (`WEBFETCH_BLOCKED` / Tier-2-only). Word it to match where the Tier-2 evidence
-  actually came from:
-  - Verified from the **RSS funnel** snippets (START_POOL — the normal blocked-mode path):
+  status blockquote directly under the H1, keyed on *both* the probe result and whether
+  the funnel pre-fetched full article bodies. Match exactly one of the four cases:
+  - **`WEBFETCH_OK`** (with or without funnel bodies): include **no** banner.
+  - **`WEBFETCH_BLOCKED` + funnel has `body_text`** (`stats.items_enriched > 0` in the
+    universe JSON — the normal case on a scheduled run): show a **soft informational**
+    banner. GitHub Actions (which runs in an open-egress environment) fetched the full
+    articles; only Claude's own in-session WebFetch is blocked. Quality is Tier 1:
+    > _หมายเหตุ: WebFetch ถูกบล็อกใน Claude session นี้ แต่ GitHub Actions เข้าถึงบทความฉบับเต็มได้ — การตรวจสอบข่าวรอบนี้ใช้ข้อมูล Tier 1 จากบทความที่ดึงไว้ล่วงหน้าโดย Actions_
+  - **`WEBFETCH_BLOCKED` + only RSS snippets** (`items_enriched = 0`, Tier-2-only from
+    funnel `description` fields — genuinely degraded):
     > _หมายเหตุ: รอบนี้ตรวจสอบข่าวจากฟีด RSS (snippet) ของสำนักข่าวต้นทาง เนื่องจาก WebFetch ถูกบล็อก_
-  - Verified from **live WebSearch** snippets (no funnel available that day):
+  - **No funnel, live WebSearch snippets only**:
     > _หมายเหตุ: รอบนี้ตรวจสอบข่าวผ่าน WebSearch (snippet) เท่านั้น_
 
-  When not degraded (Tier-1 `WebFetch`), include **no** such line. Verification detail
-  otherwise lives only in `sources.md` and the commit tag — never multiple banners/footers.
+  Verification detail otherwise lives only in `sources.md` and the commit tag — never
+  multiple banners/footers.
 
 ## Step 3 — Three perspectives
 For each selected story (and each update inside a roundup, if this skill has them),
@@ -371,7 +377,7 @@ Stub/empty-day variant: state which gate(s) blocked everything.
 | Condition | Action |
 |---|---|
 | Required per-skill input missing/unparseable | Abort before research. Log clearly. |
-| `WEBFETCH_BLOCKED` (whole runtime) | Tier 2 for every story — **prefer the funnel snippet** (START_POOL `description` + `published_raw`) over WebSearch; note it in sources.md so the runner tags `[verify=search]`; add the matching degraded-mode blockquote (Step 2). A funnel-backed blocked run is a real brief, not a stub. |
+| `WEBFETCH_BLOCKED` (whole runtime) | Check `stats.items_enriched` in the universe JSON. **If > 0** (funnel fetched full article bodies in GitHub Actions): verify from `body_text` as Tier 1 as normal; runner tags `[verify=funnel]`; add the soft informational banner (Step 2 — second bullet). **If = 0** (only RSS snippets): Tier 2 for every story — prefer funnel `description` + `published_raw` over WebSearch; runner tags `[verify=search]`; add the degraded banner (Step 2 — third bullet). Either way, a funnel-backed blocked run is a real brief, not a stub. |
 | Story > 24h ago | DROP (Gate A). List in "Dropped". |
 | Story URL in dedup set | DROP (Gate B). |
 | An EXTRA_GATE fails | DROP per that skill's rule. |

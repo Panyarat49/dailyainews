@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-06-24 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Anthropic เปิดตัว Claude Tag — AI teammate ตลอดเวลาใน Slack
+**อาจารย์ (มหาวิทยาลัย):** Claude Tag นำเสนอรูปแบบ ambient AI ที่แทรกซึมกระบวนการทำงานเป็นทีมแบบไม่มีแรงเสียดทาน — เป็นกรณีศึกษาที่น่าสนใจว่า "AI teammate" จะเปลี่ยน group dynamics, accountability และ knowledge management ในองค์กรอย่างไรเมื่อ institutional memory ถูก delegate ให้ AI ถือไว้
+**ผู้เชี่ยวชาญด้าน AI:** จุดสำคัญทางเทคนิคคือ persistent memory และ ambient mode ที่ทำให้ Claude ตอบสนองเชิงรุกโดยไม่ต้องถูก tag — นั่นหมายความว่า agent มี context ของทีมสะสมอยู่ตลอด ซึ่งทั้งเพิ่ม capability และสร้าง governance challenge ใหม่ด้านข้อมูล sensitive ที่ไหลผ่าน Slack channel
+**โปรแกรมเมอร์มืออาชีพ:** ตัวเลขที่ Anthropic อ้างว่า 65% ของ code ใน product team ตัวเองมาจาก Claude Tag ท้าทาย conventional metrics ของ engineering contribution — ถ้าถูกต้อง มันเปลี่ยนวิธีที่ทีมวัด "authorship" ของงาน และควรทดสอบ channel permission policy ให้รัดกุมก่อน rollout จริงใน channel ที่มีข้อมูล confidential
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. กลุ่ม AI PAC ทุ่ม $20 ล้านสู้ศึกกฎระเบียบ AI ในการเลือกตั้งขั้นต้นนิวยอร์ก
+**อาจารย์ (มหาวิทยาลัย):** นี่คือตัวอย่างจริงของ "regulatory capture" ผ่านกระบวนการประชาธิปไตย — AI companies ลงทุนในผู้แทนที่จะกำหนดนโยบาย AI แทนที่จะล็อบบี้ตรงๆ สะท้อนว่า AI governance กำลังเปลี่ยนเป็นสนามการต่อสู้ทางการเมืองที่ต้องการการศึกษาด้าน civic literacy ควบคู่กับ tech literacy
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสังเกตคือทั้ง Leading the Future (Andreessen Horowitz, Perplexity, Greg Brockman) และ PAC ที่สนับสนุนการกำกับดูแลเข้มข้นต่างลงในเขตเดียวกัน — แสดงว่า US AI regulation framework อาจถูกกำหนดโดย congressional district เดียวในนิวยอร์ก ซึ่งเป็น concentration of political risk ที่ AI industry ควรตระหนัก
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ build บน AI APIs ใน US market — ผลการเลือกตั้งนี้จะส่งผลต่อ AI regulation framework ซึ่งกระทบ compliance requirements, liability rules และ data handling regulations ที่ต้องปฏิบัติตาม ควรติดตามพัฒนาการและเตรียม compliance architecture รองรับ regulatory scenario ที่หลากหลาย
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Apple วิจัยพบ: แผงผู้ตัดสิน LLM 9 ตัวให้ข้อมูลจริงเพียง ~2 โหวตอิสระ
+**อาจารย์ (มหาวิทยาลัย):** งานวิจัยนี้ quantify "independence" ของ LLM judges ด้วย Kish effective sample size ซึ่งเป็นการนำ statistical framework ที่มีอยู่แล้วมาใช้กับปัญหาใหม่ — เป็นตัวอย่างที่ดีของ methodology transfer และวิธีตั้งคำถามเชิงประจักษ์ต่อสมมติฐานที่แพร่หลายในวงการ AI
+**ผู้เชี่ยวชาญด้าน AI:** ผลที่น่าตกใจที่สุดคือ "neither adding more judges nor using smarter aggregation helps" — บ่งชี้ว่าปัญหาอยู่ที่ correlation structure ของ model training ไม่ใช่ aggregation method การแก้ที่แท้จริงต้องมี model families ที่มี training data และ objective แตกต่างกันอย่างแท้จริง ไม่ใช่แค่เพิ่มจำนวน
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมใช้ LLM-as-judge pipeline ใน production — งานนี้บอกตรงๆ ว่า multi-judge approach ที่ใช้ model family เดียวกัน หรือ base model เดียวกัน อาจไม่ได้เพิ่ม reliability จริง ควรรวม human annotation sample เป็น calibration ground truth ควบคู่กับ judge panel เป็น baseline
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Oracle เลิกจ้างพนักงาน 21,000 คนในหนึ่งปี เหตุ AI deployment ขยายตัว
+**อาจารย์ (มหาวิทยาลัย):** Oracle คือตัวอย่างเชิงประจักษ์ที่ชัดเจนว่า AI deployment ระดับองค์กรส่งผลต่อ workforce อย่างรวดเร็วและในระดับหลักหมื่น — ควรใช้เป็นกรณีศึกษาในชั้นเรียนเรื่อง technology-driven displacement และถก reskilling challenge ที่สถาบันการศึกษาต้องเตรียมรับ
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Oracle เลิกจ้าง 21,000 คนและระบุตรงๆ ว่าจะ "continue as internal AI deployment grows" เป็น signal ที่ชัดว่า AI deployment จริง (ไม่ใช่แค่ pilot) กำลัง replace human labor ในงานที่ structured, repetitive และ internal-facing ใน enterprise software ก่อน
+**โปรแกรมเมอร์มืออาชีพ:** ควรติดตามว่า Oracle AI deployment ส่งผลต่อ job categories ใดมากที่สุด — internal IT, back-office operations, QA, และ support functions มักถูก automate ก่อน developer ที่ build บน Oracle ecosystem ควรดู roadmap สำหรับ AI-augmented workflows ใน OCI เพื่อประเมินว่า tool chain จะเปลี่ยนอย่างไร
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. หลักสูตรผลิตชิปเกาหลีใต้ — คะแนนสอบเข้าตามติดแพทย์
+**อาจารย์ (มหาวิทยาลัย):** ปรากฏการณ์นี้สะท้อน market signal ที่ชัดเจน — นักเรียนและครอบครัวกำลังอ่านอนาคตได้ดีกว่าระบบการศึกษาทั่วไปที่ยังไม่ได้ปรับหลักสูตรชิปให้ทันดีมานด์จากคลื่น AI data center ที่กำลังระเบิด
+**ผู้เชี่ยวชาญด้าน AI:** ความต้องการ HBM, DRAM และ advanced packaging สำหรับ AI data centers กำลังสร้าง demand chip engineers ที่ไม่เคยมีมาก่อน — น่าจับตาว่า semiconductor cycle จะแกว่งตัวเมื่อใด เพราะประวัติศาสตร์ชี้ว่า oversupply มักตามหลัง demand surge ราว 3–5 ปี
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า semiconductor track ในเกาหลีกลายเป็น "new medicine" — มันบ่งชี้ว่า hardware/firmware engineering และ semiconductor software (EDA tools, chip design verification, CUDA-equivalent runtimes) กำลังกลายเป็น premium career track ที่ไม่น้อยกว่า AI software ใน 5 ปีข้างหน้า

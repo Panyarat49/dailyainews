@@ -1,42 +1,33 @@
-# Perspectives — 2026-06-23 (watchlist)
+# Perspectives — 2026-06-25 (watchlist)
 
-## 1. Nvidia — Halos for Robotics (อัปเดตสำคัญ 3 รายการ)
+## 1. Alibaba — Anthropic Accuses Alibaba of Illicitly Extracting Claude AI Model Capabilities
 
-### 1.1 Halos for Robotics
-**อาจารย์ (มหาวิทยาลัย):** Halos for Robotics คือตัวอย่าง "safety-by-design" แทนที่ "safety-by-retrofit" — ออกแบบ safety framework เป็น architecture layer ตั้งแต่ต้น ไม่ใช่ patch ทีหลัง นี่คือ design philosophy ที่ควรสอนใน robotics engineering curriculum; Agility เป็น adopter รายแรกในสภาพแวดล้อม factory/warehouse ซึ่งเป็น high-stakes setting ที่จะ generate real-world safety data สำคัญ
-**ผู้เชี่ยวชาญด้าน AI:** Open architecture ของ Halos for Robotics เป็น competitive move ที่ฉลาด — commoditize safety layer เพื่อ expand AI robotics ecosystem โดยรวม ซึ่งต่างจาก proprietary safety system ของ Boston Dynamics หรือ ABB; การมี AI Systems Inspection Lab สำหรับช่วย certification prep ลด barrier ที่ใหญ่ที่สุดสำหรับ humanoid robotics deployment จริงใน regulated environments
-**โปรแกรมเมอร์มืออาชีพ:** Halos OS API และ IGX Thor SDK เป็น integration points ที่ต้องศึกษาสำหรับ robotics software developer — embedded safety frameworks กำลังกลาย requirement ไม่ใช่ optional ใน 2–3 ปีข้างหน้า; ควรเรียน NVIDIA Halos SDK ควบคู่กับ Isaac ROS และ IsaacSim เพื่อ complete physical AI stack
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือ case study ชั้นเยี่ยมของ "AI IP warfare" ในยุคที่กฎหมายยังตามไม่ทัน — เส้นแบ่งระหว่าง model distillation (ที่กฎหมายอาจยอมรับในบางกรณี) กับ "illicit extraction" ยังไม่ชัดเจนในระบบกฎหมาย ถ้า Anthropic ชนะเป็นบรรทัดฐาน จะเปลี่ยน landscape ของ competitive AI research ทั้งโลก โดยเฉพาะกลยุทธ์ "catch-up via knowledge transfer" ของ AI companies จีน
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Anthropic นำเรื่องสู่ Congress โดยตรง (ไม่แค่ civil lawsuit) บ่งชี้ว่าบริษัทต้องการให้เกิด regulatory/legislative action ไม่ใช่แค่ damages — ถ้าสำเร็จอาจนำไปสู่ export control ใหม่สำหรับ AI model knowledge ที่คล้ายกับ semiconductor export controls ปัจจุบัน cluster_size=6 ยืนยันว่าเรื่องนี้ถูกรายงานโดยสื่อใหญ่ทุกสำนัก
+**โปรแกรมเมอร์มืออาชีพ:** คดีนี้เตือนว่าขอบเขต "allowed use" ของ AI API ToS กำลังถูก enforce จริงในระดับ legal action — ควรตรวจสอบ ToS ของ AI API ที่ทีมใช้งานอยู่ โดยเฉพาะ clauses เกี่ยวกับ model distillation, capability extraction และ reverse engineering ก่อนออกแบบ training pipeline ใดๆ
 
-### 1.2 Europe 35 AI Supercomputers
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข 90% market share ใน EU AI supercomputing สะท้อนความตึงเครียดระหว่าง EU tech sovereignty aspirations กับ dependency จริงบน US chipmaker สำหรับ core research infrastructure — นี่คือ case study geopolitics + tech policy ที่น่าใช้ในห้องเรียน AI governance
-**ผู้เชี่ยวชาญด้าน AI:** 800 AI exaflops ที่ deploy/announced ใน Europe ใน 1 ปีคือ pace ที่ accelerating — quantum-GPU integration ผ่าน CUDA-Q เป็น strategic move ที่ future-proof Nvidia ก่อน quantum computers จะ commercially viable; ISC High Performance 2026 เป็น flagship HPC event ที่ Nvidia ใช้ consolidate dominance ทุกปี
-**โปรแกรมเมอร์มืออาชีพ:** 90% EU AI supercomputing บน CUDA หมายความว่า CUDA optimization, cuDNN profiling และ MPI + NCCL distributed training skills จะ valuable มากในยุโรปสำหรับ 5 ปีนี้; การ learn CUDA-Q เพิ่มเติมสำหรับ quantum-GPU hybrid algorithms เป็น long-term skill investment ที่ตอบโจทย์ตลาด
+## 2. Alphabet — อัปเดตสำคัญ 2 รายการ
 
-### 1.3 Vera Rubin Supercomputers for Science
-**อาจารย์ (มหาวิทยาลัย):** "Agentic AI co-scientist" ที่ call simulators และ surrogate models เป็น vision ที่น่าสนใจสำหรับ future of science — ควรถกในชั้นเรียน AI × science ว่า discovery ที่ AI-assisted ต่างจาก human-led research อย่างไรทั้งในมิติ epistemology และ credit attribution
-**ผู้เชี่ยวชาญด้าน AI:** FP64 precision + AI exaflops ใน single rack คือ differentiator สำคัญ — scientific computing ต้องการ double precision ซึ่ง AI accelerators ทั่วไปมักเสียสละเพื่อ throughput แต่ Vera Rubin รวมทั้งสองโดยไม่ tradeoff นี้จะเปลี่ยน TCO ของ national labs และ research facilities
-**โปรแกรมเมอร์มืออาชีพ:** CUDA-X scientific libraries บน Vera Rubin — โดยเฉพาะ cuFFT, cuSPARSE, cuDSS สำหรับ climate/physics modeling — เป็น productivity lever ที่ต้องเรียนรู้; "agentic scientific workflow" ที่ Nvidia push หมายถึง LangChain/LangGraph-style orchestration แต่ต้อง domain-specific safety validation ที่ different จาก business AI
+### 2.1 Gemini 3.5 Flash ได้ Computer Use Built-in
 
-## 2. Alphabet — Google DeepMind $75M A24 Deal
+**อาจารย์ (มหาวิทยาลัย):** การ integrate computer use เป็น built-in tool ใน Flash model (แทน standalone model) คือ architectural statement ที่สำคัญ — "reasoning + action" กำลังกลายเป็น first-class citizen ใน base model ไม่ใช่ plugin; นี่เปลี่ยนวิธีที่นักศึกษา AI ควรเข้าใจ agentic systems ว่าไม่ใช่ add-on แต่เป็น foundation
+**ผู้เชี่ยวชาญด้าน AI:** Built-in computer use ใน Flash (model เร็วและถูกกว่ารุ่น flagship) เป็น differentiator ที่สำคัญสำหรับ enterprise agentic automation ที่ต้องการ cost efficiency — long-horizon tasks เช่น continuous software testing และ knowledge work automation ตอนนี้ accessible กว่าเดิมมาก
+**โปรแกรมเมอร์มืออาชีพ:** เริ่มทดสอบ computer use via Gemini 3.5 Flash API และ Gemini Enterprise Agent Platform ได้เลย — ตัวอย่าง use-cases ที่ cost-effective: automated browser testing, document processing ข้าม applications, enterprise workflow automation; prompt injection mitigations ที่ Google เพิ่มมาควรตรวจ documentation ก่อน deploy ใน production
 
-**อาจารย์ (มหาวิทยาลัย):** A24 มี artistic credibility สูงในฐานะ filmmaker-forward studio แต่ director รายใหญ่อย่าง Kane Parsons (Backrooms) เรียก AI ว่า "genuinely harmful" — partnership นี้จะเป็น case study ความตึงเครียดระหว่าง institutional decision (studio ตกลงรับเงิน) กับ individual creative resistance; คำถามสำหรับชั้นเรียนคือ "filmmaker-guided AI tools" มี meaningful consent และ creative control แค่ไหน
-**ผู้เชี่ยวชาญด้าน AI:** Research partnership model (ไม่ใช่ licensing/acquisition) ทำให้ DeepMind ได้ creative feedback loop คุณภาพสูงโดยไม่ต้องจ่าย IP premium; ประเด็น data provenance ของ A24 creative output ใน model training pipeline และ whether filmmaker feedback เป็น structured fine-tuning data หรือแค่ product input — ต่างกันอย่างมีนัยสำคัญในทาง technical
-**โปรแกรมเมอร์มืออาชีพ:** Vertex AI video/creative generation SDK คือช่องทางที่ research output จาก partnership นี้มักไหลออกมาใน 12–18 เดือน — ควรติดตาม Vertex AI Generative AI releases; สำหรับ developer ที่ build creative tools: A24 rep ระบุว่า tools "won't look like prompted generative AI" — นี่คือ design constraint ที่สำคัญ (workflow-integrated vs. zero-shot generation)
+### 2.2 AI Researchers Continue to Leave Google for Rivals
 
-## 3. Alibaba — HappyHorse 1.1
+**อาจารย์ (มหาวิทยาลัย):** สี่คนในสัปดาห์เดียว (Shazeer → OpenAI, Jumper → Anthropic, Adler + Pritzel → Anthropic) คือ signal ที่วัดได้ว่า research culture gap เป็นปัญหาเชิงระบบของ Google DeepMind ไม่ใช่กรณีเดี่ยว — IPO equity pull ของ Anthropic และ OpenAI สร้าง structural incentive ที่ Alphabet ตามยากในระยะสั้น เหมาะเป็น case study "talent retention in AI organizations"
+**ผู้เชี่ยวชาญด้าน AI:** Adler และ Pritzel เป็น core Gemini contributors — การออกของพวกเขาอาจชะลอ Gemini roadmap ใน 12–18 เดือน และเสริม Anthropic ในพื้นที่ที่ Google เคยนำ; CNBC รายงานว่า Alphabet shares ปรับลง พร้อมตั้งคำถามถึง Gemini product timeline ที่อาจกระทบ investor confidence
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า build บน Gemini API ให้เพิ่มความสำคัญของ multi-provider abstraction layer ที่ switch ไปยัง Claude หรือ GPT ได้ — ไม่ใช่เพราะ Gemini จะล้มเหลว แต่เพราะ capability velocity อาจผันผวน และ abstraction layer ตอนนี้ถูกกว่า refactor หลังเกิดปัญหา
 
-**อาจารย์ (มหาวิทยาลัย):** ตลาด AI video generation กำลัง consolidate อย่างรวดเร็ว — Sora ถูกยกเลิก, Seedance ถูกพับ, HappyHorse ขึ้น #2 ภายในเวลาสั้น นี่คือ case study "technology market dynamics" ที่คู่แข่งหายไปพร้อมกัน opening market window สำหรับ survivor; ควรถกว่า OpenAI discontinuing Sora เพราะ "financially unsustainable" เป็น business model problem หรือ product problem
-**ผู้เชี่ยวชาญด้าน AI:** API-first + enterprise pricing strategy ของ HappyHorse 1.1 เรียนจากความล้มเหลวของ Sora ที่ consumer pricing ไม่คุ้มทุน — Alibaba เดิมพันว่า enterprise workflow integration จะ sustainable กว่า consumer subscriptions; คำถามคือ $52.7B infrastructure investment จะ convert เป็น Western market share ได้ไหมท่ามกลาง US-China tech tensions ที่ทวีขึ้น
-**โปรแกรมเมอร์มืออาชีพ:** HappyHorse 1.1 API อยู่บน Alibaba Cloud Model Studio แล้วพร้อม 40% discount 2 สัปดาห์แรก — เหมาะสำหรับ evaluation เปรียบเทียบกับ Google Veo/Runway สำหรับ enterprise video generation use-case; ต้องตรวจ data residency requirements และ export control implications ก่อน integrate ใน Western-facing products เนื่องจาก Alibaba Cloud data center locations
+## 3. Micron — Tech's New Margin King
 
-## 4. Microsoft — Chevron Power Deal
+**อาจารย์ (มหาวิทยาลัย):** Micron 84.9% gross margin เป็น empirical evidence ว่า AI boom สร้าง value capture ไปยัง upstream memory chip suppliers ไม่ใช่แค่ GPU manufacturers หรือ model companies — นี่คือ case study "AI value chain distribution" ที่ quantify ได้จาก earnings report จริง เหมาะสำหรับสอน AI economics และ semiconductor supply chain
+**ผู้เชี่ยวชาญด้าน AI:** HBM (High Bandwidth Memory) demand จาก AI accelerators คือตัวขับเคลื่อนหลักของ margin expansion นี้ — record margins เป็น signal ว่า AI infrastructure spending ยังไม่ชะลอใน H1 2026; ผลประกอบการ Micron ดีกว่า Nvidia (75%) และ Meta (81.9%) ในมิติ gross margin เดียวกัน บ่งชี้ memory scarcity ที่ยังดำเนินต่อ
+**โปรแกรมเมอร์มืออาชีพ:** Memory cost ที่สูงขึ้นจะส่งต่อมาเป็น GPU cloud instance pricing ที่แพงขึ้น — ควรประเมิน memory-efficient inference strategies (quantization, KV cache optimization, speculative decoding) สำหรับ production deployment ที่ cost-sensitive; workloads ที่ memory-heavy เช่น long-context inference จะได้รับผลกระทบมากกว่า
 
-**อาจารย์ (มหาวิทยาลัย):** ดีลพลังงานระหว่าง tech giant กับ oil major เป็นหลักฐานที่จับต้องได้ว่า AI expansion กระทบ energy sector จริง — นี่คือ case study "AI's physical footprint" สำหรับ course ที่ถก AI × sustainability; คำถามที่ต้องถกคือ gas power supply ที่ Chevron มีไป lock in AI infrastructure อย่างไรกับ Microsoft's sustainability commitments
-**ผู้เชี่ยวชาญด้าน AI:** Hyperscalers ที่ต้อง lock in power supply ระยะยาว reflect reality ที่ AI inference demand กำลัง outpace grid capacity ในหลาย US regions — Texas grid (ERCOT) มีความผันผวนสูง dedicated power supply ช่วย cost predictability สำหรับ always-on AI inference workloads ที่ sensitive ต่อ latency
-**โปรแกรมเมอร์มืออาชีพ:** ดีลพลังงานระยะยาวของ Microsoft ใน South-Central US เป็น positive signal สำหรับ Azure availability และ cost stability ในภูมิภาคนั้น — ควรพิจารณาเป็นปัจจัยใน long-term infrastructure planning; สำหรับทีมที่ choose Azure region: South-Central US อาจมี better power security guarantee ในอนาคต
+## 4. Microsoft — Qualcomm Names Microsoft as Data Center Chip Customer
 
-## 5. Tesla — Autopilot Fatal Crash Pushback
-
-**อาจารย์ (มหาวิทยาลัย):** กรณี Tesla Autopilot crash คือ case study คลาสสิก "autonomous AI + liability attribution" และ information asymmetry — data logs อยู่กับ Tesla แต่ investigators และ plaintiff ต้องการ access; นี่คือ gap ที่กฎหมาย ADAS ยังแก้ไขไม่ครบในสหรัฐฯ ซึ่งเทียบกับ EU AI Act ที่ชัดเจนกว่าเรื่อง record-keeping obligations
-**ผู้เชี่ยวชาญด้าน AI:** Tesla pushback strategy (โต้ narrative แทน transparent disclosure) เพิ่มแรงกดดันต่อ NHTSA ในการ require standardized ADAS data access protocols — pattern นี้ซ้ำหลายครั้งและอาจนำไปสู่ regulatory mandate สำหรับ black-box requirements ที่ผู้ผลิต AV ทุกรายต้องปฏิบัติตาม
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมพัฒนา safety-critical autonomous systems: กรณีนี้พิสูจน์ว่า complete, tamper-evident audit trail ของ AI decisions ทุก step (sensor input → model inference → actuator command) คือ non-negotiable — data logs คือ primary evidence ทั้ง legal และ technical; implement immutable logging ก่อนเกิดเหตุ ไม่ใช่หลัง
+**อาจารย์ (มหาวิทยาลัย):** Qualcomm pivot จาก smartphone chips สู่ data center AI chips เป็น case study "platform transition driven by AI demand" — บริษัทที่สร้างตำแหน่งใน one market กำลัง leverage core competency (custom silicon design) เข้าสู่ market ที่ใหญ่กว่า; การที่ Microsoft และ Meta เป็น named anchor customers ทำให้ pivot credible ทันที
+**ผู้เชี่ยวชาญด้าน AI:** Microsoft และ Meta เป็น anchor customers คือหลักฐานว่า hyperscalers กำลัง diversify AI chip supply chain อย่างจริงจัง — Qualcomm $15B forecast by 2029 เป็น market signal ที่ชัดว่า Arm-based data center chips กำลังเติบโตพ้นกลุ่ม Ampere ไปสู่ custom silicon ที่ hyperscalers สั่งทำโดยตรง
+**โปรแกรมเมอร์มืออาชีพ:** Qualcomm chips ใน Microsoft และ Meta infrastructure อาจเปิด inference endpoints ราคาถูกกว่าในอนาคตเมื่อ capacity พร้อม — ติดตาม Azure announcements เกี่ยวกับ custom silicon หรือ Arm-based instances สำหรับ workload planning ระยะยาว; $15B forecast by 2029 บ่งชี้ว่า non-Nvidia AI chips จะมี production relevance จริงภายใน 2–3 ปี

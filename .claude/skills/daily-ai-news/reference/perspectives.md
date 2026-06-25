@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-06-25 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. OpenAI และ Broadcom เปิดตัวชิป Jalapeño — ASIC เฉพาะทาง LLM Inference
+**อาจารย์ (มหาวิทยาลัย):** Jalapeño เป็นกรณีศึกษาคลาสสิกของ vertical integration ในยุค AI — เหมือนที่ Apple เปลี่ยนเกมด้วย Apple Silicon OpenAI กำลังควบคุม stack ตั้งแต่ model จนถึง silicon ซึ่งตั้งคำถามสำคัญในห้องเรียน: เมื่อบริษัท AI เป็นเจ้าของ hardware เอง ใครเป็นเจ้าของ economics ของ intelligence?
+**ผู้เชี่ยวชาญด้าน AI:** การพัฒนา ASIC ใน 9 เดือนโดยใช้ AI ช่วย co-design คือ milestone ที่สำคัญ — ถ้า 50% inference cost reduction พิสูจน์ได้จริงในการ deploy ปลายปี 2026 จะ reshape ตลาด AI infrastructure และกดดัน Nvidia อย่างจริงจัง เพราะ Jalapeño เปิดให้ external firms ใช้ด้วย ไม่ใช่แค่ internal
+**โปรแกรมเมอร์มืออาชีพ:** ชิปนี้ยังอยู่ระยะทดสอบและ deploy จริงปลายปี 2026 แต่ถ้า OpenAI ลดราคา API ตามต้นทุน inference ที่ลดลง TCO ของระบบที่ build บน OpenAI จะดีขึ้นมาก — ควรติดตาม benchmark report ที่จะมาในเดือนหน้าและ monitor pricing tier
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. นักวิจัย Gemini สองคนลาออกจาก Google สู่ Anthropic
+**อาจารย์ (มหาวิทยาลัย):** สี่คนในสองสัปดาห์คือสัญญาณที่วัดได้ ไม่ใช่แค่ข่าวลือ — brain drain จาก Google DeepMind สะท้อนว่า research culture, autonomy และ equity structure ของ frontier AI labs กลายเป็นปัจจัยชี้ขาดการแข่งขันระดับ talent ที่ลึกกว่าแค่เงินเดือน
+**ผู้เชี่ยวชาญด้าน AI:** Adler และ Pritzel เป็น core Gemini team — การออกของพวกเขาอาจชะลอ Gemini roadmap ใน 12-18 เดือน และเสริม Anthropic ในพื้นที่ที่ Google เคยนำ ขณะที่ IPO equity draw ของทั้ง Anthropic และ OpenAI จะยิ่งทำให้ recruitment ไม่เท่าเทียมในอีก 1-2 ปี
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า build บน Gemini API ให้เริ่มเตรียม abstraction layer ที่ switch ไปยัง Claude หรือ GPT ได้ — ไม่ใช่เพราะ Gemini จะล้มเหลว แต่เพราะ velocity อาจชะลอ และตอนนี้ multi-provider layer ราคาถูกกว่าการ refactor หลังเกิดปัญหา
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. ศึก $27M Anthropic-OpenAI ในสภาคองเกรส NY-12 จบเสมอ
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า AI companies กำลัง "ออกแบบ" ผู้กำหนดนโยบายผ่านกระบวนการประชาธิปไตยโดยตรง — ซึ่งเป็น case study ที่ใช้ถก regulatory capture, political economy of technology และ ethics ของการใช้ corporate power ในระบบนิติบัญญัติ
+**ผู้เชี่ยวชาญด้าน AI:** ผลเสมอหมายความว่า US AI regulation framework ยังอยู่ในภาวะ contested — ทั้ง permissive growth-first และ safety-focused camps ยังมีตัวแทน ทำให้ compliance architecture ต้องรองรับหลาย scenario โดยเฉพาะ liability rules และ model capability restrictions
+**โปรแกรมเมอร์มืออาชีพ:** US regulation ที่ยังไม่ชัดเจนกระทบทั่วโลก เพราะบริษัท AI ใหญ่ล้วนอิง US framework — ควรออกแบบ system ให้ flexible ต่อ regulatory changes โดยเฉพาะ data handling, model access logging และ user consent layers
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Mistral เปิดตัว OCR 4 — Document Intelligence สำหรับ Enterprise
+**อาจารย์ (มหาวิทยาลัย):** OCR 4 สาธิตว่า "AI sovereignty" กลายเป็น product differentiator จริง ไม่ใช่แค่ rhetoric ทางการเมือง — องค์กรในยุโรปและเอเชียที่มีข้อกำหนด data residency กำลังยินดีจ่ายเพื่อ on-premise AI ซึ่งเปลี่ยน market dynamics ของ enterprise AI
+**ผู้เชี่ยวชาญด้าน AI:** การให้ structured output พร้อม bounding boxes และ per-word confidence scores เป็น architectural choice ที่สำคัญ — ออกแบบมาให้ fit กับ downstream pipeline ที่ต้องการ structured data ไม่ใช่แค่ text extraction เหมาะกับ contract analysis, compliance automation และ invoice processing
+**โปรแกรมเมอร์มืออาชีพ:** ที่ $2/1,000 หน้าผ่าน batch API ต้อง benchmark กับ Azure Document Intelligence และ AWS Textract จริงๆ ก่อนตัดสินใจ — multilingual support 170 ภาษาและ on-premise option คือจุดแข็งที่ชัด แต่ debugging และ SDK maturity ยังต้องตรวจสอบ
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Shopify สร้าง AI Stack ที่ไม่ยึดติด Provider ใด
+**อาจารย์ (มหาวิทยาลัย):** Shopify สาธิต "organizational resilience design" ในยุค AI — การ abstract dependency layer ออกจาก implementation เป็นหลักการ engineering ที่ควรสอนควบคู่กับ system design ตั้งแต่ระดับปริญญาตรี
+**ผู้เชี่ยวชาญด้าน AI:** Claude Fable 5 shutdown เป็น stress test ที่ดีที่สุดที่ Shopify ได้รับโดยไม่ได้ตั้งใจ — LLM proxy pattern แก้ปัญหาสามระดับพร้อมกัน: vendor risk, cost optimization และ team governance ถ้าไม่มี layer นี้ วันที่ provider หยุดให้บริการจะเป็นวันที่ทีม engineering ทั้งทีมต้องหยุดงาน
+**โปรแกรมเมอร์มืออาชีพ:** เริ่มสร้าง LLM proxy ได้เลยด้วย open-source tools เช่น LiteLLM — ใช้เวลาไม่กี่วัน แต่ป้องกัน outage ที่ทั้งองค์กรอาจเจอ ฟีเจอร์ที่ต้องมีตั้งแต่วันแรก: provider fallback, usage reporting และ cost allocation per team

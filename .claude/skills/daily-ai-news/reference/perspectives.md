@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-06-29 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. จีนปล่อย GLM-5.2 Open-Weight เทียบ Mythos บน Cybersecurity
+**อาจารย์ (มหาวิทยาลัย):** GLM-5.2 คือกรณีศึกษา "AI capability diffusion" ที่ชัดเจน — เมื่อ open-weight model เข้าใกล้ frontier ในงานเฉพาะทาง ข้อได้เปรียบเชิง national security ที่มาจากการ restrict access ก็ลดลงอย่างรวดเร็ว ถึงเวลาถกสมดุลระหว่าง AI safety กับ scientific openness อย่างจริงจัง เพราะทั้งสองฝ่ายมีต้นทุนที่แท้จริง
+**ผู้เชี่ยวชาญด้าน AI:** น่าสังเกตที่ GLM-5.2 เป็น open-weight — ความหมายคือใครก็ download และรันได้บน commodity hardware ไม่ใช่แค่จีน การ restrict Mythos/Fable จาก non-US users อาจชะลอการใช้งาน แต่ไม่สามารถควบคุม cybersecurity capability race ได้ในระยะยาว เมื่อ open-weight alternatives พัฒนาขึ้นอย่างต่อเนื่อง
+**โปรแกรมเมอร์มืออาชีพ:** GLM-5.2 open-weight และอ้างว่าเทียบ Mythos ได้บน cybersecurity tasks — ถ้าพิสูจน์ได้นี่คือ alternative ที่ run on-premise ได้โดยไม่พึ่ง API จากต่างประเทศ ควร evaluate สำหรับ use cases ที่ data sovereignty และ air-gap requirements สำคัญ
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Wall Street เทใจ Micron — AI Memory Chip Boom ดัน Market Cap แตะ $1.27T
+**อาจารย์ (มหาวิทยาลัย):** Micron คือบทเรียน "derived demand" ในยุค AI ที่สอนได้ตรงไปตรงมา — ความต้องการ memory chip ไม่ได้มาจากผู้บริโภคโดยตรง แต่จาก HBM ใน GPU server ที่รัน AI workloads นี่คือตัวอย่างคลาสสิกว่า demand chain ขยายตัวในเศรษฐกิจดิจิทัลอย่างไร
+**ผู้เชี่ยวชาญด้าน AI:** Micron rise ขับเคลื่อนโดย HBM ที่เป็นส่วนประกอบสำคัญของ Nvidia GPU รุ่นใหม่สำหรับ AI training และ inference — Micron มี structural advantage ตรงที่ supply ยังถูก dominate โดยผู้ผลิตจำนวนจำกัด แต่ประวัติศาสตร์ semiconductor แสดงว่า demand surge มักตามด้วย oversupply ใน 2–3 ปี
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่วาง cost model ของ AI workloads — ราคา memory chip ที่ผันผวนตาม Micron cycle จะส่งผลต่อ cloud compute pricing ในที่สุด ควรติดตาม Micron earnings เป็น leading indicator ของ GPU pricing trend และปรับ infrastructure budget ให้รองรับ volatility นี้
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. [ไม่ยืนยัน] Google ปันส่วน Gemini Enterprise ให้ Meta ไม่พอ — Backlog $462B
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สะท้อน "scarcity ใน digital goods" ที่ดูเหมือนไม่จำกัด แต่ถูก bottleneck ด้วย physical infrastructure — data center, power และ cooling ที่ใช้เวลาหลายปีในการสร้าง เป็น case study เรื่องข้อจำกัดทางกายภาพของ "infinite scalability" ในโลกดิจิทัล
+**ผู้เชี่ยวชาญด้าน AI:** Backlog $462B ฉายภาพ demand ของ enterprise AI เกิน supply อย่างมีนัยสำคัญ ปัญหาไม่ใช่ model quality แต่คือ infrastructure scale ที่ต้องการลงทุนระยะยาว ซึ่งอธิบายว่าทำไม Meta ต้องเลื่อน AI projects แม้จะมีเงินพอซื้อ compute ได้
+**โปรแกรมเมอร์มืออาชีพ:** Enterprise AI supply crunch นี้มีนัยต่อ API consumer ทุกราย — SLA ที่ providers ให้ไม่ได้รับประกัน capacity จริงในภาวะ high demand ทีมที่ build บน single AI provider ในปริมาณสูงควรมี fallback providers และ caching strategies เป็น engineering requirement ไม่ใช่ optional
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Prompt Injection โจมตี Enterprise AI 90+ องค์กร — "Prompts คือ malware ใหม่"
+**อาจารย์ (มหาวิทยาลัย):** CrowdStrike's "Prompts are the new malware" เป็น framing ที่สำคัญสำหรับ AI security education — LLM ไม่ได้ fail เหมือน traditional software โดย exception แต่ fail ผ่าน instruction manipulation ซึ่งต้องการ mental model ใหม่ในการสอน security ให้แตกต่างจาก SQL injection หรือ buffer overflow
+**ผู้เชี่ยวชาญด้าน AI:** Prompt injection ยังคงเป็น unsolved problem ในระดับ architecture ของ LLM เพราะโมเดลไม่แยก "instruction space" จาก "data space" อย่างชัดเจน การ mitigate ต้องใช้ multiple defense layers พร้อมกัน — input validation, output filtering, capability restriction และ runtime sandboxing — ไม่มี single fix
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ build agentic systems: RAG pipelines และ model routers คือ attack surface ที่ต้องออกแบบ defense-in-depth ตั้งแต่ต้น อย่าวางใจว่า model provider จะ handle prompt injection แทนคุณ — ต้องมี validation layer ในฝั่ง application โดยเฉพาะ pipelines ที่รับ input จากแหล่งภายนอกที่ไม่น่าเชื่อถือ
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Ford จ้างวิศวกรอาวุโส 350 คนกลับหลัง AI Quality Systems ล้มเหลว
+**อาจารย์ (มหาวิทยาลัย):** Ford case คือหลักฐานเชิงประจักษ์ว่า AI ในงาน manufacturing quality inspection ยังต้องการ "tacit knowledge" ที่วิศวกรสะสมมาหลายทศวรรษ ซึ่ง data-driven AI ยังไม่สามารถ encode ได้ครบ — เป็นตัวอย่างที่ดีสำหรับถก human-AI collaboration ในงานที่ต้องการ physical intuition
+**ผู้เชี่ยวชาญด้าน AI:** Pattern "วิศวกรอาวุโส reprogram AI tools" คือ human-AI collaboration รูปแบบที่ sustainable กว่า "AI แทนที่ผู้เชี่ยวชาญ" — domain experts ไม่ได้ถูกแทนที่ แต่ถูก leverage ให้ทำงานที่ impact มากขึ้น คือสอน AI และสอนคนรุ่นใหม่พร้อมกัน Ford กำลังพิสูจน์ด้วย bottom-line ว่า hybrid approach ให้ ROI ดีกว่า AI-only
+**โปรแกรมเมอร์มืออาชีพ:** บทเรียนของ Ford คือ scope งาน AI automation ให้ตรงจุดที่ data coverage ดีจริง — งานที่ต้องการ physical intuition และ edge-case judgment แบบ open-ended มักมี hidden complexity ที่ AI ยังจัดการได้ไม่ดี ก่อน automate ควร audit ว่า training data ครอบคลุม failure modes จริงหรือไม่

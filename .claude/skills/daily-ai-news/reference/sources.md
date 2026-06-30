@@ -1,65 +1,68 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-06-30 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-06-30 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Verification mode: funnel
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (35 URLs loaded)
+Source mix: TechCrunch ×2, VentureBeat ×1, The Verge ×2; 0 Thai primary citations (no strong Thai-exclusive story today)
+
+Universe pre-load: 46 candidates from RSS funnel (generated_at: 2026-06-30T06:21:42+07:00, age ≈44 min; items_enriched=12)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+1. **เกาหลีใต้ระดมทุน $550B+ จาก Samsung และ SK Hynix ขยายกำลังผลิตชิปรับ AI Era**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+   - URL: https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/
+   - Published: Mon, 29 Jun 2026 18:07:48 +0000
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 5.2)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 2 — funnel snippet (extract_status: skipped; description + published_raw confirm headline and timestamp)
+   - Summary: South Korea, Samsung and SK Hynix commit over $550B to build four new fabs and HBM facilities to ease the AI-era memory supply crunch called "RAMageddon."
 
-3. **Google invests in A24 to build AI movie tools**
+2. **DeepSeek open sources DSpark — LLM inference up to 85% faster**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/orchestration/deepseek-open-sources-dspark-a-new-framework-to-speed-up-llm-inference-by-up-to-85
+   - Published: Mon, 29 Jun 2026 20:36:15 GMT
+   - FreshnessCheck: ✅ within last 24h via body_text and published_raw (age_h: 2.7)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms MIT license, speculative decoding with scout/drafter approach, technical paper + DeepSpec codebase, GitHub and HuggingFace release)
+   - Summary: DeepSeek releases DSpark, a speculative-decoding framework under MIT License that claims up to 85% LLM inference speedup, bundled with the DeepSpec training/eval codebase.
+
+3. **Anthropic and Gov. Newsom forge deal allowing California government to use Claude at half price**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/
+   - Published: Mon, 29 Jun 2026 18:10:26 +0000
+   - FreshnessCheck: ✅ within last 24h via body_text and published_raw (age_h: 5.2)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms discounted access for all California state and local agencies, training/support included, Newsom quote, follows March executive order)
+   - Summary: California Gov. Newsom and Anthropic struck a deal giving all California state and local government agencies access to Claude at half price, with training and support.
+
+4. **Lawmakers want to ban AI companies from selling your health data**
    - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+   - URL: https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon
+   - Published: 2026-06-29T12:00:00-04:00
+   - FreshnessCheck: ✅ within last 24h via body_text and published_raw (age_h: 7.3)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms Sen. Warren + Rep. Scanlon proposal, Health and Location Data Protection Act covering AI chatbots like ChatGPT and Claude, "coming weeks" timeline)
+   - Summary: Senator Elizabeth Warren and Rep. Mary Gay Scanlon are preparing an updated Health and Location Data Protection Act that explicitly bans selling health/location data revealed to AI chatbots to data brokers.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+5. **Tidal won't pay royalties on AI-generated music but isn't banning it outright**
+   - Publisher: The Verge
+   - URL: https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label
+   - Published: 2026-06-29T15:47:35-04:00
+   - FreshnessCheck: ✅ within last 24h via body_text and published_raw (age_h: 3.5)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms immediate demonetization, July 15 labeling start, Tidal policy statement on royalties for human creators, future scope expansion)
+   - Summary: Tidal immediately demonetizes 100% AI-generated tracks and will label them starting July 15; tracks are not removed unless they impersonate artists or commit streaming fraud.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.engadget.com/2204169/tidal-isnt-banning-ai-music-but-it-wont-pay-people-who-upload-it/ — duplicate story (same Tidal policy; The Verge version selected)
+- https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/ — duplicate story (third outlet on same Tidal policy)
+- https://www.engadget.com/2203705/how-to-replace-gemini-with-google-assistant/ — scope: how-to guide, not a news story
+- https://techsauce.co/ai/openai-gpt-5-6-preview-3-models-safest-ai — GPT-5.6 covered in 2026-06-27 brief; Techsauce Jun 29 article is a recap with no new development
+- https://www.theregister.com/ai-and-ml/2026/06/29/how-the-ai-bubble-could-pop-and-take-down-the-global-economy-according-to-the-bis/5263793 — Tier 2 only (extract_status: skipped); replaced by 5 Tier 1-verified stories
+- https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/ — minor product expansion; lower significance vs selected stories
+- https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/ — funding story de-prioritized vs policy/research/infrastructure stories
+- https://www.tomshardware.com/tech-industry/semiconductors/south-korea-unveils-usd520-billion-investment-plan-with-samsung-and-sk-hynix-to-expand-memory-chip-dominance-plan-includes-four-new-fabs-and-hbm-facilities-amid-strong-government-support — same South Korea story; body_text was Tom's Hardware Premium paywall page, not article; TechCrunch version selected instead

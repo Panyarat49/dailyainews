@@ -1,26 +1,31 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-06-30 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. เกาหลีใต้ระดมทุน $550B+ จาก Samsung และ SK Hynix ขยายกำลังผลิตชิปรับ AI Era
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+**อาจารย์ (มหาวิทยาลัย):** แผน $550B ของเกาหลีใต้คือตัวอย่างโดดเด่นของ "industrial policy ยุค AI" ที่รัฐและเอกชนควบรวมเป็น strategic bloc — ควรนำมาเปรียบกับ CHIPS Act สหรัฐฯ และ European Chips Act เพื่อถกว่า semiconductor nationalism เป็น zero-sum game หรือสร้าง global capacity โดยรวม
+**ผู้เชี่ยวชาญด้าน AI:** HBM shortage ("RAMageddon") เป็น bottleneck จริงของ AI scaling — แม้ Nvidia GPU จะมีกำลังการประมวลผลมากเพียงใด ถ้าไม่มี HBM เพียงพอก็ run large models ไม่ได้ fab ใหม่ที่ประกาศวันนี้จะพร้อมใช้ราว 2029–2030 หมายความว่า memory crunch จะต่อเนื่องไปอีกหลายปี
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า build ระบบที่ require large GPU cluster ควรเตรียมรับ HBM-driven GPU pricing ที่สูงต่อเนื่อง และ evaluate memory-efficient architectures เช่น quantization หรือ mixture-of-experts ที่ลด HBM requirement ต่อ FLOP
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 2. DeepSeek ปล่อย DSpark Framework ชะลอ LLM Inference ถึง 85%
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+**อาจารย์ (มหาวิทยาลัย):** DSpark เป็น case study ที่ดีของ speculative decoding ในฐานะ system optimization — นักศึกษา CS สามารถ trace ไปยัง original speculative decoding papers และเปรียบว่า DeepSeek ทำอะไรแตกต่าง การอภิปราย hardware-software co-design ใน AI efficiency เป็นหัวข้อที่เชื่อมสองสายงานได้อย่างน่าสนใจ
+**ผู้เชี่ยวชาญด้าน AI:** 85% throughput gain สูงกว่า typical speculative decoding (ปกติ 30–50%) อย่างมีนัยสำคัญ — จุดสำคัญคือ DeepSpec framework สำหรับ train/eval drafter models ถ้า drafter quality สูง gains ก็สูงตาม MIT license ทำให้ผสาน vLLM, SGLang หรือ custom inference stack ได้โดยตรง
+**โปรแกรมเมอร์มืออาชีพ:** Clone repo จาก DeepSeek GitHub แล้วทดสอบบน production model ที่มีอยู่ก่อนได้เลย ตัวเลข 85% นั้น benchmark บน hardware เฉพาะ ผลจริงใน environment ของคุณอาจต่ำกว่า แต่ถึง 40–50% ก็ยังคุ้มค่าการทดสอบ โดยเฉพาะ high-throughput serving
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 3. Anthropic จับมือ Governor Newsom ให้หน่วยงานรัฐแคลิฟอร์เนียใช้ Claude ราคาครึ่งหนึ่ง
+
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้เป็นตัวอย่างของ "federated vs. federal AI governance" ที่รัฐบาล state-level เดินหน้า AI adoption ขณะรัฐบาลกลางจำกัด — การที่ AI policy สหรัฐฯ กลายเป็น patchwork หลายมาตรฐานนั้นดีหรือไม่ เป็นหัวข้อที่ต้องถกใน policy studies และ comparative law
+**ผู้เชี่ยวชาญด้าน AI:** การเข้าสู่ government procurement cycle คือ moat ที่แข็งแกร่ง — รัฐบาลมักล็อคสัญญา multi-year และ compliance requirements ที่ตามมาจะ feed back เป็น enterprise API improvements ด้วย สัญญาณว่า Anthropic กำลังสร้างฐานรายได้ที่ stable มากขึ้นก่อน IPO
+**โปรแกรมเมอร์มืออาชีพ:** Government enterprise deals มักบังคับ API versioning, SLA guarantees และ audit logs ที่ชัดเจน — ถ้า Anthropic เพิ่ม enterprise API features ตามความต้องการของ California contract นั้นจะ benefit developer ทั่วไปด้วย
+
+## 4. สมาชิกสภาสหรัฐฯ เตรียมเสนอกฎหมายห้าม AI ขายข้อมูลสุขภาพและตำแหน่งของผู้ใช้
+
+**อาจารย์ (มหาวิทยาลัย):** ร่างกฎหมายนี้สะท้อนการต่อสู้ระหว่าง information asymmetry และ data rights ในยุค AI — chatbots สร้าง context ที่ users เปิดเผยข้อมูล sensitive โดยไม่รู้ตัวว่าอาจถูกขาย นี่คือ "privacy paradox" ใหม่ที่ต้องถกใน ethics, public health และ digital rights
+**ผู้เชี่ยวชาญด้าน AI:** ผลกระทบใหญ่คือ training data pipeline — ถ้ากฎหมายผ่าน AI companies จะต้องแยก "model training consent" ออกจาก "data monetization consent" อย่างชัดเจน ซึ่งเปลี่ยน data governance architecture ของ products ที่รับ health/location input ทุกตัว
+**โปรแกรมเมอร์มืออาชีพ:** ตรวจสอบ analytics SDK ทุกตัวในแอปที่รับ health หรือ location data ว่ามีการขาย data ต่อให้ third party หรือไม่ — "data broker" นิยามกว้างในร่างกฎหมายชุดนี้ และ retrospective compliance แพงกว่า proactive design มาก
+
+## 5. Tidal ตัดสิทธิ์ค่าลิขสิทธิ์เพลง AI 100% เริ่มทันที
+
+**อาจารย์ (มหาวิทยาลัย):** Tidal policy ตั้งคำถามเชิงปรัชญาที่ยังตอบไม่ได้: "human work" ใน creative output คืออะไร ถ้า AI แต่งทำนอง แต่มนุษย์ mix และ master — ใครเป็นเจ้าของ royalties? เป็นโจทย์ใหม่สำหรับ copyright law, labor economics และ creative industries
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Tidal ใช้ "AI detection" เป็น gate สำหรับ monetization สร้าง adversarial dynamic — AI music generators จะ optimize ให้ "ดูเหมือน human-made" ต่อ detector นั้น ทำให้ arms race ระหว่าง generation กับ detection เริ่มต้นในอุตสาหกรรมดนตรี
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า build AI music tools ที่ users จะ upload ไปยัง streaming platforms ต้องออกแบบ workflow ให้มี human intervention ที่ documented ได้ — เช่น mixing, mastering ที่มี human session log เพื่อ prove "not 100% AI-generated" เมื่อ platform ตรวจสอบ

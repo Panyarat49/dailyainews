@@ -1,103 +1,111 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-06-30 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-06-30 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Verification mode: funnel
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Dedup against: last 7 watchlist briefs (2026-06-23 – 2026-06-29; 34 URLs loaded)
+Tiers used: 1+2 (Micron Technology from Tier 2)
+Source mix: Engadget ×1, TechCrunch ×2, The Verge ×2, Tom's Hardware ×1
 
-## Significance ledger
-| Company | Tier | Significant? | Reason | Selected |
-|---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
-
-## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+Universe pre-load: 35 candidates from RSS funnel (generated_at: 2026-06-30T06:23:10+07:00, age ≈42 min; items_enriched=12)
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+1.1 **Waymo and Uber quietly part ways in Phoenix**
+   - Company: Alphabet (GOOGL · Tier 1)
+   - Publisher: Engadget
+   - URL: https://www.engadget.com/2204472/uber-is-no-longer-offering-waymo-rides-in-phoenix/
+   - Published: Mon, 29 Jun 2026 20:43:16 +0000
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 2.6)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms Uber/Waymo partnership ended in Phoenix in May, Waymo reintegrated vehicles into own fleet + Via transit + DoorDash delivery, Uber building own AV stack with Lucid/Neuro)
+   - Summary: Uber and Waymo ended their ~3-year Phoenix partnership; Waymo reintegrated its fleet into its own app and multi-modal partnerships; Uber is pivoting to build its own autonomous vehicle stack.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
+1.2 **Gemini's personalized AI image generation is now free for US users**
+   - Company: Alphabet (GOOGL · Tier 1)
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/
+   - Published: Mon, 29 Jun 2026 20:12:59 +0000
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 3.1)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms Nano Banana-powered feature now available to all eligible free US users, previously Plus/Pro/Ultra only, draws from Gmail/Photos/YouTube/Search data)
+   - Summary: Google expanded Gemini's Nano Banana personalized image generation to all eligible free US users, opening a paid-tier-only feature to the mass market.
 
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
+2. **Leaked iPhone 18 Pro photos reportedly wound up on the dark web**
+   - Company: Apple (AAPL · Tier 1)
+   - Publisher: The Verge
+   - URL: https://www.theverge.com/tech/959229/iphone-18-pro-leak-apple-dark-web
+   - Published: 2026-06-29T16:18:26-04:00
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 3.1)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok; body confirms Tata Electronics breach by World Leaks ransomware group, 200,000+ files posted, leaked images show iPhone 18 Pro drop test + triple camera, documents also involve Tesla and TSMC)
+   - Summary: Ransomware group World Leaks posted 200,000+ files from Tata Electronics on the dark web, including iPhone 18 Pro component photos and parts lists; Tesla and TSMC documents were also in the breach.
 
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
+3. **WhatsApp is launching usernames: here's how to reserve yours**
+   - Company: Meta Platforms (META · Tier 1)
+   - Publisher: The Verge
+   - URL: https://www.theverge.com/tech/958832/whatsapp-usernames-rollout-reservation-availability
+   - Published: 2026-06-29T12:00:00-04:00
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 7.4)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status: skipped; description confirms username reservation for "later this year" rollout, phone number privacy focus)
+   - Summary: WhatsApp announced usernames launching later this year, allowing users to add contacts and chat without sharing phone numbers; users can reserve usernames now.
 
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
+4. **Robot hand company settles Tesla trade secret suit and announces $11M raise**
+   - Company: Tesla (TSLA · Tier 1)
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/
+   - Published: Mon, 29 Jun 2026 14:00:08 +0000
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 9.4)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status: skipped; description confirms Proception startup settled trade secret suit with Tesla, announces $11M raise, unique training data approach for robotic hands)
+   - Summary: Proception, a robotic hand startup, settled a trade secret lawsuit with Tesla and announced an $11M funding round; the company uses proprietary training data to tackle dexterous manipulation.
 
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+5. **Samsung, SK Hynix, and Micron sued over alleged DRAM price fixing amid record memory costs**
+   - Company: Micron Technology (MU · Tier 2)
+   - Publisher: Tom's Hardware
+   - URL: https://www.tomshardware.com/tech-industry/samsung-sk-hynix-and-micron-sued-over-alleged-dram-price-fixing-amid-record-memory-costs
+   - Published: Mon, 29 Jun 2026 13:18:54 +0000
+   - FreshnessCheck: ✅ within last 24h via published_raw (age_h: 10.0)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status: skipped; description headline confirms class-action lawsuit, coordinated HBM shift alleged as cover to curtail DDR3/DDR4 production, record memory costs)
+   - Summary: A class-action lawsuit alleges Samsung, SK Hynix, and Micron colluded to restrict DRAM supply by shifting capacity to HBM, driving record memory prices amid AI infrastructure demand.
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+
+- https://www.engadget.com/2203579/google-reportedly-capped-meta-use-of-gemini-ai-for-coding-chatbots/ — same story covered in 2026-06-29 watchlist via LiveMint URL (URL-level pass but story is redundant); Alphabet slot used for Waymo + Gemini image roundup
+- https://www.engadget.com/2204589/sensitive-iphone-supplier-details-were-part-of-last-weeks-data-leak-at-tata-electronics/ — same Tata breach story as Apple slot; The Verge version selected (body_text also ok, more specific headline)
+- https://techcrunch.com/2026/06/29/waymo-and-uber-quietly-part-ways-in-phoenix/ — same Waymo/Uber story; Engadget version selected (body_text ok, both extract_status: ok; Engadget slightly fresher)
+- https://www.tomshardware.com/pc-components/gpus/legacy-nvidia-rtx-3060-12gb-returns-to-retail-... — Tom's Hardware Premium paywall (body_text is subscription page, not article); dropped
+- https://www.tomshardware.com/pc-components/gpu-drivers/cuda-emulator-for-amd-gpus-zluda-loses-funding-... — Tom's Hardware Premium paywall; low AI significance (hobby project loses funding)
+- https://www.zdnet.com/article/stop-gemini-from-listening-in-android-auto/ — how-to guide, not news (Gate D drop)
+- https://www.engadget.com/2203705/how-to-replace-gemini-with-google-assistant/ — how-to guide, not news (Gate D drop)
+- https://techcrunch.com/2026/06/29/watch-out-amazon-the-kobo-ereader-now-has-a-goodreads-rival/ — matched "amazon" keyword but story is about Kobo vs Goodreads; Gate W: not Amazon AI/tech news
+- https://www.zdnet.com/article/5-amazon-prime-day-deals-still-live-2026/ — matched "amazon" as retail brand; Gate C drop (not AI/tech news)
+- https://brandinside.asia/scbx-5-ai-papers-frontier-research/ — matched "microsoft" as passing reference in SCBX article; Gate W: not a Microsoft story
+- https://venturebeat.com/orchestration/deepseek-open-sources-dspark-... — matched "anthropic" keyword for Amazon; Gate W: DeepSeek story, not Amazon AI story
+- https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder — matched "apple" falsely; OpenAI Codex story, Gate W: not Apple
+
+## Significance ledger
+
+| Company | Tier | Significant? | Reason | Selected |
+|---|---|---|---|---|
+| Alphabet | 1 | Yes (×2) | Waymo/Uber AV partnership dissolution; Gemini AI product democratization | ✅ roundup (1.1 + 1.2) |
+| Apple | 1 | Yes | Supply chain security breach exposing iPhone 18 Pro + Tesla + TSMC data | ✅ |
+| Meta Platforms | 1 | Yes | Privacy-preserving WhatsApp username feature launch | ✅ |
+| Tesla | 1 | Yes | Trade secret lawsuit settled; AI robotic manipulation IP context | ✅ |
+| Micron Technology | 2 | Yes | Antitrust class-action over AI memory price fixing | ✅ |
+| Nvidia | 1 | Low | Tom's Hardware Premium paywall blocked both stories; consumer GPU + CUDA emulator hobby project | ❌ |
+| Microsoft | 1 | No story | Only keyword match was SCBX article listing MSFT as conference co-participant | ❌ |
+| Amazon | 1 | No story | All keyword matches were peripheral (Anthropic via investment, "amazon" as retail brand) | ❌ |
+| AMD | 1 | Low | Tom's Hardware Premium paywall; consumer RAM pricing, not AI-specific | ❌ |
+| Oracle | 1 | No story | Not in universe today | ❌ |
+| Alibaba | 1 | No story | Not in universe today | ❌ |
+
+## Tier-descent record
+
+Tier-1 slots filled: 4 companies (Alphabet roundup ×2, Apple, Meta Platforms, Tesla) = 5 story items
+Tier-2 descent: ✅ used — Micron Technology added as 5th slot to reach max
+TIERS_USED: 1+2

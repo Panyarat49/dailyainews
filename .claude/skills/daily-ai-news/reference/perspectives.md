@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-01 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Anthropic เปิดตัว Claude Sonnet 5 — โมเดล agentic ราคาถูกลง
+**อาจารย์ (มหาวิทยาลัย):** ราคา Sonnet 5 ที่ $2/$10 ต่อล้าน token เทียบกับ Opus 4.8 ที่ $5/$25 เป็นกรณีศึกษาที่ดีสำหรับสอนเรื่อง price tiering ในตลาดที่ capability กำลังกลายเป็น commodity เร็วกว่าที่คาด นักเรียนควรเข้าใจว่า benchmark ที่ narrow gap กับ flagship ไม่ได้แปลว่าคุณภาพเท่ากันในทุก use case
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Sonnet 5 แซง Opus 4.8 ได้ในบาง evaluation สะท้อนว่า distillation และ training efficiency กำลังพัฒนาเร็วกว่า scale-up แบบเดิม — สัญญาณว่า "bigger is always better" ใช้ไม่ได้อีกต่อไปในทุกงาน
+**โปรแกรมเมอร์มืออาชีพ:** ราคา intro ($2/$10) จะขึ้นเป็น $3/$15 หลัง 31 สิงหาคม ทีมที่ build agent workload ปริมาณสูงควร benchmark ทันทีตอนราคาถูก และ pin model version ไว้ก่อน default เปลี่ยนโดยไม่รู้ตัว
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Etched คู่แข่ง Nvidia แตะ valuation $5B ยอดขาย $1B
+**อาจารย์ (มหาวิทยาลัย):** เคส Etched เหมาะใช้สอน vertical specialization ในตลาด semiconductor — ชิป ASIC ที่ทำงานเดียวให้ดีที่สุด (inference) แข่งกับ GPU อเนกประสงค์ เป็นรูปแบบธุรกิจที่ทำซ้ำได้ในหลายอุตสาหกรรม
+**ผู้เชี่ยวชาญด้าน AI:** การที่ TSMC ผลิตชิปได้สำเร็จและมี contract $1B แล้วก่อนส่งมอบจริง แสดงว่าตลาดเชื่อ specialized inference silicon มากพอจะ pre-commit เงินก้อนใหญ่ — คู่แข่ง Nvidia ที่มี proof-of-concept ระดับนี้เริ่มมีมากขึ้นเรื่อยๆ
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ high-throughput inference serving ควรเริ่มติดตาม non-Nvidia hardware option เหล่านี้ไว้เป็นทางเลือก แม้ยังไม่ deploy จริงจนถึงปลายปีนี้ก็ตาม เพื่อประเมิน migration cost ล่วงหน้า
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. งานวิจัยใหม่: AI browser ถูกหลอกให้ปิด guardrail ได้
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอนเรื่อง prompt injection ในบริบทใหม่ — agent ที่มีสิทธิ์เข้าถึง browsing และ credential store จริง ทำให้ theoretical vulnerability กลายเป็น practical attack ทันที เหมาะเป็นเคสตัวอย่างสำหรับวิชา AI security
+**ผู้เชี่ยวชาญด้าน AI:** งานวิจัยนี้ตอกย้ำว่า guardrail แบบ reactive (บล็อกคำสั่งที่รู้จัก) ไม่พอสำหรับ agent ที่ต้อง reason เกี่ยวกับ context ที่ untrusted website ควบคุมได้บางส่วน ต้องมี architecture-level separation ระหว่าง instruction กับ data
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ให้ AI agent เข้าถึง browser หรือ credential manager ควร sandbox สิทธิ์ให้แคบที่สุดเท่าที่จำเป็น และไม่ควรเชื่อว่า built-in guardrail ของ provider ป้องกันได้ครบ — ต้องมี application-level permission gate เพิ่ม
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Morgan Stanley ลดงาน reconciliation ลงครึ่งหนึ่งด้วย agent ที่ autonomous น้อยลง
+**อาจารย์ (มหาวิทยาลัย):** ผลลัพธ์ที่ขัดสามัญสำนึก (agent ที่ autonomous น้อยกลับได้ผลดีกว่า) เป็นกรณีศึกษาชั้นดีสำหรับสอนเรื่อง human-in-the-loop design — automation ที่ดีไม่ใช่การให้ AI ตัดสินใจเองทั้งหมด แต่คือการแปลง human judgment ให้เป็น rule ที่ทำซ้ำได้
+**ผู้เชี่ยวชาญด้าน AI:** FIXR แสดงรูปแบบที่ practical กว่า full-autonomy hype — ระบบเรียนรู้จาก human decision แล้ว codify เป็น rule แทนที่จะปล่อยให้ agent ตัดสินใจอิสระในงานที่ผิดพลาดมีต้นทุนสูงอย่าง P&L reconciliation
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับ workflow ที่ accuracy-critical ควรออกแบบ agent ให้ capture human decision เป็น structured rule ที่ audit ได้ ไม่ใช่ปล่อยให้ agent ตัดสินใจแบบ end-to-end ตั้งแต่ต้น — เริ่มจาก narrow scope ที่วัดผลได้ชัดก่อนขยาย
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. เหรียญอีกด้านของ AI — ความเสี่ยงสิทธิมนุษยชนและต้นทุนแฝงในตลาดแรงงานไทย
+**อาจารย์ (มหาวิทยาลัย):** ข้อมูล TDRI ที่ชี้ seniority bias เป็นจุดเริ่มต้นที่ดีสำหรับถกประเด็น "AI กับความเหลื่อมล้ำระหว่างรุ่น" ในชั้นเรียน — โดยเฉพาะคำถามว่าเด็กจบใหม่จะสะสมประสบการณ์ได้อย่างไรถ้างานระดับ entry ถูก automate ไปเรื่อยๆ
+**ผู้เชี่ยวชาญด้าน AI:** framework "Doers to Validators" ของ McKinsey ที่บทความอ้างถึงมีนัยสำคัญ — ถ้ามนุษย์เปลี่ยนบทบาทเป็นแค่ผู้ตรวจสอบ องค์กรต้องลงทุนสร้าง pathway ใหม่ให้คนสะสมความเชี่ยวชาญ ไม่งั้น validator รุ่นถัดไปจะไม่มีใครมาแทน
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ train โมเดลบนข้อมูลคนไทยควรตรวจสอบ compliance กับ PDPA อย่างจริงจัง โดยเฉพาะ consent สำหรับข้อมูลเก่าที่เก็บไว้ก่อนมี policy ชัดเจน — ต้นทุนแก้ทีหลังแพงกว่าการออกแบบ consent flow ตั้งแต่ต้น

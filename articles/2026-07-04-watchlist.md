@@ -1,0 +1,43 @@
+# สรุปข่าว AI ประจำวันที่ 2026-07-04 — Watchlist
+
+> _หมายเหตุ: WebFetch ถูกบล็อกใน Claude session นี้ แต่ GitHub Actions เข้าถึงบทความฉบับเต็มได้ — การตรวจสอบข่าวรอบนี้ใช้ข้อมูล Tier 1 จากบทความที่ดึงไว้ล่วงหน้าโดย Actions_
+
+> TL;DR
+> - Alibaba และ Tencent ร่วมลงทุนใน Kling AI ของ Kuaishou รอบ $2.8 พันล้าน
+> - Microsoft เผยเคสลูกค้า Virtua Health ใช้ Copilot ช่วยระบุภาวะ sepsis แม่นขึ้น 80%
+> - Amazon เผยทิศทางอุปกรณ์ AI ไร้จอรุ่นใหม่ผ่านปาก Panos Panay หัวหน้าฝ่ายอุปกรณ์
+
+## ข่าวเด่น AI ล่าสุด
+
+### 1. Alibaba (BABA US · Tier 1) — Alibaba, Tencent back Kuaishou's Kling AI in $2.8 billion fundraise — [Reuters](https://www.reuters.com/world/china/alibaba-tencent-back-kuaishous-kling-ai-28-billion-fundraise-2026-07-03/)
+Alibaba และ Tencent สองยักษ์ใหญ่เทคโนโลยีจีนที่ปกติแข่งขันกันดุเดือด ต่างร่วมลงทุนในรอบระดมทุน 2.8 พันล้านดอลลาร์ของ Kling AI หน่วยงาน AI สร้างวิดีโอในเครือ Kuaishou
+
+ดีลนี้สะท้อนว่าตลาด AI video generation เริ่มเข้าสู่ช่วง consolidation ที่คู่แข่งยอมร่วมลงทุนแทนที่จะสร้างคู่แข่งขึ้นมาเอง แสดงว่านักลงทุนมองว่า video generation จะเป็นสมรภูมิใหญ่ถัดไปหลังโมเดล text/coding เริ่มอิ่มตัว ทีมที่ทำงานด้าน content และ media production ควรเริ่มประเมิน Kling AI เป็นตัวเลือกสำหรับ video generation pipeline โดยเฉพาะทีมที่ใช้ ecosystem ของ Alibaba Cloud หรือ Tencent อยู่แล้ว
+
+### 2. Microsoft (MSFT US · Tier 1) — Virtua Health innovates to improve patient care using Copilot as the UI to AI — [Microsoft](https://www.microsoft.com/en/customers/story/26318-virtua-health-microsoft-copilot)
+Virtua Health นำ Copilot มาเป็นหน้าด่านแสดงผล AI insight ให้แพทย์และผู้บริหารในจุดที่ต้องตัดสินใจ ช่วยลดภาระทางความคิดของบุคลากรและเพิ่มประสิทธิภาพการดูแลผู้ป่วย ผลลัพธ์ที่วัดได้คือการระบุภาวะ sepsis แม่นยำขึ้น 80% และอัตราการตรวจพบ/รักษาภาวะหัวใจล้มเหลวดีขึ้น
+
+ตัวเลข sepsis 80% เป็นตัวอย่างที่จับต้องได้ว่า AI ในสายการแพทย์สร้างผลลัพธ์เชิงปริมาณจริง ไม่ใช่แค่ efficiency gain ทั่วไป และรูปแบบการวาง Copilot เป็น "ชั้น UI" คลุมทับข้อมูลที่กระจัดกระจายอยู่แล้ว เป็นแพทเทิร์นที่ประสบความสำเร็จมากกว่าการสร้างโมเดลเฉพาะทางใหม่ทั้งหมด ทีมที่ทำงานกับข้อมูล healthcare ควรศึกษาสถาปัตยกรรมนี้เป็นต้นแบบ คือวาง AI เป็นชั้นแสดงผล/ช่วยตัดสินใจ ไม่ใช่แทนที่ระบบข้อมูลเดิมทั้งหมด
+
+### 3. Amazon (AMZN US · Tier 1) — The Tech Download: Amazon's devices chief Panos Panay on tech giant's AI gadget push — [CNBC](https://www.cnbc.com/2026/07/03/the-tech-download-amazon-devices-chief-panos-panay.html)
+Panos Panay หัวหน้าฝ่ายอุปกรณ์ของ Amazon ให้สัมภาษณ์ในพอดแคสต์ Tech Download ของ CNBC ถึงทิศทางที่ Amazon กำลังผลักดันอุปกรณ์ AI รุ่นใหม่ที่ไม่มีจอแสดงผล โต้ตอบด้วยเสียงและ AI เต็มรูปแบบ
+
+การเปลี่ยนจากจอสัมผัสไปสู่อุปกรณ์ไร้จอที่พึ่งพา AI เต็มรูปแบบ เป็นการเปลี่ยนกระบวนทัศน์การออกแบบผลิตภัณฑ์ แต่ในทางเทคนิคยังต้องแก้โจทย์ latency และ on-device inference ให้ได้ก่อนจะ mass-market ได้จริง คำพูดของ Panay ยังเป็นทิศทางกว้างๆ มากกว่าประกาศผลิตภัณฑ์เฉพาะเจาะจง นักพัฒนาที่สนใจ voice/ambient computing ควรติดตามว่า Amazon จะเปิด SDK หรือ Alexa/Nova API ใหม่สำหรับอุปกรณ์กลุ่มนี้เมื่อไหร่
+
+### 4. Micron Technology (MU US · Tier 2) — SK hynix, Samsung, Micron among semiconductor industry group lobbying against government intervention on domestic memory chip supply — [Tom's Hardware](https://www.tomshardware.com/tech-industry/sk-hynix-samsung-micron-among-semiconductor-industry-group-lobbying-against-government-intervention-on-domestic-memory-chip-supply-says-move-would-worsen-situation-suggests-tax-deductions-on-consumer-electronics-instead)
+กลุ่มอุตสาหกรรมเซมิคอนดักเตอร์ที่มี SK hynix, Samsung และ Micron ร่วมอยู่ด้วย ออกมาล็อบบี้คัดค้านแผนของรัฐบาลที่จะเข้าแทรกแซงห่วงโซ่อุปทานชิปหน่วยความจำในประเทศ โดยระบุว่าการแทรกแซงจะยิ่งทำให้สถานการณ์แย่ลง พร้อมเสนอทางออกอื่นคือมาตรการลดหย่อนภาษีสำหรับสินค้าอิเล็กทรอนิกส์ผู้บริโภคแทน
+
+กรณีนี้สะท้อนความตึงตัวระหว่างนโยบายรัฐกับกลไกตลาดในอุตสาหกรรมเซมิคอนดักเตอร์ และมีผลกระทบตรงต่อ roadmap การผลิตชิป AI accelerator รุ่นใหม่ เพราะความตึงตัวของ HBM supply เชื่อมโยงกับ allocation ของ Nvidia และ AMD ที่ต้องพึ่งพา HBM จากผู้ผลิตกลุ่มนี้ ทีม infra ที่วางแผนจัดซื้อฮาร์ดแวร์ AI ระยะยาวควรติดตามประเด็นนี้ใกล้ชิด เพราะราคาและ availability ของ HBM อาจผันผวนตามผลของการล็อบบี้นี้
+
+## Action items
+- **สำหรับอาจารย์/นักเรียน:** ใช้เคส Virtua Health เป็นตัวอย่างสอนว่า AI ในสายการแพทย์วัดผลลัพธ์เชิงปริมาณได้จริงอย่างไร
+- **สำหรับผู้เชี่ยวชาญ AI:** ติดตามทิศทาง Kling AI ในตลาด AI video generation และผลของการล็อบบี้ export control ต่อ HBM allocation
+- **สำหรับโปรแกรมเมอร์:** ทดสอบ Kling AI สำหรับงาน video generation pipeline และติดตามว่า Amazon จะเปิด SDK สำหรับอุปกรณ์ AI ไร้จอรุ่นใหม่เมื่อไหร่
+
+## การครอบคลุม watchlist
+คัดจาก Tier 1+2 · บริษัทที่มีข่าวสำคัญวันนี้: Alibaba, Microsoft, Amazon, Micron Technology · เติมจาก Tier 2: Micron Technology
+
+---
+📊 [ดูการจัดอันดับข่าวทั้งหมด (Excel) / full ranked universe](https://github.com/Panyarat49/dailyainews/blob/main/.github/scripts/output/universe-latest.xlsx) — ทุกข่าวที่คัดมา จัดอันดับด้วยคะแนนความเกี่ยวข้อง พร้อมแท็บแยกตามสตรีมและตามบริษัทใน watchlist
+
+_Generated by the `daily-ai-watchlist` skill on 2026-07-04 (Asia/Bangkok) · model claude-opus-4-8._

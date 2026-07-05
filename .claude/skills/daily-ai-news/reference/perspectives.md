@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-05 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. OpenAI mulls 5% US government stake to share AI wealth with Americans
+**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษาเรื่องความสัมพันธ์รัฐ-เอกชนในยุค AI ที่ควรสอนในวิชานโยบายเทคโนโลยี — คำถามสำคัญคือ การให้รัฐถือหุ้นจะทำให้รัฐเป็นทั้งผู้กำกับดูแลและผู้ถือผลประโยชน์ในเวลาเดียวกันหรือไม่ ซึ่งอาจสร้างความขัดแย้งทางผลประโยชน์ที่ไม่เคยมีมาก่อน
+**ผู้เชี่ยวชาญด้าน AI:** ข้อเสนอยังอยู่ในขั้นต้นมาก และไม่มีรายละเอียดว่าหุ้น 5% จะมาจากการเจือจางผู้ถือหุ้นเดิมหรือกลไกอื่น แต่สัญญาณที่ชัดคือ Altman พยายามผูก narrative ของ OpenAI เข้ากับ "AI เพื่อสาธารณะ" ไปพร้อมกับการเจรจากับรัฐบาลทรัมป์เรื่องกรอบกำกับดูแล
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พึ่งพา OpenAI API ควรจับตาว่าดีลแบบนี้จะมาพร้อมเงื่อนไขใหม่ด้าน compliance หรือการเข้าถึงโมเดลระดับสูงหรือไม่ — ความสัมพันธ์ที่ใกล้ชิดกับรัฐบาลมักตามมาด้วยข้อกำหนดด้าน data residency และ export control ที่กระทบ roadmap ของผู้ใช้งานองค์กร
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Midjourney wants Hollywood studios to reveal the details of their AI usage
+**อาจารย์ (มหาวิทยาลัย):** คดีนี้สะท้อนหลักการ discovery ที่น่าสนใจ — ฝ่ายที่ฟ้องเรื่องลิขสิทธิ์ AI ก็ถูกเรียกร้องให้เปิดเผยการใช้ AI ของตัวเองด้วย เป็นตัวอย่างที่ดีสำหรับสอนเรื่องความสมมาตรทางกฎหมายในคดี fair use
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นทางเทคนิคจริง ๆ อยู่ที่ขอบเขตของคำสั่งศาลก่อนหน้านี้ที่จำกัดแค่การใช้งาน "consumer-facing" — Midjourney ต้องการเอกสารเบื้องหลังที่อาจแสดงว่าสตูดิโอเองก็ใช้เทคนิค generative model ฝึกจากงานที่มีลิขสิทธิ์เช่นกัน
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่สร้างผลิตภัณฑ์ image/video generation ควรติดตามผลคดีนี้อย่างใกล้ชิด เพราะบรรทัดฐานเรื่อง fair use กับข้อมูลฝึกโมเดลจะกำหนดทิศทาง licensing ของอุตสาหกรรมทั้งหมดในอีกไม่กี่ปีข้างหน้า
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. ลือ Alibaba สั่งห้ามพนักงานใช้ Claude Code กลัวความลับรั่วไหล
+**อาจารย์ (มหาวิทยาลัย):** เหตุการณ์นี้กลับด้านกับภาพจำเดิมที่สหรัฐฯ มักเป็นฝ่ายแบนซอฟต์แวร์จีน — เหมาะเป็นตัวอย่างสอนเรื่อง information security ระดับชาติที่ใช้ได้ทั้งสองทิศทางเมื่อ AI tool กลายเป็นช่องทางเข้าถึงข้อมูลภายในองค์กร
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นคือ coding agent อย่าง Claude Code มักเข้าถึง codebase และข้อมูล infrastructure ระดับลึก การให้พนักงานใช้เครื่องมือจากบริษัทต่างชาติจึงเป็นความเสี่ยงด้าน data exfiltration ที่จับต้องได้ ไม่ใช่แค่ความกังวลเชิงภูมิรัฐศาสตร์ลอย ๆ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมวิศวกรที่ใช้ AI coding assistant ในองค์กรควรมีนโยบายชัดเจนว่าข้อมูลใดส่งออกไปยัง third-party model ได้บ้าง และพิจารณา self-hosted หรือ on-prem model เป็นทางเลือกสำหรับงานที่มีข้อมูลอ่อนไหว
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Meta data center water discharges suspended after contaminating Cheyenne's water reclamation system
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างที่ดีของต้นทุนแฝงด้าน environmental ที่มาพร้อมการขยายตัวของ AI data center — ควรใช้สอนเรื่อง externality ที่อุตสาหกรรมเทคโนโลยีสร้างให้ชุมชนท้องถิ่นโดยตรง
+**ผู้เชี่ยวชาญด้าน AI:** ระบบ closed-loop cooling ถูกออกแบบมาเพื่อลดการใช้น้ำ แต่เหตุการณ์นี้แสดงว่าความล้มเหลวของผู้รับเหมาเพียงจุดเดียวก็ทำให้ระบบทั้งเมืองต้องหยุดทำงานหลายเดือน สะท้อนความเปราะบางของ supply chain ด้าน data center infrastructure
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ดูแล infrastructure ควรถอดบทเรียนเรื่อง vendor oversight และการตรวจสอบ closed-loop system อย่างสม่ำเสมอ ไม่ใช่แค่ประเด็น performance/uptime แต่รวมถึงผลกระทบต่อ utility ภายนอกที่อาจนำไปสู่การถูกระงับใบอนุญาตดำเนินงาน
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. The fanfiction community is at war with AI — and itself
+**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีเรื่องข้อจำกัดของ AI-detection tools — ชุมชนที่ไม่มีทรัพยากรทางเทคนิคพยายามพัฒนาเครื่องมือตรวจจับเองแต่ผลลัพธ์ไม่แม่นยำ นำไปสู่การกล่าวหาที่ผิดพลาดและความแตกแยกในชุมชน
+**ผู้เชี่ยวชาญด้าน AI:** AI-text detector ทุกตัวที่มีอยู่ในตลาดยังมี false positive/negative สูงอยู่ดี โดยเฉพาะกับงานเขียนเชิงสร้างสรรค์ที่มีสไตล์หลากหลาย การใช้เครื่องมือเหล่านี้ตัดสินโดยไม่มี human review เพิ่มเติมจึงเสี่ยงสร้างความเสียหายมากกว่าประโยชน์
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนาที่คิดจะสร้างเครื่องมือ AI-content detection ควรสื่อสารเรื่อง confidence score และข้อจำกัดอย่างโปร่งใส แทนที่จะให้ผลลัพธ์แบบ binary ซึ่งชุมชนผู้ใช้มักนำไปตัดสินคนอื่นแบบขาวดำ

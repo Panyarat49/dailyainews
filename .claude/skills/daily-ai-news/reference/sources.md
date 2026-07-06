@@ -1,65 +1,64 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-06 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-06 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel   # majority verified from funnel body_text (Tier 1); one Tier 2 (headline-level, TH boilerplate body)
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Freshness window: rolling 7d (Asia/Bangkok); all 5 selected within 24h (funnel's own 24h pre-filter)
+Dedup against: last 7 ainews briefs (2026-06-29 → 2026-07-05; 33 URLs loaded)
+Source mix: 2 Thai (Blognone, bangkokbiznews) · 3 international (Tom's Hardware, The Guardian, ABC News Australia)
+Universe pre-load: 27 candidates from universe_2026-07-06_ainews.json (generated_at 2026-07-06T07:04:01+07:00), items_enriched=11 > 0 — WebSearch skipped (≥ 8 candidates after gates)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
+1. **Alibaba bans Anthropic's Claude Code after alleged hidden China-detection backdoor uncovered**
    - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
+   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens
+   - Published: Sun, 05 Jul 2026 12:20:00 +0000 (age 11.7h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ new URL — a genuine new development (backdoor allegation, switch to Qoder) on the Alibaba/Claude Code story last covered 2026-07-05 (different techcrunch.com URL, no backdoor detail)
+   - Verification: Tier 2 — funnel snippet (headline). Funnel `body_text` for this Tom's Hardware URL was subscription-page boilerplate, not article text (a known extraction gap for this outlet) — summary paraphrases only the RSS headline itself, which is unusually detailed for this feed; no invented specifics beyond it.
+   - Summary: Alibaba has reportedly banned internal use of Anthropic's Claude Code after employees allegedly found a hidden mechanism that detects and blocks use from China; staff were told to switch to the in-house Qoder tool instead, widening the rift between the two companies.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+2. **Taiwan raids Super Micro over alleged smuggling of Nvidia AI chips to China**
+   - Publisher: bangkokbiznews (กรุงเทพธุรกิจ)
+   - URL: https://www.bangkokbiznews.com/world/economics/1240886
+   - Published: Sun, 05 Jul 2026 06:20:46 GMT (age 17.7h)
+   - FreshnessCheck: ✅ within 24h
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 1 — funnel body (full Thai-language article text, sourced to Bloomberg)
+   - Summary: Taiwan's Keelung District Prosecutors Office raided Super Micro Computer's Taiwan offices and three affiliates, plus six individuals' homes, investigating alleged smuggling of Nvidia AI chips to China via servers routed through Japan; Super Micro's US stock fell 8%, partner Albatron fell 10%, and data-center operator Chief Telecom fell over 2%.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+3. **UK foreign secretary warns AI poses 'Hiroshima'-style threat without global rules**
+   - Publisher: The Guardian
+   - URL: https://www.theguardian.com/politics/2026/jul/05/ai-hiroshima-style-threat-humanity-global-rules-yvette-cooper
+   - Published: Sun 5 Jul 2026 15:00 EDT / 2026-07-05T23:08:00Z (age 0.9h)
+   - FreshnessCheck: ✅ within 24h
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body (full article text)
+   - Summary: UK Foreign Secretary Yvette Cooper, in an essay for Chatham House, said AI carries a "Hiroshima"-style risk to humanity absent international agreement, urging the US and China to negotiate shared AI rules and predicting the issue will dominate foreign policy over the next two years.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
+4. **Singapore's central bank issues AI-agent safety framework for financial services**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+   - URL: https://www.blognone.com/node/151072
+   - Published: Sun, 05 Jul 2026 16:41:21 +0000 (age 7.4h)
+   - FreshnessCheck: ✅ within 24h
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 1 — funnel body (full Thai-language article text)
+   - Summary: The Monetary Authority of Singapore published a whitepaper, "Safeguards for Agentic Finance at Runtime (SAFR)," setting a minimum of four checkpoints financial firms must build into AI agents that act on customers' behalf, codifying practices already used by Ant, Mastercard, Visa, and Circle.
+
+5. **Australia's ABC rolls out AI writing tools amid union trust warnings**
+   - Publisher: ABC News (Australia)
+   - URL: https://www.abc.net.au/news/2026-07-06/abc-new-ai-policies/106844364
+   - Published: Sun, 05 Jul 2026 19:06:28 GMT (age 5.0h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (full article text)
+   - Summary: The ABC is trialling AI tools to help staff turn regional radio bulletins into digital news articles, after striking a deal with Anthropic last month; the journalists' union welcomed the move cautiously but said management refused to commit to AI never replacing jobs, with an all-staff town hall set for July 28.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep — lower significance/lifestyle feature, displaced by higher-scoring items
+- https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence — opinion/culture commentary, not a news development
+- https://www.tomshardware.com/tech-industry/atomic-semi-rebrands-as-fab2-and-shifts-operations-to-texas — funnel body was boilerplate/unusable and a stronger 5th pick (ABC, real body) was available
+- https://news.google.com/rss/articles/...abc-new-ai-policies (GNews redirect) — resolved to the same abc.net.au URL cited in Story 5
+- Remaining Tom's Hardware GPU/hardware-review and gaming items — off-scope (not AI/tech-significant)
+- thestandard.co semiconductor-board retrospective, mgronline True/Big Data piece, and Thai stock-market/AI-bubble commentary pieces — lower significance/analysis rather than news, displaced to stay within STORY_COUNT max

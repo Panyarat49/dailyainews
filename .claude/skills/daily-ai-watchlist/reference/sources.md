@@ -1,103 +1,74 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-07-06 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-06 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel   # majority verified from funnel body_text (Tier 1); 1 headline-only Tier 2
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Freshness window: rolling 7d (Asia/Bangkok); all selected within 24h (funnel's own 24h pre-filter)
+Dedup against: last 7 watchlist briefs (2026-06-30 → 2026-07-05; 27 URLs loaded)
+Tiers used: 1 (no Tier-2 descent needed/possible — see ledger)
+Universe pre-load: 20 candidates from universe_2026-07-06_watchlist.json (generated_at 2026-07-06T07:05:01+07:00), items_enriched=12 > 0 — WebSearch skipped (≥ 8 candidates after gates)
 
-## Significance ledger
-| Company | Tier | Significant? | Reason | Selected |
+## Significance ledger (Tier 1)
+| Company | Tier | Significant AI/tech news today? | Reason | Selected |
 |---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
+| Nvidia | 1 | Candidate existed (Hon Hai/Foxconn earnings beat on AI demand) | Bloomberg = screening-only, body_text was a robot-check wall (unusable), no open-citation cross-match found in pool | ❌ dropped — unciteable |
+| Tesla | 1 | Candidates existed (AI-cost cap on staff spending; stock re-rating) | Both only had a `news.google.com` redirect with empty `resolved_url` — no real citeable article URL available | ❌ dropped — unciteable |
+| Microsoft | 1 | Yes — Ayman AlGhamdi appointed President, Microsoft Arabia | Primary source (news.microsoft.com), real body confirming Saudi AI/cloud strategy tie-in | ✅ selected |
+| Amazon | 1 | Yes — AWS closes Mechanical Turk to new customers | Real body (TechCrunch); MTurk is the human-labeling backbone behind many "AI" products/SageMaker | ✅ selected |
+| Oracle | 1 | No candidate surfaced | — | — |
+| Alphabet | 1 | Candidate existed (Google Workspace/Gemini ad) | Opinion/culture commentary on an ad, not a news development — dropped per "always drop: opinion" | ❌ dropped |
+| Apple | 1 | Yes — EU says Apple responsible for Siri AI delay in Europe | AP News headline confirmed via GNews-resolved apnews.com URL; body was AP's generic video-roundup filler (unusable) so summary is headline-only (Tier 2) | ✅ selected |
+| Alibaba | 1 | Yes — bans Claude Code over alleged China-detection backdoor | Rich real body (Tom's Hardware, corroborated by France 24): backdoor allegation, Anthropic distillation-attack accusation, Qoder switch, July 10 effective date | ✅ selected |
+| Meta Platforms | 1 | No candidate surfaced | — | — |
+| AMD | 1 | Candidates existed (GPU reviews, Windows/Scattered Spider story mismatched to AMD) | Not genuine AMD-company AI news — hardware reviews / unrelated security story | ❌ dropped |
 
-## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+**Tier-descent record:** Not triggered. 4 Tier-1 stories cleared all gates with real citations, meeting the `prefer` (4) target; the two open slots (Nvidia, Tesla) had real candidates but no citeable, verifiable URL, and no genuine Tier-2 company story surfaced (only tangential DARPA/Oklo drone-battery item, dropped for weak AI/company relevance) — so the brief ships at 4 rather than padding with unciteable or off-topic filler.
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
+1. **Alibaba bans Anthropic's Claude Code after alleged hidden China-detection backdoor uncovered**
+   - Company · Ticker · Tier: Alibaba · BABA US / 9988 HK · Tier 1
+   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens
+   - Published: Sun, 05 Jul 2026 12:20:00 +0000 (age 11.7h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ new URL — a genuine new development (specific backdoor allegation, July 10 effective date, distillation-attack context, Qoder + full Anthropic-product uninstall directive) beyond the 2026-07-05 watchlist brief's techcrunch.com report, which had none of this detail
+   - Verification: Tier 1 — funnel body (the GNews-resolved duplicate of this URL carried real article text, unlike the direct-feed entry which returned subscription boilerplate; corroborated by France 24's independent write-up of the same event)
+   - Summary: Alibaba banned staff from using Anthropic's Claude Code for all work, effective July 10, after researchers alleged it contained code that detects users connecting from China; per a July 3 SCMP report Alibaba added it to a "high-risk software" list over back-door concerns. Staff were told to switch to Alibaba's own Qoder and reportedly to uninstall all Anthropic products (Sonnet, Opus, Fable). The ban follows Anthropic's own accusation that Alibaba's Qwen lab ran a large-scale "distillation" attack on Claude using ~25,000 fake accounts.
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+2. **EU says Apple is responsible for Siri AI delay in Europe**
+   - Company · Ticker · Tier: Apple · AAPL US · Tier 1
+   - URL: https://apnews.com/video/eu-says-apple-is-responsible-for-siri-ai-delay-in-europe-0cde1ca0a58041038b42f3fd806950b2
+   - Published: Sun, 05 Jul 2026 12:21:17 GMT (age 11.7h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (headline only). AP's `body_text` for this entry was a generic "AP top stories" video-roundup list unrelated to the Siri story, so the summary paraphrases only the headline itself; no further specifics invented.
+   - Summary: According to AP News, the European Union has said Apple bears responsibility for the delay in bringing Siri's AI-enhanced features to the European market.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
+3. **AWS to stop accepting new customers for Mechanical Turk**
+   - Company · Ticker · Tier: Amazon · AMZN US · Tier 1
+   - URL: https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/
+   - Published: Sun, 05 Jul 2026 17:43:36 +0000 (age 6.3h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (full article text)
+   - Summary: Amazon will close Mechanical Turk to new customers on July 30, 2026, though existing customers may continue using it; AWS says it will keep investing in security/availability but add no new features. Mechanical Turk's crowdsourced human labeling has long been the hidden backbone behind SageMaker's AI data-annotation pipeline and some products marketed as "AI."
 
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
-
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
-
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
-
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+4. **Microsoft appoints Ayman AlGhamdi as President, Microsoft Arabia**
+   - Company · Ticker · Tier: Microsoft · MSFT US · Tier 1
+   - URL: https://news.microsoft.com/source/emea/2026/07/microsoft-appoints-ayman-alghamdi-as-president-microsoft-arabia/
+   - Published: Sun, 05 Jul 2026 11:03:48 GMT (age 13.0h)
+   - FreshnessCheck: ✅ within 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (primary source, full text)
+   - Summary: Microsoft named Ayman AlGhamdi President of Microsoft Arabia effective July 5, 2026, as the company prepares to launch its Saudi Arabia cloud region; AlGhamdi previously led Microsoft's Saudi public-sector business and will oversee cloud, AI, cybersecurity, and digital-skilling programs supporting the Kingdom's AI ambitions.
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+- https://news.google.com/rss/articles/...Hon-Hai-AI-demand (resolved: bloomberg.com) — Screening-only source, body blocked by a robot-check wall; no open-citation cross-match found for the same story in this pool
+- Tesla "AI cost cap" and "Tesla/SpaceX record highs" (livemint.com, both via news.google.com with empty `resolved_url`) — no real citeable article URL available; can't cite a Google News redirect directly
+- https://news.google.com/rss/articles/...alibaba-lobbying-ban-reprieve (resolved: bloomberg.com, empty `resolved_url` on the direct entry) — screening-only + no usable body; distinct from the Claude Code story but uncorroborated and uncitable this run
+- https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence — opinion/culture piece about an ad, not a news development (Alphabet — dropped, tagged Microsoft by the funnel's keyword match but content is about Google)
+- https://www.tomshardware.com/software/windows-11-identifier-... (Scattered Spider arrest) — security/hacker-arrest story, not genuinely AI-relevant; mismatched to Microsoft/AMD by keyword overlap
+- https://www.tomshardware.com/tech-industry/drones/darpa-plans-30-year-endurance-nuclear-waste-batteries... — DARPA drone battery research; only tangential Oklo (Tier 2) keyword match on "nuclear," not a genuine Oklo company development
+- Remaining Tom's Hardware GPU/hardware-review, gaming, and lifestyle items (RTX 4080M, F1 25 benchmarks, iPad/iPhone charging, smart-band comparison) — off-scope, not genuine watchlist-company AI news
+- France 24 "Alibaba bans Claude for staff" — same event as Story 1; kept as corroboration, not cited as a separate slot
+- Blognone Thai-language Mechanical Turk piece — same story as Story 3 (English TechCrunch kept as the higher-scored, fuller-body source)

@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-08 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. GitHub AI agent leaks private repos when asked nicely ("GitLost")
+**อาจารย์ (มหาวิทยาลัย):** ช่องโหว่ GitLost เป็นตัวอย่างสอนเรื่อง prompt injection ที่ดีที่สุดเคสหนึ่ง เพราะมันไม่ใช่บั๊กใน AI model โดยตรง แต่เป็นช่องว่างในการออกแบบ workflow ที่ให้ agent มีสิทธิ์เข้าถึงข้อมูล private และโพสต์ผลลัพธ์แบบ public พร้อมกัน — ควรใช้สอนหลักการ "least privilege" ใน agentic system design
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่น่ากังวลคือช่องโหว่นี้ไม่ได้จำเพาะโมเดล ใช้ได้ทั้งกับ agent ที่ขับเคลื่อนด้วย Claude หรือ Copilot เพราะรากปัญหาอยู่ที่สถาปัตยกรรม GitHub Agentic Workflows เอง และ GitHub ยังไม่มีทั้ง fix และเอกสารเตือนผู้ใช้อย่างเป็นทางการ ทำให้องค์กรที่เปิดใช้ฟีเจอร์นี้อยู่ในความเสี่ยงต่อเนื่อง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่เปิดใช้ GitHub Agentic Workflows ควรตรวจสอบทันทีว่า agent มีสิทธิ์เข้าถึง private repo ใดบ้าง และปิดความสามารถโพสต์คอมเมนต์สาธารณะจาก workflow ที่แตะข้อมูล sensitive จนกว่า GitHub จะออก patch อย่างเป็นทางการ
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Anthropic launches Claude Cowork on mobile and web
+**อาจารย์ (มหาวิทยาลัย):** การขยาย Cowork จาก desktop-only ไปสู่ mobile/web สะท้อนทิศทางที่ agentic AI กำลังเปลี่ยนจาก "เครื่องมือที่ต้องนั่งหน้าคอม" เป็น "ผู้ช่วยที่ทำงานต่อเนื่องในคลาวด์" — ประเด็นที่ควรถกในชั้นเรียนคือความรับผิดชอบเมื่อ agent ทำงานอัตโนมัติต่อแม้ผู้ใช้ปิดเครื่องไปแล้ว
+**ผู้เชี่ยวชาญด้าน AI:** การย้าย workload ไปรันบนคลาวด์แทนเครื่อง local เปลี่ยน threat model และ latency profile ของ Cowork อย่างมีนัยสำคัญ ต้องติดตามว่า Anthropic จัดการ state/context ระหว่าง session มือถือกับเว็บอย่างไรให้ต่อเนื่องและปลอดภัย
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Cowork ในงาน non-coding อยู่แล้ว (ตามข้อมูลผู้ใช้ 90% ไม่ได้ใช้เพื่อ coding) การมาถึงของ mobile/web เปิดโอกาสให้ non-technical staff เข้าถึง agent ได้ง่ายขึ้น — ควรทบทวน permission model และ access control ก่อนปล่อยให้ทีมที่ไม่ใช่ engineer ใช้งานแบบ self-serve
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. China's DeepSeek reportedly developing its own AI chip
+**อาจารย์ (มหาวิทยาลัย):** ถ้าเป็นจริง นี่คือหลักฐานว่ามาตรการควบคุมการส่งออกชิปกำลังผลักดันให้ AI lab ของจีนขยับจาก "ผู้ใช้ชิปต่างชาติ" ไปสู่ "ผู้ออกแบบชิปเอง" เร็วกว่าที่นักวิเคราะห์หลายคนเคยคาด ควรใช้สอนเรื่อง unintended consequences ของนโยบาย export control
+**ผู้เชี่ยวชาญด้าน AI:** DeepSeek พิสูจน์ตัวเองแล้วว่าเก่งด้าน algorithm efficiency (efficient training/inference) แต่การออกแบบชิปเป็นทักษะคนละมิติที่ต้องใช้เวลาและทุนมหาศาลกว่าจะแข่งกับ Nvidia/AMD ได้จริง ควรระวังการตีความข่าวนี้เกินจริงจนกว่าจะมีรายละเอียด architecture ที่ชัดเจนกว่า "sources say"
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พึ่งพา DeepSeek model ผ่าน API ควรจับตาว่าชิปของตัวเอง (ถ้าเกิดขึ้นจริง) จะทำให้ inference cost ถูกลงและ availability เพิ่มขึ้นแค่ไหน เพราะอาจกระทบทางเลือก provider ในสาย cost-sensitive workload
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Meta's new Muse Image model lets prompts pull in other Instagram users
+**อาจารย์ (มหาวิทยาลัย):** ฟีเจอร์ "@mention" คนอื่นในภาพที่ AI สร้างเป็นกรณีศึกษาชั้นดีเรื่อง consent และ likeness rights — คำถามคือใครต้องยินยอมก่อนภาพหน้าตาคนอื่นถูกใช้ generate เนื้อหาใหม่ และแพลตฟอร์มควรมี guardrail อย่างไรก่อนเปิดฟีเจอร์แบบนี้สู่สาธารณะวงกว้าง
+**ผู้เชี่ยวชาญด้าน AI:** การให้ Superintelligence Labs ปล่อยโมเดลภาพตัวแรกพร้อมความสามารถอ้างอิงบัญชี Instagram อื่นโดยตรง ต้องอาศัยระบบตรวจสอบ identity/consent ที่แม่นยำมาก มิเช่นนั้นความเสี่ยงเรื่อง deepfake-adjacent misuse จะสูงกว่าเครื่องมือ image-gen ทั่วไปที่ไม่ผูกกับบัญชีจริง
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาที่สร้างแอปบน Meta AI API ควรตรวจสอบ policy การใช้ฟีเจอร์ @mention นี้อย่างละเอียด โดยเฉพาะเรื่อง opt-out ของผู้ใช้ที่ไม่ต้องการให้บัญชีถูกดึงไปใช้ใน prompt ของคนอื่น ก่อนนำไปสร้างผลิตภัณฑ์ต่อยอด
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Cloud AI worm "CAI" steals rival malware's stolen credentials, mines crypto
+**อาจารย์ (มหาวิทยาลัย):** ปรากฏการณ์ "โจรขโมยของจากโจร" ของเวิร์ม CAI เป็นตัวอย่างที่ดีของวิวัฒนาการ malware ที่แข่งขันกันเองในระบบนิเวศอาชญากรรมไซเบอร์ ควรใช้สอนแนวคิด competitive dynamics ในภัยคุกคามไซเบอร์ ไม่ใช่แค่มองว่าเป็นภัยจากฝ่ายเดียว
+**ผู้เชี่ยวชาญด้าน AI:** การที่ CAI เจาะจงเป้าหมายเครื่องมือ cloud-native อย่าง Docker, Kubernetes, Redis, etcd, Kubelet และ Ray สะท้อนว่าผู้โจมตีเข้าใจ AI/ML infrastructure stack สมัยใหม่เป็นอย่างดี โดยเฉพาะ Ray ที่ใช้กันแพร่หลายใน distributed AI training/serving ทำให้ workload AI เป็นเป้าที่มีมูลค่าสูงขึ้นเรื่อย ๆ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่รัน Kubernetes/Ray cluster สำหรับ AI workload ควรตรวจสอบทันทีว่า dashboard และ API endpoint ของเครื่องมือเหล่านี้ไม่ได้เปิดสู่อินเทอร์เน็ตแบบไม่มี authentication เพราะเป็นช่องทางหลักที่เวิร์มประเภทนี้ใช้เจาะเข้าระบบ

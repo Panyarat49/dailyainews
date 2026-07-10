@@ -1,65 +1,66 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-10 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-10 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Verification mode: funnel
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (07-09, 07-06, 07-05, 07-04, 07-03 read; 07-07/07-08 missing on disk — skipped, no collision risk found) — ~26 URLs loaded
+Universe pre-load: 34 candidates from universe_2026-07-10_ainews.json (generated_at 2026-07-10T07:03:01+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Source mix: The Verge ×2, TechCrunch (secondary ×3), ZDNet (secondary), Blognone (Thai), Reuters — 5 stories, 1 Thai + 4 international
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+1. **OpenAI เปิดตัว GPT-5.6 ทั่วไป + ChatGPT Work พร้อมยุบ Atlas browser**
+   - Publisher: The Verge (+ ZDNet, TechCrunch)
+   - URL: https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work
+   - Published: 2026-07-09T13:00:00-04:00 (17:00 UTC) — age 7.0h
+   - FreshnessCheck: ✅ within WINDOW via funnel published_raw
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 1 — funnel body
+   - Summary: OpenAI received US government approval and rolled out GPT-5.6 (Sol/Terra/Luna) publicly; announced ChatGPT Work (Codex + ChatGPT combined agent); same-day confirmed Atlas browser shutdown (Aug 9 deprecation), folding agentic-browsing features into the ChatGPT desktop app + a Chrome extension. Secondary: https://www.zdnet.com/article/openais-gpt-5-6-chatgpt-work-beat-anthropic-on-price-speed-and-productivity/ ; https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/
 
-3. **Google invests in A24 to build AI movie tools**
+2. **Fidji Simo ก้าวลงจากตำแหน่งเบอร์สองของ OpenAI**
+   - Publisher: TechCrunch (+ The Verge)
+   - URL: https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/
+   - Published: Thu, 09 Jul 2026 23:38:00 +0000 — age 0.4h
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Fidji Simo, OpenAI's CEO of Applications and de facto No. 2, is stepping down full-time after an extended medical leave, moving to a part-time advisory role — leaving a leadership vacuum as OpenAI eyes a possible IPO and races Anthropic in enterprise. Secondary: https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor
+
+3. **Meta เปิดตัว Muse Spark 1.1 โมเดล agentic coding ขายผ่าน API ครั้งแรก**
+   - Publisher: Blognone (+ TechCrunch)
+   - URL: https://www.blognone.com/node/151114
+   - Published: Thu, 09 Jul 2026 17:13:21 +0000 — age 6.8h
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Meta launched Muse Spark 1.1, an agentic coding/computer-use model, and opened it via the Meta Model API for the first time (not yet available to Thai users) at $1.25/$4.25 per million tokens — competitive with Anthropic's Claude Haiku 4.5 and OpenAI's GPT-5.6 Luna. Secondary: https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/
+
+4. **Google เริ่มติดป้าย "สร้างด้วย AI" บนโฆษณา**
    - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - URL: https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label
+   - Published: 2026-07-09T16:11:38-04:00 (20:11 UTC) — age 3.8h
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Google added a "created or edited with AI" label under the "how this ad was made" panel in My Ad Center for Search, Discover, and YouTube ads, auto-applied to ads made with Google's own generative tools; other AI ads need manual labeling.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+5. **Meta จะเริ่มผลิตชิป AI ของตัวเองในเดือนกันยายน เพิ่มกำลังประมวลผลเป็นสองเท่า**
+   - Publisher: Reuters (+ TechCrunch)
+   - URL: https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09/
+   - Published: Thu, 09 Jul 2026 23:48:25 GMT — age 0.2h
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status: blocked; body_text empty — WEBFETCH_BLOCKED so no live fallback either)
+   - Summary: Reuters exclusive (per internal memo): Meta will put its own AI chip into production in September as part of a plan to double its computing capacity; TechCrunch snippet adds that Meta is taking a modular chip-design approach anticipating AI's fast-changing compute needs.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.zdnet.com/article/openais-gpt-5-6-chatgpt-work-beat-anthropic-on-price-speed-and-productivity/ — folded into story 1 (same event, secondary citation)
+- https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset — folded into story 1 (same event)
+- https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/ — folded into story 3 (same event)
+- https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor — folded into story 2 (same event)
+- https://www.thairath.co.th/lifestyle/tech/2945234 (Meta Muse Image) — same underlying launch already covered in the 2026-07-09 brief (TechCrunch URL); topic-dedup, skipped for breadth
+- https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/ — no body_text (extract_status skipped), thin snippet only; passed over for better-evidenced picks
+- https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/ — no body_text, thin snippet; lower significance than selected set
+- Remaining ~20 lower-score candidates (Intel/AMD CPU hardware, GPU repair human-interest story, AI-slop/education op-eds, misc small funding) — below selection cutoff on significance/relevance, no gate failure

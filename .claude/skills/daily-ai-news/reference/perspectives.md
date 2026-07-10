@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-10 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. OpenAI เปิดตัว GPT-5.6 ทั่วไป + ChatGPT Work พร้อมยุบ Atlas browser
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนเรื่อง product-portfolio consolidation ในอุตสาหกรรม AI ได้ดี — บริษัทเดียวเปิดตัวโมเดลใหม่ ผลิตภัณฑ์ agent ใหม่ และปิดผลิตภัณฑ์เก่าในวันเดียวกัน สะท้อนว่าแม้แต่ผู้นำตลาดก็ต้องตัดสินใจเร็วว่าจะ "เดิมพัน" กับ form factor ไหนของ AI assistant
+**ผู้เชี่ยวชาญด้าน AI:** การยุบ Atlas หลังเปิดตัวไม่ถึงปีชี้ว่า "AI browser แยกเดี่ยว" ไม่ใช่ form factor ที่ชนะ — ความสามารถ agentic browsing กำลังถูกดูดกลับเข้าไปอยู่ในแอปหลักและส่วนขยาย Chrome แทน ขณะที่ ChatGPT Work วางตำแหน่งชนกับ Claude Cowork โดยตรง ต้องรอ benchmark อิสระเพื่อดูว่า Sol/Terra/Luna เหนือกว่า Claude Opus 4.8 จริงหรือแค่ราคาถูกกว่า
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ integrate Atlas ต้อง migrate ก่อน 9 สิงหาคม ส่วนใครที่ทดลอง ChatGPT Work ควรเทียบต้นทุนต่อ token กับ Claude Cowork ก่อนผูก workflow องค์กรกับเครื่องมือใดเครื่องมือหนึ่ง เพราะ landscape ผลิตภัณฑ์ agent เปลี่ยนเร็วมากในไตรมาสนี้
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Fidji Simo ก้าวลงจากตำแหน่งเบอร์สองของ OpenAI
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เหมาะสอนเรื่อง succession planning ในบริษัทเทคโนโลยีที่โตเร็วเกินโครงสร้างองค์กรเดิม — การที่ผู้บริหารระดับสูงหลายคน (Simo, Lightcap, Rouch, Weil) ทยอยออกหรือเปลี่ยนบทบาทในเวลาไล่เลี่ยกันเป็นสัญญาณที่ควรศึกษาแยกจากเหตุผลด้านสุขภาพส่วนบุคคล
+**ผู้เชี่ยวชาญด้าน AI:** การสูญเสียผู้บริหารที่คุม COO/CFO/CPO reporting line เกิดขึ้นในจังหวะที่ OpenAI กำลังเร่งแข่งกับ Anthropic ด้าน enterprise และพิจารณา IPO ความไม่ต่อเนื่องของผู้นำระดับนี้มักกระทบ execution speed มากกว่าที่แถลงการณ์ทางการจะยอมรับ
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่พึ่งพา OpenAI enterprise roadmap ควรจับตาว่าการเปลี่ยนผู้นำจะกระทบ timeline ของฟีเจอร์ enterprise ที่ประกาศไปแล้วหรือไม่ โดยเฉพาะ ChatGPT Work ที่เพิ่งเปิดตัวในวันเดียวกัน
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Meta เปิดตัว Muse Spark 1.1 โมเดล agentic coding ขายผ่าน API ครั้งแรก
+**อาจารย์ (มหาวิทยาลัย):** เหมาะเป็นตัวอย่างสอนเรื่อง competitive benchmarking — Meta เข้าตลาด agentic coding ทีหลัง Anthropic และ OpenAI มาก แต่ยังแข่งขันได้ด้วยกลยุทธ์ราคา ไม่ใช่ผลคะแนน benchmark ที่เหนือกว่า
+**ผู้เชี่ยวชาญด้าน AI:** Muse Spark 1.1 ยังตามหลัง Opus และ GPT ด้าน coding benchmark แต่ผลทดสอบภายในของ Meta เองใกล้เคียงกันมาก จุดที่น่าสนใจทางเทคนิคคือการเน้น multi-agent orchestration และ computer-use ควบคุมหลายแอปพร้อมกัน ซึ่งต่างจากการแข่งแค่ single-agent coding score
+**โปรแกรมเมอร์มืออาชีพ:** ราคา $1.25/$4.25 ต่อล้านโทเค็นถูกกว่า Claude และ GPT-5.6 Luna เล็กน้อย เหมาะให้ทีมที่ทำงาน batch/agentic workload ต้นทุนสูงทดลองเทียบคุณภาพจริงคู่ขนานก่อนย้าย แต่ต้องรู้ว่ายังไม่เปิดให้ผู้ใช้ในไทยใช้ API โดยตรง
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Google เริ่มติดป้าย "สร้างด้วย AI" บนโฆษณา
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอนเรื่อง transparency-by-design ในแพลตฟอร์มโฆษณาขนาดใหญ่ — การติดป้ายอัตโนมัติเฉพาะเครื่องมือของตัวเองแต่ให้ผู้ลงโฆษณาติดป้ายเองสำหรับเครื่องมือภายนอก เผยให้เห็นข้อจำกัดของการกำกับดูแลตนเองในอุตสาหกรรม
+**ผู้เชี่ยวชาญด้าน AI:** ฟีเจอร์นี้เป็นก้าวเล็กแต่สำคัญด้าน AI content provenance ในบริบทโฆษณา ต่างจาก watermarking ที่ฝังในไฟล์ นี่คือ metadata label ระดับแพลตฟอร์มที่ผู้ใช้ปลายทางมองเห็นได้ง่าย แต่ยังพึ่งพา self-declaration สำหรับเนื้อหาที่สร้างนอกระบบ Google
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำระบบโฆษณาอัตโนมัติควรตรวจสอบว่า pipeline การสร้างครีเอทีฟด้วย AI ของตนติดป้ายให้ตรงตามนโยบายใหม่หรือไม่ ก่อนที่แพลตฟอร์มอื่นจะออกกฎบังคับตามมา
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Meta จะเริ่มผลิตชิป AI ของตัวเองในเดือนกันยายน เพิ่มกำลังประมวลผลเป็นสองเท่า
+**อาจารย์ (มหาวิทยาลัย):** เหมาะสอนเรื่อง vertical integration ของ Big Tech ในสาย AI infrastructure — การออกแบบชิปเองช่วยลดการพึ่งพา Nvidia ในระยะยาวและควบคุมต้นทุนต่อหน่วยประมวลผลได้มากขึ้น
+**ผู้เชี่ยวชาญด้าน AI:** แนวทาง modular chip design ที่ยังปรับเปลี่ยนได้ตามความต้องการ AI ที่เปลี่ยนเร็ว เป็นจุดที่ต่างจากการออกแบบชิปแบบ fixed-purpose ทั่วไป แต่รายละเอียดสเปกยังไม่ชัดเจนเพราะข่าวนี้มาจาก memo ภายในที่หลุดออกมา ยังต้องรอการยืนยันอย่างเป็นทางการจาก Meta
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ Meta AI infrastructure หรือติดตาม capacity ฝั่ง cloud ควรจับตาประกาศอย่างเป็นทางการช่วงเดือนกันยายน เพราะการเพิ่ม compute capacity เป็นสองเท่าอาจกระทบราคาและ availability ของบริการที่พึ่งพาโครงสร้างพื้นฐานของ Meta ในระยะกลาง

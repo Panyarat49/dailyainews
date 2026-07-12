@@ -1,103 +1,71 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-07-12 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-12 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel + search (Nvidia and Micron verified via WebSearch snippet since neither surfaced in the funnel; Microsoft verified from funnel body_text)
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Dedup against: last 7 watchlist briefs (2026-07-05 through 2026-07-11; 37 URLs loaded)
+Source mix: 2 citation (CNBC, Tom's Hardware) + 1 citation (Fox Business)
+Universe pre-load: 31 candidates from universe_2026-07-12_watchlist.json (generated_at 2026-07-12T06:54:47+07:00) — used as START_POOL; ~30 of 31 candidates were either thematic dedup of already-covered stories (Meta Muse Image removal, Apple v. OpenAI lawsuit — both fully reported in the 2026-07-11 brief) or non-AI/thin snippets, so extensive per-company WebSearch gap-fill was run across nearly all Tier-1 companies and several Tier-2 companies (Nvidia, Tesla, Amazon, Alphabet, Oracle, TSMC, Alibaba, AMD, Apple, Tencent, Xiaomi, Oklo, Netflix, Goldman Sachs, Micron) to reach the floor.
+Tiers used: 1+2 | Story count: 3 slots (target 4–5, floor 3 — floor met, not prefer; flagged below)
 
 ## Significance ledger
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
+| Nvidia | 1 | ✅✅✅ | Kyber NVL144 rack-scale system reportedly delayed 12+ months to 2028 (SemiAnalysis); Nvidia publicly denies, "our roadmap is intact"; triggered a multi-country semiconductor supplier stock selloff (Japan's Ibiden, Kingboard, Samsung Electro-Mechanics) | yes (slot 1) |
+| Microsoft | 1 | ✅✅ | FY2026 Environmental Sustainability Report: emissions up 25% YoY, driven by AI datacenter buildout; casts doubt on 2030 carbon-negative pledge | yes (slot 2) |
+| Micron Technology | 2 | ✅✅✅ | Raised total planned US investment to $250B through 2035 (+$50B) for AI memory/DRAM/HBM capacity; new Clay, NY mega-fab breaks ground ahead of schedule | yes (slot 3, Tier-2 top-up) |
+| Meta Platforms | 1 | ◻ dedup | All fresh Meta candidates in today's universe (AP News, TechCrunch, Engadget, Blognone) are the same Muse Image removal story already fully reported in the 2026-07-11 brief — no new development | no |
+| Apple | 1 | ◻ dedup | Fresh AP News candidate is the same Apple v. OpenAI trade-secret lawsuit already fully reported in the 2026-07-11 brief; Bloomberg follow-up is screening-only, no open cross-match found | no |
+| AMD | 1 | ◻ | Only fresh AMD candidate (Clorox content-creation case study) traced back to a July 2, 2026 publish date on amd.com — outside the freshness window despite recent RSS re-syndication; gaming-GPU price/thermal stories are non-AI | no |
+| Alibaba | 1 | ◻ | Fresh candidates were a generic China-ETF investment listicle (not AI-specific) and a $600M DOJ drug-marketplace settlement (not AI-relevant); the PrismML/Qwen-on-iPhone story is genuinely fresh and significant but has no coverage on any trusted-sources.md outlet — rejected per citation rule | no |
+| Tesla | 1 | ◻ | Miami robotaxi "unsupervised network" coverage traces back to the July 3 launch already reported in the 2026-07-05 brief — no new development | no |
+| Alphabet | 1 | ◻ | No fresh (in-window), non-evergreen Alphabet/Gemini story found on a trusted outlet after gap-fill search | no |
+| Oracle | 1 | ◻ | No fresh Oracle story found beyond evergreen monthly product digests of uncertain publish date | no |
+| TSMC | 2 | ◻ | CoWoS/packaging coverage found was evergreen background, not a dated fresh event | no |
+| Tencent | 2 | ◻ | WeChat "Xiaowei" AI agent coverage traces back to June 22 testing report — outside window | no |
+| Affirm | 2 | ◻ | Only candidate (Thai BOT grey-money/BNPL regulation) is non-AI financial regulation | no |
 
 ## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+Tier 1 yielded only 2 significant, citable, in-window stories (Nvidia, Microsoft) after dropping thematic-dedup and non-AI candidates. Per `tier_descent: top-up-to-target`, descended to Tier 2 and found Micron's $250B investment announcement — significant, fresh, and citable. Combined total: 3 (floor met). Extensive additional gap-fill searching (15+ targeted queries) across remaining Tier-1 and Tier-2 companies did not surface a 4th story that was simultaneously fresh, genuinely AI-relevant, and citable on a `trusted-sources.md` outlet — shipping 3 rather than reaching for a stale or off-list source.
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
+1. **Nvidia — Kyber AI rack-scale system reportedly delayed to 2028; Nvidia denies, says roadmap "intact"**
+   - Publisher: CNBC (Citation)
+   - URL: https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html
+   - Published: Mon, 6 Jul 2026 (per CNBC dateline; multiple outlets corroborate the same week)
+   - FreshnessCheck: ✅ within rolling 7d window (~6 days old at time of writing; no fresher trusted follow-up found, but this is the first Nvidia-specific story in the watchlist stream in the last 7 days and remains the most current reporting)
+   - DedupCheck: ✅ URL/story not in last-7-day watchlist set
+   - Verification: Tier 2 — WebSearch snippet (CNBC not present in the RSS funnel for this story; corroborated independently by SemiAnalysis's original report, Yahoo Finance, Benzinga, wccftech, and the visible stock reaction in Ibiden/Kingboard Laminates/Samsung Electro-Mechanics shares — high cross-outlet consistency on the facts)
+   - Summary: Research firm SemiAnalysis reported that Nvidia's next-gen Kyber NVL144 rack-scale system (built for the 2027 Rubin Ultra chip) has slipped over 12 months to 2028 due to manufacturing difficulty with its 78-layer PCB midplane. Nvidia publicly rejected the report: "Our roadmap is intact," noting current Rubin systems are already in full production, shipping to major cloud customers this fall. The rumor briefly hit shares of Asian supply-chain names (Ibiden, Kingboard Laminates, Samsung Electro-Mechanics).
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
+2. **Microsoft — FY2026 sustainability report shows emissions up 25% amid AI datacenter expansion**
+   - Publisher: Tom's Hardware (Citation)
+   - URL: https://www.tomshardware.com/tech-industry/big-tech/microsoft-struggles-to-fulfill-its-2030-sustainability-promise-amid-carbon-heavy-ai-expansions-the-companys-chief-sustainability-officer-claims-the-target-is-still-feasible
+   - Published: Sat, 11 Jul 2026 (article says "Published 11 hours ago" relative to funnel generation time; explicit feed timestamp 12:45 GMT)
+   - FreshnessCheck: ✅ within last 24h — explicit body timestamp
    - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+   - Verification: Tier 1 — funnel body (body_text confirms FY2025 emissions rose 25% YoY to ~20.3M metric tons CO2e, up from 16.2M tons in FY2024 and 58% above the 2020 baseline; driven by datacenter buildout and the end of short-term renewable energy certificate purchases; company maintains its 2030 carbon-negative target is still feasible)
+   - Summary: Microsoft's 2026 Environmental Sustainability Report shows FY2025 emissions rose 25% year over year, driven primarily by rapid AI datacenter expansion and the company's decision to stop relying on short-term renewable energy certificates. Microsoft's chief sustainability officer maintains the 2030 carbon-negative target remains feasible.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
-
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
-
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
-
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
-
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+3. **Micron — raises planned US investment to $250B through 2035 for AI memory manufacturing**
+   - Publisher: Fox Business (Citation)
+   - URL: https://www.foxbusiness.com/media/micron-ceo-says-ai-boom-drives-unprecedented-memory-demand-company-invests-250b
+   - Published: Sat, 11 Jul 2026
+   - FreshnessCheck: ✅ within last 24h — multiple outlets (Fox Business, Yahoo Finance, Motley Fool, Interesting Engineering, Times Now World) independently dated this to July 11, 2026
+   - DedupCheck: ✅ URL/story not in last-7-day watchlist set
+   - Verification: Tier 2 — WebSearch snippet (Micron not present in the RSS funnel; verified via strong cross-outlet corroboration — CEO Sanjay Mehrotra's announcement at a Clay, NY event was independently reported with consistent figures by 5+ trusted-adjacent outlets)
+   - Summary: Micron raised its total planned US investment to more than $250 billion through 2035 (a ~$50B increase), aimed at scaling DRAM and high-bandwidth memory (HBM) production for AI. The centerpiece is a new multi-fab complex near Syracuse, NY, where the first concrete pour happened more than a quarter ahead of schedule. Micron says it has sold out its 2026 HBM capacity and presold its full 2027 capacity amid what CEO Sanjay Mehrotra calls sustained AI-driven demand.
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+- https://apnews.com/article/meta-artificial-intelligence-instagram-images-privacy-4df3bdb3fec6e046c6562accc2d270a5 (and 5 more Meta Muse Image variants: TechCrunch, Engadget ×2, Blognone, BBC, Al Jazeera, Fox Business, thenationalnews, ABC AU) — thematic dedup: same Muse Image removal event already fully reported in the 2026-07-11 brief (techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/ was cited that day); no new development.
+- https://apnews.com/article/apple-openai-lawsuit-trade-secrets-theft-6fff8833f5889d86406b89a02dd8fb16 (and CNA, Bloomberg ×2 variants) — thematic dedup: same Apple v. OpenAI trade-secret lawsuit already fully reported in the 2026-07-11 brief.
+- https://www.blognone.com/node/151124 (EU Commission probes Meta/Instagram addictive app design under DSA) — Gate C: this is a general platform/UX-addiction regulatory story (infinite scroll, autoplay, notifications), not an AI-specific development; dropped despite being a real, fresh, significant Meta story.
+- https://www.tomshardware.com/pc-components/gpus/hotspot-temperature-sensor-on-nvidias-blackwell-gaming-gpus-... and the AMD RX 9070 GRE price-cut story — Gate C: gaming-GPU hardware/pricing, not AI-relevant.
+- AMD "Clorox Creates Scalable Content with AMD CPUs and GPUs" (amd.com case study) — traced via search to a July 2, 2026 publish date; outside the 7-day freshness window despite appearing freshly in today's RSS feed (re-syndication, not a new event).
+- PrismML shrinks Alibaba's Qwen 3.6 to run on iPhone 17 Pro, drawing Apple's interest — genuinely fresh (~July 9-10) and significant (touches both Alibaba and Apple), but after checking MacRumors, 9to5Mac, TrendForce, MacDailyNews, BigGo Finance, and Mezha, none is on `trusted-sources.md`; The Register's PrismML coverage found was a different (April 2026) story. Rejected per the "cite only outlets on this list" rule — flagged here in case the maintainer wants to add a qualifying outlet.
+- Nvidia Blackwell hotspot/thermal + AMD RX 9070 GRE — gaming hardware, non-AI (Gate C).
+- Livemint "Want Alibaba, Tencent, Baidu in your portfolio? 5 China ETFs" — investment listicle, not company-specific AI news.
+- Thai BOT grey-money/BNPL regulation (Affirm, Tier 2) — non-AI financial regulation (Gate C).
+- Remaining low-score/skipped candidates (Microsoft Xbox Brazil court case, Samsung Gallery OneDrive sync end, Amazon layoffs burnout piece, Amazon Echo Studio listing, Bambu Lab/Insta360 contest mis-tagged to Apple) — non-AI or too thin to verify (`extract_status: skipped`, single-line snippet only).

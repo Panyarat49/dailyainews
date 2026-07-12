@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-12 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. AI companies want to water down Australia's copyright laws. Artists are outraged, Labor is split
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างคลาสสิกของความขัดแย้งระหว่าง industrial policy กับสิทธิ์ทางทรัพย์สินทางปัญญา — เหมาะเป็นกรณีศึกษาให้นักเรียนเห็นว่ารัฐบาลต้องชั่งน้ำหนักระหว่างการดึงดูดการลงทุน data center กับการปกป้องรายได้ของครีเอเตอร์ ซึ่งไม่มีคำตอบที่ถูกต้องตายตัว
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นสำคัญคือการเจรจาแลกเปลี่ยน (carve-out) ระหว่างสิทธิ์ใช้ข้อมูลฝึกโมเดลกับการลงทุนโครงสร้างพื้นฐาน AI ซึ่งกำลังเกิดซ้ำในหลายประเทศ ไม่ใช่แค่ออสเตรเลีย — ทิศทางของกฎหมายนี้อาจกลายเป็นบรรทัดฐานให้ตลาดอื่นอ้างอิงต่อ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ฝึกหรือ fine-tune โมเดลด้วยข้อมูลจากออสเตรเลียควรจับตาการเปลี่ยนแปลงกฎหมายนี้อย่างใกล้ชิด เพราะอาจกระทบสิทธิ์การใช้ข้อมูล licensing และ data-sourcing pipeline ในอนาคตอันใกล้
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Forget typosquatting; slopsquatting is the software supply chain threat created by AI coding tools
+**อาจารย์ (มหาวิทยาลัย):** นี่คือตัวอย่างที่ดีในการสอนเรื่อง emergent risk จาก AI hallucination — ความเสี่ยงไม่ได้จบแค่ "คำตอบผิด" แต่ลามไปเป็นช่องโหว่ความปลอดภัยจริงในระบบซอฟต์แวร์ ควรบรรจุไว้ในหลักสูตร secure coding ยุค AI
+**ผู้เชี่ยวชาญด้าน AI:** ปรากฏการณ์นี้สะท้อนขีดจำกัดพื้นฐานของ LLM ที่ยัง hallucinate ชื่อ package ที่ไม่มีอยู่จริงได้บ่อย — การแก้ที่ต้นเหตุต้องอาศัยทั้ง grounding กับ package registry จริงระหว่าง inference และการปรับปรุง training data ไม่ใช่แค่ patch ที่ปลายทาง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ AI coding assistant ควรเพิ่มขั้นตอน verify ชื่อ package กับ registry ทางการก่อน install ทุกครั้ง และตั้ง policy ห้าม auto-install จาก suggestion โดยไม่ผ่านการรีวิวมนุษย์ โดยเฉพาะใน CI/CD pipeline
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. OpenAI bets on families as ChatGPT goes deeper into households
+**อาจารย์ (มหาวิทยาลัย):** การขยายฐานผู้ใช้จาก individual productivity ไปสู่ household เป็นทิศทางที่ platform เทคโนโลยีใหญ่เคยเดินตามมาก่อน (Google, Apple, Meta) — น่าสนใจให้นักเรียนวิเคราะห์ว่า trust-sensitive design สำหรับผู้สูงอายุและเด็กต้องต่างจาก design สำหรับผู้ใช้ทั่วไปอย่างไร
+**ผู้เชี่ยวชาญด้าน AI:** ข้อมูล Sensor Tower ที่ระบุว่าฐานผู้ใช้อายุ 35+ โตขึ้นชัดเจนสะท้อนว่า ChatGPT กำลังเปลี่ยนจาก early-adopter tool เป็น mainstream utility — การออกแบบสำหรับ caregiver และผู้สูงวัยต้องคำนึงถึง safety guardrail ที่ต่างจาก power-user segment
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่สร้างผลิตภัณฑ์บน ChatGPT API ควรเตรียมรับมือกับ user base ที่หลากหลายขึ้น (ผู้สูงอายุ ผู้ปกครอง) ซึ่งต้องการ UX ที่เรียบง่ายกว่าและ error handling ที่ชัดเจนกว่าฐานผู้ใช้เดิม
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Colibrì proof-of-concept gains frontier-level 1.5-TB AI model — runs on only 25GB of RAM
+**อาจารย์ (มหาวิทยาลัย):** โปรเจกต์นี้เป็นตัวอย่างดีของงานวิศวกรรมแบบ resource-constrained ที่ท้าทายสมมติฐานว่าโมเดลระดับ frontier ต้องใช้ hyperscale hardware เท่านั้น — เหมาะสอนแนวคิด memory-mapped inference และ trade-off ระหว่าง speed กับ accessibility
+**ผู้เชี่ยวชาญด้าน AI:** ความเร็วเพียง 0.05–0.1 token/วินาทีทำให้ยังใช้งานจริงไม่ได้ แต่พิสูจน์แนวคิดสำคัญคือโมเดลขนาด 1.5TB สามารถรันบน RAM เพียง 25GB ได้ด้วยเทคนิค offloading ไปยัง NVMe ซึ่งเปิดทางให้ home-lab AI enthusiast เข้าถึงโมเดลระดับ frontier ได้ในอนาคตหากเทคนิคนี้พัฒนาต่อ
+**โปรแกรมเมอร์มืออาชีพ:** วิศวกรที่สนใจ local AI deployment ควรติดตามเทคนิค memory-offloading แบบนี้ เพราะแม้วันนี้ช้าเกินใช้งานจริง แต่แนวทาง CPU + NVMe อาจกลายเป็นทางเลือกต้นทุนต่ำสำหรับ inference offline ในอนาคต
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Notion ออกแอปแยก Notion Agents บน iOS ไว้เรียกใช้ผู้ช่วย AI โดยเฉพาะ
+**อาจารย์ (มหาวิทยาลัย):** การแยกแอป AI assistant ออกจากแอปหลักสะท้อนเทรนด์ที่ผู้ผลิตซอฟต์แวร์เริ่มมอง agentic AI เป็นผลิตภัณฑ์อิสระ ไม่ใช่แค่ feature เสริม — น่าสนใจให้ผู้เรียนเปรียบเทียบกับ pattern เดียวกันในผลิตภัณฑ์อื่น
+**ผู้เชี่ยวชาญด้าน AI:** การให้ผู้ใช้เลือกโมเดลเบื้องหลังได้เอง (GPT, Claude, Gemini) เป็นแนวทาง model-agnostic ที่ช่วยลด vendor lock-in และให้ผู้ใช้เลือกโมเดลที่เหมาะกับงานแต่ละประเภทได้ตรงจุดขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ build บน Notion API ควรตรวจสอบว่า Notion Agents เปิด endpoint ใหม่ให้ integrate หรือไม่ เพราะ agentic layer แบบนี้มักตามมาด้วย API ใหม่สำหรับนักพัฒนาภายในไม่กี่เดือน

@@ -1,65 +1,64 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-13 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-13 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Verification mode: funnel
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (24 URLs loaded from Jul 6–12)
+Source mix: 2 Thai-language (The Standard, Blognone) + 3 international (VentureBeat, The Verge, The Register)
+Universe pre-load: 23 candidates from universe_2026-07-13_ainews.json (generated_at 2026-07-13T06:52:26+07:00) — WebSearch skipped (≥8 candidates after gates). WebFetch control probe returned 403 (WEBFETCH_BLOCKED); items_enriched=11 > 0 so verified from funnel body_text/description per the funnel-backed-blocked-run rule.
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+1. **DeepSeek cut prices 75%. The 100x problem remains**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/orchestration/deepseek-cut-prices-75-the-100x-problem-remains
+   - Published: Sun, 12 Jul 2026 16:00:00 GMT
+   - FreshnessCheck: ✅ within 24h via funnel body_text timestamp
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 1 — funnel body
+   - Summary: DeepSeek's 75% price cut on V4-Pro hasn't improved enterprise margins because agentic systems are consuming tokens faster than prices are falling, breaking the old "infra gets cheaper, apps get better" software-economics assumption.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
-
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
+2. **IMF ยกไทยติด 1 ใน 4 ผู้ส่งออกฮาร์ดแวร์ AI ของโลก รัฐบาลเดินหน้าสร้างฐานการผลิตเทคโนโลยีแห่งอนาคต**
    - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+   - URL: https://thestandard.co/imf-thailand-ai-hardware-exporter/
+   - Published: Sun, 12 Jul 2026 06:18:23 GMT
+   - FreshnessCheck: ✅ within 24h via funnel body_text timestamp
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 1 — funnel body
+   - Summary: IMF placed Thailand among the world's top-4 AI-hardware exporters (alongside Taiwan, Malaysia, South Korea); government spokesperson says fiscal stimulus plus tech-sector exports/investment will push GDP growth above prior forecasts. (Same story also carried by thansettakij.com and bangkokbiznews.com — cluster of 3 outlets.)
+
+3. **Apple's failed self-driving car program left a legacy of powerful AI chips**
+   - Publisher: The Verge
+   - URL: https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra
+   - Published: 2026-07-12T12:27:06-04:00
+   - FreshnessCheck: ✅ within 24h via funnel body_text timestamp
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Apple's shelved self-driving car project drove early investment in on-device AI silicon; that legacy is accelerating development of the M7 Ultra chip, reportedly able to support up to 1.5TB of RAM.
+
+4. **Memory makers are slaves to the boom-bust rollercoaster, and the AI boom is the wildest ride of all**
+   - Publisher: The Register
+   - URL: https://www.theregister.com/ai-and-ml/2026/07/12/memory-makers-are-slaves-to-the-boom-bust-rollercoaster-and-the-ai-boom-is-the-wildest-ride-of-all/5269549
+   - Published: Sun, 12 Jul 2026 13:04:00 +0200
+   - FreshnessCheck: ✅ within 24h via funnel published_raw timestamp
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (body_text returned a bot-check interstitial, not real content; RSS description is substantive and used instead)
+   - Summary: AI-datacenter demand tripled SK Hynix and Micron revenue and roughly doubled Samsung's over the past year, but the memory market's historic boom-bust cycle means the current windfall is structurally exposed to a reversal.
+
+5. **Bun พอร์ตโค้ดจาก Zig เป็น Rust สำเร็จแล้ว ใช้เวลา 11 วัน ด้วยพลัง Fable 5**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151130
+   - Published: Sun, 12 Jul 2026 04:54:35 +0000
+   - FreshnessCheck: ✅ within 24h via funnel published_raw timestamp
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (description substantive; body_text empty/skipped)
+   - Summary: Bun creator Jarred Sumner confirmed the JavaScript runtime's full Zig-to-Rust port completed in 11 days with heavy use of Anthropic's Fable 5 model, shipping in Bun 1.3.14.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- tomshardware.com Legion 7a RTX 5070 laptop — Significance: gaming-laptop SKU/pricing item, only incidental AI angle (Ryzen "AI" CPU branding); body_text was a paywall/membership page, no real article content available.
+- news.google.com redirect → Reuters "India's Tata Consultancy Services plans up to 8,900 AI deployment engineers" — extract blocked, funnel description was just the headline restated (not a substantive snippet); no usable evidence to verify/summarize beyond the title.
+- engadget.com "What are your plans for AI Appreciation Day?" — Significance: listicle/prompt-style filler, not a reportable news event.
+- theverge.com "Lorde says Ray-Ban Meta AI glasses are 'not sexy'" — Significance: celebrity-opinion item, low news substance.
+- news.google.com redirect → The Guardian "AI companies want to water down Australia's copyright laws" — Gate B (dedup, editorial): same story already covered in 2026-07-12-ainews.md.
+- Other lower-score START_POOL items (SSD enclosure deal, TechCrunch Mobility roundup, Register "AI web" opinion column, Ireland datacenter electricity, Thai trade-ministry FTA/AI item, thansettakij state-tech-ecosystem item, Guardian "how engineers adapt to AI", Nakhon Phanom university item, Reed Jobs profile) — not selected: lower significance/AI-centrality than the 5 chosen, extraction gave only non-substantive boilerplate (author bios / titles), or redundant with a selected story's topic (Thailand AI-hardware/tech-policy angle already covered by Story 2).

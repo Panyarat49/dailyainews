@@ -1,65 +1,64 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-15 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-15 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel (funnel bodies used for all 5 picks; items_enriched=12>0)
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (2026-07-08 .. 2026-07-14; 0 URL overlap with picks)
+Source mix: theverge.com, techcrunch.com, tomshardware.com, theguardian.com, thestandard.co (4 intl + 1 Thai)
+Universe pre-load: 40 candidates from universe_2026-07-15_ainews.json (generated_at 2026-07-15T06:52:13+07:00) — WebSearch skipped (≥8 candidates after gates)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
-
-3. **Google invests in A24 to build AI movie tools**
+1. **SpaceXAI's Grok Build tool was uploading users' entire codebases to cloud storage**
    - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+   - URL: https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload
+   - Published: 2026-07-14T15:25:00-04:00 (Jul 14, 7:25 PM UTC)
+   - FreshnessCheck: ✅ within WINDOW (age_h 4.4)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body
+   - Summary: Security researchers (Cereblab, via The Register) found Grok Build's CLI packaging and uploading entire code repos to Google Cloud, including files marked do-not-open and deleted secrets; xAI disabled the upload flag and Musk says pre-existing uploaded data will be deleted.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+2. **OpenAI's first hardware device is reportedly a screenless, moving smart speaker**
+   - Publisher: TechCrunch (citing Bloomberg); corroborated same-day by The Verge
+   - URL: https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/
+   - Published: Tue, 14 Jul 2026 22:22:24 +0000
+   - FreshnessCheck: ✅ within WINDOW (age_h 1.5)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 1 — funnel body
+   - Summary: Bloomberg reports OpenAI's first hardware device is a screen-free "humanlike AI companion" smart speaker with mechanical elements that can move, built with help from former Apple hardware engineers, designed to learn about its owner over time.
+
+3. **Nvidia slashes its list of authorized Asia customers to curb AI-chip smuggling**
+   - Publisher: Tom's Hardware
+   - URL: https://www.tomshardware.com/tech-industry/big-tech/nvidia-slashes-list-of-authorized-customers-in-asia-in-a-bid-to-reduce-ai-chip-smuggling-report-claims-company-sent-field-inspectors-called-customers-to-check-if-business-is-genuine-after-pressure-from-washington
+   - Published: Tue, 14 Jul 2026 11:08:54 +0000
+   - FreshnessCheck: ✅ within WINDOW (age_h 12.7)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Report says Nvidia cut its list of authorized Asia resellers/customers and sent field inspectors to verify buyers are genuine end-users, after pressure from Washington to curb chip-smuggling into China; cluster_size=2 (also carried via a Google News-resolved duplicate of the same article).
+
+4. **Anthony Albanese promises fast-track datacentre approvals to shore up AI investment**
+   - Publisher: The Guardian
+   - URL: https://www.theguardian.com/technology/2026/jul/14/anthony-albanese-promises-fast-track-approvals-for-datacentres-to-shore-up-ai-investment
+   - Published: Tue, 14 Jul 2026 22:20:00 GMT
+   - FreshnessCheck: ✅ within WINDOW (age_h 1.5)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Australia's PM will announce a new national "Office of AI" and faster approval processes for AI projects including datacentres, aiming to be the first country to bring AI's economic, social, security and environmental issues under one framework; copyright-law plans were not detailed.
+
+5. **อนุทินเตรียมเยือนจีน 3 เมือง ร่วมประชุม AI โลก (WAIC 2026) พบสีจิ้นผิง-หลี่เฉียง**
+   - Publisher: The Standard (Thai)
+   - URL: https://thestandard.co/anutin-china-visit-xi-li-ai/
+   - Published: Tue, 14 Jul 2026 09:18:46 +0000
+   - FreshnessCheck: ✅ within WINDOW (age_h 14.5)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Thai PM Anutin Charnvirakul will visit Shanghai, Chengdu and Beijing (Jul 16–20), meeting Xi Jinping and attending the opening of the World Artificial Intelligence Conference (WAIC) 2026, plus bilateral talks with Li Qiang on tech/AI and investment cooperation.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.tomshardware.com/tech-industry/artificial-intelligence/us-govt-allows-chinese-telecom-giant-zte-to-purchase-nvidia-h200-ai-chips-firm-joins-alibaba-tencent-and-bytedance-in-access-to-hopper-tech — in-window & valid; near-duplicate topic (Nvidia Asia chip-export policy) of selected story 3; deprioritized for breadth, not a gate failure.
+- https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/ — in-window & valid; below cut line at 5 (would be a 2nd OpenAI item).
+- https://spectrum.ieee.org/jailbreaking-llms — in-window & valid; below cut line at 5.
+- https://news.mit.edu/2026/can-ai-build-jet-engine-jarvis-challenge-tests-ai-copilots-in-tough-tech-engineering-0714 — in-window & valid; below cut line at 5.
+- https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/ — in-window & valid; below cut line at 5.
+- Remaining candidates ranked 12–39 (score ≤4.25, mostly `extract_status: skipped`) — not selected; lower score / less significant, story cap of 5 reached.

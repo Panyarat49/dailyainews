@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-15 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. SpaceXAI's Grok Build tool uploaded users' entire codebases to the cloud
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เหมาะเป็นตัวอย่างสอนเรื่อง data minimization ใน AI tooling — เครื่องมือที่ต้อง "อ่าน" โค้ดเพื่อช่วยเขียนโปรแกรม ไม่จำเป็นต้อง "เก็บสำเนา" ทั้ง repository ไว้ที่ฝั่งผู้ให้บริการ นี่คือช่องว่างระหว่าง necessity กับ over-collection ที่นักเรียนวิศวกรรมซอฟต์แวร์ควรตั้งคำถามกับทุกเครื่องมือ AI ที่เข้าถึงซอร์สโค้ด
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่ากังวลกว่าการอัปโหลดคือมันดึงไฟล์ที่ถูกสั่งห้ามเปิดและ secrets ที่ถูกลบออกจาก git history ไปด้วย ซึ่งชี้ว่า pipeline ของเครื่องมือไม่ได้เคารพ scope ที่ผู้ใช้กำหนดจริง ๆ ต่างจาก Claude Code ที่มี data retention ที่จำกัดกว่าอย่างมีนัยสำคัญตามที่นักวิจัยเปรียบเทียบไว้
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ Grok Build หรือ agentic coding CLI ตัวอื่นควรตรวจ audit log ทันทีว่ามี secrets หลุดไปหรือไม่ และหมุนเวียน (rotate) credentials ที่เคยอยู่ใน repo แม้จะลบออกจาก history แล้วก็ตาม เพราะครั้งนี้พิสูจน์แล้วว่า "ลบจาก history" ไม่เท่ากับ "ไม่เคยถูกเก็บที่อื่น"
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. OpenAI's first hardware device is reportedly a moving, screenless smart speaker
+**อาจารย์ (มหาวิทยาลัย):** การออกแบบให้ "มีบุคลิก" และเคลื่อนไหวได้ สะท้อนแนวคิด anthropomorphism ในโปรดักต์ AI ที่น่าศึกษาผลกระทบด้านจิตวิทยาผู้ใช้ — เมื่อฮาร์ดแวร์ถูกวางกรอบให้เป็น "เพื่อน" มากกว่า "เครื่องมือ" เส้นแบ่งเรื่อง emotional dependency และ data trust ก็ยิ่งเลือนลาง
+**ผู้เชี่ยวชาญด้าน AI:** การดึงอดีตวิศวกรฮาร์ดแวร์ระดับ iPhone/Mac มาช่วยออกแบบ บ่งชี้ว่า OpenAI เอาจริงกับ physical form factor ไม่ใช่แค่ badge บน speaker ทั่วไป แต่ device ที่ "เข้าถึงอีเมลและชีวิตดิจิทัล" ของผู้ใช้ทั้งหมดก็ยกระดับความเสี่ยงด้าน privacy surface อย่างมาก เทียบกับ ChatGPT บนมือถือที่ยังจำกัดสิทธิ์กว่า
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า OpenAI เปิด SDK ให้ developer ต่อยอด device นี้ นักพัฒนาควรเตรียมรับมือกับ permission model ใหม่ที่ลึกกว่าการเข้าถึง API ทั่วไป และจับตาว่าจะมี local/edge inference บางส่วนหรือพึ่งพา cloud ทั้งหมด เพราะกระทบทั้ง latency และ data-residency ของแอปที่จะสร้างต่อ
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Nvidia slashes its list of authorized Asia customers to curb AI-chip smuggling
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างเชิงนโยบายที่ดีเรื่อง export control enforcement ในทางปฏิบัติ — เมื่อกฎหมายกำหนดกรอบแล้ว บริษัทเอกชนต้องแบกรับต้นทุนการตรวจสอบ end-user เอง ซึ่งเป็นประเด็นถกเถียงเรื่องขอบเขตความรับผิดชอบระหว่างรัฐกับเอกชนในการควบคุมเทคโนโลยี dual-use
+**ผู้เชี่ยวชาญด้าน AI:** การส่งผู้ตรวจสอบภาคสนามไปยืนยันตัวตนลูกค้าคือมาตรการที่เข้มกว่าการตรวจเอกสารทั่วไปมาก สะท้อนว่าแรงกดดันจากวอชิงตันเปลี่ยนจาก policy-level ไปเป็น operational-level แล้ว และอาจกระทบ lead time การจัดหาชิป H100/H200 ของลูกค้าที่ถูกต้องตามกฎหมายในภูมิภาคไปด้วย
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พึ่งพา GPU cluster ในเอเชียตะวันออกเฉียงใต้หรือไต้หวันควรวางแผนสำรอง capacity ล่วงหน้า เพราะกระบวนการ re-verification ของ Nvidia อาจทำให้ order ที่เคย fast-track ล่าช้าลงชั่วคราวจนกว่า supply chain จะปรับตัว
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Anthony Albanese promises fast-track datacentre approvals to shore up AI investment
+**อาจารย์ (มหาวิทยาลัย):** การตั้ง "Office of AI" ระดับชาติเพื่อรวมประเด็นเศรษฐกิจ สังคม ความมั่นคง และสิ่งแวดล้อมไว้ในกรอบเดียว เป็นโมเดล governance ที่น่าศึกษาเปรียบเทียบกับแนวทาง sector-by-sector regulation ของประเทศอื่น ว่าแบบรวมศูนย์จะเร็วกว่าจริงหรือเสี่ยงขาด nuance เฉพาะด้าน
+**ผู้เชี่ยวชาญด้าน AI:** การเร่งอนุมัติ datacentre โดยไม่ระบุรายละเอียดเรื่องกฎหมายลิขสิทธิ์การเทรนโมเดล สะท้อนว่ารัฐบาลเลือกแก้ปัญหาโครงสร้างพื้นฐาน (compute) ก่อน แล้วค่อยตามด้วยประเด็นเนื้อหา (data/copyright) ซึ่งเป็นลำดับความสำคัญที่หลายประเทศเลือกใช้เช่นกัน แต่ก็ทิ้งความไม่แน่นอนให้ AI lab ที่รอความชัดเจนด้าน training data
+**โปรแกรมเมอร์มืออาชีพ:** บริษัทที่วางแผนตั้ง cloud/AI infrastructure ในออสเตรเลียควรติดตามรายละเอียด fast-track approval process ที่จะประกาศ เพราะอาจย่นระยะเวลาการขอใบอนุญาตสร้าง datacentre ลงอย่างมีนัยสำคัญ เป็นโอกาสสำหรับทีมที่วางแผน expansion ในภูมิภาค APAC
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. อนุทินเตรียมเยือนจีน ร่วมประชุม AI โลก (WAIC 2026)
+**อาจารย์ (มหาวิทยาลัย):** การที่ผู้นำรัฐบาลเข้าร่วม WAIC โดยตรงสะท้อนว่า AI กลายเป็นวาระการทูตระดับผู้นำประเทศ ไม่ใช่แค่เรื่องเทคนิคหรือธุรกิจ — น่าสนใจสำหรับการศึกษาความสัมพันธ์ระหว่างประเทศยุคที่ AI เป็นทั้งเครื่องมือทางเศรษฐกิจและภูมิรัฐศาสตร์
+**ผู้เชี่ยวชาญด้าน AI:** การร่วมพิธีเปิด WAIC 2026 เปิดโอกาสให้ไทยเข้าถึงเครือข่ายงานวิจัยและบริษัท AI ชั้นนำของจีนโดยตรง ซึ่งอาจนำไปสู่ความร่วมมือด้าน AI infrastructure หรือ data center ที่เป็นรูปธรรมมากกว่าการเจรจาผ่านช่องทางปกติ
+**โปรแกรมเมอร์มืออาชีพ:** ผู้ประกอบการไทยด้าน AI/เทคโนโลยีที่มีแผนขยายตลาดหรือหาพาร์ทเนอร์จีนควรติดตามผลการหารือที่เฉิงตูและปักกิ่งอย่างใกล้ชิด เพราะข้อตกลงด้านการลงทุนที่จะลงนามอาจเปิดช่องทาง incentive หรือ investment zone ใหม่ที่เกี่ยวกับเทคโนโลยีโดยตรง

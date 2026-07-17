@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-17 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Moonshot AI เปิดตัว Kimi K3 โมเดลโอเพนซอร์สที่ใหญ่ที่สุดในโลก
+**อาจารย์ (มหาวิทยาลัย):** การที่ Kimi K3 ขึ้นแท่นโมเดลโอเพนซอร์สที่ใหญ่ที่สุดในเวลาไล่เลี่ยกับ WAIC Shanghai สะท้อนว่าจีนใช้ open-weight เป็นเครื่องมือ soft power ทางเทคโนโลยี — ประเด็นที่ควรสอนคือความต่างระหว่าง "ใหญ่ที่สุด" กับ "ดีที่สุด" และนักเรียนต้องอ่าน benchmark อย่างมีวิจารณญาณ ไม่เชื่อตัวเลขพารามิเตอร์อย่างเดียว
+**ผู้เชี่ยวชาญด้าน AI:** 2.8 ล้านล้านพารามิเตอร์กับ context window 1 ล้านโทเคนคือขนาดที่ท้าทายทั้ง inference cost และ serving infrastructure — ที่น่าจับตาคือ Moonshot เลือกเปิด full weights (27 ก.ค.) แทนที่จะเก็บเป็น API-only ซึ่งกดดันให้ Anthropic/OpenAI ต้องตอบโต้ทั้งด้าน pricing และ open-model strategy
+**โปรแกรมเมอร์มืออาชีพ:** โมเดลขนาดนี้รันเองยากมากสำหรับทีมทั่วไป แต่การมี weights เปิดหมายถึง fine-tune/distill เป็นโมเดลเล็กลงได้เร็วขึ้น — ทีมที่ทำ on-prem หรือ air-gapped deployment ควรติดตาม quantized/distilled variants ที่จะตามมาหลังวันที่ 27 นี้
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. อดีตนักวิจัย DeepMind ระดมทุน Elorian มูลค่า $300M ตั้งแต่ pre-seed
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างดีของ "reputation capital" ในวงการ AI — ประสบการณ์วิจัยที่มีส่วนสร้าง ChatGPT กลายเป็นสินทรัพย์ที่นักลงทุนตีมูลค่าได้สูงกว่าตัวผลิตภัณฑ์จริงเสียอีก ควรใช้สอนเรื่องความเสี่ยงของการประเมินมูลค่าสตาร์ทอัพ AI ในภาวะที่ตลาดยัง "FOMO" อยู่
+**ผู้เชี่ยวชาญด้าน AI:** อัตราส่วน valuation ต่อเงินทุนที่สูงกว่าดีลของ Thinking Machines สะท้อนว่านักลงทุนกำลังไล่ตาม "ผู้มีประสบการณ์สร้าง frontier model" มากกว่าไล่ตาม product ที่พิสูจน์แล้ว — visual AI ที่ Andrew Dai เลือกเป็นสนามที่ยังไม่มีผู้ครองตลาดชัดเจนเท่าโมเดลภาษา จึงเป็นจังหวะเข้าตลาดที่น่าจับตา
+**โปรแกรมเมอร์มืออาชีพ:** ยังไม่มีผลิตภัณฑ์เปิดตัวจริง จึงยังประเมิน API หรือ tooling ไม่ได้ในตอนนี้ — ทีมที่ทำงานสาย visual AI ควรติดตาม Elorian ต่อเนื่องเพื่อดูว่าผลิตภัณฑ์แรกจะออกมาในรูปแบบใดก่อนตัดสินใจนำมาประเมินใช้งาน
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. 1Password เปิด Agentic Mode ให้ Claude ล็อกอินบัญชีแทนผู้ใช้โดยไม่เห็นรหัสผ่าน
+**อาจารย์ (มหาวิทยาลัย):** นี่คือตัวอย่างรูปธรรมของ "least-privilege AI agent design" ที่ควรใช้สอนในชั้นเรียน security — การให้ agent ทำงานแทนโดยไม่เปิดเผย credential แก่ตัวโมเดลเองคือหลักการ separation of concerns ที่นำไปประยุกต์ได้กับระบบ AI agent อื่น ๆ
+**ผู้เชี่ยวชาญด้าน AI:** ความท้าทายทางเทคนิคคือการทำให้ agent กรอกรหัสผ่านและรหัส MFA ได้โดยไม่ผ่าน context ของโมเดล ต้องอาศัย secure credential injection ที่ sandbox ไว้แยกจาก LLM reasoning loop — เป็นรูปแบบที่ agentic AI ทั้งวงการต้องเดินตามหากจะขยายสิทธิ์การเข้าถึงระบบจริง
+**โปรแกรมเมอร์มืออาชีพ:** ฟีเจอร์นี้แก้ pain point ใหญ่ของการมอบงานให้ AI agent จริงจัง — ทีมที่กำลังสร้าง workflow ให้ Claude ทำงานอัตโนมัติผ่านระบบที่ต้อง login ควรประเมิน 1Password integration นี้แทนการฝัง credential ตรง ๆ ใน prompt หรือ config
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Netflix เผยใช้ generative AI ในคอนเทนต์ราว 300 เรื่อง
+**อาจารย์ (มหาวิทยาลัย):** การเปิดเผยตัวเลขนี้ใน earnings report แสดงว่า generative AI กลายเป็นเมตริกที่นักลงทุนสนใจไม่ต่างจาก subscriber growth — ควรใช้เป็นกรณีศึกษาเรื่องความโปร่งใสของสตูดิโอเมื่อ AI เข้ามาเกี่ยวข้องกับงานสร้างสรรค์ และผลกระทบต่อแรงงานในอุตสาหกรรมบันเทิง
+**ผู้เชี่ยวชาญด้าน AI:** การใช้ AI ใน post-production เช่น crowd enhancement และฉากประวัติศาสตร์ ต่างจาก generative video เต็มรูปแบบ — เป็นการใช้งานที่ mature และ risk ต่ำกว่าเพราะยังมีการถ่ายทำจริงเป็นฐาน ควรจับตาว่าสัดส่วนนี้จะเพิ่มขึ้นแค่ไหนในปีถัดไป
+**โปรแกรมเมอร์มืออาชีพ:** ทีม VFX/post-production ที่ทำงานกับสตูดิโอควรเริ่มสร้างทักษะ AI-assisted compositing และ tooling เพราะ workflow แบบนี้กำลังกลายเป็นมาตรฐานอุตสาหกรรม ไม่ใช่ experiment เฉพาะโปรเจกต์ทดลองอีกต่อไป
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Google เปลี่ยนชื่อ NotebookLM เป็น Gemini Notebook พร้อมเพิ่ม code execution
+**อาจารย์ (มหาวิทยาลัย):** การรีแบรนด์ผลิตภัณฑ์ที่มีผู้ใช้กว่า 30 ล้านคนให้เข้าสู่ร่ม Gemini สะท้อนกลยุทธ์ unify AI product line ของ Google — ควรใช้สอนเรื่อง product naming/positioning ในองค์กรใหญ่ที่มีหลายทีมพัฒนา AI feature คู่ขนานกัน
+**ผู้เชี่ยวชาญด้าน AI:** ฟีเจอร์ code execution ที่ทำให้แต่ละ notebook กลายเป็น secure container สำหรับวิเคราะห์ข้อมูลแบบ interactive คือการยกระดับจาก "สรุปเอกสาร" ไปสู่ "workspace วิเคราะห์ข้อมูล" เต็มรูปแบบ ใกล้เคียงกับ code interpreter ของคู่แข่งมากขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** การเชื่อม Gemini Notebook เข้ากับ AI Mode ใน Search หมายความว่า workflow การค้นคว้า-วิเคราะห์-รันโค้ดจะรวมอยู่ในที่เดียวมากขึ้น — ทีมที่ใช้ NotebookLM สำหรับ data analysis ควรตรวจสอบสิทธิ์ Google AI Ultra/Workspace ก่อน feature ใหม่นี้ปล่อยจริง

@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-19 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Kimi: Threat or menace?
+**อาจารย์ (มหาวิทยาลัย):** Kimi K3 เป็นตัวอย่างที่ดีสำหรับสอนเรื่อง open-source AI catch-up dynamics — เมื่อโมเดลจีนแบบเปิดเข้าใกล้ frontier ของโมเดลปิดจากสหรัฐฯ มากขึ้นเรื่อยๆ นักเรียนควรเข้าใจว่า benchmark score ไม่เท่ากับ production readiness เสมอไป ต้องดู evaluation methodology ของแต่ละสำนักด้วย
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสนใจคือ Moonshot เทียบ Kimi K3 ตรงๆ กับ Claude Fable 5 และ GPT 5.6 Sol ในประกาศของตัวเอง ซึ่งเป็นสัญญาณว่าช่องว่างด้าน frontier performance ระหว่างโมเดลเปิดกับปิดแคบลงจริง แต่การยืนยันจาก Arena.ai และ Vals AI ที่เป็น third-party ช่วยเพิ่มความน่าเชื่อถือกว่าการอ้างอิงตัวเลขจากผู้พัฒนาเอง
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ต้องการทางเลือก self-hosted หรือ cost-sensitive workload, Kimi K3 เป็นโมเดล open-weight ที่ควรอยู่ใน shortlist ทดสอบ — แต่ต้องประเมิน latency, fine-tuning cost และ compliance ของ data residency เองก่อนย้าย production traffic จากโมเดลปิดที่ใช้อยู่
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Dave Eggers told OpenAI staff that ChatGPT was 'silencing an entire generation'
+**อาจารย์ (มหาวิทยาลัย):** เหตุการณ์นี้ควรใช้เปิดประเด็นถกในชั้นเรียนเรื่องผลกระทบทางปัญญาและความคิดสร้างสรรค์ของ AI ต่อคนรุ่นใหม่ — คำวิจารณ์จากนักเขียนที่มีชื่อเสียงต่อหน้าพนักงาน OpenAI เองสะท้อนความกังวลเชิงวัฒนธรรมที่ลึกกว่าประเด็นเทคนิค และเป็นตัวอย่างที่ดีของการวิจารณ์จากภายในวงการ
+**ผู้เชี่ยวชาญด้าน AI:** คำวิจารณ์แบบนี้ยากจะพิสูจน์เชิงปริมาณ แต่สอดคล้องกับงานวิจัยหลายชิ้นที่เริ่มตั้งคำถามเรื่อง cognitive offloading และผลต่อทักษะการเขียน/คิดวิเคราะห์ของผู้ใช้ที่พึ่งพา chatbot มากเกินไป OpenAI เชิญ Eggers มาพูดเองก็น่าสนใจว่าบริษัทเปิดรับเสียงวิจารณ์ภายในระดับไหน
+**โปรแกรมเมอร์มืออาชีพ:** แม้ไม่กระทบ API หรือ pricing โดยตรง แต่เป็นสัญญาณว่ากระแสวิจารณ์ social-impact ของ AI กำลังแรงขึ้น — ทีมที่สร้างผลิตภัณฑ์บน LLM ควรพิจารณาฟีเจอร์ที่ส่งเสริมการคิดวิเคราะห์ของผู้ใช้ (เช่น citation, reasoning trace) แทนการให้คำตอบสำเร็จรูปอย่างเดียว เพื่อลด reputational risk ระยะยาว
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. OpenAI will start notifying parents if their teen has been kicked off of ChatGPT
+**อาจารย์ (มหาวิทยาลัย):** ฟีเจอร์นี้เป็นตัวอย่างที่ดีของ AI safety-by-design สำหรับกลุ่มเปราะบาง — ควรใช้สอนเรื่อง trade-off ระหว่าง privacy ของวัยรุ่นกับความรับผิดชอบของผู้ปกครอง/แพลตฟอร์มในการป้องกันอันตราย
+**ผู้เชี่ยวชาญด้าน AI:** การขยาย parental controls ให้ครอบคลุมการแจ้งเตือนเมื่อบัญชีถูกระงับจากเนื้อหารุนแรง เป็นการยกระดับจาก passive monitoring (จำกัดเวลา/เนื้อหา) ไปสู่ active incident notification — สะท้อนว่า OpenAI กำลังเผชิญแรงกดดันด้าน regulatory และ liability เรื่องความปลอดภัยของผู้ใช้วัยรุ่นมากขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พัฒนาแอปสำหรับผู้ใช้ทั่วไปที่มีกลุ่มวัยรุ่น ควรศึกษา pattern การทำ linked-account + policy-violation notification นี้เป็น reference design สำหรับ trust & safety feature ของตัวเอง โดยเฉพาะการ balance ระหว่างการแจ้งเตือนผู้ปกครองกับสิทธิความเป็นส่วนตัวของผู้ใช้
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Fable 5 ตั้งแต่ 20 กรกฎาคม ยังได้โควต้า 50% เฉพาะ Max และ Team Premium
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างเชิงประจักษ์ของ resource-constrained AI service management — เหมาะใช้สอนเรื่องเศรษฐศาสตร์ของการให้บริการ compute-heavy AI ที่ demand เกิน capacity อย่างต่อเนื่อง แม้เป็นผู้ให้บริการรายใหญ่ก็ยังต้องปรับ tier policy
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Anthropic ต้องขยายเวลามาตรการจำกัดการใช้งานหลายรอบ สะท้อนว่าความต้องการใช้โมเดล capability สูงสุดอย่าง Fable 5 ยังเกิน compute ที่มีอยู่จริง ไม่ใช่แค่ปัญหาชั่วคราว — น่าจับตาว่าการแบ่งกลุ่มตาม tier จะกลายเป็นโมเดลถาวรหรือเป็นมาตรการชั่วคราวระหว่างขยาย capacity
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ Fable 5 ผ่าน tier ที่ไม่ใช่ Max/Team Premium ควรวางแผน cost เผื่อซื้อเครดิตเพิ่มตั้งแต่ 20 กรกฎาคม หรือพิจารณา fallback ไปโมเดลอื่นสำหรับงานที่ไม่จำเป็นต้องใช้ capability สูงสุด เพื่อควบคุมงบประมาณ API
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. รัฐบาลไทยดึงเทคโนโลยี Embodied AI จากบิ๊กเทคจีน
+**อาจารย์ (มหาวิทยาลัย):** การเยือน AgiBot ที่เซี่ยงไฮ้เป็นกรณีศึกษาที่ดีเรื่อง technology diplomacy และการถ่ายทอดเทคโนโลยีข้ามพรมแดน — ควรตั้งคำถามในชั้นเรียนว่าไทยจะสร้าง local R&D capacity ได้จริงหรือเป็นเพียงการนำเข้าเทคโนโลยีสำเร็จรูป
+**ผู้เชี่ยวชาญด้าน AI:** Embodied AI ที่ผสาน perception, decision-making และ actuation ในหุ่นยนต์เสมือนมนุษย์เป็นหนึ่งใน frontier ที่แข่งขันสูงระหว่างจีนกับสหรัฐฯ ขณะนี้ — การที่ไทยเลือกศึกษาจาก AgiBot ซึ่งเป็นผู้เล่นชั้นนำจีน สะท้อนทิศทาง supply chain และ partnership ที่ไทยกำลังเอียงเข้าหาฝั่งจีนในเทคโนโลยีนี้
+**โปรแกรมเมอร์มืออาชีพ:** หากนโยบายนี้เดินหน้าจริง อาจเกิดโอกาสงานด้าน robotics software, sensor integration และ AI control system ในไทย — วิศวกรซอฟต์แวร์ที่สนใจ embodied AI ควรติดตามรายละเอียดของความร่วมมือนี้ต่อ เพราะมักนำไปสู่ pilot project และการจ้างงานท้องถิ่นในระยะถัดไป

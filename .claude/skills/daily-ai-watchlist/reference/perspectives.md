@@ -1,42 +1,26 @@
-# Perspectives — 2026-06-23 (watchlist)
+# Perspectives — 2026-07-20 (watchlist)
 
-## 1. Nvidia — Halos for Robotics (อัปเดตสำคัญ 3 รายการ)
+## 1. Alibaba — Qwen 3.8 เปิดตัวอ้างเป็นรองแค่ Claude Fable, จุดชนวนสงครามราคาโมเดลเปิดจีน
+**อาจารย์ (มหาวิทยาลัย):** การอ้างอันดับเทียบ Claude Fable โดยไม่เปิดเผยตัวเลขเทียบมาตรฐานเป็นกรณีศึกษาที่ดีเรื่อง benchmark transparency — ควรสอนนักเรียนให้ตั้งคำถามกับคำกล่าวอ้างเชิงประสิทธิภาพที่ไม่มีหลักฐานรองรับก่อนยอมรับ
+**ผู้เชี่ยวชาญด้าน AI:** ขนาด 2.8T พารามิเตอร์ที่เท่ากับ Kimi K3 ของ Moonshot พอดีสะท้อนว่า Alibaba กำลังแข่งที่ scale เดียวกับคู่แข่งจีนเพื่อไล่ตาม frontier lab ตะวันตก การเปิดให้ใช้ผ่านแผนรายเดือนเท่านั้นทำให้ยังตรวจสอบคำกล่าวอ้างไม่ได้จนกว่าจะมีผู้ทดสอบอิสระยืนยัน
+**โปรแกรมเมอร์มืออาชีพ:** การที่ GLM-5.2 ถูกกดราคาลง 70-80% เหลือ 0.25/0.78 ดอลลาร์ต่อล้านโทเค็นเป็นข่าวดีสำหรับทีมที่ใช้ open model ผ่าน OpenRouter — ควรทดสอบคุณภาพจริงก่อนย้าย workload เพราะราคาถูกมักมาพร้อม rate limit หรือ SLA ที่ต่างจากผู้ให้บริการรายใหญ่
 
-### 1.1 Halos for Robotics
-**อาจารย์ (มหาวิทยาลัย):** Halos for Robotics คือตัวอย่าง "safety-by-design" แทนที่ "safety-by-retrofit" — ออกแบบ safety framework เป็น architecture layer ตั้งแต่ต้น ไม่ใช่ patch ทีหลัง นี่คือ design philosophy ที่ควรสอนใน robotics engineering curriculum; Agility เป็น adopter รายแรกในสภาพแวดล้อม factory/warehouse ซึ่งเป็น high-stakes setting ที่จะ generate real-world safety data สำคัญ
-**ผู้เชี่ยวชาญด้าน AI:** Open architecture ของ Halos for Robotics เป็น competitive move ที่ฉลาด — commoditize safety layer เพื่อ expand AI robotics ecosystem โดยรวม ซึ่งต่างจาก proprietary safety system ของ Boston Dynamics หรือ ABB; การมี AI Systems Inspection Lab สำหรับช่วย certification prep ลด barrier ที่ใหญ่ที่สุดสำหรับ humanoid robotics deployment จริงใน regulated environments
-**โปรแกรมเมอร์มืออาชีพ:** Halos OS API และ IGX Thor SDK เป็น integration points ที่ต้องศึกษาสำหรับ robotics software developer — embedded safety frameworks กำลังกลาย requirement ไม่ใช่ optional ใน 2–3 ปีข้างหน้า; ควรเรียน NVIDIA Halos SDK ควบคู่กับ Isaac ROS และ IsaacSim เพื่อ complete physical AI stack
+## 2. Nvidia — ดีลใหญ่จากทริปญี่ปุ่นของ Jensen Huang: AI factory ระดับชาติมูลค่า 6.2 พันล้านดอลลาร์
+**อาจารย์ (มหาวิทยาลัย):** โครงการ Noetra ที่รวม 44 บริษัทญี่ปุ่นเพื่อสร้าง "physical AI" ของตัวเองเป็นตัวอย่างชัดเจนของ sovereign-AI strategy — ประเทศที่ไม่อยากพึ่งพา AI จากสหรัฐฯ หรือจีนแต่ยังต้องพึ่งฮาร์ดแวร์ Nvidia อยู่ดี เป็นประเด็นน่าสอนเรื่อง tech sovereignty ที่ไม่สมบูรณ์
+**ผู้เชี่ยวชาญด้าน AI:** การขยายจาก data-center AI ไปสู่ physical AI (หุ่นยนต์ โรงงาน ยานยนต์) เป็นทิศทางกลยุทธ์ที่ Nvidia ผลักดันต่อเนื่องหลังทริปไต้หวันและเกาหลีใต้ก่อนหน้านี้ — ดีล chip-material supplier เสริมความมั่นคงของ supply chain สำหรับ AI chip รุ่นถัดไปด้วย
+**โปรแกรมเมอร์มืออาชีพ:** วิศวกรที่ทำงานด้าน robotics/edge AI ควรติดตามการเปิดตัว foundation model ของ Noetra consortium เพราะอาจเป็น API หรือ SDK ใหม่สำหรับพัฒนาแอปพลิเคชัน physical AI ในตลาดญี่ปุ่นและเอเชียในอีก 2-3 ปีข้างหน้า
 
-### 1.2 Europe 35 AI Supercomputers
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข 90% market share ใน EU AI supercomputing สะท้อนความตึงเครียดระหว่าง EU tech sovereignty aspirations กับ dependency จริงบน US chipmaker สำหรับ core research infrastructure — นี่คือ case study geopolitics + tech policy ที่น่าใช้ในห้องเรียน AI governance
-**ผู้เชี่ยวชาญด้าน AI:** 800 AI exaflops ที่ deploy/announced ใน Europe ใน 1 ปีคือ pace ที่ accelerating — quantum-GPU integration ผ่าน CUDA-Q เป็น strategic move ที่ future-proof Nvidia ก่อน quantum computers จะ commercially viable; ISC High Performance 2026 เป็น flagship HPC event ที่ Nvidia ใช้ consolidate dominance ทุกปี
-**โปรแกรมเมอร์มืออาชีพ:** 90% EU AI supercomputing บน CUDA หมายความว่า CUDA optimization, cuDNN profiling และ MPI + NCCL distributed training skills จะ valuable มากในยุโรปสำหรับ 5 ปีนี้; การ learn CUDA-Q เพิ่มเติมสำหรับ quantum-GPU hybrid algorithms เป็น long-term skill investment ที่ตอบโจทย์ตลาด
+## 3. Alphabet — EU สั่งเปิด Android ให้ AI assistant คู่แข่งเข้าถึงได้เท่าเทียม Gemini ภายในปี 2027
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือการปะทะกันคลาสสิกระหว่าง platform dominance กับ market fairness ภายใต้ Digital Markets Act — เหมาะเป็นกรณีศึกษาสอนเรื่อง antitrust ในยุค AI ที่กฎเดิมสำหรับ search/app store กำลังถูกนำมาปรับใช้กับ AI assistant
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Apple เลือกไม่เปิดตัว Siri AI ใหม่ใน EU เลยเพื่อหลีกเลี่ยงข้อบังคับนี้ ขณะที่ Googleถูกบังคับให้เปิด Android แสดงความแตกต่างในกลยุทธ์รับมือ regulation — ประเด็น privacy ที่ทั้งสองบริษัทอ้างมีน้ำหนักจริงเมื่อ AI assistant ต้องเข้าถึงข้อมูลระดับ OS
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาแอป AI assistant ควรเตรียมตัวสำหรับ API ใหม่ที่ Google จะต้องเปิดให้ third-party เข้าถึง Android ในระดับเดียวกับ Gemini ภายในกลางปี 2027 — นี่อาจเป็นโอกาสสร้างแอป AI assistant แข่งขันในตลาดยุโรปที่เคยถูกปิดกั้น
 
-### 1.3 Vera Rubin Supercomputers for Science
-**อาจารย์ (มหาวิทยาลัย):** "Agentic AI co-scientist" ที่ call simulators และ surrogate models เป็น vision ที่น่าสนใจสำหรับ future of science — ควรถกในชั้นเรียน AI × science ว่า discovery ที่ AI-assisted ต่างจาก human-led research อย่างไรทั้งในมิติ epistemology และ credit attribution
-**ผู้เชี่ยวชาญด้าน AI:** FP64 precision + AI exaflops ใน single rack คือ differentiator สำคัญ — scientific computing ต้องการ double precision ซึ่ง AI accelerators ทั่วไปมักเสียสละเพื่อ throughput แต่ Vera Rubin รวมทั้งสองโดยไม่ tradeoff นี้จะเปลี่ยน TCO ของ national labs และ research facilities
-**โปรแกรมเมอร์มืออาชีพ:** CUDA-X scientific libraries บน Vera Rubin — โดยเฉพาะ cuFFT, cuSPARSE, cuDSS สำหรับ climate/physics modeling — เป็น productivity lever ที่ต้องเรียนรู้; "agentic scientific workflow" ที่ Nvidia push หมายถึง LangChain/LangGraph-style orchestration แต่ต้อง domain-specific safety validation ที่ different จาก business AI
+## 4. Apple — คดีฟ้อง OpenAI ฐานลอบดึงพนักงาน อาจกระทบแผนฮาร์ดแวร์ของ OpenAI
+**อาจารย์ (มหาวิทยาลัย):** คดี trade-secrets นี้สะท้อนความตึงเครียดเมื่อบริษัทเทคโนโลยียักษ์ใหญ่กับสตาร์ทอัพ AI แข่งขันกันแย่งบุคลากรที่มีความรู้เฉพาะทาง — เหมาะเป็นกรณีศึกษาสอนเรื่อง trade secrets law กับ talent mobility ในอุตสาหกรรมที่เปลี่ยนเร็ว
+**ผู้เชี่ยวชาญด้าน AI:** ข้อกล่าวหาเรื่องการดึงพนักงานปัจจุบันและอดีตของ Apple มาเปิดเผยข้อมูลลับสะท้อนว่า hardware expertise เฉพาะทางของ Apple (เช่น chip design, wearables) เป็นทรัพยากรที่ OpenAI ต้องการอย่างมากสำหรับแผนเข้าสู่ตลาดฮาร์ดแวร์
+**โปรแกรมเมอร์มืออาชีพ:** ทีมวิศวกรที่กำลังพิจารณาย้ายจากบริษัทใหญ่ไปสตาร์ทอัพ AI ควรตรวจสอบ non-disclosure และ non-compete agreement ของตนให้ละเอียด เพราะคดีลักษณะนี้อาจกลายเป็นบรรทัดฐานที่ส่งผลต่อการเคลื่อนย้ายบุคลากรในอุตสาหกรรม AI hardware โดยรวม
 
-## 2. Alphabet — Google DeepMind $75M A24 Deal
-
-**อาจารย์ (มหาวิทยาลัย):** A24 มี artistic credibility สูงในฐานะ filmmaker-forward studio แต่ director รายใหญ่อย่าง Kane Parsons (Backrooms) เรียก AI ว่า "genuinely harmful" — partnership นี้จะเป็น case study ความตึงเครียดระหว่าง institutional decision (studio ตกลงรับเงิน) กับ individual creative resistance; คำถามสำหรับชั้นเรียนคือ "filmmaker-guided AI tools" มี meaningful consent และ creative control แค่ไหน
-**ผู้เชี่ยวชาญด้าน AI:** Research partnership model (ไม่ใช่ licensing/acquisition) ทำให้ DeepMind ได้ creative feedback loop คุณภาพสูงโดยไม่ต้องจ่าย IP premium; ประเด็น data provenance ของ A24 creative output ใน model training pipeline และ whether filmmaker feedback เป็น structured fine-tuning data หรือแค่ product input — ต่างกันอย่างมีนัยสำคัญในทาง technical
-**โปรแกรมเมอร์มืออาชีพ:** Vertex AI video/creative generation SDK คือช่องทางที่ research output จาก partnership นี้มักไหลออกมาใน 12–18 เดือน — ควรติดตาม Vertex AI Generative AI releases; สำหรับ developer ที่ build creative tools: A24 rep ระบุว่า tools "won't look like prompted generative AI" — นี่คือ design constraint ที่สำคัญ (workflow-integrated vs. zero-shot generation)
-
-## 3. Alibaba — HappyHorse 1.1
-
-**อาจารย์ (มหาวิทยาลัย):** ตลาด AI video generation กำลัง consolidate อย่างรวดเร็ว — Sora ถูกยกเลิก, Seedance ถูกพับ, HappyHorse ขึ้น #2 ภายในเวลาสั้น นี่คือ case study "technology market dynamics" ที่คู่แข่งหายไปพร้อมกัน opening market window สำหรับ survivor; ควรถกว่า OpenAI discontinuing Sora เพราะ "financially unsustainable" เป็น business model problem หรือ product problem
-**ผู้เชี่ยวชาญด้าน AI:** API-first + enterprise pricing strategy ของ HappyHorse 1.1 เรียนจากความล้มเหลวของ Sora ที่ consumer pricing ไม่คุ้มทุน — Alibaba เดิมพันว่า enterprise workflow integration จะ sustainable กว่า consumer subscriptions; คำถามคือ $52.7B infrastructure investment จะ convert เป็น Western market share ได้ไหมท่ามกลาง US-China tech tensions ที่ทวีขึ้น
-**โปรแกรมเมอร์มืออาชีพ:** HappyHorse 1.1 API อยู่บน Alibaba Cloud Model Studio แล้วพร้อม 40% discount 2 สัปดาห์แรก — เหมาะสำหรับ evaluation เปรียบเทียบกับ Google Veo/Runway สำหรับ enterprise video generation use-case; ต้องตรวจ data residency requirements และ export control implications ก่อน integrate ใน Western-facing products เนื่องจาก Alibaba Cloud data center locations
-
-## 4. Microsoft — Chevron Power Deal
-
-**อาจารย์ (มหาวิทยาลัย):** ดีลพลังงานระหว่าง tech giant กับ oil major เป็นหลักฐานที่จับต้องได้ว่า AI expansion กระทบ energy sector จริง — นี่คือ case study "AI's physical footprint" สำหรับ course ที่ถก AI × sustainability; คำถามที่ต้องถกคือ gas power supply ที่ Chevron มีไป lock in AI infrastructure อย่างไรกับ Microsoft's sustainability commitments
-**ผู้เชี่ยวชาญด้าน AI:** Hyperscalers ที่ต้อง lock in power supply ระยะยาว reflect reality ที่ AI inference demand กำลัง outpace grid capacity ในหลาย US regions — Texas grid (ERCOT) มีความผันผวนสูง dedicated power supply ช่วย cost predictability สำหรับ always-on AI inference workloads ที่ sensitive ต่อ latency
-**โปรแกรมเมอร์มืออาชีพ:** ดีลพลังงานระยะยาวของ Microsoft ใน South-Central US เป็น positive signal สำหรับ Azure availability และ cost stability ในภูมิภาคนั้น — ควรพิจารณาเป็นปัจจัยใน long-term infrastructure planning; สำหรับทีมที่ choose Azure region: South-Central US อาจมี better power security guarantee ในอนาคต
-
-## 5. Tesla — Autopilot Fatal Crash Pushback
-
-**อาจารย์ (มหาวิทยาลัย):** กรณี Tesla Autopilot crash คือ case study คลาสสิก "autonomous AI + liability attribution" และ information asymmetry — data logs อยู่กับ Tesla แต่ investigators และ plaintiff ต้องการ access; นี่คือ gap ที่กฎหมาย ADAS ยังแก้ไขไม่ครบในสหรัฐฯ ซึ่งเทียบกับ EU AI Act ที่ชัดเจนกว่าเรื่อง record-keeping obligations
-**ผู้เชี่ยวชาญด้าน AI:** Tesla pushback strategy (โต้ narrative แทน transparent disclosure) เพิ่มแรงกดดันต่อ NHTSA ในการ require standardized ADAS data access protocols — pattern นี้ซ้ำหลายครั้งและอาจนำไปสู่ regulatory mandate สำหรับ black-box requirements ที่ผู้ผลิต AV ทุกรายต้องปฏิบัติตาม
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมพัฒนา safety-critical autonomous systems: กรณีนี้พิสูจน์ว่า complete, tamper-evident audit trail ของ AI decisions ทุก step (sensor input → model inference → actuator command) คือ non-negotiable — data logs คือ primary evidence ทั้ง legal และ technical; implement immutable logging ก่อนเกิดเหตุ ไม่ใช่หลัง
+## 5. Netflix จ่าย 587 ล้านดอลลาร์ซื้อสตาร์ทอัพ AI สร้างภาพยนตร์ของ Ben Affleck
+**อาจารย์ (มหาวิทยาลัย):** วาทกรรมของ Affleck ที่พูดถึง "ปกป้องพลังความคิดสร้างสรรค์มนุษย์" ขณะที่ขายบริษัท AI ให้ Netflix ในราคาสูงเป็นประเด็นน่าถกในชั้นเรียนเรื่องเส้นแบ่งระหว่าง AI ช่วยงานหลังการถ่ายทำกับ AI แทนที่ทักษะงานฝีมือ
+**ผู้เชี่ยวชาญด้าน AI:** InterPositive มุ่งแก้ปัญหาการผลิตที่จับต้องได้ (ช็อตหาย พื้นหลังผิด แสงไม่ตรง) มากกว่าการ generate เนื้อหาใหม่ทั้งหมด ซึ่งเป็น use case แบบ post-production ความเสี่ยงต่ำที่สตูดิโอใหญ่ยอมรับได้ง่ายกว่า text-to-video เต็มรูปแบบ
+**โปรแกรมเมอร์มืออาชีพ:** ตัวเลข ~300 เรื่องที่ Netflix ใช้ generative AI แล้วสะท้อนว่า pipeline การผลิตคอนเทนต์ระดับสตูดิโอกำลังผนวก AI tooling เข้า workflow มาตรฐาน — วิศวกรสาย media/VFX ควรติดตามว่า Netflix จะเปิดเครื่องมือเหล่านี้ให้ทีมภายนอกใช้หรือเก็บไว้ใช้เองเท่านั้น

@@ -1,65 +1,64 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-24 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-24 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel   # items_enriched=12>0 in universe_2026-07-24_ainews.json — Tier 1 funnel body preferred; Tier 2 funnel snippet where body unavailable
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Freshness window: rolling 7d (Asia/Bangkok) — all 5 selected stories are within 24h
+Dedup against: last 7 ainews briefs (2026-07-16/17/18/19/20/22/23; 34 URLs loaded)
+Source mix: 2 Thai (Blognone x2, one story) + 3 international (VentureBeat x2, TechCrunch); companies covered: AMD, OpenAI, Microsoft, DeepSeek, Etched — no repeats
+Universe pre-load: 40 candidates from universe_2026-07-24_ainews.json (generated_at 2026-07-24T06:58:49+07:00) — WebSearch skipped (≥ 8 candidates after gates)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+1. **AMD เปิดตัวเซิร์ฟเวอร์ Helios และชิป Instinct MI400 ในงาน Advancing AI 2026**
+   - Publisher: Blognone (primary) + Blognone (supporting)
+   - URL: https://www.blognone.com/node/151219 (+ supporting: https://www.blognone.com/node/151221)
+   - Published: Thu 23 Jul 2026 16:49 UTC / 23:49 ICT (age ~7.2h); supporting article 19:07 UTC / 02:07 ICT (age ~4.8h)
+   - FreshnessCheck: ✅ within last 24h via funnel `published_raw`
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 1 — funnel body (both candidates have full `body_text`, extract_status=ok)
+   - Summary: AMD launched the Instinct MI400 family (MI455X/MI430X, 2nm, up to 432GB HBM4) and the Helios rack-scale AI server, claiming 30% better perf-per-dollar than Nvidia's Vera Rubin NVL72; Microsoft, Meta, OpenAI, Oracle and Anthropic are named early Helios adopters.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+2. **OpenAI นำ GPT-Live ควบคุมด้วยเสียงแบบ full-duplex เข้าสู่ Codex และ ChatGPT desktop**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/orchestration/agentic-coding-goes-hands-free-as-openai-brings-gpt-lives-full-duplex-voice-control-to-codex-and-chatgpt-on-the-desktop
+   - Published: Thu 23 Jul 2026 21:17 UTC / 04:17 ICT Jul 24 (age ~2.7h)
+   - FreshnessCheck: ✅ within last 24h via funnel `published_raw`
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body (extract_status=ok)
+   - Summary: OpenAI brought its full-duplex GPT-Live voice model into the ChatGPT desktop app (macOS/Windows), letting developers orchestrate Codex coding jobs, review PRs, and debug by voice — aimed at 10M+ weekly Codex/ChatGPT Work users.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
+3. **Microsoft เปิดตัวโมเดล AI ของตัวเอง อ้างลดต้นทุนได้ถึง 89% เทียบกับ OpenAI**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai
+   - Published: Thu 23 Jul 2026 23:37 UTC / 06:37 ICT Jul 24 (age ~0.4h)
+   - FreshnessCheck: ✅ within last 24h via funnel `published_raw`
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status=skipped; description is a substantive first-party outlet summary with a timestamp)
+   - Summary: Microsoft AI put two in-house models into public preview — MAI-Image-2.5-Pro (its top-fidelity image generator) and MAI-Voice-2-Flash (a speech model for enterprise workloads) — publishing data claiming up to 89% lower cost than equivalent OpenAI models.
+
+4. **DeepSeek เปิดตัว DeepSeek-V4 จุดชนวนสงครามราคาโมเดล AI จีน**
    - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+   - URL: https://thestandard.co/deepseek-v4-ai-price-war-us-giants/
+   - Published: Thu 23 Jul 2026 12:03 UTC / 19:03 ICT (age ~11.9h)
+   - FreshnessCheck: ✅ within last 24h via funnel `published_raw`
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 2 — funnel snippet (extract_status=skipped; description is a substantive first-party outlet summary with a timestamp)
+   - Summary: Chinese startup DeepSeek is rolling out its flagship DeepSeek-V4 model (full release July 24, after limited V4 Flash/V4 Pro testing since April) at a price reported 7–30x cheaper than rival flagship models, pressuring US AI labs' pricing strategy.
+
+5. **สตาร์ทอัปชิป AI สาย Etched ระดมทุนพุ่ง มูลค่ากิจการแตะ 1 หมื่นล้านดอลลาร์**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/
+   - Published: Thu 23 Jul 2026 15:00 UTC / 22:00 ICT (age ~9.0h)
+   - FreshnessCheck: ✅ within last 24h via funnel `published_raw`
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (extract_status=skipped; description is a substantive first-party outlet summary with a timestamp)
+   - Summary: AI-chip startup Etched, founded by three Harvard dropouts, hit a $10.3B valuation from big-name investors on the strength of inference-focused silicon and memory components that speed up AI inference without requiring GPUs.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- Duplicate/overlapping AMD event candidates (idx 0/2/3/6/7/9/10/11 — Cerebras partnership, EPYC Venice CPU, MI455X detail piece, ROCm.ai toolkit, X100 embedded chips, Thai "Trustworthy AI" digital economy) — no Gate A/B failure, dropped on SELECTION breadth rule to avoid stacking one company; folded MI400 + Helios into one consolidated story instead
+- thestandard.co Moonshot AI / Kimi K3 / GB300 White House allegation (idx5/9/17) — topic materially rehashes the 2026-07-23 brief's Treasury/Moonshot sanctions coverage; dropped on editorial freshness-of-angle judgement (not a hard gate)
+- Nvidia–Amkor $1.5B packaging deal, Reuters via Google News (idx19) — only a `news.google.com` redirect available, no resolvable direct trusted-source URL this run; not citeable per sourcing rule
+- US lawmakers "AI kill switch" bill, BBC via Google News (idx20) — same redirect problem; Tom's Hardware duplicate (idx34/35) had only a non-substantive (staff-bio) snippet, insufficient for Tier 2
+- Patreon layoffs (Engadget/The Verge, idx16/22) — not AI/tech-relevant enough (generic staffing story)
+- Remaining skipped items (idx12,13,21,23–33,36–39: Anthropic voice mode, ZDNet HF-breach follow-up, DHS agent security studies, ChatGPT Health rollout, FLUX 3, etc.) — real and in-window but cut to hold STORY_COUNT at 5 with the best topic/source breadth; none failed Gate A/B

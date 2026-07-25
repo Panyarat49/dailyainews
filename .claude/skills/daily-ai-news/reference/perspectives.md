@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-25 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Anthropic เปิดตัว Claude Opus 5
+**อาจารย์ (มหาวิทยาลัย):** สิ่งที่น่าสอนในชั้นเรียนคือ Anthropic กำลังนิยาม "ความฉลาดที่คุ้มค่า" ใหม่ — แทนที่จะแข่งกันที่ frontier intelligence อย่างเดียว บริษัทแบ่งโมเดลเป็น 4 ระดับตามงาน (Fable 5 / Opus 5 / Sonnet 5 / Haiku 4.5) ซึ่งสะท้อนว่าตลาด AI กำลังเข้าสู่ช่วง maturity ที่ต้นทุนและความเหมาะสมกับงานสำคัญพอๆ กับ raw capability
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Anthropic ยอมรับตรงๆ ว่า Opus 5 ไม่ใช่โมเดลที่ฉลาดที่สุดของตัวเอง (ตำแหน่งนั้นยังเป็นของ Fable 5) แต่เน้นประสิทธิภาพต่อราคา เป็นกลยุทธ์ segmentation ที่ชัดเจน — ราคาคงเดิมที่ $5/$25 ต่อล้าน token แต่ประสิทธิภาพใกล้ frontier มากขึ้น หมายความว่า cost-per-quality ของงานระดับกลางลดลงจริง ไม่ใช่แค่การตลาด
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ build agent หรือ coding tool บน Claude — Opus 5 กลายเป็น default บน Claude Max และเป็นตัวเลือกบน Pro ทันที ควร benchmark งานที่เคยใช้ Opus 4.8 ใหม่เพื่อดูว่า cost-to-performance ดีขึ้นพอจะย้าย production workload หรือยัง โดยเฉพาะงานที่เคยต้องเลือกใช้ Fable 5 เพราะกลัวคุณภาพไม่พอ
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Nvidia, Meta, Microsoft, Hugging Face ลงนามค้านมาตรการจำกัด Open-Weight AI
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างชัดเจนของความตึงเครียดระหว่าง national security policy กับ open-source AI ecosystem — ประเด็นที่ควรถกในชั้นเรียนคือเส้นแบ่งระหว่าง "distillation" ซึ่งเป็นเทคนิควิจัยที่ใช้กันทั่วไป กับการ "ขโมย" ทรัพย์สินทางปัญญา และใครควรเป็นผู้ตัดสิน
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสังเกตคือ OpenAI, Anthropic และ Google ไม่ได้ร่วมลงนาม ขณะที่บริษัทที่เน้น open-weight หรือ infrastructure อย่าง Meta, Hugging Face และ Nvidia นำขบวน — สะท้อนว่าจุดยืนต่อ open-weight policy แบ่งตาม business model ของแต่ละค่ายอย่างชัดเจน ไม่ใช่แค่จุดยืนทางเทคนิค
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ fine-tune หรือ distill โมเดล open-weight เพื่อใช้งานภายในควรติดตามพัฒนาการนโยบายนี้ใกล้ชิด เพราะหากมีมาตรการจำกัดกว้างเกินคาด อาจกระทบ toolchain และ dependency ที่ใช้โมเดลจีนหรือโมเดล open-weight บางตัวอยู่ในปัจจุบัน
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Midjourney ซื้อกิจการแอปโหราศาสตร์ Co-Star
+**อาจารย์ (มหาวิทยาลัย):** การขยายจาก image generation ไปสู่ lifestyle app อย่าง astrology เป็นกรณีศึกษาที่ดีเรื่อง product diversification ของ AI startup — คำถามคือ Midjourney กำลังสร้าง platform ของ consumer AI app ในวงกว้าง หรือแค่หาช่องทางรายได้ใหม่นอกเหนือจาก subscription image generation
+**ผู้เชี่ยวชาญด้าน AI:** Co-Star ใช้ AI ผสมกับข้อมูลดาราศาสตร์จริงในการให้คำทำนายรายบุคคล ซึ่งเข้ากับ DNA ของ Midjourney ที่เน้น personalized generative content — การให้ผู้ก่อตั้ง Co-Star อยู่ดูแลต่อบ่งชี้ว่า Midjourney ต้องการ domain expertise ไม่ใช่แค่ user base
+**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้น่าจับตาเรื่อง tech stack integration — ถ้า Midjourney นำ generative model ของตัวเองมาเสริม Co-Star's personalization engine อาจเห็น API หรือ feature ใหม่ที่ผสม image/video generation เข้ากับ personalized content ในไม่ช้า
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Cognition ซื้อกิจการ Poke เสริม "AI personality" ให้ Devin
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้ชี้ให้เห็นมิติที่มักถูกมองข้ามในการสอน AI product design — นอกจาก accuracy และ capability แล้ว "วิธีที่ AI สื่อสารกับผู้ใช้" กำลังกลายเป็นปัจจัยแข่งขันที่จับต้องได้ ไม่ใช่แค่เรื่อง UX ผิวเผิน
+**ผู้เชี่ยวชาญด้าน AI:** การนำ interaction style ของ Poke มาใส่ใน coding agent อย่าง Devin เป็นความพยายาม differentiate ในตลาด coding agent ที่กำลังแออัดขึ้นเรื่อยๆ — เมื่อ base model capability ใกล้เคียงกันมากขึ้น "บุคลิก" ของ agent อาจเป็นตัวตัดสินใจเลือกใช้งานจริง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ประเมิน coding agent หลายเจ้าควรเริ่มพิจารณาปัจจัยเรื่อง interaction style และ trust-building ควบคู่กับ benchmark ความแม่นยำ เพราะ agent ที่สื่อสารชัดเจนและน่าเชื่อถือมักลดเวลา review และเพิ่มการยอมรับใช้งานในทีมจริง
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Huawei เปิดตัว Thailand AI Ecosystem Initiative ดัน AI Hub อาเซียน
+**อาจารย์ (มหาวิทยาลัย):** โครงการนี้เป็นตัวอย่างของ ecosystem-building strategy ที่ผูกภาครัฐ ภาคธุรกิจ และมหาวิทยาลัยเข้าด้วยกัน — ควรตั้งคำถามในชั้นเรียนว่าการพึ่งพา infrastructure จากผู้ให้บริการรายเดียว (โดยเฉพาะจากต่างประเทศ) มีความเสี่ยงเชิง sovereignty และ vendor lock-in อย่างไรต่ออนาคตของ AI ecosystem ไทย
+**ผู้เชี่ยวชาญด้าน AI:** การนำ Agentic Infrastructure และ CodeArts Agent เข้าสู่ตลาดไทยเป็นก้าวที่สอดคล้องกับเทรนด์โลกที่ AI agent กำลังเป็นจุดแข่งขันหลัก — แต่ความสำเร็จจริงจะขึ้นกับว่ามหาวิทยาลัยและนักพัฒนาไทยสามารถ localize เครื่องมือเหล่านี้ให้ตอบโจทย์ use case ในประเทศได้แค่ไหน
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาไทยที่สนใจ agentic AI ควรติดตามรายละเอียดการเข้าถึง CodeArts Agent และ Agentic Infrastructure ที่จะเปิดให้ใช้งานจริง เพราะอาจเป็นโอกาสได้เครื่องมือ agentic ระดับ enterprise ในราคา/เงื่อนไขที่เข้าถึงง่ายกว่าเดิมสำหรับตลาดไทย

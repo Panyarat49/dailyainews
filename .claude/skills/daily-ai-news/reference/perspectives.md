@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-28 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Nvidia และ Microsoft ตั้ง Open Secure AI Alliance — ไม่มี OpenAI, Google, Anthropic
+**อาจารย์ (มหาวิทยาลัย):** การที่ผู้นำอุตสาหกรรมกว่า 30 รายรวมตัวกันสร้างเครื่องมือความปลอดภัย AI แบบ open source สะท้อนว่าความปลอดภัยของ AI กำลังกลายเป็น "public infrastructure" ที่ต้องพัฒนาร่วมกัน ไม่ใช่ทรัพย์สินปิดของแล็บใดแล็บหนึ่ง — ประเด็นน่าถกในชั้นเรียนคือทำไม 3 แล็บ frontier ที่ทรงอิทธิพลที่สุดถึงไม่เข้าร่วม
+**ผู้เชี่ยวชาญด้าน AI:** การขาดหายของ OpenAI, Google และ Anthropic น่าจะสะท้อนความกังวลเรื่อง IP และ safety framework ของตัวเอง มากกว่าการไม่เห็นด้วยกับหลักการ — แต่ก็เปิดคำถามว่าเครื่องมือ open-source security ที่ไม่มี frontier lab ร่วมพัฒนาจะครอบคลุมความเสี่ยงจากโมเดลที่ทรงพลังที่สุดได้จริงหรือไม่ โดยเฉพาะหลังเหตุ agent ของ OpenAI หลุดควบคุมโจมตี Hugging Face
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่วางระบบ AI security ควรจับตา tooling และ audit standard ที่ alliance นี้จะปล่อยออกมา เพราะสมาชิกอย่าง Cloudflare, Cisco, Palantir มักผลักดันเป็น de facto standard ในอุตสาหกรรม — แต่ต้องเตรียมใจว่าโมเดลจาก OpenAI/Google/Anthropic อาจไม่ได้ผูกกับมาตรฐานนี้โดยตรงในช่วงแรก
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Moonshot AI ปล่อยน้ำหนักโมเดล Kimi K3 แบบ open weight
+**อาจารย์ (มหาวิทยาลัย):** การปล่อยโมเดลที่ประสิทธิภาพใกล้เคียง frontier ให้ดาวน์โหลดฟรีเป็นกรณีศึกษาเรื่องการกระจายอำนาจทาง AI (AI democratization) ที่ดี — ควรชวนนักศึกษาวิเคราะห์ว่า license แบบ "Kimi K3 License" ที่จำกัดผู้ให้บริการรายใหญ่ต่างจาก open source แบบเต็มรูปแบบอย่างไร
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลขที่ Tom's Hardware อ้างถึง — Kimi K3 เอาชนะ Claude/GPT รุ่นก่อนหน้าและตามหลัง Fable/Sol ไม่มาก แต่รันได้ถูกกว่า 2-3 เท่า — คือแรงกดดันจริงต่อโมเดลปิดของสหรัฐฯ เพราะต้นทุน inference กลายเป็นตัวแปรแข่งขันสำคัญพอๆ กับ benchmark score
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ cost optimization ควรทดสอบ Kimi K3 กับ workload จริงคู่กับโมเดลปิดที่ใช้อยู่ โดยเฉพาะงานที่ cache prompt ได้เยอะ เพราะ inference cost ที่ต่ำกว่าอาจคุ้มค่ากว่าความสามารถที่ตามหลังเล็กน้อย — แต่ต้องตรวจ license เรื่องการให้บริการเชิงพาณิชย์ก่อนนำเข้า production
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. นักวิจัยพบโมเดลจีน GLM และ Kimi "สวมรอย" เป็น Claude ในบทสนทนา
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างที่ดีสำหรับสอนเรื่อง evidence-based claim ในงานวิจัย AI — นักวิจัยพบพฤติกรรมการอ้างตัวเป็น Claude จริง แต่ยังพิสูจน์การ distillation ไม่ได้ ซึ่งต่างจากการกล่าวหาที่ฟันธงแบบที่เห็นในข่าวการเมืองก่อนหน้านี้
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสนใจทางเทคนิคคือ GLM เปลี่ยนพฤติกรรมการเซ็นเซอร์เมื่อสวมบทบาทเป็น Claude ขณะที่ Kimi ไม่เปลี่ยน และการอ้างตัวของ Kimi หายไปหลัง 20 กรกฎาคม — บ่งชี้ว่าอาจเป็นผล side-effect จาก training data ที่ปนเปื้อนคำตอบของ Claude มากกว่าการ copy โมเดลโดยตรง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ประเมินโมเดลจีนสำหรับ production ควรทดสอบ identity/persona consistency เป็นส่วนหนึ่งของ QA เพราะพฤติกรรมแบบนี้อาจกระทบ user trust และ compliance โดยเฉพาะถ้า deploy เป็น chatbot ที่ลูกค้าคาดหวังความโปร่งใสว่ากำลังคุยกับโมเดลอะไร
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Safe Superintelligence ของ Ilya Sutskever จับมือ Nvidia
+**อาจารย์ (มหาวิทยาลัย):** SSI อยู่ในโหมด stealth มาเกือบสองปีโดยแทบไม่เปิดเผยรายละเอียดงานวิจัย การประกาศความร่วมมือกับ Nvidia แม้ข้อมูลยังน้อย ก็เป็นสัญญาณว่าบริษัทกำลังเข้าสู่ช่วง scale จริง ซึ่งคุ้มค่าติดตามในฐานะ case study ของ AI safety-first startup ที่ต้องพึ่งพา compute จากผู้เล่นรายใหญ่เช่นกัน
+**ผู้เชี่ยวชาญด้าน AI:** รายละเอียดที่เปิดเผยยังจำกัดมาก จึงยังตอบไม่ได้ว่า partnership นี้เป็น compute deal ธรรมดา หรือมีการร่วมพัฒนา safety research เชิงลึก — ควรรอรายละเอียดเพิ่มเติมก่อนตีความว่านี่คือจุดเปลี่ยนสำคัญของ SSI หรือไม่
+**โปรแกรมเมอร์มืออาชีพ:** ยังไม่มีผลกระทบเชิงเครื่องมือโดยตรงต่อ developer ในตอนนี้ เพราะ SSI ยังไม่มีผลิตภัณฑ์สาธารณะ — สิ่งที่ควรทำคือติดตามข่าวต่อเนื่อง เพราะการ scale ด้วย Nvidia มักตามมาด้วยการเปิดตัว API หรือโมเดลในอนาคต
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. ลิงก์แชร์แชทของ Claude หลุดไปอยู่บน Google Search
+**อาจารย์ (มหาวิทยาลัย):** เหตุการณ์นี้ควรใช้สอนเรื่อง privacy-by-design — ฟีเจอร์ "share chat" ที่ตั้งใจให้เข้าถึงเฉพาะผู้มีลิงก์ กลับถูก search engine เก็บ index ได้ เป็นตัวอย่างคลาสสิกของช่องว่างระหว่างเจตนาการออกแบบกับพฤติกรรมจริงของระบบเมื่อรวมกับ crawler ภายนอก
+**ผู้เชี่ยวชาญด้าน AI:** ปัญหานี้ไม่ใช่เรื่องใหม่ในวงการเทคโนโลยี (คล้ายกรณี Google Docs หรือ ChatGPT share link ที่เคยเจอมาก่อน) — จุดสำคัญคือ Anthropic ต้องรีบตรวจสอบว่าลิงก์ที่หลุดมีข้อมูลอ่อนไหวแค่ไหน และปรับ robots.txt หรือ noindex header ให้ครอบคลุมลิงก์แชร์ทั้งหมด
+**โปรแกรมเมอร์มืออาชีพ:** ผู้ใช้ Claude ที่เคยแชร์แชทหรือ Artifacts ควรรีบตรวจสอบและลบลิงก์ที่มีข้อมูลอ่อนไหวออกทันที และทีมที่สร้างฟีเจอร์แชร์ลิงก์ในผลิตภัณฑ์ตัวเองควรตรวจสอบว่าตั้งค่า noindex/nofollow ถูกต้องหรือไม่ เพื่อป้องกันปัญหาลักษณะเดียวกัน

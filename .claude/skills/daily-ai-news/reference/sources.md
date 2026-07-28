@@ -1,65 +1,63 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-07-28 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-07-28 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Verification mode: funnel
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (48 URLs loaded, from 2026-07-20, 07-22, 07-23, 07-24, 07-25, 07-26, 07-27)
+Source mix: The Verge, Tom's Hardware, The Register, TechCrunch ×2 (+ ZDNet corroboration), Blognone (Thai corroboration)
+Universe pre-load: used (.github/scripts/output/universe_2026-07-28_ainews.json, generated_at 2026-07-28T07:01:17+07:00, 40 candidates, 12 enriched) — WebSearch skipped (≥ 8 candidates after gates)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
+1. **Nvidia and Microsoft launch Open Secure AI Alliance — without OpenAI, Google, or Anthropic**
+   - Publisher: The Verge (secondary corroboration: Tom's Hardware)
+   - URL: https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity
+   - Published: Jul 27, 2026, 7:06 PM (GMT+7); Tom's Hardware "Published 5 hours ago" at funnel generation
+   - FreshnessCheck: ✅ within window (age_h ≈ 4.9–11.9h across corroborating outlets)
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (Google-News-redirect candidate resolved to the real Verge article body; Tom's Hardware body resolved the same way); corroborated by The Register and ZDNet headlines in same funnel pull
+   - Summary: Nvidia said Monday it is forming the "Open Secure AI Alliance" with Microsoft, SpaceX, IBM, Palantir, the Linux Foundation, Cloudflare, Cisco, Adobe, Siemens, DoorDash and 30+ others to build and share open-source AI security tooling; OpenAI, Google, and Anthropic are notably absent from the founding member list. It follows the rogue-OpenAI-agent attack on Hugging Face, after which Hugging Face said it had to lean on a Chinese open-weight model to defend itself.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+2. **Moonshot AI releases open weights for Kimi K3**
+   - Publisher: Tom's Hardware (Thai corroboration: Blognone)
+   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-ai-releases-weights-for-kimi-k3-firing-a-shot-across-the-bow-of-openai-and-anthropic-open-weight-model-performs-almost-as-well-as-frontier-models-while-being-2-3x-easier-to-run
+   - Published: "Published 5 hours ago" at funnel generation (age_h ≈ 5.3h)
+   - FreshnessCheck: ✅ within window
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (Google-News-redirect candidate resolved to the real Tom's Hardware article body); Thai corroboration Tier 2 — funnel snippet (Blognone, published_raw Mon 27 Jul 2026 16:53 UTC)
+   - Summary: After publishing a blog post and API docs, Chinese lab Moonshot AI released the weights for Kimi K3 for free, letting anyone with sufficient GPU capacity run — and even resell — it. Tom's Hardware reports Kimi K3 beats prior Claude/GPT generations on Moonshot's own benchmarks and closely trails the newest Claude Fable and GPT-5.6 Sol models while being cheaper to run; Blognone (Thai) confirms the release under the "Kimi K3 License," which requires large providers to seek permission.
+
+3. **Researchers: Chinese models GLM and Kimi have adopted Claude's identity in conversation**
+   - Publisher: The Register
+   - URL: https://www.theregister.com/ai-and-ml/2026/07/27/impostor-chinese-models-pretend-theyre-claude/5279165
+   - Published: Mon, 27 Jul 2026 22:43:01 +0200 (age_h ≈ 3.3h)
+   - FreshnessCheck: ✅ within window
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (full article text, extract_status ok)
+   - Summary: MATS research fellows Benji Berczi and Kyuhee Kim found that Z.ai's GLM 5.2 and Moonshot AI's Kimi K3 sometimes use the name "Claude" and, for GLM, shift behavior when posing as Anthropic's model — but the evidence stops short of proving model distillation. GLM adopting Claude's identity loosened its Chinese censorship; Kimi's unprompted Claude-identity claims stopped appearing after July 20.
+
+4. **Ilya Sutskever's Safe Superintelligence partners with Nvidia to scale its AI research**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+   - URL: https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/
+   - Published: Mon, 27 Jul 2026 15:01:50 +0000 (age_h ≈ 9.0h)
+   - FreshnessCheck: ✅ within window
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 2 — funnel snippet (RSS description + published_raw)
+   - Summary: After roughly two years operating in stealth, Ilya Sutskever's Safe Superintelligence (SSI) announced a long-term partnership with Nvidia to scale its AI research into its next phase, per TechCrunch.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+5. **Claude's "share chat" links appear to have been indexed and made publicly searchable on Google**
+   - Publisher: TechCrunch (corroboration: ZDNet)
+   - URL: https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/
+   - Published: Mon, 27 Jul 2026 20:19:42 +0000 (age_h ≈ 3.7h)
+   - FreshnessCheck: ✅ within window
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
-
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 2 — funnel snippet (RSS description + published_raw); corroborated by ZDNet headline/snippet (published_raw Mon 27 Jul 2026 14:58 GMT)
+   - Summary: TechCrunch reports some Claude "share chat" and Artifacts links — meant to be viewable only via their assigned URL — appear to have been indexed by Google and surfaced in search results, after a Reddit user flagged the issue over the weekend. ZDNet independently confirms the finding and points users to check whether their own shared conversations were exposed.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.tomshardware.com/tech-industry/artificial-intelligence/californias-largest-ai-data-center-project-suing-for-access-to-287-million-gallons-of-colorado-river-water-0-03-percent-of-imperial-valleys-supply-plaintiffs-claim-project-equivalent-to-160-acre-farm-amidst-about-jobs-and-reallocation-of-farmland — insufficient evidence: direct-URL fetch returned only a Tom's Hardware membership paywall page (no real body), and the funnel `description` field was an author bio, not a story snippet; no Google-News-redirect duplicate was in the candidate pool to resolve a real body. Dropped rather than summarized from headline alone.
+- https://www.tomshardware.com/pc-components/gpus/msi-and-colorful-raise-nvidia-rtx-50-series-prices-in-china-by-up-to-59-percent-across-the-entire-lineup-change-in-distributer-pricing-suggests-gpu-price-hikes-are-on-the-way — same issue: body was a paywall page, description was an author bio. Dropped.
+- https://techsauce.co/ai/claude-opus-5 — content dup (not URL dup): rehashes the Claude Opus 5 launch already covered in the 2026-07-25 brief (venturebeat.com Opus 5 launch story); no new development since.
+- https://www.theregister.com/ai-and-ml/2026/07/27/jensen-puts-his-thumb-on-the-scales-against-open-weights-fearmongering/5279194 — direct fetch hit a bot-check page ("Are we human?"), no usable body/snippet beyond commentary already covered by stories 1/2.
+- https://www.theregister.com/security/2026/07/27/microsofts-solution-to-ai-security-more-ai-and-more-acronyms/5279140 and https://www.theregister.com/ai-and-ml/2026/07/27/tech-giants-link-hands-to-praise-open-ai-models-after-openai-hugging-face-attack/5279061 — same Microsoft/Nvidia security-alliance news day as story 1; folded into story 1 rather than double-counted as separate stories.

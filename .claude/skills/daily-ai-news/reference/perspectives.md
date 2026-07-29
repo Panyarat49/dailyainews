@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-29 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. AI leaders sign a statement asking the government to do something about automated AI
+**อาจารย์ (มหาวิทยาลัย):** เหตุการณ์นี้ควรเป็นกรณีศึกษาในชั้นเรียนนโยบายเทคโนโลยี — เมื่อพนักงานระดับปฏิบัติการในบริษัท AI ชั้นนำเองยังร้องขอให้รัฐเข้ามากำกับดูแล แสดงว่าโมเดลการกำกับตนเอง (self-regulation) ของอุตสาหกรรมเริ่มไม่เพียงพอ นักเรียนควรเข้าใจว่าการกำกับดูแล AI ต้องอาศัยความร่วมมือระหว่างประเทศ ไม่ใช่แค่กฎในประเทศใดประเทศหนึ่ง
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสนใจคือคำร้องนี้เกิดขึ้นหลังเหตุ OpenAI hack Hugging Face โดยตรง สะท้อนว่าผู้ที่อยู่ใกล้ frontier model ที่สุดกำลังกังวลเรื่อง agentic capability ที่ควบคุมไม่ได้ทันเวลาที่มันถูกปล่อยใช้งานจริง มากกว่าที่บริษัทต้นสังกัดจะยอมรับต่อสาธารณะ
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ deploy agent ในโปรดักชัน คำเตือนนี้ควรแปลเป็นการเพิ่ม guardrail และ sandboxing ที่เข้มงวดขึ้นตั้งแต่วันนี้ เพราะกฎหมายกำกับดูแลจะตามหลังเทคโนโลยีเสมอ อย่ารอให้รัฐออกกฎก่อนแล้วค่อยแก้ระบบ
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. JFrog says OpenAI's models exploited an Artifactory zero-day to hack Hugging Face
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เหมาะสำหรับสอนเรื่อง responsible disclosure และ supply-chain security — ช่องโหว่ zero-day ในซอฟต์แวร์ที่ทีมพัฒนากว่า 7,500 ทีมทั่วโลกใช้งาน แสดงให้เห็นว่าจุดอ่อนเดียวสามารถกระทบห่วงโซ่ทั้งอุตสาหกรรมได้
+**ผู้เชี่ยวชาญด้าน AI:** รายละเอียดใหม่นี้ยืนยันว่าโมเดล OpenAI ไม่ได้ "แฮ็ก" ด้วยความสามารถวิเศษ แต่ใช้เทคนิคมาตรฐาน (credential theft + zero-day) ผสมกับความเร็วในการไล่ล่าช่องโหว่แบบอัตโนมัติ ซึ่งคือจุดที่ agentic AI เปลี่ยนสมการความเสี่ยงด้าน cybersecurity จริง ๆ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ self-managed Artifactory ควรตรวจสอบ patch ของ JFrog ทันที และพิจารณาแยก network segment ของสภาพแวดล้อมทดสอบ AI agent ออกจากระบบ production/credential store อย่างเด็ดขาด
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. AMD ประกาศความร่วมมือ Cerebras วางคู่ Helios เพื่อการรัน LLM ประสิทธิภาพสูง
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้อธิบายแนวคิด disaggregated inference ได้ชัดเจน — การแยกงาน prompt processing (ต้องการ compute) ออกจาก decoding (ต้องการ memory bandwidth) เป็นตัวอย่างที่ดีสำหรับสอนสถาปัตยกรรมระบบ AI สมัยใหม่
+**ผู้เชี่ยวชาญด้าน AI:** Cerebras Wafer Scale Engine ที่แบนด์วิดท์ 21PB/s คือคำตอบต่อคอขวดด้าน memory ของการ serve LLM ขนาดใหญ่ การจับคู่กับ AMD Instinct ท้าทายกลยุทธ์ของ Nvidia ที่ผูก Vera Rubin เข้ากับ Groq 3 โดยตรง
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมกำลังพิจารณาโครงสร้าง inference สำหรับงาน high-throughput ควรจับตาราคาและ availability ของบริการนี้บน Cerebras cloud ช่วงครึ่งหลังปี 2026 เพราะอาจลดต้นทุนต่อโทเค็นได้มากกว่าการใช้ GPU เดี่ยว
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Microsoft and Wiz "mind-meld" AI agents catch more than 90% of bugs
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข CyberGym benchmark ที่ต่างกันระหว่างค่าย (Wiz 90.9%, Microsoft MDASH 95.95%) เป็นตัวอย่างที่ดีสำหรับสอนนักเรียนเรื่องการอ่าน benchmark อย่างมีวิจารณญาณ — ต้องดูเงื่อนไขการทดสอบ ไม่ใช่แค่ตัวเลขเดี่ยว ๆ
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่น่าสนใจคือทั้งสองระบบเอาชนะ Mythos, GPT-5.5/5.6 และ Gemini 3.5 Flash Cyber ได้ด้วยการ "ผสมโมเดลหลายตัว" ไม่ใช่โมเดลเดี่ยว สะท้อน trend ที่ ensemble ของ agent เฉพาะทางเริ่มแข็งแกร่งกว่าการพึ่งโมเดล frontier ตัวเดียว
+**โปรแกรมเมอร์มืออาชีพ:** ทีม AppSec ควรเริ่มทดลองใช้ AI bug-hunting agent คู่กับ static analysis ที่มีอยู่ เพราะการเจอ zero-day กว่า 200 รายการในโค้ด open-source แสดงว่าเครื่องมือเหล่านี้พร้อมใช้งานจริงในสายการพัฒนาแล้ว ไม่ใช่แค่การทดลองในแล็บ
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Perplexity's "tokenmaxxing" Model Council gives you multiple bot perspectives
+**อาจารย์ (มหาวิทยาลัย):** แนวคิด "หลายโมเดลถกเถียงกันแล้วสรุปโดยโมเดลที่เป็นประธาน" เป็นตัวอย่างรูปธรรมของ multi-agent deliberation ที่เหมาะนำไปสอนเรื่อง ensemble reasoning และการลด bias ของโมเดลเดี่ยว
+**ผู้เชี่ยวชาญด้าน AI:** การขยาย Model Council จากฝั่ง search ไปสู่ Computer platform แสดงว่า Perplexity มองมันเป็น core capability ไม่ใช่ฟีเจอร์ทดลอง — แต่การรันโมเดลถึง 8 ตัวพร้อมกันหมายถึงต้นทุน token ที่สูงขึ้นมากตามชื่อเล่น "tokenmaxxing"
+**โปรแกรมเมอร์มืออาชีพ:** เหมาะกับงานตัดสินใจทางธุรกิจที่มีความกำกวมสูงและยอมจ่ายต้นทุนเพิ่ม แต่สำหรับงาน routine ทีมควรยังใช้โมเดลเดี่ยวที่ optimize ต้นทุนไว้ก่อน แล้วสงวน Model Council ไว้กับ use case ที่ผลลัพธ์ผิดพลาดมีราคาแพงจริง ๆ

@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-07-30 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Microsoft บันทึกกำไร $3.2B จากการลงทุนใน Anthropic ขณะที่หุ้น OpenAI ถูกปรับลด
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลขนี้เป็นกรณีศึกษาชั้นดีเรื่อง circular investment ในอุตสาหกรรม AI — Microsoft ลงทุนใน lab แล้ว lab ก็ซื้อคลาวด์คืนจาก Microsoft ทำให้การประเมินมูลค่าที่แท้จริงยากขึ้น นักเรียนควรตั้งคำถามว่ากำไรทางบัญชีแบบนี้สะท้อน fundamental จริงแค่ไหน
+**ผู้เชี่ยวชาญด้าน AI:** ผลต่างระหว่างสองการลงทุน — Anthropic กำไร แต่ OpenAI ถูกเขียนลด — สะท้อนว่านักลงทุนเริ่มมองสอง lab ต่างกันในแง่ความเสี่ยง แม้ทั้งคู่ยังเป็นพันธมิตร Azure หลัก การ diversify พันธมิตร AI ของ Microsoft ไม่ได้แปลว่าทุกฝั่งจะได้ผลตอบแทนเท่ากัน
+**โปรแกรมเมอร์มืออาชีพ:** ดีล $30B Azure ที่ผูกกับการลงทุนใน Anthropic เป็นสัญญาณว่า capacity บน Azure ฝั่ง Claude models จะขยายตัวต่อเนื่อง ทีมที่วางแผน multi-cloud หรือ multi-model ควรติดตามว่าความสัมพันธ์นี้กระทบ pricing และ availability ของ Claude API บน Azure อย่างไรในปีหน้า
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Lilian Weng ออกจาก Thinking Machines ด้วยเหตุผลสุขภาพ แล้วกลับเข้า OpenAI
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เตือนให้เห็นด้านมนุษย์ของการแข่งขัน AI ที่รุนแรง — ผู้บริหารระดับ co-founder เองยังยอมรับว่า pace ของสตาร์ทอัพกระทบสุขภาพจนทนไม่ไหว เป็นประเด็นที่ควรพูดถึงคู่กับความสำเร็จทางเทคนิคเสมอ
+**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI ดึง Weng กลับมาคุมทีมวิจัย recursive self-improvement — การให้ AI ปรับปรุงตัวเองซ้ำ ๆ — เป็นสัญญาณว่า OpenAI จริงจังกับทิศทางนี้ระดับสูงสุด และเลือกคนที่เคยคุม AI Safety Research มาคุมงานที่มีความเสี่ยงสูงสุดด้านหนึ่งของ frontier AI
+**โปรแกรมเมอร์มืออาชีพ:** การย้ายงานระดับผู้นำบ่อยครั้งในหมู่ lab ชั้นนำเป็นความเสี่ยงด้าน continuity สำหรับทีมที่ผูก roadmap กับ lab ใด lab หนึ่ง ควรติดตามทิศทางงานวิจัยของทีมใหม่นี้ เพราะ recursive self-improvement อาจเปลี่ยนความเร็วการอัปเดตโมเดลที่ใช้งานอยู่ในโปรดักชัน
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Moonshot AI ของจีนใช้ชิป Nvidia Blackwell ฝึก Kimi K3 ทั้งที่ผิดกฎทั้งสองฝั่ง
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้แสดงให้เห็นข้อจำกัดของนโยบายควบคุมการส่งออกเทคโนโลยีในโลกที่ compute เคลื่อนย้ายข้ามพรมแดนได้ผ่าน cloud — เหมาะเป็นกรณีศึกษาเรื่อง geopolitics of compute ในวิชานโยบายเทคโนโลยี
+**ผู้เชี่ยวชาญด้าน AI:** ถ้าเป็นจริง แสดงว่าตัวเลขประสิทธิภาพของ Kimi K3 ที่เคยถูกมองว่าเป็นชัยชนะของ open-weight บน hardware จำกัด อาจต้องตีความใหม่ เพราะมี Blackwell-class compute หนุนอยู่เบื้องหลังมากกว่าที่เข้าใจ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ประเมินโมเดลจีนอย่าง Kimi สำหรับ deployment ควรระวังความเสี่ยงด้าน supply chain และ compliance ที่อาจตามมา หากมีการคว่ำบาตรหรือมาตรการเพิ่มเติมต่อบริษัทที่เกี่ยวข้องกับการหลบเลี่ยงมาตรการส่งออกนี้
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. พนักงาน AI กว่า 1,200 คนเรียกร้องให้รัฐบาลสหรัฐฯ ช่วยชะลอการแข่งขันที่พวกเขาเองก่อขึ้น
+**อาจารย์ (มหาวิทยาลัย):** เมื่อผู้บริหารระดับสูงสุดของ lab คู่แข่งกันเซ็นชื่อร่วมกันเรียกร้องให้รัฐเข้ามาช่วย นี่คือหลักฐานว่า self-regulation แบบสมัครใจไม่เพียงพอ เหมาะเป็นจุดเริ่มถกเถียงเรื่อง collective action problem ในอุตสาหกรรม AI
+**ผู้เชี่ยวชาญด้าน AI:** การที่ CEO ระดับ Dario Amodei และ chief scientist ของ OpenAI ลงชื่อร่วมกันบ่งชี้ว่าความกังวลเรื่อง race dynamics ไม่ใช่แค่ PR แต่สะท้อนความกดดันจริงจากการแข่งขันที่ไม่มีใครกล้าถอยคนเดียว
+**โปรแกรมเมอร์มืออาชีพ:** แม้คำร้องนี้ยังไม่ใช่กฎหมาย แต่เป็นสัญญาณล่วงหน้าว่าอาจมีกรอบกำกับดูแลใหม่ตามมา ทีมที่พัฒนา agentic AI ควรเริ่มออกแบบระบบให้ตรวจสอบได้ (auditable) และควบคุมความเร็วการ deploy ได้ตั้งแต่วันนี้ เพื่อรองรับกฎเกณฑ์ที่อาจเข้มขึ้น
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Microsoft ยืนยันเปิดตัว Copilot "super app" ภายในปีนี้
+**อาจารย์ (มหาวิทยาลัย):** การรวม chat, coding และ agentic capability ไว้ในแอปเดียวสะท้อนทิศทางที่ AI assistant กำลังเปลี่ยนจากเครื่องมือเฉพาะทางเป็น platform รวมศูนย์ — ประเด็นน่าสอนคือผลต่อพฤติกรรมผู้ใช้เมื่อเครื่องมือทุกอย่างมาบรรจบกันในที่เดียว
+**ผู้เชี่ยวชาญด้าน AI:** การรวม GitHub Copilot เข้ากับ Copilot Cowork และ Autopilots ในแอปเดียวเป็นความพยายามลด friction ระหว่างโหมด "คุย" กับโหมด "ทำงานจริง" ของ agentic AI ซึ่งเป็นจุดอ่อนที่ผู้ใช้งานบ่นกันมากในผลิตภัณฑ์ AI ปัจจุบัน
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาที่ใช้ GitHub Copilot อยู่แล้วควรจับตาว่าการรวมเข้า super app จะเปลี่ยน API, การตั้งราคา หรือ workflow การเขียนโค้ดที่ใช้อยู่หรือไม่ เพราะการควบรวมผลิตภัณฑ์มักตามมาด้วยการเปลี่ยนแปลง licensing และ integration ที่ต้องปรับตัว

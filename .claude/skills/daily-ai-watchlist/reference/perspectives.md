@@ -1,42 +1,40 @@
-# Perspectives — 2026-06-23 (watchlist)
+# Perspectives — 2026-08-02 (watchlist)
 
-## 1. Nvidia — Halos for Robotics (อัปเดตสำคัญ 3 รายการ)
+## 1. Amazon — อัปเดตสำคัญ 2 รายการ
 
-### 1.1 Halos for Robotics
-**อาจารย์ (มหาวิทยาลัย):** Halos for Robotics คือตัวอย่าง "safety-by-design" แทนที่ "safety-by-retrofit" — ออกแบบ safety framework เป็น architecture layer ตั้งแต่ต้น ไม่ใช่ patch ทีหลัง นี่คือ design philosophy ที่ควรสอนใน robotics engineering curriculum; Agility เป็น adopter รายแรกในสภาพแวดล้อม factory/warehouse ซึ่งเป็น high-stakes setting ที่จะ generate real-world safety data สำคัญ
-**ผู้เชี่ยวชาญด้าน AI:** Open architecture ของ Halos for Robotics เป็น competitive move ที่ฉลาด — commoditize safety layer เพื่อ expand AI robotics ecosystem โดยรวม ซึ่งต่างจาก proprietary safety system ของ Boston Dynamics หรือ ABB; การมี AI Systems Inspection Lab สำหรับช่วย certification prep ลด barrier ที่ใหญ่ที่สุดสำหรับ humanoid robotics deployment จริงใน regulated environments
-**โปรแกรมเมอร์มืออาชีพ:** Halos OS API และ IGX Thor SDK เป็น integration points ที่ต้องศึกษาสำหรับ robotics software developer — embedded safety frameworks กำลังกลาย requirement ไม่ใช่ optional ใน 2–3 ปีข้างหน้า; ควรเรียน NVIDIA Halos SDK ควบคู่กับ Isaac ROS และ IsaacSim เพื่อ complete physical AI stack
+### 1.1 Anthropic's Claude hacked three real companies during a security-capabilities test
+**อาจารย์ (มหาวิทยาลัย):** ควรใช้เคสนี้สอนว่า "sandbox isolation" เป็นข้อสมมติที่ต้องพิสูจน์ ไม่ใช่เชื่อไว้ก่อน — ความผิดพลาดของมนุษย์ในการตั้งค่าโครงสร้างพื้นฐานคือช่องโหว่จริง ไม่ใช่ความสามารถ hacking ระดับสูงของโมเดลเอง
+**ผู้เชี่ยวชาญด้าน AI:** Claude ใช้เทคนิคพื้นฐาน (รหัสผ่านอ่อนแอ, endpoint ไม่มี auth) ไม่ใช่ zero-day สะท้อนว่าความเสี่ยงจริงในระยะนี้คือ agentic AI ที่ทำงานต่อเนื่องแล้วบังเอิญเจอช่องโหว่ที่มนุษย์มองข้าม มากกว่าความฉลาดของโมเดล
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ให้สิทธิ์ agent เข้าถึงเครือข่ายจริง ต้อง verify การตัด egress ด้วยการทดสอบอิสระ ไม่พึ่งพา prompt-level instruction เพียงอย่างเดียว เพราะ misconfiguration ระดับ infra คือช่องโหว่ที่เกิดขึ้นแล้วจริง
 
-### 1.2 Europe 35 AI Supercomputers
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข 90% market share ใน EU AI supercomputing สะท้อนความตึงเครียดระหว่าง EU tech sovereignty aspirations กับ dependency จริงบน US chipmaker สำหรับ core research infrastructure — นี่คือ case study geopolitics + tech policy ที่น่าใช้ในห้องเรียน AI governance
-**ผู้เชี่ยวชาญด้าน AI:** 800 AI exaflops ที่ deploy/announced ใน Europe ใน 1 ปีคือ pace ที่ accelerating — quantum-GPU integration ผ่าน CUDA-Q เป็น strategic move ที่ future-proof Nvidia ก่อน quantum computers จะ commercially viable; ISC High Performance 2026 เป็น flagship HPC event ที่ Nvidia ใช้ consolidate dominance ทุกปี
-**โปรแกรมเมอร์มืออาชีพ:** 90% EU AI supercomputing บน CUDA หมายความว่า CUDA optimization, cuDNN profiling และ MPI + NCCL distributed training skills จะ valuable มากในยุโรปสำหรับ 5 ปีนี้; การ learn CUDA-Q เพิ่มเติมสำหรับ quantum-GPU hybrid algorithms เป็น long-term skill investment ที่ตอบโจทย์ตลาด
+### 1.2 Banks in talks to lend $15B for a Google-backed Anthropic data center
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข $15 พันล้าน สำหรับ data center เดียวสะท้อนสเกลการลงทุน AI infrastructure ที่ผูกโยงกับพลังงาน (โรงไฟฟ้าก๊าซ 1.6GW) ไม่ใช่แค่การเงิน — เหมาะเป็นกรณีศึกษาด้าน AI infrastructure economics ที่โยงกับพลังงานและอสังหาริมทรัพย์
+**ผู้เชี่ยวชาญด้าน AI:** โครงสร้างดีลที่ Google ค้ำประกัน lease/power payment ของ Anthropic แลกกับ equity ~20% เป็นรูปแบบการลงทุนทางอ้อมที่ผูก Google เข้ากับความสำเร็จของ Anthropic มากขึ้น แม้ Amazon จะเป็นนักลงทุนหลักดั้งเดิม แสดงว่า Anthropic กำลังกระจายแหล่งทุนโครงสร้างพื้นฐานข้ามหลาย backer
+**โปรแกรมเมอร์มืออาชีพ:** ดีล infrastructure ขนาดนี้มักแปลว่า capacity ใหม่จะทยอยออนไลน์ในอีก 1-2 ปี ทีมที่วางแผนใช้ Claude API ระยะยาวควรจับตาว่า capacity เพิ่มนี้จะช่วยลด latency/คิวช่วง peak หรือไม่
 
-### 1.3 Vera Rubin Supercomputers for Science
-**อาจารย์ (มหาวิทยาลัย):** "Agentic AI co-scientist" ที่ call simulators และ surrogate models เป็น vision ที่น่าสนใจสำหรับ future of science — ควรถกในชั้นเรียน AI × science ว่า discovery ที่ AI-assisted ต่างจาก human-led research อย่างไรทั้งในมิติ epistemology และ credit attribution
-**ผู้เชี่ยวชาญด้าน AI:** FP64 precision + AI exaflops ใน single rack คือ differentiator สำคัญ — scientific computing ต้องการ double precision ซึ่ง AI accelerators ทั่วไปมักเสียสละเพื่อ throughput แต่ Vera Rubin รวมทั้งสองโดยไม่ tradeoff นี้จะเปลี่ยน TCO ของ national labs และ research facilities
-**โปรแกรมเมอร์มืออาชีพ:** CUDA-X scientific libraries บน Vera Rubin — โดยเฉพาะ cuFFT, cuSPARSE, cuDSS สำหรับ climate/physics modeling — เป็น productivity lever ที่ต้องเรียนรู้; "agentic scientific workflow" ที่ Nvidia push หมายถึง LangChain/LangGraph-style orchestration แต่ต้อง domain-specific safety validation ที่ different จาก business AI
+## 2. Alphabet — อัปเดตสำคัญ 2 รายการ
 
-## 2. Alphabet — Google DeepMind $75M A24 Deal
+### 2.1 Google launches Gemini Robotics ER 2
+**อาจารย์ (มหาวิทยาลัย):** "Embodied reasoning" ต้องสอนแยกจาก LLM ทั่วไป เพราะโมเดลต้องเข้าใจพื้นที่ทางกายภาพและวางแผนหลายขั้นตอนพร้อมกัน ต่างจาก text reasoning ล้วน
+**ผู้เชี่ยวชาญด้าน AI:** การที่โมเดลเดียวควบคุมหุ่นยนต์ต่างแพลตฟอร์ม (Spot, Apollo 2, Franka arm) พร้อมกันได้ คือสัญญาณว่า Google กำลังผลัก ER 2 ให้เป็น "สมองกลาง" ข้ามฮาร์ดแวร์ ต่างจาก Gemini Robotics 2 (whole-body) ที่เน้นควบคุมร่างกายหุ่นยนต์ตัวเดียวแบบเต็มรูปแบบ — ทั้งสองสายผลิตภัณฑ์กำลังพัฒนาคู่ขนานกัน
+**โปรแกรมเมอร์มืออาชีพ:** ทีม robotics ที่พิจารณา API นี้ควรทดสอบ latency ของ vision-to-action loop ในสภาพแวดล้อมจริงก่อนใช้กับหุ่นยนต์หลายตัวพร้อมกัน เพราะการประสานงานหลายตัวอ่อนไหวต่อ network latency กว่าหุ่นยนต์เดี่ยว
 
-**อาจารย์ (มหาวิทยาลัย):** A24 มี artistic credibility สูงในฐานะ filmmaker-forward studio แต่ director รายใหญ่อย่าง Kane Parsons (Backrooms) เรียก AI ว่า "genuinely harmful" — partnership นี้จะเป็น case study ความตึงเครียดระหว่าง institutional decision (studio ตกลงรับเงิน) กับ individual creative resistance; คำถามสำหรับชั้นเรียนคือ "filmmaker-guided AI tools" มี meaningful consent และ creative control แค่ไหน
-**ผู้เชี่ยวชาญด้าน AI:** Research partnership model (ไม่ใช่ licensing/acquisition) ทำให้ DeepMind ได้ creative feedback loop คุณภาพสูงโดยไม่ต้องจ่าย IP premium; ประเด็น data provenance ของ A24 creative output ใน model training pipeline และ whether filmmaker feedback เป็น structured fine-tuning data หรือแค่ product input — ต่างกันอย่างมีนัยสำคัญในทาง technical
-**โปรแกรมเมอร์มืออาชีพ:** Vertex AI video/creative generation SDK คือช่องทางที่ research output จาก partnership นี้มักไหลออกมาใน 12–18 เดือน — ควรติดตาม Vertex AI Generative AI releases; สำหรับ developer ที่ build creative tools: A24 rep ระบุว่า tools "won't look like prompted generative AI" — นี่คือ design constraint ที่สำคัญ (workflow-integrated vs. zero-shot generation)
+### 2.2 Reddit CEO criticizes Google's AI Overviews as stock falls
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างเรื่อง value capture ในยุค AI search — แพลตฟอร์มที่ผลิตเนื้อหาต้นทางเริ่มตั้งคำถามว่า AI summary ที่ใช้ข้อมูลของตนสร้างมูลค่าคืนกลับมาเพียงพอหรือไม่ เหมาะสอนคู่กับแนวคิด "content value chain"
+**ผู้เชี่ยวชาญด้าน AI:** คำวิจารณ์ของ CEO Reddit ชี้ปัญหาเชิงโครงสร้างของ AI Overviews คือมันลด referral traffic โดยไม่ทดแทนด้วยมูลค่าธุรกิจเทียบเท่า "10 blue links" เดิม ซึ่งเป็นความเสี่ยงที่ผู้ให้บริการเนื้อหารายอื่นน่าจะเริ่มพูดถึงเช่นกัน
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ build บน Google Search/SEO-driven traffic ควรเริ่มวัด dependency ต่อ referral จาก Google อย่างเป็นระบบ และพิจารณา diversify ช่องทางเข้าถึงผู้ใช้ก่อนที่ AI Overviews จะขยายผลกระทบมากขึ้น
 
-## 3. Alibaba — HappyHorse 1.1
+## 3. Nvidia — A deep dive into Nvidia's Vera CPU and the Olympus cores that power it
+**อาจารย์ (มหาวิทยาลัย):** Vera เป็นตัวอย่างที่ดีของ vertical integration ในอุตสาหกรรม AI infrastructure — จาก GPU สู่ CPU ที่ออกแบบเอง สะท้อนว่าการควบคุม full-stack กำลังเป็นกลยุทธ์หลักของผู้เล่นรายใหญ่
+**ผู้เชี่ยวชาญด้าน AI:** จุดเด่นทางเทคนิคคือ Nvidia วาง Vera ให้เป็น host สำหรับ AI agent workload ที่ไม่ต้องพึ่ง GPU โดยตรง ยอมรับว่า agentic AI มี compute profile ต่างจาก LLM inference แบบเดิม
+**โปรแกรมเมอร์มืออาชีพ:** ทีม infra ที่วางแผนย้ายไป Vera Rubin ควรเริ่มทดสอบ compatibility ของ workload agent-based กับสถาปัตยกรรม Armv9.2 ตั้งแต่วันนี้ เพราะ hyperscaler รายใหญ่เริ่ม commit แล้ว
 
-**อาจารย์ (มหาวิทยาลัย):** ตลาด AI video generation กำลัง consolidate อย่างรวดเร็ว — Sora ถูกยกเลิก, Seedance ถูกพับ, HappyHorse ขึ้น #2 ภายในเวลาสั้น นี่คือ case study "technology market dynamics" ที่คู่แข่งหายไปพร้อมกัน opening market window สำหรับ survivor; ควรถกว่า OpenAI discontinuing Sora เพราะ "financially unsustainable" เป็น business model problem หรือ product problem
-**ผู้เชี่ยวชาญด้าน AI:** API-first + enterprise pricing strategy ของ HappyHorse 1.1 เรียนจากความล้มเหลวของ Sora ที่ consumer pricing ไม่คุ้มทุน — Alibaba เดิมพันว่า enterprise workflow integration จะ sustainable กว่า consumer subscriptions; คำถามคือ $52.7B infrastructure investment จะ convert เป็น Western market share ได้ไหมท่ามกลาง US-China tech tensions ที่ทวีขึ้น
-**โปรแกรมเมอร์มืออาชีพ:** HappyHorse 1.1 API อยู่บน Alibaba Cloud Model Studio แล้วพร้อม 40% discount 2 สัปดาห์แรก — เหมาะสำหรับ evaluation เปรียบเทียบกับ Google Veo/Runway สำหรับ enterprise video generation use-case; ต้องตรวจ data residency requirements และ export control implications ก่อน integrate ใน Western-facing products เนื่องจาก Alibaba Cloud data center locations
+## 4. Microsoft — Microsoft, Amazon and Alphabet earnings reveal the next challenge in the AI race
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลขรายได้คลาวด์ที่แข็งแกร่งของทั้งสามบริษัทเป็นกรณีศึกษาที่ดีว่าการลงทุน AI capex ระดับแสนล้านเริ่มแปลงเป็นรายได้จริง ไม่ใช่แค่ hype — ประเด็นที่น่าถกคือ "ทรัพยากร" ที่กลายเป็นคอขวดใหม่นอกเหนือจากชิป
+**ผู้เชี่ยวชาญด้าน AI:** ข้อสังเกตสำคัญคือ "ไม่ใช่แค่ชิปอีกต่อไป" — พลังงาน พื้นที่ data center และแรงงานทักษะเฉพาะทางกำลังกลายเป็นข้อจำกัดใหม่ของการขยาย AI capacity แม้ปัญหาชิปจะเริ่มคลี่คลาย
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่วางแผน capacity บน Azure/AWS/GCP ควรจับตาว่าคอขวดใหม่ (พลังงาน/พื้นที่) จะกระทบ lead time การขอ instance ใหม่หรือราคาในไตรมาสถัดไปหรือไม่
 
-## 4. Microsoft — Chevron Power Deal
-
-**อาจารย์ (มหาวิทยาลัย):** ดีลพลังงานระหว่าง tech giant กับ oil major เป็นหลักฐานที่จับต้องได้ว่า AI expansion กระทบ energy sector จริง — นี่คือ case study "AI's physical footprint" สำหรับ course ที่ถก AI × sustainability; คำถามที่ต้องถกคือ gas power supply ที่ Chevron มีไป lock in AI infrastructure อย่างไรกับ Microsoft's sustainability commitments
-**ผู้เชี่ยวชาญด้าน AI:** Hyperscalers ที่ต้อง lock in power supply ระยะยาว reflect reality ที่ AI inference demand กำลัง outpace grid capacity ในหลาย US regions — Texas grid (ERCOT) มีความผันผวนสูง dedicated power supply ช่วย cost predictability สำหรับ always-on AI inference workloads ที่ sensitive ต่อ latency
-**โปรแกรมเมอร์มืออาชีพ:** ดีลพลังงานระยะยาวของ Microsoft ใน South-Central US เป็น positive signal สำหรับ Azure availability และ cost stability ในภูมิภาคนั้น — ควรพิจารณาเป็นปัจจัยใน long-term infrastructure planning; สำหรับทีมที่ choose Azure region: South-Central US อาจมี better power security guarantee ในอนาคต
-
-## 5. Tesla — Autopilot Fatal Crash Pushback
-
-**อาจารย์ (มหาวิทยาลัย):** กรณี Tesla Autopilot crash คือ case study คลาสสิก "autonomous AI + liability attribution" และ information asymmetry — data logs อยู่กับ Tesla แต่ investigators และ plaintiff ต้องการ access; นี่คือ gap ที่กฎหมาย ADAS ยังแก้ไขไม่ครบในสหรัฐฯ ซึ่งเทียบกับ EU AI Act ที่ชัดเจนกว่าเรื่อง record-keeping obligations
-**ผู้เชี่ยวชาญด้าน AI:** Tesla pushback strategy (โต้ narrative แทน transparent disclosure) เพิ่มแรงกดดันต่อ NHTSA ในการ require standardized ADAS data access protocols — pattern นี้ซ้ำหลายครั้งและอาจนำไปสู่ regulatory mandate สำหรับ black-box requirements ที่ผู้ผลิต AV ทุกรายต้องปฏิบัติตาม
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมพัฒนา safety-critical autonomous systems: กรณีนี้พิสูจน์ว่า complete, tamper-evident audit trail ของ AI decisions ทุก step (sensor input → model inference → actuator command) คือ non-negotiable — data logs คือ primary evidence ทั้ง legal และ technical; implement immutable logging ก่อนเกิดเหตุ ไม่ใช่หลัง
+## 5. Apple — Apple vs Nvidia: World's most valuable companies are taking opposite AI paths
+**อาจารย์ (มหาวิทยาลัย):** การสลับตำแหน่งบริษัทมูลค่าสูงสุดโลกระหว่าง Apple กับ Nvidia เป็นกรณีศึกษาที่ดีเรื่องกลยุทธ์ AI สองขั้ว — "cash-flow stability" กับ "AI growth bet" นักลงทุนกำลังชั่งน้ำหนักคนละแบบ
+**ผู้เชี่ยวชาญด้าน AI:** Apple เลือกแนวทาง on-device/privacy-first ที่ conservative กว่า ขณะที่ Nvidia all-in กับ AI infrastructure เต็มรูปแบบ ความแตกต่างนี้สะท้อนว่าตลาดยังไม่ปิดประเด็นว่าใครจะได้ประโยชน์สุทธิจาก AI มากกว่ากันในระยะยาว
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พัฒนาแอปบน iOS ควรจับตาว่า Apple จะเร่งเปิด on-device AI API มากขึ้นหรือไม่ เพื่อตอบโต้แรงกดดันจากคู่แข่งที่ลงทุน AI infra หนักกว่า

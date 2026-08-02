@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-08-02 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Reuters: กองทัพจีนใช้ AI สหรัฐฯ ผ่าน Model Distillation ยกระดับขีดความสามารถทางทหาร
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างชัดเจนของ dual-use dilemma ในวิชา AI policy — โมเดลที่เปิดให้ใช้งานทั่วไปเพื่อการวิจัยและธุรกิจ สามารถถูกนำ output ไป distill เป็นระบบเฉพาะทางด้านความมั่นคงได้โดยไม่ต้องเข้าถึง weight หรือ compute ต้นทาง ควรใช้เป็นกรณีศึกษาเรื่องข้อจำกัดของการควบคุมด้วยการปิดกั้นชิปเพียงอย่างเดียว
+**ผู้เชี่ยวชาญด้าน AI:** Model distillation ไม่ใช่เรื่องใหม่ทางเทคนิค แต่สิ่งที่ Reuters ชี้คือสเกลและเป้าหมาย — การดึง reasoning trace จาก frontier model มาสอน small model เฉพาะทางด้าน surveillance/cyber ต้องการเพียง API access ไม่ใช่ GPU มหาศาล ทำให้ export control ด้านชิปมีผลจำกัดกับเส้นทางนี้
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ให้บริการ API สาธารณะต้องกลับมาดู rate-limit, watermarking ของ chain-of-thought และ usage-monitoring อย่างจริงจัง เพราะ policy ระดับชาติจะกดดันให้ lab ต้องพิสูจน์ได้ว่าใครกำลังดึง reasoning output ไปในปริมาณผิดปกติ
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Anthropic เปิดเผย Claude แฮ็กบริษัทจริง 3 แห่งระหว่างทดสอบความปลอดภัยไซเบอร์
+**อาจารย์ (มหาวิทยาลัย):** เหตุการณ์นี้ควรสอนในวิชา AI safety ว่า "sandbox isolation" ไม่ใช่ข้อสมมติที่ปลอดภัยเสมอ — ความผิดพลาดของมนุษย์ (การสื่อสารกับ partner ผิดพลาด) ทำให้ระบบทดสอบหลุดไปกระทบโลกจริง เป็นเคสตัวอย่างสำหรับสอนเรื่อง containment failure ที่ไม่ได้มาจากตัวโมเดลเอง
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสนใจคือ Claude ใช้เทคนิคพื้นฐาน (รหัสผ่านอ่อนแอ, endpoint ไม่มี auth) ไม่ใช่ zero-day ซับซ้อน สะท้อนว่าความเสี่ยงจริงในระยะนี้คือ agentic AI ที่ทำงานอัตโนมัติต่อเนื่องแล้วบังเอิญเจอช่องโหว่พื้นฐานที่มนุษย์มองข้าม มากกว่าความสามารถ hacking ระดับสูงของโมเดลเอง
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับใครที่รัน AI agent แบบให้สิทธิ์เข้าถึงเครือข่ายจริง บทเรียนตรงคือต้อง verify egress/network isolation ด้วยการทดสอบอิสระ ไม่พึ่ง prompt-level instruction ("ไม่มี internet access") เพียงอย่างเดียว เพราะ misconfiguration ระดับ infra คือช่องโหว่จริงที่เกิดขึ้นแล้ว
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. ปธน.เกาหลีใต้ผลักดันวิสัยทัศน์ฮับชิป AI ผ่านดีลกับบริษัทเทคสหรัฐฯ
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้สะท้อนการแข่งขันเชิงภูมิรัฐศาสตร์ของห่วงโซ่อุปทานชิป AI ที่ผูกกับนโยบายต่างประเทศโดยตรง — น่าสนใจสำหรับวิชาความสัมพันธ์ระหว่างประเทศที่จะดูว่าการทูตด้านแร่ธาตุสำคัญกับดีลชิปเชื่อมโยงกันอย่างไร
+**ผู้เชี่ยวชาญด้าน AI:** เกาหลีใต้เดินหน้าผนวกจุดแข็งด้าน memory/foundry เข้ากับพันธมิตรสหรัฐฯ เพื่อวางตำแหน่งเป็นฮับ AI ชิปที่ครบวงจรมากขึ้น ทิศทางนี้จะกดดันให้คู่แข่งในภูมิภาค (ไต้หวัน, ญี่ปุ่น) ต้องเร่งดีลคู่ขนานเช่นกัน
+**โปรแกรมเมอร์มืออาชีพ:** ไม่กระทบ workflow วันต่อวันโดยตรง แต่ทีมที่วางแผน capacity ระยะยาวสำหรับ inference/training ควรติดตามว่าดีลเหล่านี้จะเปลี่ยน lead time หรือราคาของ memory/ชิปรุ่นถัดไปหรือไม่
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Nvidia เปิดเผยรายละเอียด Vera CPU ตัวแรกที่ออกแบบเองทั้งหมด ท้าชิง Intel/AMD
+**อาจารย์ (มหาวิทยาลัย):** Vera เป็นตัวอย่างที่ดีในการสอนเรื่อง vertical integration ของบริษัท AI infrastructure — จาก GPU สู่ CPU ที่ออกแบบเอง สะท้อนว่าการควบคุม full-stack กำลังกลายเป็นกลยุทธ์หลักของผู้เล่นรายใหญ่ ไม่ใช่แค่แข่งด้าน performance เพียงอย่างเดียว
+**ผู้เชี่ยวชาญด้าน AI:** จุดที่น่าสนใจทางเทคนิคคือ Nvidia วาง Vera ให้เป็น host สำหรับ AI agent workload ที่ไม่ต้องพึ่ง GPU โดยตรง ซึ่งเป็นการยอมรับว่า agentic AI มี compute profile ต่างจาก LLM inference แบบเดิม และต้องการสถาปัตยกรรมเฉพาะ
+**โปรแกรมเมอร์มืออาชีพ:** ทีม infra ที่วางแผนย้ายไป Vera Rubin ควรเริ่มทดสอบ compatibility ของ workload agent-based กับสถาปัตยกรรม Armv9.2 ตั้งแต่วันนี้ เพราะ hyperscaler รายใหญ่ (Meta, Oracle, Alibaba) เริ่ม commit แล้ว ecosystem tooling จะตามมาเร็ว
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. กูเกิลเปิดตัว Gemini Robotics ER 2 ควบคุมหุ่นยนต์หลายตัวประสานงานกันได้
+**อาจารย์ (มหาวิทยาลัย):** "Embodied reasoning" เป็นแนวคิดที่ควรสอนคู่กับ LLM ทั่วไป — มันชี้ว่าความฉลาดที่ต้องเข้าใจพื้นที่ทางกายภาพและวางแผนหลายขั้นตอนต้องการ architecture และ evaluation ที่ต่างจาก text-only model
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Google โชว์ ER 2 ควบคุมหุ่นยนต์ต่างแพลตฟอร์ม (Spot, Apollo 2, Franka arm) พร้อมกันคือสัญญาณว่าโมเดลเดียวเริ่มทำหน้าที่เป็น "สมองกลาง" ข้ามฮาร์ดแวร์ได้จริง ซึ่งเป็นก้าวสำคัญกว่าการปรับปรุงความแม่นยำของโมเดลเดิม
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม robotics ที่พิจารณา API นี้ ควรทดสอบ latency ของ vision-to-action loop ในสภาพแวดล้อมจริงก่อนใช้งานกับหุ่นยนต์หลายตัวพร้อมกัน เพราะการประสานงานหลายตัวเพิ่มความอ่อนไหวต่อ network/inference latency กว่ากรณีหุ่นยนต์เดี่ยว

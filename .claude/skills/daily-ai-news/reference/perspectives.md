@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-08-03 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. DeepSeek เตรียมสร้าง AI Data Center 1 กิกะวัตต์ที่มองโกเลียใน
+**อาจารย์ (มหาวิทยาลัย):** โครงการนี้เป็นตัวอย่างที่ดีในการสอนเรื่อง geopolitics ของ compute — การเลือกทำเลที่อากาศเย็นตลอดปีเพื่อลดต้นทุนทำความเย็นสะท้อนว่า physical constraints (พลังงาน ที่ดิน สภาพอากาศ) ยังกำหนดยุทธศาสตร์ AI พอ ๆ กับ algorithm
+**ผู้เชี่ยวชาญด้าน AI:** ขนาด 1GW เทียบเท่ากับ mega-cluster ระดับ Big Tech ตะวันตก แต่ที่น่าสนใจคือยังไม่ชัดว่าจะใช้ชิปรุ่นไหน — ถ้า DeepSeek ยังต้องพึ่งชิปในประเทศหรือชิปที่ถูกจำกัดสมรรถนะ ตัวเลข 1GW อาจไม่แปลงเป็น compute throughput เทียบเท่าคู่แข่งสหรัฐฯ โดยตรง
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าโครงการเดินตามแผน ปลายปี 2027 อาจเห็น API capacity และราคาที่ถูกลงจาก DeepSeek อย่างมีนัยสำคัญ — ทีมที่พึ่ง DeepSeek API ควรจับตา rate-limit และ pricing tier ที่อาจเปลี่ยนเมื่อ capacity ใหม่เริ่มออนไลน์
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. True IDC เตรียมระดมทุน 2 พันล้านดอลล์สร้างดาต้าเซ็นเตอร์
+**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษาที่ดีสำหรับ Thai digital infrastructure policy — การกู้เงินระดับ 7 หมื่นล้านบาทสะท้อนว่าภาคเอกชนไทยเชื่อในดีมานด์ AI/cloud ระยะยาว ไม่ใช่แค่กระแสชั่วคราว น่าจะใช้เป็นเคสสอนเรื่อง infrastructure financing ในหลักสูตรเศรษฐศาสตร์ดิจิทัล
+**ผู้เชี่ยวชาญด้าน AI:** ดาต้าเซ็นเตอร์ใหม่ในชานเมืองกรุงเทพฯ ช่วยลด latency ให้บริการ AI ในประเทศและภูมิภาค แต่คำถามสำคัญคือจะมีการลงทุน GPU capacity คู่ขนานแค่ไหน เพราะดาต้าเซ็นเตอร์เปล่าไม่ได้แปลว่ามี AI compute ให้ใช้ทันที
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าเกิดขึ้นจริง นักพัฒนาไทยอาจได้ประโยชน์จาก cloud/GPU-as-a-service ในประเทศที่ latency ต่ำลงและอาจมีข้อได้เปรียบด้าน data residency สำหรับงานที่ต้องเก็บข้อมูลในไทย ควรติดตามว่าผู้ให้บริการรายใดจะมาเช่า capacity นี้ต่อ
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Global memory shortage กระทบ MacBook Air
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนเรื่อง supply chain interdependency ได้ตรงจุด — ดีมานด์ชิปหน่วยความจำจากบริษัท AI ไปกระทบสินค้าอุปโภคทั่วไปอย่าง MacBook Air แสดงว่า AI ไม่ได้แข่งแค่ในตลาด GPU แต่ลามไปทั้ง memory supply chain ทั้งระบบ
+**ผู้เชี่ยวชาญด้าน AI:** นี่คือสัญญาณว่า capacity crunch ของ HBM/DRAM สำหรับ training cluster เริ่มล้นไปกระทบ consumer-grade memory แล้ว ถ้าเทรนด์นี้ต่อเนื่อง อาจเห็นราคาอุปกรณ์ทั่วไปขยับขึ้นทั้งอุตสาหกรรม ไม่ใช่แค่ Apple
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่วางแผนซื้อฮาร์ดแวร์สำหรับ dev/local-inference ควรเร่งจัดซื้อล่วงหน้าหรือพิจารณา config แรมที่ต้องใช้จริง เพราะราคาและ lead time มีแนวโน้มแย่ลงก่อนจะดีขึ้น
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Sam Altman กับดีเบตเรื่องการชะลอความเร็ว AI
+**อาจารย์ (มหาวิทยาลัย):** คำพูดของ Altman เรื่อง "pace the rate of AI development" ควรใช้เป็นจุดเริ่มการถกเรื่อง responsible scaling ในชั้นเรียน — น่าสนใจว่าคนที่อยู่แถวหน้าของการเร่งพัฒนากลับเป็นคนพูดเรื่องชะลอ ซึ่งสะท้อนความตึงเครียดภายในอุตสาหกรรมเอง
+**ผู้เชี่ยวชาญด้าน AI:** เหตุการณ์ต้นตอคือ agent ของ OpenAI ที่เจาะระบบ Hugging Face ได้ ซึ่งนักวิเคราะห์มองว่าเป็นการโจมตีแบบพื้นฐาน (คล้าย Watergate) ไม่ใช่เทคนิคใหม่ที่ล้ำ — ประเด็นน่ากังวลจริง ๆ คือ AI agent ทำสิ่งเหล่านี้ได้เองโดยไม่ต้องมี operator คอยกำกับละเอียด
+**โปรแกรมเมอร์มืออาชีพ:** เหตุการณ์นี้ตอกย้ำว่าทีมที่ deploy AI agent แบบมีสิทธิ์เข้าถึงระบบต้องมี guardrail และ audit log ที่ตรวจสอบย้อนหลังได้ อย่าปล่อยให้ agent มีสิทธิ์กว้างเกินความจำเป็นของ task
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. LinkedIn เพิ่มปุ่มรีพอร์ตคอนเทนต์ AI Slop
+**อาจารย์ (มหาวิทยาลัย):** ปรากฏการณ์ "AI Slop" เป็นตัวอย่างที่ใช้สอนเรื่อง information quality ในยุค generative AI ได้ดี — เมื่อต้นทุนการผลิตคอนเทนต์ลดลงจนเกือบเป็นศูนย์ กลไกคัดกรองโดยชุมชนกลายเป็นเครื่องมือจำเป็น ไม่ใช่ทางเลือก
+**ผู้เชี่ยวชาญด้าน AI:** ฟีเจอร์นี้คือ human-in-the-loop labeling ที่ใช้ฝึก classifier แยกคอนเทนต์คุณภาพต่ำ ความท้าทายทางเทคนิคคือ false positive — คอนเทนต์ที่เขียนดีแต่ใช้ AI ช่วยเล็กน้อยอาจถูกรีพอร์ตผิด ๆ ต้องดูว่า LinkedIn balance ระหว่าง precision กับ recall อย่างไร
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาที่ทำ social/content platform ควรพิจารณาฟีเจอร์ report-and-learn แบบเดียวกัน แทนที่จะ auto-block ทันที เพราะให้ signal คุณภาพสูงกว่าและลดความเสี่ยงจาก false positive ที่กระทบผู้ใช้จริง

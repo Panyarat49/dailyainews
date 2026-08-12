@@ -1,103 +1,75 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-08-12 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-08-12 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search   # funnel body_text was empty/site-chrome for all 4 selected picks; verified via WebSearch snippets that resolved google-news redirects to trusted-source direct URLs, cross-corroborated across multiple outlets per story
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Freshness window: rolling 7d (Asia/Bangkok); all 4 selected stories are ≤20h old
+Dedup against: last 7 watchlist briefs (2026-08-05 .. 2026-08-11; 27 URLs loaded) — no overlaps
+TIERS_USED: 1 (no Tier-2 descent needed; floor of 3 and near-target 4 reached from Tier-1 companies)
 
 ## Significance ledger
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
+| Alphabet | 1 | ✅ | Product milestone — Gemini app crosses 1B monthly users | ✅ |
+| Nvidia | 1 | ✅ | Model launch — first open-source model (Nemotron 3.5 Lightning) since Huang's public open-source pivot | ✅ |
+| Meta Platforms | 1 | ✅ | Strategic reversal — $2B+ Manus acquisition unwound after China blocked it | ✅ (roundup #1) |
+| Meta Platforms | 1 | ✅ | Product launch — Muse Glimmer (30B open-weight, laptop-class) + Muse Spark 1.2 weights released | ✅ (roundup #2) |
+| Apple | 1 | ◐ (minor) | Product feature in development — iOS anti-deepfake photo provenance metadata | ✅ (backfill to reach `prefer`) |
+| Nvidia | 1 | ✅ (already covered) | $500B Wall Street financing platforms (Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR) | ❌ dropped — same story already led the 2026-08-11 watchlist brief (nvidianews.nvidia.com URL); would be redundant re-coverage under a new URL |
+| Oracle | 1 | ✅ | Oracle × Quantinuum quantum-computing-on-OCI partnership | ❌ dropped — no trusted-source (allowlist) outlet carried a direct, non-redirect URL; only Reuters (google-news redirect, unresolvable) and off-allowlist wire re-publishers (Yahoo Finance, PRNewswire, Manila Times, etc.) found |
+| Nvidia | 1 | ✅ | IBM × Together AI $240M Nvidia-powered inference cluster | ❌ dropped — same allowlist gap as Oracle/Quantinuum; only Reuters (unresolvable redirect) + off-allowlist syndication found |
+| Alphabet | 1 | ➖ | Chrome device-bound session credentials (account-takeover protection) | ❌ dropped — general browser-security feature, not an AI development; fails Gate C |
+| Microsoft, Amazon, Tesla, AMD | 1 | — | Searched (gap-fill) | ❌ nothing both fresh (≤24h) and significant found with a citeable allowlist source; AMD's "6GW Helios" figure at the Aug 11 Technology Leadership Forum is a restatement of already-reported July deals, not a new development |
 
 ## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+Tier 1 candidates alone reached 4 selected stories (Alphabet, Nvidia, Meta ×2-in-roundup, Apple) — at the shared `prefer` target. Tier 2 was not consulted (`tier_descent` not invoked).
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
+1. **Google's Gemini app surges to 1 billion users**
+   - Company · Ticker · Tier: Alphabet · GOOGL US · Tier 1
+   - URL: https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/
+   - Published: Tue, 11 Aug 2026 18:49:12 UTC
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw`
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok)
+   - Summary: Sundar Pichai announced via X that the Gemini app passed 1 billion monthly active users — the 14th Google product to do so, and Google's fastest-growing product ever. 63% of Gemini users talk to it by voice; it generates 150M+ images/day and has 100M+ active iOS users. The milestone lands right after Google's Q2 2026 earnings.
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+2. **Nvidia unveils first open-source AI model since CEO Jensen Huang entered the chat**
+   - Company · Ticker · Tier: Nvidia · NVDA US · Tier 1
+   - URL: https://www.cnbc.com/2026/08/11/nvidia-releases-nemotron-3point5-lightning-open-source-ai-model-.html
+   - Published: Tue, 11 Aug 2026 13:00:01 GMT (funnel `published_raw`, google-news redirect resolved via WebSearch)
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — WebSearch snippet (funnel had only the google-news redirect for this candidate; resolved to the direct CNBC article, corroborated by IBTimes/Dealroom coverage of the same release)
+   - Summary: Nvidia released Nemotron 3.5 Lightning, a lightweight open-weight model that runs on a single GPU (laptop/desktop-class), built for autonomous AI agents and available on Hugging Face — its first open model since CEO Jensen Huang's late-July X post defending open-source AI ("open models strengthen safety... and enable sovereignty"). CrowdStrike, CodeRabbit and Harvey have already tested/customized it.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
+3. **Meta Platforms — อัปเดตสำคัญ 2 รายการ**
+   - Company · Ticker · Tier: Meta Platforms · META US · Tier 1
+   - **3.1 AI startup Manus to resume independent operations as deal with Meta unwinds**
+     - URL: https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html
+     - Published: Tue, 11 Aug 2026 (same-day per WebSearch corroboration; funnel candidate for this story had only a blocked google-news redirect)
+     - Verification: Tier 2 — WebSearch snippet (CNBC + Reuters-sourced wire, cross-corroborated across AOL/Yahoo/Bloomberg/The Information republications)
+     - Summary: Manus said it will resume independent operations and delete some user data as Meta unwinds its $2B+ acquisition after Beijing ordered the deal blocked in April over scrutiny of US investment in Chinese frontier-tech startups. Tencent is reportedly in talks to become Manus's largest shareholder.
+   - **3.2 Meta เปิดตัว Muse Glimmer AI ขนาด 30 พันล้านพารามิเตอร์ พร้อมเปิดค่าน้ำหนัก Muse Spark 1.2**
+     - URL: https://techsauce.co/ai/meta-muse-glimmer-open-weight-muse-spark-1-2
+     - Published: Tue, 11 Aug 2026 11:24:18 +0700
+     - Verification: Tier 2 — funnel snippet (`description`; direct techsauce.co URL, not a redirect; extract_status: skipped so no body_text, snippet-only)
+     - Summary: Meta introduced Muse Glimmer, a new open-weight model family designed to run on laptops, starting with a 30B-parameter release on Hugging Face under an Apache-style license, alongside the open-weighting of Muse Spark 1.2.
 
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
-
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
-
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
-
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+4. **Apple could help you prove your iPhone photos aren't deepfakes**
+   - Company · Ticker · Tier: Apple · AAPL US · Tier 1
+   - URL: https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata
+   - Published: 2026-08-11T12:19:15-04:00 (funnel `published_raw`)
+   - FreshnessCheck: ✅ within WINDOW
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (direct theverge.com URL; extract_status: skipped, no body_text; snippet cites 9to5Mac's discovery of iOS 27 beta 5 code references)
+   - Summary: Code in the iOS 27 beta 5 points to an "Apple Reference Image" system that would embed photo-provenance metadata at the moment of capture, letting users later prove a photo was genuinely shot on an iPhone camera and wasn't AI-generated or manipulated — per 9to5Mac's code analysis, as reported by The Verge.
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+- https://nvidianews.nvidia.com/... ($500B Wall Street financing, referenced via Tom's Hardware/CNN/Fox Business/Bloomberg/CNBC google-news duplicates in START_POOL) — Gate: editorial redundancy; identical story already led the 2026-08-11 watchlist brief.
+- Reuters "Oracle, Quantinuum partner to bring quantum computing to cloud" (google-news redirect, unresolved) — Gate: no allowlist outlet found with a direct citeable URL.
+- Reuters "IBM, Together AI ink $240 million deal for Nvidia-powered AI inference cluster" (google-news redirect, unresolved) — Gate: same as above.
+- arstechnica.com "Chrome adopts... best protection yet against account takeovers" — Gate C: general browser-security feature, not an AI development.
+- Various Alphabet long-tail items (Pixel Buds sale, Google Health/Abbott glucose monitoring partnership, AI Professional Certificate expansion, Chrome/Pixel roundups) — outranked by the 4 selected on significance; Alphabet already has its one slot for today per one-slot-per-company selection rule.
+- AMD "6GW Helios" recap at the Aug 11 Technology Leadership Forum — Gate A judgment call: restates already-reported July 2026 OpenAI/Meta/Anthropic Helios commitments, not a fresh development; no allowlist source treated it as new news either.

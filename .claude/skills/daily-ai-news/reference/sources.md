@@ -1,65 +1,60 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-08-12 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-08-12 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel   # 3/5 picks verified from funnel body_text (Tier 1); 2/5 via WebSearch snippet (Tier 2) after funnel body extraction returned only site chrome
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Freshness window: rolling 7d (Asia/Bangkok); all 5 selected stories are ≤14h old
+Dedup against: last 7 ainews briefs (2026-08-05 .. 2026-08-11; 33 URLs loaded) — no overlaps
+Source mix: theverge.com, tomshardware.com, venturebeat.com ×2, thestandard.co — 4 distinct international outlets + 1 Thai outlet
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
-
-3. **Google invests in A24 to build AI movie tools**
+1. **ChatGPT and Gemini both just passed 1 billion users**
    - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+   - URL: https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users
+   - Published: Aug 11, 2026, 7:41 PM UTC (~3.9h before generation)
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw`
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body (extract_status: ok)
+   - Summary: Google says Gemini has hit 1 billion monthly users (Sundar Pichai, on X) — Google's fastest-growing product ever. OpenAI quietly disclosed ChatGPT passed 1 billion monthly users in an Aug 6 blog post; a spokesperson says it happened "some time ago" and hit a billion *weekly* users in July.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+2. **Nvidia teams up with financial giants to create $500 billion AI infrastructure funds**
+   - Publisher: Tom's Hardware
+   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-teams-up-with-financial-giants-to-create-usd500-billion-ai-infrastructure-funds-six-investment-firms-to-enable-access-to-long-term-funding-at-attractive-rates
+   - Published: Tue, 11 Aug 2026 11:04:32 +0000
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw`
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 2 — WebSearch snippet (funnel `body_text` extracted only site-membership chrome, not the article; corroborated via WebSearch across Tom's Hardware, Yahoo Finance and The National reprints of the same wire story)
+   - Summary: Nvidia signed MOUs with six investment firms — Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR — to stand up independent financing platforms able to mobilize $500B+ in third-party capital, using compute capacity as collateral, exclusively to fund Nvidia-based AI data centers for its customers.
+
+3. **SpaceXAI's Grok Bot turns agents into persistent digital coworkers ($120/month)**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/orchestration/spacexais-grok-bot-turns-agents-into-persistent-digital-coworkers-that-can-operate-your-apps-for-120-per-month
+   - Published: Tue, 11 Aug 2026 21:07:00 GMT
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw`
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok)
+   - Summary: SpaceXAI (formerly xAI) launched an early beta of Grok Bot, persistent AI agents that log into a user's own apps/websites and keep working — even offline — until a task is done or needs approval, at $120/month. Grew from an internal prototype used for sales, marketing and bug fixes into an external product; no agentic-task benchmarks were released.
+
+4. **Mistral AI wants to build 1 gigawatt of European compute by 2030**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/infrastructure/mistral-ai-wants-to-build-1-gigawatt-of-european-compute-by-2030-and-lock-in-customers-now
+   - Published: Tue, 11 Aug 2026 13:59:00 GMT
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw`
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body (extract_status: ok)
+   - Summary: Mistral announced regional inference endpoints (EU-or-US data residency choice), an uptime-guaranteed "Priority Tier," and enterprise compute commitments meant to underwrite 200MW of European infrastructure by end-2027 and a full 1GW by 2030. It will also host third-party open models, starting with Z.ai's GLM-5.2.
+
+5. **AI-ชิป-Data Center หนุนตลาดอิเล็กทรอนิกส์ขั้นสูงไทยโตแรง 5.2 หมื่นล้านดอลลาร์ 'BOI' ดัน New Growth Engine**
+   - Publisher: The Standard (thestandard.co)
+   - URL: https://thestandard.co/thai-electronics-ai-chip-data-center/  (resolved from a news.google.com redirect via WebSearch; funnel had not resolved the redirect)
+   - Published: Tue, 11 Aug 2026 (Google News feed timestamp 08:50 +07 / body confirms same-day)
+   - FreshnessCheck: ✅ within WINDOW via funnel `published_raw` + WebSearch corroboration
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet + WebSearch snippet (funnel `body_text` empty for this candidate; google-news redirect never cited directly, only the resolved thestandard.co article)
+   - Summary: BOI is positioning AI chips and data centers as a "New Growth Engine" for Thailand's advanced-electronics sector, now valued near USD 52 billion, citing over 900 billion baht (~880 project applications over 3 years) in related investment and Thailand's rise as a PCB manufacturing base for global electronics supply chains.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://techsauce.co/ai/ai-agent-gym-booking-hack — editorial: same underlying incident (AI agent hacking a gym-class waitlist API) already covered via The Register in the 2026-08-11 brief; dropped to avoid re-covering an identical story under a new URL.
+- https://news.google.com/rss/articles/CBMiX0FVX3lxTE9SdEs1TDBqM1JlUm9UTXBkd0RMRXpFUlF6X01LRXdTMmkzSFF5TzBlc1JTdE5URi1LR3lRZ2ZLZmpIdDJreDAxeE5JSERGVFR3TENMRlRSM09NNUFWbXJv?oc=5 (thestandard.co — Asia tech stocks slide, SK Hynix) — Gate: could not resolve to a citeable non-redirect URL within scope/time budget; lower priority than selected stories.
+- Remaining ~30 START_POOL candidates (OpenAI ChatGPT Linux app, Brad Lightcap departure, General Catalyst→River AI, chip export-control lawmaker push, SK hynix China capacity, etc.) — not dropped for cause, simply outranked by the 5 selected on significance + breadth; all remain in-window and eligible for a future brief if not superseded.

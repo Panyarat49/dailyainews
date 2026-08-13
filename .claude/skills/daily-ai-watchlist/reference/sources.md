@@ -1,103 +1,76 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-08-13 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-08-13 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel   # verified from RSS-funnel body_text (items_enriched=11>0) + funnel snippets
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Dedup against: last 7 watchlist briefs (2026-08-06 → 2026-08-12; 30 URLs loaded, 0 overlap)
+Tiers used: 1 (Tier 2 not called — no Tier-2 company had a candidate in today's funnel pool; WebSearch gap-fill for AMD/Tesla/Apple/Alibaba/Microsoft found only stale (>24h) coverage, so none qualified)
 
 ## Significance ledger
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
+| Meta Platforms | 1 | Yes | Legal/regulatory action (criminal complaint re: AI glasses) + AI product launch (Creator Studio) — 2 qualifying items → roundup | ✅ (roundup, 2 items) |
+| Alphabet | 1 | Yes | Major product launch (Pixel 11 line) with AI as the headline feature | ✅ |
+| Nvidia | 1 | Yes | New enterprise AI infra product (NeMo Switchyard router) cutting inference cost | ✅ |
+| Amazon | 1 | Yes (fill) | AI-training data policy change affecting Twitch creators — genuinely AI/tech-relevant, less major than the top 3 | ✅ |
+| Oracle | 1 | Undetermined | 4 candidates in pool, but every blogs.oracle.com body_text returned only the site's generic "technical difficulty" error page, and RSS descriptions carried no substantive content; WebFetch also blocked (EGRESS_BLOCKED on control probe). Could not verify — dropped, not scored on merit. | ❌ |
+| Microsoft | 1 | Undetermined | Only candidate (MindTopo AI spatial-reasoning post) had no body_text and a title-only description; unverifiable | ❌ |
+| Apple | 1 | No | Only candidate was Pixel-11-vs-Apple commentary (comparison piece, not an Apple-originated development) | ❌ |
+| Tesla, AMD, Alibaba | 1 | No | No candidate in today's funnel pool; WebSearch gap-fill surfaced only >24h-old coverage | ❌ |
+| Tier 2 (all 10) | 2 | N/A | Zero Tier-2 company candidates in today's funnel pool; not needed since Tier 1 filled to `prefer` (4) | ❌ |
 
 ## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+Tier 1 alone reached 4 stories (= `prefer`). Tier 2 was not invoked (`tier_descent = top-up-to-target` only triggers below `prefer`). Stopped at 4 rather than force a 5th from unverifiable Oracle/Microsoft candidates or stale (>24h) WebSearch results — Gate A / verification held firm over hitting `max`.
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
+1. **Meta Platforms (META US · Tier 1) — roundup, 2 updates**
+   1.1
+   - URL: https://www.channelnewsasia.com/business/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-6314716 (resolved from Google News redirect; CNA republishing Reuters)
+   - Published: Wed, 12 Aug 2026 10:38 GMT (~13h old)
+   - FreshnessCheck: ✅ within WINDOW via funnel body_text
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: A German advocacy group (HateAid) filed a criminal complaint against Meta over its AI smart glasses, alleging the discreet on-face cameras breach German privacy/data-protection law.
+   1.2
+   - URL: https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/
+   - Published: Wed, 12 Aug 2026 15:56 GMT (~7.7h old)
+   - FreshnessCheck: ✅ within WINDOW via funnel body_text
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Facebook rolled out a stand-alone Creator Studio app with an AI creator assistant that gives personalized growth tips based on content style, performance, and audience engagement.
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+2. **Alphabet (GOOGL US · Tier 1) — Google unveils Pixel 11 line with AI as the centerpiece — [AP News](https://apnews.com/article/google-pixel-11-android-3bbad7afc4d25e15527477123415e50a)**
+   - URL: https://apnews.com/article/google-pixel-11-android-3bbad7afc4d25e15527477123415e50a (resolved from Google News redirect)
+   - Published: Wed, 12 Aug 2026 14:00 GMT (~9.6h old)
+   - FreshnessCheck: ✅ within WINDOW via funnel body_text
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Google unveiled its Pixel 11 lineup (phones, Pixel Watch 5, earbuds) with slimmer cameras and AI features aimed at completing tasks in fewer taps/steps.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
+3. **Nvidia (NVDA US · Tier 1) — NeMo Switchyard model-routing platform — [The Register](https://www.theregister.com/ai-and-ml/2026/08/12/nvidias-latest-solution-for-soaring-enterprise-costs-nemo-switchyard-software-router/5286911)**
+   - Published: Wed, 12 Aug 2026 21:00:10 +0200 (~4.6h old)
+   - FreshnessCheck: ✅ within WINDOW via funnel body_text
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Nvidia launched NeMo Switchyard, a routing layer that sends inference requests to different models to optimize cost/latency/quality, claiming up to 74% lower job-completion cost vs. Claude Opus 4.8 alone (~6-point accuracy tradeoff). (Note: also covered in today's general brief — legitimate per-stream story, no cross-stream dedup required.)
 
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
-
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
-
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
-
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+4. **Amazon (AMZN US · Tier 1) — Twitch will train Amazon AI on streamer content by default, adds opt-out — [TechCrunch](https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/)**
+   - Published: Wed, 12 Aug 2026 20:10:40 GMT (~3.5h old)
+   - FreshnessCheck: ✅ within WINDOW via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 2 — funnel snippet (TechCrunch quote from Twitch CPO Mike Minton + The Verge's snippet on what content the opt-out covers; no body_text on any outlet, WebFetch blocked)
+   - Summary: Amazon's Twitch will use streamers' content (streams, VODs, clips, chat, channel text/images) to train its generative AI models by default; streamers can opt out. Twitch CPO Mike Minton: "If this was opt-in, nobody would opt in."
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+- https://news.google.com/...(Announcing the Private Large Language Model Service, Oracle) — Gate: funnel body_text was an Oracle site-error page ("experiencing technical difficulty"); description was headline-only; WebFetch blocked. Unverifiable.
+- https://news.google.com/...(Getting Started with Private LLM Service – Part 1, Oracle) — same Gate as above.
+- https://news.google.com/...(Oracle APEX AI Application Generator, Oracle) — same Gate as above (also site-error page).
+- https://news.google.com/...(Oracle Exadata Database Service on Oracle AI Database@AWS) — same Gate as above; also mistagged by the funnel as "Amazon" (it's an Oracle product announcement) — dropped on verification grounds regardless.
+- https://news.google.com/...(MindTopo puts AI's spatial reasoning to the test, Microsoft) — Gate: no body_text, description was title-only; WebFetch blocked. Unverifiable.
+- https://www.cnbc.com/... (Pixel 11 offers an early look at the AI experience Apple is chasing) — Gate C: this is Pixel/Google-centric commentary about Apple, not an Apple-originated AI development; and duplicates the Alphabet Pixel-11 story already selected (#2).
+- https://news.google.com/...(EXCLUSIVE: Inside the Google executive moves..., Reuters) — Gate: extract_status skipped, no body_text or substantive description; WebFetch blocked. Also thematically close to the 2026-08-06 brief's DeepMind reshuffle story. Unverifiable + likely stale angle.
+- Multiple lower-score Pixel/Twitch/Nvidia duplicate-URL entries (Google News redirects of the same story already selected) — same story, not double-counted.
+- Nvidia RTX PRO 6000 price story, CoreWeave GPU-profit story, "Sovereign AI" sponsored piece, Norway wealth-fund gain story — extract_status skipped, no usable body/description; not selected (below the top-4 cut and unverifiable content, not merely lower score).
+- AMD, Tesla, Alibaba (Tier 1) — no candidate in today's funnel pool; WebSearch gap-fill (`AMD AI chip news`, `Alibaba Qwen AI news`, `Tesla OR AMD OR Apple OR Microsoft OR Alibaba AI news today`) surfaced only articles from early August or earlier — Gate A (>24h) — dropped.

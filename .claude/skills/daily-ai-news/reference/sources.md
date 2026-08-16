@@ -1,65 +1,65 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-08-16 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-08-16 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel (all 5 picks verified from funnel body_text, items_enriched=12)
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Freshness window: rolling 7d (Asia/Bangkok) — all 5 selected stories are within 24h
+Dedup against: last 7 ainews briefs (2026-08-09 → 2026-08-14; 30 URLs loaded)
+Source mix: TechCrunch ×2, Engadget ×1, VentureBeat ×1, The Standard (Thai) ×1 — 4 distinct publishers, 1 Thai-language
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+1. **SpaceX officially closes its Cursor acquisition**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
+   - URL: https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/
+   - Published: Sat, 15 Aug 2026 16:30:00 +0000
+   - FreshnessCheck: ✅ within last 24h (published ~15h before generation)
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - Verification: Tier 1 — funnel body
+   - Summary: SpaceX has closed its ~$60B acquisition of AI coding startup Cursor, first agreed in April; Cursor says it now gets access to "the largest fleet of GPUs in the world" via SpaceX's compute infrastructure, which is also rented to Anthropic and Google.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
+2. **Woman claims her stepfather used Grok to transform childhood photo into explicit imagery**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/
+   - Published: Sat, 15 Aug 2026 21:29:19 +0000
+   - FreshnessCheck: ✅ within last 24h
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - Verification: Tier 1 — funnel body
+   - Summary: A new plaintiff ("Jane Doe 4") has joined a Tennessee lawsuit against Elon Musk's xAI (now part of SpaceX), alleging Grok was used to generate over 7,000 explicit images from a childhood photo of her; the suit seeks class-action status over xAI's alleged failure to prevent CSAM generation.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
+3. **Anthropic is watermarking text generated by Claude to comply with EU law**
+   - Publisher: Engadget
+   - URL: https://www.engadget.com/2237691/anthropic-watermarking-text-generated-by-claude/
+   - Published: Sat, 15 Aug 2026 18:08:36 +0000
+   - FreshnessCheck: ✅ within last 24h
    - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - Verification: Tier 1 — funnel body
+   - Summary: Anthropic detailed how Claude will watermark generated text to comply with the EU AI Act's Transparency Code — steering "low-stakes" word choices via a key-based pattern that's undetectable to readers but decodable by anyone holding the key, without affecting output quality.
+
+4. **An eval harness found what qualitative review couldn't: AI models are most confident when wrong**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/orchestration/an-eval-harness-found-what-qualitative-review-couldnt-ai-models-are-most-confident-when-wrong
+   - Published: Sat, 15 Aug 2026 19:00:00 GMT
+   - FreshnessCheck: ✅ within last 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Analysis of enterprise LLM tooling finds most teams skip rigorous correctness verification in favor of qualitative "sounds right" review; an eval harness testing against ground truth showed models can be most confident exactly when their answers are wrong, a gap that matters as AI tools move into higher-stakes business decisions.
+
+5. **AI-ชิป-Data Center หนุนตลาดอิเล็กทรอนิกส์ขั้นสูงไทยโตแรง 5.2 หมื่นล้านดอลลาร์ 'BOI' ดัน New Growth Engine**
+   - Publisher: The Standard (Thai)
+   - URL: https://thestandard.co/thai-electronics-ai-chip-data-center/
+   - Published: Sat, 15 Aug 2026 18:47:10 GMT
+   - FreshnessCheck: ✅ within last 24h
+   - DedupCheck: ✅ URL not in last-7-day set
+   - Verification: Tier 1 — funnel body
+   - Summary: Thailand's BOI reports 880 semiconductor/advanced-electronics investment applications worth over 900 billion baht over the past 3 years, driven by AI chip and data-center demand; BOI is positioning the sector as a "New Growth Engine" linking Thailand into the global chip supply chain.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.tomshardware.com/tech-industry/nvidia-turns-usd5b-intel-stock-bet-into-usd30b-windfall... — unverifiable: funnel body_text for both Tom's Hardware candidates (Nvidia windfall, Nanya DRAM-theft story) returned only membership/paywall-gate boilerplate, not article content; no usable Tier-2 description either. Dropped rather than risk fabricating claims.
+- https://www.tomshardware.com/pc-components/dram/nanya-engineer-used-360-degree-cam... — same reason (junk body_text, membership gate).
+- https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot — Gate: not a genuine AI/tech news development (entertainment/game feature), too minor to fill floor.
+- https://www.tomshardware.com/desktops/gaming-pcs/grab-this-rtx-5070-gaming-pc... — Gate: product deal/listicle, not news.
+- https://www.theregister.com/ai-and-ml/2026/08/15/anthropic-says-text-watermarking-scheme-relies-on-inconsequential-words/5288156 — Gate: duplicate story (Anthropic watermarking already covered via Engadget as the citation source).
+- https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/ — duplicate angle on same watermarking story; Engadget selected instead for source-mix balance (TechCrunch already used twice elsewhere).
+- https://www.engadget.com/2237655/spacex-officially-acquired-ai-coding-startup-cursor/ — duplicate of TechCrunch Cursor/SpaceX story (Tier-2 only, no body_text; TechCrunch had full Tier-1 body).
+- Remaining lower-score START_POOL items (Blognone "Model 2" name claim, Alibaba Qwen3.8, Bloomberg Alibaba downloads, Microsoft Copilot merge, Gemini watermark toggle, Dow AI selloff, etc.) — below the cut for this run's 5-story selection; several (Blognone "Model 2" claim) also carry unconfirmed/rumor framing per their own headline ("[ไม่ยืนยัน]"/rumor tone).

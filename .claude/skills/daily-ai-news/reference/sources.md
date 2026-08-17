@@ -1,65 +1,62 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-08-17 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-08-17 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: funnel (11/12 items_enriched with body_text; funnel ran in GitHub Actions with open egress)
 Model: claude-opus-4-8
-Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Freshness window: rolling 7d (Asia/Bangkok) — all 5 selected stories are <24h old
+Dedup against: last 7 ainews briefs (36 URLs loaded, 2026-08-08 → 2026-08-14)
+Source mix: TechCrunch x2, Tom's Hardware x1, The Verge x1, Blognone x1 (Thai) — 4 distinct outlets, 1 Thai-language
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+1. **Anthropic CEO says AI backlash is "fundamentally a crisis of trust"**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - URL: https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/
+   - Published: Sun, 16 Aug 2026 16:53:51 +0000 (~6.4h old)
+   - FreshnessCheck: ✅ within window via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 1 — funnel body
+   - Summary: Dario Amodei pushed back on investor Gavin Baker's claim that Amodei's own warnings about AI risk fueled the US backlash against AI/data centers, arguing the backlash is really about trust, not messaging tone.
 
-3. **Google invests in A24 to build AI movie tools**
+2. **Google reportedly taps AMD to design next-generation TPU**
+   - Publisher: Tom's Hardware
+   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/google-reportedly-taps-amd-to-design-next-generation-tpu-hybrid-ai-asic-could-integrate-on-package-cpu-cores-for-reinforcement-learning
+   - Published: Sun, 16 Aug 2026 12:40:00 +0000 (~10.6h old)
+   - FreshnessCheck: ✅ within window via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 1 — funnel body
+   - Summary: Citing a SemiAnalysis client note, the report says Google is working with AMD on its 10th-generation TPU, a hybrid AI ASIC that could fold AMD CPU cores onto the package for CPU-heavy/reinforcement-learning workloads — AMD's first known role in a custom AI ASIC project.
+
+3. **Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/
+   - Published: Sun, 16 Aug 2026 20:57:04 +0000 (~2.3h old)
+   - FreshnessCheck: ✅ within window via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 1 — funnel body
+   - Summary: Per Bloomberg, Stripe has finalized a deal to buy OpenRouter — the multi-model AI gateway used by 8M+ users across 400+ models — for more than $7B, up sharply from its $1.3B Series B valuation in May.
+
+4. **OpenAI reportedly disbanded its preparedness team**
    - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+   - URL: https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team
+   - Published: 2026-08-16T17:32:56-04:00 (~1.7h old)
+   - FreshnessCheck: ✅ within window via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 1 — funnel body
+   - Summary: Citing the Financial Times, OpenAI disbanded the team tasked with assessing catastrophic model risks (bio, cyber, autonomy) at the end of last month, folding its responsibilities into existing teams — the latest safety-team shake-up as OpenAI moves toward an IPO.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+5. **Anthropic อธิบายการทำงานของลายน้ำในข้อความเพิ่มเติม**
+   - Publisher: Blognone (Thai)
+   - URL: https://www.blognone.com/node/151387
+   - Published: Sun, 16 Aug 2026 04:13:13 +0000 (~19.1h old)
+   - FreshnessCheck: ✅ within window via funnel published_raw
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — funnel snippet (extract_status: skipped; RSS description used)
+   - Summary: Follow-up on Anthropic's EU AI Act-driven watermarking policy for AI-generated text/files, explaining the mechanism uses word-choice patterns the model itself recognizes rather than special/invisible characters.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai — scope: opinion column, not a reported news event.
+- https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/ — deprioritized: overlaps Meta/consumer-AI sentiment angle already reflected via Anthropic-CEO trust story; lower score, extract_status skipped.
+- https://www.theguardian.com/us-news/2026/aug/16/california-openai-protester-wynd-kaufman — deprioritized in favor of higher-scored, more directly AI-industry stories; kept as backup if a selected item had failed verification.
+- https://www.tomshardware.com/tech-industry/dude-youre-getting-a-dell-ai-server-rack-dell-recycles-famous-ad-campaign-to-appeal-to-its-new-ai-overlords — deprioritized: lighter/marketing-angle story, lower score than selected set.
+- All other START_POOL candidates below rank 8 — not selected (STORY_COUNT cap of 5 reached); none failed Gate A/B, simply lower score / redundant topic.

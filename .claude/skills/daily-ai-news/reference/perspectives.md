@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-08-17 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Anthropic CEO says AI backlash is "fundamentally a crisis of trust"
+**อาจารย์ (มหาวิทยาลัย):** ประเด็นนี้สะท้อนช่องว่างคลาสสิกระหว่างผู้เชี่ยวชาญที่เตือนความเสี่ยงกับสาธารณะที่ตีความคำเตือนนั้นเป็นภัยคุกคามโดยตรง เป็นกรณีศึกษาที่ดีเรื่องการสื่อสารความเสี่ยงทางวิทยาศาสตร์
+**ผู้เชี่ยวชาญด้าน AI:** ข้อถกเถียงนี้ไม่ใช่เรื่องใหม่ในวงการ safety — คำถามคือบริษัท AI ควรพูดเรื่องความเสี่ยงตรงไปตรงมาแค่ไหนโดยไม่บั่นทอนความเชื่อมั่นของสาธารณะ ยิ่ง Anthropic ผลักดันกฎหมายอย่าง California transparency bill ยิ่งถูกจับตาว่าพูดกับทำตรงกันหรือไม่
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่พึ่งพา API ของ Anthropic การถกเถียงเชิงนโยบายแบบนี้มักนำไปสู่กฎเกณฑ์ transparency/reporting ใหม่ในอนาคต ควรติดตามว่าจะกระทบ SLA หรือ terms of use หรือไม่
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Google reportedly taps AMD to design next-generation TPU
+**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างที่ดีของแนวโน้ม heterogeneous computing — การรวม CPU core เข้ากับ AI accelerator บนแพ็กเกจเดียวกันเพื่อลด latency ระหว่างการประมวลผลทั่วไปกับงาน AI เฉพาะทาง
+**ผู้เชี่ยวชาญด้าน AI:** ถ้าเป็นจริง นี่คือก้าวสำคัญของ AMD เข้าสู่ตลาด custom AI ASIC ซึ่งเดิมถูกครองโดย Broadcom และ Marvell การผนวก CPU core เข้ากับ TPU รุ่นที่ 10 ก็สอดคล้องกับทิศทาง workload แบบ agentic/reinforcement learning ที่ต้องสลับงาน CPU-GPU ถี่ขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า Google เปิด TPU v10 นี้บน Cloud ทีมที่ optimize โมเดลสำหรับ RL หรือ agent workload ควรจับตาความเปลี่ยนแปลงด้าน instruction set และ compiler toolchain ที่อาจตามมา
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้เป็นตัวอย่างชัดเจนของการที่โครงสร้างพื้นฐานการชำระเงินกำลังขยายเข้าสู่โครงสร้างพื้นฐาน AI — ทั้งสองอย่างต่างเป็น "ชั้นกลาง" (middleware) ที่ธุรกิจอื่นพึ่งพา
+**ผู้เชี่ยวชาญด้าน AI:** มูลค่าที่พุ่งจาก 1.3 พันล้านดอลลาร์เป็นกว่า 7 พันล้านดอลลาร์ในเวลาไม่กี่เดือนสะท้อนว่าตลาดให้คุณค่ากับ "AI gateway" ที่ช่วยสลับโมเดลข้ามค่ายอย่างมาก โดยเฉพาะเมื่อองค์กรต้องการลดการผูกติดกับผู้ให้บริการรายเดียว
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาที่ใช้ OpenRouter ผ่าน API เดียวเข้าถึงกว่า 400 โมเดล ควรจับตาว่า Stripe จะเปลี่ยนโครงสร้างราคา, rate limit หรือเงื่อนไขการใช้งานหลังปิดดีลหรือไม่
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. OpenAI reportedly disbanded its preparedness team
+**อาจารย์ (มหาวิทยาลัย):** การยุบทีมที่ตั้งขึ้นมาเพื่อประเมินความเสี่ยงร้ายแรงจากโมเดล AI (bio, cyber, autonomy) เป็นประเด็นที่ควรสอนในวิชาจริยธรรม AI ว่าองค์กรรักษาสมดุลระหว่างความเร็วในการออกผลิตภัณฑ์กับ governance อย่างไรเมื่อใกล้เข้าสู่ IPO
+**ผู้เชี่ยวชาญด้าน AI:** การยุบทีมและกระจายหน้าที่ไปทีมอื่นไม่ได้แปลว่าละทิ้งงาน safety โดยสิ้นเชิง แต่คำถามสำคัญคือความรับผิดชอบและอำนาจตัดสินใจ (เช่น สิทธิ์ block การ deploy) ยังคงชัดเจนเท่าเดิมหรือกระจายจนอ่อนแรงลง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ integrate โมเดลของ OpenAI ในงาน production ควรติดตามว่าการเปลี่ยนโครงสร้างนี้กระทบ policy การ deploy โมเดลรุ่นใหม่ (เช่น safety evaluation ก่อนปล่อย) หรือกระทบ timeline การอัปเดต API หรือไม่
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Anthropic อธิบายการทำงานของลายน้ำในข้อความเพิ่มเติม
+**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างดีของการปฏิบัติตามกฎระเบียบ (EU AI Act) ที่บังคับให้ผู้ให้บริการ AI ต้องระบุแหล่งที่มาของเนื้อหา และเป็นโจทย์ที่น่าสอนเรื่อง trade-off ระหว่างความโปร่งใสกับความสามารถในการหลบเลี่ยงการตรวจจับ
+**ผู้เชี่ยวชาญด้าน AI:** การใช้แพทเทิร์นการเลือกคำแทนอักขระพิเศษทำให้ watermark ทนทานต่อการแก้ไขข้อความมากกว่า แต่ก็เปิดคำถามเรื่องความแม่นยำในการตรวจจับและโอกาสเกิด false positive/negative เมื่อข้อความถูกแปลหรือเรียบเรียงใหม่
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่สร้างเครื่องมือตรวจจับเนื้อหา AI-generated ควรติดตามสเปกของ watermark นี้ เพราะแนวทางแบบ statistical word-pattern ต่างจาก unicode-based watermark ที่เคยเจอ อาจต้องปรับ pipeline การตรวจจับใหม่

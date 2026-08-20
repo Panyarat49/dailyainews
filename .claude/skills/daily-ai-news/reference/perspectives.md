@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-08-20 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. 'Not a theoretical risk,' feds warn as attackers use AI-made code to hack critical infrastructure controllers
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เหมาะเป็นตัวอย่างสอนเรื่อง dual-use ของ AI coding assistant — เครื่องมือเดียวกับที่ช่วยเขียนโค้ดให้เร็วขึ้น ก็ลดต้นทุนการโจมตี OT/ICS ได้เช่นกัน ควรสอนเรื่อง security-by-design ของระบบอุตสาหกรรมควบคู่ไปกับการสอนใช้ AI เขียนโปรแกรม
+**ผู้เชี่ยวชาญด้าน AI:** จุดที่น่ากังวลคือ AI ไม่ได้สร้างช่องโหว่ใหม่ แต่ลดอุปสรรคด้านทักษะในการเขียนสคริปต์โจมตี PLC ผ่านโปรโตคอล S7comm ที่เดิมต้องใช้ผู้เชี่ยวชาญเฉพาะทาง ทำให้กลุ่มที่มีทรัพยากรจำกัดโจมตีได้ในสเกลใหญ่ขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ดูแลระบบ OT ควรตรวจสอบว่าอุปกรณ์ S7 series เปิดสู่อินเทอร์เน็ตโดยตรงหรือไม่ทันที และพิจารณา monitoring การเข้าถึง memory/ladder logic เป็นพิเศษ เพราะ playbook การโจมตีแบบนี้จะถูกทำซ้ำง่ายขึ้นเรื่อยๆ ด้วย AI
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. OpenAI seeks to one-up Anthropic with new customer privacy protections
+**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีเรื่องความขัดแย้งระหว่าง "privacy" กับ "safety monitoring" — สอนนักเรียนให้เห็นว่าไม่มีคำตอบเดียวที่ถูกต้อง แต่ละบริษัทเลือก trade-off ต่างกันตามกลุ่มลูกค้าองค์กรที่ตัวเองเจาะ
+**ผู้เชี่ยวชาญด้าน AI:** Private Safety Processing ที่ไม่เก็บข้อมูลลูกค้าเลย ต่างจากนโยบายเก็บข้อมูล 30 วันของ Anthropic สำหรับโมเดลตระกูล Mythos อย่างชัดเจน คำถามทางเทคนิคที่ต้องติดตามคือระบบตรวจจับการใช้งานผิดจะแม่นยำแค่ไหนถ้าไม่มี data retention ให้ตรวจสอบย้อนหลัง
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ต้องเลือกผู้ให้บริการ AI enterprise ตอนนี้มีตัวเลือกด้าน data-retention policy ชัดเจนขึ้น ควรอ่านเงื่อนไขทั้งสองฝั่งให้ละเอียดก่อนย้าย workload ที่มีข้อมูลอ่อนไหว โดยเฉพาะทีมที่ต้องปฏิบัติตามกฎ compliance เข้มงวด
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Google pits Marvell against Broadcom as it chases AI crown
+**อาจารย์ (มหาวิทยาลัย):** สอนเรื่องโครงสร้างอุตสาหกรรมเซมิคอนดักเตอร์ได้ดี — แม้แต่ Google ที่ดูเหมือนควบคุมทุกอย่างเองก็ยังต้องพึ่งบริษัทออกแบบชิปภายนอกอย่าง Broadcom และ Marvell เพื่อผลิต TPU ของตัวเอง
+**ผู้เชี่ยวชาญด้าน AI:** การดึง Marvell เข้ามาแข่งกับ Broadcom เป็นกลยุทธ์กระจายความเสี่ยง supply chain มากกว่าจะแทนที่กัน โดยเฉพาะ inference accelerator และ interconnect ที่ต้องการ capacity เพิ่มขึ้นเรื่อยๆ ตามการเติบโตของ workload AI
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม infra ที่ใช้ Google Cloud TPU ควรจับตาว่า custom silicon รุ่นใหม่จะกระทบ roadmap ราคาและ availability ของ TPU generation ถัดไปอย่างไร การแข่งขันระหว่างซัพพลายเออร์มักแปลว่าต้นทุนต่อ FLOP มีโอกาสลดลงในระยะยาว
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. TerraPower's nuclear reactor has a secret weapon for powering AI data centers
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้ใช้สอนเรื่องข้อจำกัดทางกายภาพของพลังงานประกอบการเรียน AI ได้ดี — โมเดลใหญ่ขึ้นเท่าไหร่ ปัญหาคอขวดก็ยิ่งย้ายจากชิปไปที่แหล่งพลังงานที่เสถียรและพร้อมใช้ตลอด 24 ชั่วโมง
+**ผู้เชี่ยวชาญด้าน AI:** จุดขายทางเทคนิคของ TerraPower คือ capacity factor สูงถึง 92.5% บวกกับระบบกักเก็บพลังงานที่ผสานกับพลังงานหมุนเวียนได้ ซึ่งตอบโจทย์ load ของ data center AI ที่ต้องการไฟสม่ำเสมอมากกว่าพลังงานหมุนเวียนเพียงอย่างเดียว
+**โปรแกรมเมอร์มืออาชีพ:** โครงการจะเริ่มก่อสร้างปี 2027 เป็นแผนระยะยาว 3-5 ปี ทีมที่วางแผน capacity data center ควรมองเป็นสัญญาณว่าปัญหาคอขวดพลังงานสำหรับ AI training/inference ยังไม่คลี่คลายในระยะสั้น ต้องวางแผนสำรองด้าน power ล่วงหน้า
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Anthropic เผยผล Claude ออกแบบโปรตีนสำเร็จ 14 จาก 15 เป้าหมาย
+**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างชั้นดีของ AI for science ที่จับต้องได้ — งานที่ปกติใช้เวลาเป็นเดือนในห้องแล็บ ทำเสร็จใน 48 ชั่วโมง เหมาะใช้สอนนักเรียนสายชีวเคมี/bioinformatics ให้เห็นศักยภาพจริงของโมเดลภาษา
+**ผู้เชี่ยวชาญด้าน AI:** อัตราความสำเร็จ 22-35% เทียบกับมาตรฐานวงการ 10-15% เป็นตัวเลขที่น่าสนใจ แต่ต้องระวังว่าเป็นการทดสอบกับห้องแล็บภายนอกเพียงสองแห่งและเป้าหมาย 15 โปรตีน ยังเป็น sample size เล็กที่ต้องรอการทำซ้ำในสเกลใหญ่ขึ้นก่อนสรุปเป็นมาตรฐานใหม่
+**โปรแกรมเมอร์มืออาชีพ:** งานนี้ชี้ให้เห็นทิศทางที่ AI agent จะถูกใช้ในงานวิจัยที่มี feedback loop จากโลกจริง (wet-lab validation) ไม่ใช่แค่งานเขียนโค้ด ทีมที่ทำ tooling สำหรับ AI ควรเริ่มมองการเชื่อม pipeline ระหว่างโมเดลกับกระบวนการทดลองจริงเป็นเทรนด์ถัดไป

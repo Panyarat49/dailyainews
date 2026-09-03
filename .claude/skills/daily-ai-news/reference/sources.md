@@ -1,65 +1,59 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-09-03 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-09-03 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (2026-08-08 → 2026-08-14; ~35 URLs loaded)
+Source mix: 4 international (TechCrunch, The Register, CNBC, Nvidia blog) + 1 Thai (Blognone)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
-
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+1. **OpenAI's Astra model becomes first to cross "Critical" cybersecurity threshold**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - URL: https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/
+   - Published: 2026-09-01
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-day ainews set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by SecurityWeek, Decrypt, Security Boulevard, and OpenAI's own post "Path to Astra")
+   - Summary: Astra is the first OpenAI model to cross the "Critical" cybersecurity capability threshold under OpenAI's Preparedness Framework, scoring perfectly on ExploitBench and independently finding two zero-days; full capability access will be gated via the Daybreak Blue program.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+2. **Google launches Gemini 3.8 Flash, its third Flash model in six weeks**
+   - Publisher: The Register
+   - URL: https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049
+   - Published: 2026-09-02
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-day ainews set (distinct from 3.7 Flash story on 2026-08-14)
+   - Verification: Tier 2 — WebSearch snippet (corroborated by 9to5Google, DataCamp benchmark writeups)
+   - Summary: Google released Gemini 3.8 Flash, scoring 90.8% on Terminal-Bench 2.1 (up from 81.6%) and outperforming larger frontier models on long-horizon coding benchmarks, while Humanity's Last Exam stayed flat; pricing holds at $0.75/$3.75 per 1M tokens through end of 2026.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
+3. **Dell posts record $60.9B AI orders, $95B backlog, raises FY27 guidance**
+   - Publisher: CNBC
+   - URL: https://www.cnbc.com/2026/09/01/dell-q2-earnings-report-2027.html
+   - Published: 2026-09-01
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-day ainews set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by 24/7 Wall St., Investing.com, Business Wire earnings release)
+   - Summary: Dell's Q2 FY27 AI server backlog hit a record $95B after $60.9B in new orders, prompting the company to raise full-year revenue guidance by $25B to $192B and lift its FY27 AI-server revenue target to ~$74B.
 
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
+4. **Nvidia and CrowdStrike launch SafeMind, an agentic cybersecurity AI system**
+   - Publisher: NVIDIA Blog
+   - URL: https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/
+   - Published: 2026-09-01
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-day ainews set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by SiliconANGLE, CrowdStrike's own press release, Cyber Daily)
+   - Summary: Unveiled at Fal.Con 2026, CrowdStrike SafeMind pairs two Nvidia-Nemotron-based models — offensive "Red Tempest" and defensive "Blue Solano" — in a closed-loop system CrowdStrike says delivers a 29% higher detection rate and 6x faster remediation than leading frontier models.
+
+5. **Anthropic ปรับโควต้า Claude Code รายสัปดาห์ เพิ่มถาวร 25% แต่ลดจากช่วงโปรโมชันจริง 17%**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+   - URL: https://www.blognone.com/node/151498
+   - Published: 2026-09-01/02 (ช่วงต้นเดือนกันยายน 2569)
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-day ainews set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by Bleeping Computer, Enterprise DNA, daily.dev)
+   - Summary: Anthropic will permanently raise Claude Code's standard weekly usage limit by 25% over baseline starting Sept 14, but because it replaces a temporary 50% promotional boost that ran since May, most active users will see roughly a 17% cut versus what they have today.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- Elon Musk's G20 warning of a 15GW AI power shortfall by 2027 (Sept 1) — no citeable outlet on trusted-sources.md carried it (only Fortune/kaohoon/freepressjournal/techxplore, none on allow-list); discovery-only, dropped per sourcing rule.
+- IBM Granite 3.0, Nvidia Vera Rubin platform general-availability recap, Kneron 2020 chip story — stale/off-window items surfaced by broad search queries, not from the last 24-7d.

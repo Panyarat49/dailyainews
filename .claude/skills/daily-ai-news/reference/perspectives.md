@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-09-04 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. OpenAI เปิดตัว GPT-6 Astra แตะเกณฑ์ความเสี่ยงไซเบอร์ระดับ Critical
+**อาจารย์ (มหาวิทยาลัย):** ใช้เป็นเคสสอน AI Preparedness Framework และเกณฑ์ระดับความเสี่ยง (risk tiers) ว่าองค์กรกำหนดเกณฑ์ "Critical" อย่างไร และทำไมโมเดลที่เก่งขึ้นเรื่อยๆ ถึงชนเพดานที่เคยตั้งไว้เร็วกว่าที่คาด
+**ผู้เชี่ยวชาญด้าน AI:** เทคนิค "opaque recurrence" ที่ทำให้ chain-of-thought ตรวจสอบยากขึ้นเป็นจุดที่ต้องจับตา เพราะขัดแย้งกับเทรนด์ interpretability ที่วงการพยายามผลักดัน ขณะที่คะแนน FrontierMath Tier 4 98% เป็นตัวเลขที่ต้องรอการยืนยันอิสระ
+**โปรแกรมเมอร์มืออาชีพ:** ความสามารถ computer-use/browsing ระดับนี้หมายถึง agent เขียนโค้ดและควบคุมหน้าจอได้เนียนขึ้น แต่การเข้าถึงจะจำกัดผ่าน Daybreak ก่อน ทีมที่รอใช้งานควรเตรียม use case ที่ชัดเจนไว้ล่วงหน้า
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Anthropic เปิดตัว Claude Fable 5.1 และ Mythos 5.1 พร้อม Enterprise Frontier Safeguards
+**อาจารย์ (มหาวิทยาลัย):** โครงสร้าง "โมเดลเดียว สอง safety configuration" ของ Fable/Mythos เป็นตัวอย่างสอนเรื่อง tiered-access ที่ดี ว่าบริษัทแยกระดับความเสี่ยงออกจากตัวโมเดลได้อย่างไรโดยไม่ต้องฝึกโมเดลใหม่
+**ผู้เชี่ยวชาญด้าน AI:** การลดราคา cached input ถึง 75% เป็นสัญญาณว่าต้นทุน inference สำหรับ workload ที่มี context ยาวกำลังลงจริง ไม่ใช่แค่โปรโมชัน ส่วน Enterprise Frontier Safeguards ที่ให้ลูกค้าเก็บ monitoring data เองสะท้อนแรงกดดันด้าน data residency จากลูกค้าองค์กรขนาดใหญ่
+**โปรแกรมเมอร์มืออาชีพ:** งาน agentic ที่เรียก cache ซ้ำบ่อยจะประหยัดชัดเจนถึง 45% ทีมที่ใช้ Claude ทำงาน long-context ควรรีบทดสอบ Fable 5.1 กับ workload จริงเพื่อวัดผลประหยัดก่อนตัดสินใจย้าย
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Dell พลิกกำไรพุ่งจากยอดขายเซิร์ฟเวอร์ AI ทำสถิติใหม่
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข backlog 9.5 หมื่นล้านดอลลาร์เป็นกรณีศึกษาที่ดีเรื่อง supply-chain lag ในอุตสาหกรรมฮาร์ดแวร์ AI — ดีมานด์ล้นเกินกำลังผลิตต่อเนื่องหลายไตรมาส
+**ผู้เชี่ยวชาญด้าน AI:** รายได้เซิร์ฟเวอร์ AI ที่โตเท่าตัว YoY ยืนยันว่าการลงทุน infrastructure ของ enterprise ยังไม่ชะลอ แม้จะมีคำถามเรื่องฟองสบู่ AI capex มาต่อเนื่องหลายเดือน
+**โปรแกรมเมอร์มืออาชีพ:** Backlog ขนาดนี้แปลว่า lead time การจัดหาฮาร์ดแวร์ AI ยังยาว ทีม infra ที่วางแผนซื้อเซิร์ฟเวอร์ AI ควรจองล่วงหน้าและเผื่องบเพิ่มสำหรับความล่าช้าที่อาจเกิดขึ้น
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Palo Alto Networks ทุ่ม 500 ล้านดอลลาร์ซื้อ Console
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้สอนเรื่อง acqui-hire ในตลาด AI security — บริษัทใหญ่เลือกซื้อทีมและ IP ที่พิสูจน์แล้วแทนการพัฒนาเองตั้งแต่ต้น
+**ผู้เชี่ยวชาญด้าน AI:** การผนวก agent ที่สั่งงานด้วยภาษาธรรมชาติเข้ากับ Cortex สะท้อนทิศทางที่ผู้ให้บริการ security หันมาใช้ agentic workflow แทน dashboard/rule-based แบบเดิม
+**โปรแกรมเมอร์มืออาชีพ:** ทีม security ที่ใช้ Cortex อยู่แล้วควรติดตาม roadmap การรวม Console เข้าแพลตฟอร์ม เพราะจะเปลี่ยนวิธีตั้งค่า automation ของ help-desk/security operation โดยตรง
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Perplexity เปิดฟีเจอร์ hybrid compute สลับงานลับไปรันบน Mac
+**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างสอนเรื่อง privacy-by-design ที่จับต้องได้ — การให้ local classifier คัดกรองข้อมูลอ่อนไหวก่อนตัดสินใจว่าจะประมวลผลที่ไหน
+**ผู้เชี่ยวชาญด้าน AI:** การสลับงานระหว่างโมเดลคลาวด์กับโมเดล open-weight บนเครื่องโดยไม่เสีย context เป็นโจทย์ทางวิศวกรรมที่ไม่ง่าย และเป็นทิศทางที่ผู้เล่นรายอื่นน่าจะทำตาม
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่กังวลเรื่องข้อมูลลูกค้าหลุดเข้าคลาวด์ควรทดลองฟีเจอร์นี้กับ workload ที่มีข้อมูลอ่อนไหว โดยเฉพาะบน Apple silicon Mac ที่รองรับ macOS 15 ขึ้นไป

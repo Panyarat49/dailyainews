@@ -1,65 +1,58 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-09-06 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-09-06 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search   # no funnel JSON for today; all picks verified via WebSearch snippets (Tier 2)
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (0 URLs loaded — most recent existing brief on disk is 2026-08-14, outside the 7-day dedup window; treated as an empty dedup set)
+Source mix: 4 international (OpenAI/CNBC, Anthropic primary, Google DeepMind primary, Meta/VentureBeat) + 1 Thai (Thairath)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
+1. **OpenAI เริ่มทยอยปล่อยโมเดล GPT-6 Astra พร้อมมาตรการความปลอดภัยไซเบอร์เพิ่มเติม**
+   - Publisher: CNBC
+   - URL: https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html
+   - Published: Thursday, September 3, 2026 (explicit date in URL slug + article text "OpenAI announced on Thursday")
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 3, 3 days before TODAY)
+   - DedupCheck: ✅ URL not in dedup set (set is empty)
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked network-wide; confirmed via multiple corroborating snippets)
+   - Summary: OpenAI began a phased rollout of GPT-6 Astra, first to companies in its Daybreak cybersecurity program, then to ChatGPT Plus/Pro/Business/Enterprise and API/AWS. Added safeguards followed the earlier Hugging Face breach; Altman said the model went through a formal review with the Trump administration.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+2. **Anthropic เปิดตัว Claude Fable 5.1 และ Claude Mythos 5.1 ลดต้นทุนโค้ดดิ้งลงถึง 45%**
+   - Publisher: Anthropic (primary)
+   - URL: https://www.anthropic.com/claude-fable-and-mythos-5-1
+   - Published: September 1, 2026 (per corroborating outlets MacRumors/9to5Mac dated 2026-09-01; primary page carries same announcement)
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 1, 5 days before TODAY)
+   - DedupCheck: ✅ URL not in dedup set
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked; corroborated across MacRumors, 9to5Mac, Thurrott, SiliconRepublic)
+   - Summary: Anthropic released Claude Fable 5.1 (generally available) and Claude Mythos 5.1 (trusted-access only) — "the same model, different safeguard levels." Fable 5.1 costs ~25% less for typical workloads and up to 45% less for agentic work vs Fable 5, with ~60% fewer Claude Code cybersecurity false positives.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+3. **Google เปิดตัว Gemini 3.8 Flash เทียบชั้น Opus 5 ด้านโค้ดดิ้ง**
+   - Publisher: Google DeepMind (primary)
+   - URL: https://deepmind.google/models/gemini/flash/
+   - Published: September 2, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 2, 4 days before TODAY)
+   - DedupCheck: ✅ URL not in dedup set
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked; corroborated via WSJ report relayed by Newsquawk/TestingCatalog)
+   - Summary: Google shipped Gemini 3.8 Flash, matching Anthropic's Opus 5 on benchmarks while reportedly beating it in real-world developer workflows on latency and hallucination rate in internal Google testing; 1M-token context window, priced $0.75/$3.75 per million input/output tokens.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
+4. **Meta ปล่อย Muse Spark 1.3 ประกาศไล่ทันคู่แข่ง OpenAI และ Anthropic**
+   - Publisher: VentureBeat
+   - URL: https://venturebeat.com/technology/meta-says-muse-spark-1-3-has-frontier-performance-but-its-best-results-come-from-a-model-developers-cant-broadly-use-yet
+   - Published: September 2, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 2, 4 days before TODAY)
+   - DedupCheck: ✅ URL not in dedup set
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked; corroborated via Bloomberg headline (screening, discovery-only) + SiliconANGLE + Meta AI's own X post)
+   - Summary: Meta released Muse Spark 1.3, its most powerful model yet, using ~20% fewer tool calls and ~25% fewer tokens than 1.2 on agentic/coding tasks. Chief AI Officer Alexandr Wang called it Meta's biggest jump yet, putting it near OpenAI/Anthropic's latest — though the best-performing variant isn't broadly available yet.
 
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+5. **ส.ส. จี้สอบ TH-AI Passport ชี้ประสิทธิภาพต่ำกว่ามาตรฐาน หลังมีการร้อง ป.ป.ช. ทุจริต**
+   - Publisher: Thairath
+   - URL: https://www.thairath.co.th/news/politic/2957673
+   - Published: September 5, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 5, 1 day before TODAY)
+   - DedupCheck: ✅ URL not in dedup set
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked; corroborated via related Thairath articles on the same story cluster, incl. the NACC fraud complaint and BDE registration-figures response)
+   - Summary: A lawmaker publicly criticized the government's TH-AI Passport AI-upskilling program as below-standard — usable AI quota limited to 20–50 prompts/day despite 1.47M+ registrations — and urged the ministry to halt it, the same week a formal anti-graft complaint was filed against the minister overseeing the program.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- (none — no candidate failed Gate A/B during this run; SoundHound/LivePerson AI-voice acquisition close was considered but only SEC filings and stock-quote pages were found on trusted outlets, no substantive trusted-source news article, so it was not cited)

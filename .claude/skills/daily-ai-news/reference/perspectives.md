@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-09-06 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. OpenAI เริ่มทยอยปล่อยโมเดล GPT-6 Astra พร้อมมาตรการความปลอดภัยไซเบอร์เพิ่มเติม
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เหมาะใช้สอนเรื่อง "phased rollout" และ AI governance ควบคู่กัน — การให้สิทธิ์เข้าถึงก่อนกับพันธมิตรด้านไซเบอร์ซีเคียวริตี้สะท้อนแนวคิด responsible disclosure ที่นักเรียนวิศวกรรมควรทำความเข้าใจ ไม่ใช่แค่มองเป็นข่าวการตลาด
+**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI ต้องเพิ่ม safeguard หลังเหตุการณ์ Hugging Face breach และให้รัฐบาลสหรัฐฯ ร่วมรีวิวอย่างเป็นทางการ บ่งชี้ว่าโมเดลระดับนี้เริ่มถูกจัดเป็นความเสี่ยงระดับชาติ ไม่ใช่แค่ผลิตภัณฑ์ทั่วไปอีกต่อไป
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ ChatGPT Enterprise/API อยู่แล้ว ควรจับตาว่า Astra จะเปิดให้ทดลองผ่าน AWS เมื่อไร และเตรียม guardrail ฝั่งตัวเองสำหรับความสามารถ "ค้นหาช่องโหว่" ที่โมเดลระดับนี้มักมาพร้อมกัน
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Anthropic เปิดตัว Claude Fable 5.1 และ Claude Mythos 5.1 ลดต้นทุนโค้ดดิ้งลงถึง 45%
+**อาจารย์ (มหาวิทยาลัย):** การที่ Anthropic แยกรุ่น Fable/Mythos ด้วยระดับ safeguard ต่างกันแต่เป็นโมเดลเดียวกัน เป็นตัวอย่างที่ดีสำหรับสอนเรื่อง tiered-access policy ในงานวิจัย AI ที่มีความเสี่ยงสองด้าน (dual-use)
+**ผู้เชี่ยวชาญด้าน AI:** จุดที่น่าสนใจทางเทคนิคคือการลด false positive ด้าน cybersecurity ลง 60% ในตัว Claude Code ซึ่งสะท้อนว่าปัญหาหลักของโมเดล agentic รุ่นก่อนไม่ใช่ความสามารถแต่คือ "ความแม่นยำในการตัดสินใจ" ระหว่างทำงานยาว
+**โปรแกรมเมอร์มืออาชีพ:** ราคาที่ลดลงถึง 45% สำหรับงาน agentic ทำให้การรัน multi-hour autonomous task คุ้มทุนขึ้นมาก ทีมที่ใช้ Fable 5 อยู่ควรทดสอบ migrate ทันทีเพื่อลดค่าใช้จ่าย cache-read
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Google เปิดตัว Gemini 3.8 Flash เทียบชั้น Opus 5 ด้านโค้ดดิ้ง
+**อาจารย์ (มหาวิทยาลัย):** ควรใช้เคสนี้สอนนักศึกษาเรื่องการอ่าน benchmark อย่างมีวิจารณญาณ — ผลทดสอบภายในของ Google เองย่อมมีอคติ (self-reported) แม้ตัวเลข latency ต่ำจะน่าเชื่อถือกว่าเรื่อง quality โดยรวม
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Flash-tier โมเดลไล่ทันรุ่น flagship ของคู่แข่งได้ในงานโค้ดดิ้งจริง สะท้อนว่าความได้เปรียบของโมเดลราคาแพงเริ่มแคบลงเรื่อยๆ โดยเฉพาะเมื่อวัดจาก workflow จริงมากกว่า benchmark สาธารณะ
+**โปรแกรมเมอร์มืออาชีพ:** ราคา $0.75/$3.75 ต่อล้านโทเคนถูกกว่ารุ่น flagship มาก ทีมที่ทำ agentic coding ปริมาณสูงควรทดสอบสลับมาใช้ Flash เป็นค่าเริ่มต้นแล้ว fallback ไปโมเดลใหญ่เฉพาะงานยาก
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Meta ปล่อย Muse Spark 1.3 ประกาศไล่ทันคู่แข่ง OpenAI และ Anthropic
+**อาจารย์ (มหาวิทยาลัย):** เหมาะเป็นกรณีศึกษาเรื่อง "closing the gap" ในอุตสาหกรรม AI — Meta ใช้แนวทาง efficiency (ลด tool call และ token ลง) แทนการแข่งขนาดโมเดลอย่างเดียว ต่างจากช่วงก่อนหน้าที่เน้น scale
+**ผู้เชี่ยวชาญด้าน AI:** คำกล่าวของ Alexandr Wang ต้องฟังอย่างระมัดระวัง เพราะรุ่นที่ performance ดีที่สุดยังไม่เปิดให้ใช้งานกว้าง ทำให้ยากจะเทียบตรงๆ กับ Fable 5.1 หรือ GPT-6 Astra ที่ปล่อยจริงแล้ว
+**โปรแกรมเมอร์มืออาชีพ:** การลด tool call ~20% และ token ~25% มีผลตรงต่อค่าใช้จ่ายรันจริงในงาน agentic เป็นตัวเลขที่ทีม infra ควรนำไปเทียบ cost-per-task กับ Gemini 3.8 Flash และ Fable 5.1 ก่อนตัดสินใจย้ายสแตก
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. ส.ส. จี้สอบ TH-AI Passport ชี้ประสิทธิภาพต่ำกว่ามาตรฐาน หลังมีการร้อง ป.ป.ช. ทุจริต
+**อาจารย์ (มหาวิทยาลัย):** สะท้อนช่องว่างระหว่างนโยบาย "อัปสกิล AI ระดับชาติ" กับความสามารถของแพลตฟอร์มจริง เป็นบทเรียนสำหรับผู้ออกแบบหลักสูตร/โครงการภาครัฐว่าโควตาการใช้งานที่จำกัดเกินไปทำลายเป้าหมายการเรียนรู้
+**ผู้เชี่ยวชาญด้าน AI:** โควตา 20–50 prompt ต่อวันต่ำเกินกว่าจะฝึกทักษะการใช้ AI เชิงลึกได้จริง ตัวเลขผู้ลงทะเบียน 1.47 ล้านคนจึงอาจสะท้อน "ความสนใจ" มากกว่า "การใช้งานต่อเนื่อง" ซึ่งเป็นตัวชี้วัดที่สำคัญกว่า
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าเป็นทีมที่ต้องประเมิน หรือ integrate กับแพลตฟอร์ม AiPASS ควรตรวจสอบ rate limit และ SLA ให้ชัดก่อนวางแผนใช้งานจริงในระดับองค์กร เพราะข้อจำกัดด้าน quota อาจกระทบ use case ที่ต้องใช้ปริมาณสูง

@@ -1,65 +1,59 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-09-07 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-09-07 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search   # no fresh universe_2026-09-07_ainews.json (last funnel file is 2026-09-06, stale) — WebFetch also 403/egress-blocked in this session, so every pick verified from WebSearch snippets (Tier 2)
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (0 URLs loaded — no ainews brief found in articles/ since 2026-08-14; gap in the routine, not a dedup conflict)
+Source mix: 3 AI-lab primaries (OpenAI/Anthropic/Google DeepMind) + Apple (business/exec) + 1 Thai gov-program story (Thairath)
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
+1. **OpenAI ships GPT-6 Astra, claims start of the "AGI era"**
+   - Publisher: OpenAI (openai.com/index/gpt-6-astra) — primary; also reported by CNBC, TechCrunch, Fortune, Axios
+   - URL: https://openai.com/index/gpt-6-astra/
+   - Published: September 3, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (4 days old)
+   - DedupCheck: ✅ no prior ainews brief on file to dedup against
+   - Verification: Tier 2 — WebSearch snippet (multiple corroborating outlets: CNBC, Fortune, Axios, 9to5Mac, TechCrunch)
+   - Summary: OpenAI released GPT-6 Astra, its most capable model yet, with strong "computer use" (navigating a computer like a human), coding, and cybersecurity benchmarks (e.g., near-saturating ARC-AGI-3), rolling out first to select orgs then to ChatGPT Plus/Pro/Business/Enterprise and via API/Azure/Bedrock; OpenAI President Greg Brockman said it's "not unreasonable" to consider this the start of the AGI era.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+2. **Anthropic launches Claude Fable 5.1 and Mythos 5.1 with 75% cheaper cache reads, EU AI Act watermarking**
+   - Publisher: Anthropic (anthropic.com) — primary; also reported by VentureBeat, MacRumors, MarkTechPost
+   - URL: https://www.anthropic.com/claude-fable-and-mythos-5-1
+   - Published: September 1, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (6 days old)
+   - DedupCheck: ✅ no prior ainews brief on file to dedup against
+   - Verification: Tier 2 — WebSearch snippet (VentureBeat, MacRumors, MarkTechPost corroborate)
+   - Summary: Anthropic shipped Claude Fable 5.1 (generally available) and Mythos 5.1 (restricted trusted-access tier for cybersecurity/life-sciences work), cutting cache-read costs ~75%, improving Terminal-Bench-Science score to 52.6% (from 24.7% on Fable 5), tightening false-positive rates in cyber safeguards by 60%, and adding EU AI Act-mandated output watermarking with a private-preview detection API.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+3. **Google DeepMind releases Gemini 3.8 Flash and a restricted "Cyber" variant for defenders**
+   - Publisher: Google DeepMind (deepmind.google) — primary; also reported by VentureBeat
+   - URL: https://deepmind.google/models/gemini/flash/
+   - Published: September 2, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (5 days old)
+   - DedupCheck: ✅ no prior ainews brief on file to dedup against
+   - Verification: Tier 2 — WebSearch snippet (VentureBeat corroborates with benchmark detail)
+   - Summary: Google DeepMind shipped Gemini 3.8 Flash — its third Flash release in six weeks — pitched as its best reasoning/coding model at 3.7 Flash's price/speed, plus a "Cyber" twin gated behind the new Fairwind Program for vetted government and critical-infrastructure defenders to hunt vulnerabilities; it jumped to #14 in Agent Arena from Gemini 3.7 Flash's #32.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
+4. **John Ternus succeeds Tim Cook as Apple CEO**
+   - Publisher: TechCrunch — citation; transition also confirmed on Apple Newsroom
+   - URL: https://techcrunch.com/2026/09/01/who-is-john-ternus-the-incoming-apple-ceo/
+   - Published: September 1, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (6 days old) — this write-up covers the transition taking effect Sept 1, a new development, not a rehash of April's succession announcement
+   - DedupCheck: ✅ no prior ainews brief on file to dedup against
+   - Verification: Tier 2 — WebSearch snippet (also Al Jazeera, Fox Business, Yahoo Finance corroborate)
+   - Summary: John Ternus, Apple's hardware-engineering chief since 2021, became CEO on September 1, 2026 as Tim Cook moved to executive chairman after a 15-year run; commentary flagged Apple as the only major tech giant still without a frontier AI model of its own, making AI strategy the defining early test of Ternus's tenure.
 
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+5. **Thailand's TH-AI Passport tops 1.47 million registrations amid transparency pushback**
+   - Publisher: Thairath (thairath.co.th)
+   - URL: https://www.thairath.co.th/news/governmentpolicy/2957501
+   - Published: ~September 3-5, 2026
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ no prior ainews brief on file to dedup against
+   - Verification: Tier 2 — WebSearch snippet (corroborated by The Standard, PRD.go.th, The Bangkok Insight)
+   - Summary: Thailand's government-backed AI upskilling program TH-AI Passport passed 1.47 million registrations and 4 million prompts submitted as of Sept 3, with the Digital Economy agency (BDE/สดช.) defending its ~1.6-billion-baht budget as "pay per active user"-based and transparent, after lawmakers and civic groups criticized system readiness and Thai-language model quality.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- Sony Music Publishing & Warner Chappell v. Anthropic copyright lawsuit — Gate A (>7d): filed Fri Aug 28/29, 2026; later coverage (Fortune Sept 1, Variety, etc.) is rehash/reaction to the same filing with no distinct new development, so the underlying write-up date (Aug 28-29) governs and falls outside the rolling 7-day window.
+- Nvidia/Armenia-Azerbaijan "chip diplomacy" (Blackwell GPUs for Firebird data center) — Gate A (>7d): underlying peace-deal reporting traces to the August 2025 White House signing; no fresh (≤7d) write-up with a genuine new development found.

@@ -1,103 +1,83 @@
-# Sources — 2026-06-23 (watchlist)
+# Sources — 2026-09-12 (watchlist)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-09-12 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search   # no funnel JSON for 2026-09-12; whole run verified from live WebSearch snippets (Tier 2)
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 watchlist briefs (14 URLs loaded from Jun 20, 21, 22 briefs — Jun 17–19 unread but no collision risk — all candidates are Jun 22 articles not previously covered)
-Source mix: 2 primary (NVIDIA Newsroom ×3), 3 citation (The Verge, VentureBeat, Reuters, TechCrunch)
-Universe pre-load: 43 candidates from universe_2026-06-23_watchlist.json (generated_at 2026-06-23T06:31:00+07:00) — WebSearch skipped (≥ 8 candidates after gates)
-Tiers used: 1 | Story count: 5 slots (target 4–5, floor 3 — met, all Tier 1 companies)
+Dedup against: last 7 watchlist briefs (35 URLs loaded — 2026-08-08 through 2026-08-14; no more recent briefs exist in the repo)
+Tiers used: 1 (Tier 2 not needed — 5 distinct Tier-1 companies cleared the gates)
 
-## Significance ledger
+## Significance ledger (Gate D)
 | Company | Tier | Significant? | Reason | Selected |
 |---|---|---|---|---|
-| Nvidia | 1 | ✅✅✅ | ISC High Performance 2026: Halos for Robotics launch (industry first) + 35 Europe AI supercomputers + Vera Rubin science platform | yes (roundup, slot 1) |
-| Alphabet | 1 | ✅✅✅ | $75M investment in A24, first Google stake in a film studio, research partnership | yes (slot 2) |
-| Alibaba | 1 | ✅✅ | HappyHorse 1.1 rises to #2 global AI video ranking; Sora discontinued; Seedance shelved | yes (slot 3) |
-| Microsoft | 1 | ✅ | Chevron power supply deal for Texas data center (cluster_size 5) | yes (slot 4) |
-| Tesla | 1 | ✅ | Autopilot fatal crash Texas + company pushback; safety/regulatory significance | yes (slot 5) |
-| Oracle | 1 | ◻ | Blog posts only (body_text = site error page, uncitable); workforce 13% shrink (Gate C uncertain — no AI-tech confirmation in description) | no |
-| Amazon | 1 | ◻ fill | Alexa+ India Hindi test (Tier 2, score 5.61) — lower significance than selected slots; capped at 5 | no |
-| Apple | 1 | ◻ | No fresh Apple story today — iOS 27 / ambient AI covered in Jun 21–22 watchlist briefs | no |
-| AMD | 1 | ◻ | No new AMD story today — ACE extensions covered Jun 21; GMKtec EVO-X3 covered Jun 22 | no |
-| Meta Platforms | 1 | ◻ | No fresh Meta/Llama story surfaced in universe | no |
+| Oracle | 1 | ✅ | Earnings w/ AI angle: cloud infra revenue +121% YoY, $30B+ new AI cloud contracts booked | ✅ |
+| Amazon | 1 | ✅ | Major partnership/business move: Amazon Ads opens ChatGPT ad inventory via Amazon DSP | ✅ |
+| Meta Platforms | 1 | ✅ | Model/product launch: Muse, Meta's first consumer personal AI agent | ✅ |
+| Nvidia | 1 | ✅ | Major partnership + product: sovereign AI stack with Palantir (Nemotron + Foundry/AIP) for supply chains | ✅ |
+| Apple | 1 | ✅ | Product launch: Siri AI ships with iOS 27 on Sept 14; RC seeded Sept 9 | ✅ |
+| Microsoft | 1 | ⚠️ borderline | 38GW data-center capacity plan (Bloomberg, Sept 10-11) — significant but Screening-only source with no open-outlet cross-match found at run time | ❌ dropped (Gate: source) |
+| Alphabet | 1 | ❌ | Gemini 3.8 Flash (Sept 2) and Waymo×Gemini (Jul 29) both outside 7d window; no fresh in-window story found | ❌ |
+| Tesla | 1 | ❌ | FSD v14 Lite / Automatic Collision Evasion rollout this week, but only auto-enthusiast sites (not on trusted-sources.md) carried it | ❌ |
+| AMD | 1 | ❌ | Instinct MI400/Helios (Advancing AI 2026) — event predates 7d window | ❌ |
+| Alibaba | 1 | ❌ | Qwen revenue-sharing plan reported Aug 7 — outside 7d window | ❌ |
+| Micron | 2 | ❌ | HBM4 capacity-doubling reports dated ~Sept 4 — outside 7d window | ❌ (tier 2 not needed anyway) |
 
 ## Tier-descent record
-Tier 1 yielded 5+ significant stories (Nvidia roundup + Alphabet + Alibaba + Microsoft + Tesla). No Tier 2 descent required. All 5 slots filled from Tier 1 candidates.
+Not invoked — Tier 1 alone produced 5 significant, gate-passing, distinct-company stories (at `max`). `TIERS_USED = 1`.
 
 ## Selected stories
-1. **Nvidia — Halos for Robotics (Roundup item 1.1)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms NVIDIA Halos for Robotics, industry's first full-stack safety system, Agility as first adopter, IGX Thor + Holoscan Sensor Bridge + Halos OS + AI Systems Inspection Lab, ISC 2026 context)
-   - Summary: NVIDIA announced Halos for Robotics, the industry's first full-stack safety system for physical AI, extending its AV safety architecture to robots. Agility (humanoid robotics) is the first adopter.
+1. **Oracle (ORCL US · Tier 1) — รายได้คลาวด์ AI พุ่ง 121% ดันผลประกอบการ Q1 ปีงบ 2027 ทะลุคาด**
+   - URL: https://www.cnbc.com/2026/09/11/oracle-stock-q1-earnings-ai-cloud.html
+   - Published: September 11, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (1 day old)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by Bloomberg, SEC 8-K, Yahoo Finance same-day coverage)
+   - Summary: Oracle's fiscal Q1 revenue rose 30% to $19.35B, beating estimates, with cloud infrastructure revenue up 121% YoY to $7.4B and net income up 60% to $4.7B; the company booked more than $30B in new AI cloud contracts during the quarter even as debt tied to its AI buildout climbed toward $125B.
 
-2. **Nvidia — Europe 35 AI Supercomputers (Roundup item 1.2)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers
-   - Published: Mon, 22 Jun 2026 13:05:16 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.4h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 35 AI HPC supercomputers across Europe, 23 countries, 3M researchers, 90% EU AI factory buildout, 800 AI exaflops, Barcelona SC EuroHPC AI Factory, BavariaAI Blue Swan, CUDA-Q quantum-GPU integration, ISC High Performance 2026 Hamburg)
-   - Summary: Record 35 NVIDIA AI supercomputers are in development across 23 European countries, equipping 3M+ researchers. NVIDIA now powers 90% of Europe's AI factory buildout.
+2. **Amazon (AMZN US · Tier 1) — Amazon เปิดทางโฆษณาใน ChatGPT ผ่าน Amazon DSP ร่วมมือ OpenAI**
+   - URL: https://www.cnbc.com/2026/09/10/amazon-chatgptads-open-ai.html
+   - Published: September 10, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (2 days old)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by Digiday, eMarketer, Adweek, Amazon Ads' own announcement page)
+   - Summary: Amazon Ads and OpenAI announced select US advertisers can now buy ChatGPT ad inventory through Amazon DSP on a CPC/CPM basis, with Amazon handling campaign setup while OpenAI controls ad delivery — a reversal for a company that had previously kept AI assistants out of its retail ecosystem.
 
-3. **Nvidia — Vera Rubin Supercomputers for Science (Roundup item 1.3)**
-   - Publisher: NVIDIA Newsroom (Primary)
-   - URL: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science
-   - Published: Mon, 22 Jun 2026 13:10:18 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 10.3h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms 7 exaflops AI + 5 petaflops FP64 in single rack, Los Alamos/NERSC/Lawrence Livermore adopters, climate/CFD/energy workloads, Vera CPU for agentic scientific AI, Dell/HPE/GIGABYTE/Supermicro/Bull support)
-   - Summary: Vera Rubin platform delivers 7 AI exaflops + 5 FP64 petaflops in a single rack. LANL, NERSC, and Lawrence Livermore are first adopters for science workloads.
+3. **Meta Platforms (META US · Tier 1) — Meta เปิดตัว Muse เอเจนต์ AI ส่วนตัวตัวแรกของบริษัท**
+   - URL: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+   - Published: September 9, 2026 (Meta's own newsroom; TechCrunch/Axios/Bloomberg corroborate Sept 8-9)
+   - FreshnessCheck: ✅ within rolling 7d window (3 days old)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet, Primary source (about.fb.com) corroborated by TechCrunch
+   - Summary: Meta launched Muse, its first personal AI agent, which runs on a dedicated per-user cloud VM to handle tasks like shopping, booking and scheduling rather than just answering questions; it ships with a free tier plus $20 and $100/month paid tiers, and immediately drew scrutiny (TechCrunch, Forbes) over the broad account/data access it requests.
 
-4. **Alphabet — Google DeepMind $75M A24 investment**
-   - Publisher: The Verge (Citation)
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set (ainews Jun 23 covered same URL but that's a different stream — watchlist dedup is watchlist-only)
-   - Verification: Tier 1 — funnel body (body_text ok; confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive across multiple projects, storyboard AI first application, A24 rep note tools won't be "prompted generative AI", Demis Hassabis + Eli Collins quotes)
-   - Corroboration: TechCrunch (body_text ok, score 6.54), Engadget (body_text ok, score 7.33, adds Backrooms director anti-AI quote + 2,000 storyboard artists at risk detail), cluster_size 4
-   - Summary: Google DeepMind invested ~$75M in indie studio A24 to develop AI filmmaking tools — the first time Google has taken a stake in a film studio. Research partnership will develop storyboard AI tools first.
+4. **Nvidia (NVDA US · Tier 1) — Nvidia จับมือ Palantir วางสถาปัตยกรรม Sovereign AI ให้ซัพพลายเชน**
+   - URL: https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains
+   - Published: September 10, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (2 days old)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet, Primary source (nvidianews.nvidia.com) corroborated by HPCwire, BusinessWire
+   - Summary: NVIDIA and Palantir unveiled a joint "sovereign AI" stack — NVIDIA Nemotron open models running inside Palantir Foundry/AIP on the Palantir Ontology — first deployed inside NVIDIA's own supply chain to manage materials-allocation decisions, with on-prem support from Cisco/Dell and cloud/colo support from Rackspace/Nebius.
 
-5. **Alibaba — HappyHorse 1.1 rises to #2 globally**
-   - Publisher: VentureBeat (Citation)
-   - URL: https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away
-   - Published: Mon, 22 Jun 2026 20:22:56 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 3.1h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 1 — funnel body (body_text ok; confirms Alibaba Cloud released HappyHorse 1.1 on Sunday, API access on Model Studio, 40% launch discount 2 weeks, OpenAI Sora discontinued as financially unsustainable, ByteDance Seedance 2.0 shelved due to Hollywood copyright complaints, Alibaba $52.7B global infrastructure buildout)
-   - Summary: Alibaba Cloud's HappyHorse 1.1 rises to #2 globally as OpenAI discontinues Sora and ByteDance shelves Seedance 2.0. The API-first model targets enterprise software stacks.
-
-6. **Microsoft — Chevron power deal for Texas data center**
-   - Publisher: Reuters (Citation)
-   - URL: https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/
-   - Published: Mon, 22 Jun 2026 15:36:07 GMT
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 7.9h)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status blocked — Reuters paywalled; RSS description "Chevron signs power supply deal with Microsoft for Texas data center" confirms key facts; cluster_size 5 provides strong corroboration)
-   - Summary: Chevron signed a power supply deal with Microsoft for a Texas data center, reflecting growing AI infrastructure energy demand. Covered by at least 5 outlets.
-
-7. **Tesla — Pushes back on Autopilot narrative after fatal Texas crash**
-   - Publisher: TechCrunch (Citation)
-   - URL: https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/
-   - Published: Mon, 22 Jun 2026 22:59:57 +0000
-   - FreshnessCheck: ✅ within 24h via published_raw (age_h 0.5h — breaking at funnel time)
-   - DedupCheck: ✅ URL not in last-7-day watchlist set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; description "Whether the Autopilot system was truly active, overridden, or malfunctioning likely won't be resolved until investigators finish combing through the vehicle's data logs" + title confirms fatal crash + Tesla pushback + ADAS investigation context)
-   - Summary: Tesla pushed back on Autopilot-focused reporting after a fatal crash in Texas. Investigators are examining vehicle data logs to determine system status at the time.
+5. **Apple (AAPL US · Tier 1) — Apple ปล่อย iOS 27 รุ่น Release Candidate ก่อนเปิดตัว Siri AI วันที่ 14 กันยายน**
+   - URL: https://www.engadget.com/2254005/ios-27-with-siri-ai-will-be-available-on-september-14/
+   - Published: ~September 9, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (~3 days old)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet (corroborated by MacRumors, 9to5Mac RC-seed coverage the same day)
+   - Summary: Apple seeded the release candidate of iOS 27 on September 9, confirming Siri AI — the Apple Intelligence-powered assistant rebuild — will begin rolling out in English on September 14 on iPhone 15 Pro and later, with the best experience reserved for iPhone 17-generation hardware; non-English languages follow in October.
 
 ## Dropped
-- Oracle blog posts (LangGraph on OCI, AI Agent Studio, Agentic ERP, Agentic SCM, Agentic AI Foundations) — body_text = Oracle site error page ("This site is experiencing technical difficulty"); no citeable evidence; blog-level significance only
-- Oracle workforce shrinks 13% (Reuters, score 6.1) — Tier 2 (description only); Gate C uncertain (description confirms workforce reduction but no explicit AI/tech connection; cannot verify without body_text)
-- Alphabet/Bloomberg "Second AI Star Departs" — source_role: screening; body_text empty; no open-source cross-match available in universe; cannot cite
-- blog.google Interactions API for Gemini (score 6.42) — body_text skipped; description is only the title; insufficient evidence for a citeable Alphabet second item
-- Amazon Alexa+ India Hindi (TechCrunch, score 5.61) — Tier 2 snippet; below significance threshold vs. selected stories; story cap of 5 reached
-- Instagram episodic TV / ZDNet Costco deals — not AI/tech-primary (Gate C); commercial/consumer content
-- Cloudflare browser protocol (matched Microsoft via Google keyword) — Cloudflare story, not primarily a Microsoft AI story (Gate W marginal)
-- Microsoft Security blog (one intrusion / two attackers) — cybersecurity post, no primary AI angle (Gate C marginal)
+- Bloomberg's Microsoft "38 gigawatts by 2032" data-center report (Sept 10-11) — Screening-only source; searched techcrunch/theverge/reuters/apnews/arstechnica/theregister/zdnet/cnbc for a cross-matchable open citation and found none at run time. Per trusted-sources.md rule 3, dropped rather than cited via Bloomberg.
+- https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership — Gate A: cross-check shows the SSI×NVIDIA $5B partnership was originally reported in **July 2026**; could not confirm the newsroom page reflects a genuinely new September development rather than a stale/re-surfaced listing, so dropped per the "verbatim rehash — drop" rule rather than risk it.
+- https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/ (IFA 2026 local-AI tools) — Gate A borderline: corroborating outlets (GIGAZINE, ITmedia) date this Sept 4-7, straddling the 7-day window edge; dropped in favor of the cleanly-dated Sept 10 NVIDIA-Palantir story instead.
+- Tesla FSD v14 Lite / Automatic Collision Evasion rollout (this week) — only found on enthusiast trackers (notateslaapp.com, teslanorth.com, teslascope.com), none on trusted-sources.md; no outlet on the allow-list covered it at run time.
+- Alibaba Qwen revenue-sharing plan — Gate A (>7d): first reported August 7, 2026.
+- AMD Instinct MI400/Helios — Gate A (>7d): unveiled at Advancing AI 2026, outside the rolling window.
+- Micron HBM4/HBM capacity reports — Gate A (>7d): TrendForce/DigiTimes coverage dated ~Sept 4, outside window at run time.
+- Google Gemini 3.8 Flash / Waymo Ojai×Gemini — Gate A (>7d): Sept 2 and Jul 29 respectively.
+
+## Notes on this run
+- No RSS-funnel universe file existed for 2026-09-12 (`.github/scripts/output/universe_2026-09-12_watchlist.json` absent) — Step 0.5 skipped, full WebSearch fallback used.
+- WebFetch is fully egress-blocked this session (confirmed via control probe + live retry) — every story verified at Tier 2 from WebSearch snippets, cross-corroborated across ≥2 independent outlets (or, for Meta/Nvidia, the company's own primary newsroom plus independent corroboration).
+- The last committed `-watchlist.md` brief predates this run by ~4 weeks (2026-08-14); dedup was applied against the most recent 7 available briefs per the engine's mechanical rule.

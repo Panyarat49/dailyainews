@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-09-21 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Plugin4Shell zero-click RCE hits four major AI coding agents
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เหมาะเป็นตัวอย่างสอนเรื่อง "supply-chain trust" ในหลักสูตรความปลอดภัยไซเบอร์ — การ pin SHA ไม่มีความหมายถ้าไม่ตรวจสอบว่า working tree ตรงกับ hash จริง
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่น่ากังวลคือ agent เหล่านี้รันด้วยสิทธิ์เดียวกับนักพัฒนา จึงเข้าถึง SSH key, cloud credential และ production ได้ทันทีที่ plugin ถูกสลับ และการที่ผู้ให้บริการแก้ปัญหาไม่พร้อมกัน (บางเจ้ายังไม่แพตช์) สะท้อนว่ามาตรฐานความปลอดภัยของ AI coding agent ยังตามหลังความเสี่ยงจริง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ Claude Code, Codex, Copilot หรือ Gemini CLI ควรอัปเดตทันที (Claude Code 2.1.179, Codex 0.146.0) และตรวจสอบ plugin ที่ติดตั้งไว้ทั้งหมด — ถ้าใช้ Gemini CLI ควรเริ่มวางแผนย้ายไป Antigravity ตามที่ Google แนะนำ เพราะจะไม่มีแพตช์ตามมา
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. Google discloses Gemini "hacked" three companies during a security test
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้ควรถูกใช้สอนเรื่อง sandbox isolation ที่ผิดพลาด — แค่ตั้งชื่อบริษัทสมมติไปตรงกับโดเมนจริงบนอินเทอร์เน็ตก็ทำให้การทดสอบหลุดออกจากสภาพแวดล้อมที่ควบคุมได้
+**ผู้เชี่ยวชาญด้าน AI:** นี่คือรูปแบบที่พบซ้ำในหลายแล็บ (OpenAI, Anthropic, Meta ก็เจอคล้ายกัน) — AI agent ที่มีทักษะเจาะระบบระดับสูงจะสร้างความเสี่ยงจริงถ้าไม่มีการกั้นสภาพแวดล้อมที่แน่นหนา ยิ่งความสามารถสูงขึ้น "accident blast radius" ก็ยิ่งใหญ่ตาม
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ red-team หรือ CTF-style testing กับ AI agent ต้องตรวจสอบ network isolation ของ sandbox อย่างเข้มงวด และไม่ควรใช้ชื่อโดเมนสมมติที่อาจชนกับโดเมนจริงในการทดสอบ
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Trump says he will form an "AI Force" and name a new AI czar
+**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีเรื่องความตึงเครียดระหว่างการส่งเสริมนวัตกรรมกับการกำกับดูแลความเสี่ยง — โดยเฉพาะเมื่อผู้นำประเทศเลือกกรอบ "ความมั่นคงแบบ Space Force" แทนกรอบกำกับดูแลเชิงกฎหมาย
+**ผู้เชี่ยวชาญด้าน AI:** การประกาศยังขาดรายละเอียดโครงสร้างและอำนาจหน้าที่ทั้งหมด ทำให้ยังบอกไม่ได้ว่าจะกระทบกฎระเบียบ AI ของสหรัฐฯ อย่างไรในทางปฏิบัติ แต่ท่าทีปฏิเสธการชะลอการพัฒนา AI ส่งสัญญาณชัดต่อทิศทางนโยบายระยะสั้น
+**โปรแกรมเมอร์มืออาชีพ:** บริษัทที่ทำธุรกิจ AI ในสหรัฐฯ ควรจับตาว่า "AI Czar" คนใหม่จะเป็นใครและมีอำนาจแค่ไหน เพราะอาจกระทบทิศทาง compliance และการจัดซื้อจัดจ้างภาครัฐด้าน AI ในอนาคตอันใกล้
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. OpenAI launches Astra for Law
+**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างที่ดีของการนำ LLM ไปประยุกต์ใช้เฉพาะทาง (domain-specific deployment) โดยผูก retrieval index ขนาดใหญ่เข้ากับโมเดลทั่วไป แทนที่จะฝึกโมเดลใหม่ทั้งหมด
+**ผู้เชี่ยวชาญด้าน AI:** จุดสำคัญทางเทคนิคคือ Legal Search Index ที่ครอบคลุมกฎหมาย/คำพิพากษากว่า 230 ล้าน URL และอัปเดตทุกวัน ซึ่งช่วยลดปัญหา hallucination ในงานกฎหมายที่ต้องการความแม่นยำสูง แต่ยังต้องพิสูจน์ความน่าเชื่อถือในสนามจริงก่อน
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่พัฒนา legal-tech ควรติดตาม API ของ Astra for Law ที่จะเปิดให้ผู้ให้บริการอย่าง Harvey และ Legora ใช้งาน เพราะอาจเป็นโครงสร้างพื้นฐานใหม่สำหรับสร้างผลิตภัณฑ์ legal AI โดยไม่ต้องสร้าง retrieval pipeline เอง
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. Manus seeks $4B valuation in new $500M raise
+**อาจารย์ (มหาวิทยาลัย):** สะท้อนว่าตลาดทุนยังให้มูลค่าสูงกับสตาร์ทอัพ AI agent แม้กระแสความกังวลเรื่องฟองสบู่ AI จะเพิ่มขึ้น เหมาะเป็นกรณีศึกษาด้านการประเมินมูลค่าธุรกิจเทคโนโลยี
+**ผู้เชี่ยวชาญด้าน AI:** การ "resume independent operations" บ่งชี้ว่า Manus กำลังปรับโครงสร้างธุรกิจให้อยู่ได้ด้วยตัวเอง ซึ่งเป็นสัญญาณบวกต่อความยั่งยืนของผลิตภัณฑ์ agent มากกว่าการพึ่งพาพันธมิตรรายใหญ่เพียงรายเดียว
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาที่ติดตามตลาด AI agent ควรจับตาว่าเงินทุนก้อนนี้จะถูกใช้พัฒนาความสามารถด้านใด เพราะสะท้อนทิศทางการแข่งขันกับ agent จากค่ายใหญ่อย่าง OpenAI และ Anthropic

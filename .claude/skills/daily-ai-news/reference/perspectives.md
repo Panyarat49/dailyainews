@@ -1,26 +1,26 @@
-# Perspectives — 2026-06-23 (ainews)
+# Perspectives — 2026-09-24 (ainews)
 
-## 1. Anthropic Mythos AI เจาะระบบลับ NSA ได้ "เกือบทั้งหมด" ในไม่กี่ชั่วโมง
-**อาจารย์ (มหาวิทยาลัย):** ผลทดสอบนี้ฉายภาพช่องว่างระหว่างความสามารถ AI กับกรอบนโยบาย national security ที่ตามไม่ทัน — บทเรียนสำหรับห้องเรียนคือ AI governance ต้องผนวก red-team assessment เป็นกระบวนการมาตรฐานก่อนปล่อยโมเดล frontier สู่สาธารณะ ไม่ใช่ทำหลังจากเกิดเหตุ
-**ผู้เชี่ยวชาญด้าน AI:** Mythos แสดงศักยภาพ offensive cybersecurity ที่น่าตื่นตะลึง — LLM ที่ออกแบบสำหรับ security research สามารถ synthesize ช่องโหว่ได้เร็วกว่า human red teamers อย่างมีนัยสำคัญ แต่ผู้เชี่ยวชาญตั้งข้อสังเกตว่าการแบนอาจทำให้ฝ่ายป้องกันเสียเปรียบมากกว่าฝ่ายโจมตี ซึ่งยังหาเครื่องมือทดแทนได้
-**โปรแกรมเมอร์มืออาชีพ:** ทีม security engineering ที่ใช้ Anthropic API ต้องเตรียม fallback plan ทันที — กรณีนี้เป็นหลักฐานเชิงประจักษ์ว่า model access สามารถถูกตัดกลางดึกได้โดยไม่มีคำเตือน multi-provider abstraction layer ที่ tested และพร้อม switch ได้จริงคือสิ่งที่ต้องมีก่อนเกิดเหตุ
+## 1. Claude ค้นพบระบบเอนไซม์ชนิดใหม่ในไวรัสแบคทีเรีย (ART system)
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างสอนที่ดีมากว่า AI agent สามารถทำงาน "screening" ขนาดใหญ่ที่มนุษย์ทำเองไม่ไหว — คัดกรองยีนกว่า 2 แสนตัวจนเหลือ 20 ตัวที่น่าสนใจ — แต่ต้องเน้นย้ำกับนักศึกษาว่านี่คือการ "ตั้งสมมติฐาน" ไม่ใช่ "การพิสูจน์" หน้าที่ทางชีวภาพของเอนไซม์ยังไม่มีใครรู้
+**ผู้เชี่ยวชาญด้าน AI:** จุดที่น่าสนใจทางเทคนิคคือการใช้ agent สวอร์มระดับเกือบพันตัวทำงานคู่ขนานแบบมี pipeline ตรวจสอบซ้ำ (นับ repeat, เทียบ literature) ก่อนส่งรายงานให้มนุษย์ — เป็นรูปแบบ AI-for-science ที่ scale ได้จริง ไม่ใช่แค่ demo
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าสนใจ agentic workflow แบบนี้ ควรศึกษาโครงสร้างการ orchestrate agent จำนวนมากพร้อม guardrail และ deduplication ของผลลัพธ์ — pattern เดียวกันเอาไปใช้กับงาน data-mining ขนาดใหญ่ในบริษัทได้เลย
 
-## 2. Groq ระดมทุน $650M ฟื้นองค์กรหลังดีล Nvidia
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็น case study ที่ดีเรื่อง IP transfer ใน tech ecosystem — เมื่อสตาร์ทอัพขาย IP และทีมให้คู่แข่งรายใหญ่ แต่ยังระดมทุนได้อีก $650M แสดงให้เห็นว่าตลาด AI infrastructure ยังเชื่อใน inference chip diversity และ talent มากกว่า IP เพียงอย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** การ pivot ไปสู่ neocloud หลัง LPU IP ไปอยู่กับ Nvidia เป็นก้าวที่น่าจับตา — คำถามคือ Groq มี competitive moat อะไรเหลืออยู่นอกจาก architecture ที่ถ่ายโอนไปแล้ว และ Nvidia Groq 3 LPX ซึ่งเกิดจาก IP นั้นจะแข่งกับตัวเองหรือเติมเต็มตลาดคนละส่วน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Groq API ใน production — ควรติดตาม neocloud roadmap และ API compatibility ของ Groq ใหม่ก่อนตัดสินใจ migrate หรือ lock-in เพิ่ม landscape กำลังเปลี่ยนแปลงเร็วและ multi-provider abstraction layer คือ engineering insurance ที่ต้องมีไว้แล้ว
+## 2. OpenAI เปิดตัว GPT-6 Sol และ GPT-6 Luna พร้อมอัปเกรด ChatGPT Voice
+**อาจารย์ (มหาวิทยาลัย):** ควรใช้เคสนี้สอนเรื่อง trade-off ระหว่างคุณภาพกับต้นทุนโมเดล — Luna ถูกออกแบบมาเฉพาะงาน routine เช่นสรุปเอกสาร ต่างจาก Sol ที่เน้นงาน coding/agentic ซึ่งสะท้อนแนวโน้มตลาดที่โมเดลเริ่มแตกสายตาม use-case ชัดเจนขึ้น
+**ผู้เชี่ยวชาญด้าน AI:** ราคาที่ถูกลงครึ่งหนึ่งจาก GPT-5.6 พร้อม error rate ที่ลดลงราวครึ่งหนึ่งเป็นสัญญาณว่าการแข่งขันด้านต้นทุนต่อ token กำลังเข้มข้น ไม่ใช่แค่แข่งความสามารถอย่างเดียว
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ GPT ผ่าน API ควรทดสอบสลับไปใช้ Sol/Luna ทันทีสำหรับงาน agentic coding และงาน batch-processing ตามลำดับ เพราะต้นทุนต่อ token ลดลงมากพอที่จะกระทบ cost structure ของ production pipeline
 
-## 3. Google DeepMind ลงทุน $75M ใน A24 พัฒนา AI สำหรับภาพยนตร์
-**อาจารย์ (มหาวิทยาลัย):** การที่ frontier AI lab จับมือกับ art house studio คือสัญญาณว่า AI กำลังถูก embed เข้า creative process ไม่ใช่แค่ productivity tool — คำถามที่ต้องถกในชั้นเรียนคือมันเปลี่ยน authorship และ creative labor อย่างไร และ "AI ช่วย" กับ "AI ทำแทน" มีเส้นแบ่งที่ใด
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคอยู่ที่ว่า DeepMind จะนำ generative video/audio models เข้าสู่ pipeline ของ A24 อย่างไร — ต่างจาก consumer tool ตรงที่เป็น research partnership ที่อาจสร้าง feedback loop ใหม่ระหว่างข้อมูล creative คุณภาพสูงและ model training
-**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้อาจนำไปสู่ tools และ API ใหม่ผ่าน Google Cloud/Vertex AI ที่ developer เข้าถึงได้ — ควรติดตาม Vertex AI updates หลัง collaboration เพราะ research output มักไหลมาเป็น API และ SDK ในที่สุด
+## 3. Alibaba เปิดตัวชิป AI Zhenwu V900 ชิปที่ทรงพลังที่สุดของจีน
+**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีเรื่องผลกระทบของ export control ของสหรัฐฯ ต่อการพัฒนาชิปในจีน — Alibaba ต้องพึ่งพาชิปที่ออกแบบเองมากขึ้นเพราะเข้าถึง Nvidia รุ่นล่าสุดได้จำกัด
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลขสเปก (216GB memory, cluster ถึง 5 แสนตัว) ยังเป็นคำกล่าวอ้างฝ่ายเดียวของ Alibaba ที่ยังไม่มีการทดสอบอิสระ ต้องรอ benchmark จริงก่อนตัดสินว่าสู้ Nvidia รุ่นปัจจุบันได้จริงหรือไม่
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Alibaba Cloud หรือ Qwen ควรติดตามว่า ecosystem ซอฟต์แวร์/library รองรับชิปนี้เร็วแค่ไหน เพราะฮาร์ดแวร์ใหม่มักมาพร้อมปัญหา driver/compiler ในช่วงแรก
 
-## 4. ไทยประกาศยุทธศาสตร์ Siam Silica และโครงการชิปแห่งชาติ
-**อาจารย์ (มหาวิทยาลัย):** ยุทธศาสตร์ Siam Silica ตั้งเป้าพัฒนา talent และ research infrastructure ระยะยาว สะท้อนความเข้าใจว่า semiconductor leadership ต้องสร้างจากฐานความรู้และทรัพยากรมนุษย์ ไม่ใช่แค่การเป็น assembly hub — นี่คือโมเดล education-to-industry pipeline ที่ควรศึกษาให้ลึก
-**ผู้เชี่ยวชาญด้าน AI:** โฟกัสที่ photonic chips เป็นทิศทางที่ถูกต้องเชิงกลยุทธ์ — supply chain ของ photonic chips ยังไม่ถูก dominate อย่างเต็มที่เหมือน DRAM หรือ logic chips โอกาสสร้าง niche ที่แท้จริงยังมีอยู่ และความร่วมมือกับ imec ให้ไทยเข้าถึง frontier R&D ที่ประเทศส่วนใหญ่ในภูมิภาคยังไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ยุทธศาสตร์นี้จะสร้าง chip design jobs และ semiconductor software ecosystem ใหม่ในไทย — วิศวกรและ developer ที่สนใจ embedded AI หรือ chip software ควรติดตาม imec training programs และ BOI-linked R&D partnerships ที่จะเปิดโอกาสในระยะ 3–5 ปี
+## 4. Qualcomm เปิดตัวชิป Snapdragon 8 Elite Gen 6 เน้น AI บนอุปกรณ์
+**อาจารย์ (มหาวิทยาลัย):** เหมาะเป็นตัวอย่างสอนเรื่อง edge AI / on-device inference — การรันโมเดล MoE ขนาด 3 หมื่นล้านพารามิเตอร์บนมือถือได้เป็นก้าวสำคัญของการย้ายงาน AI จากคลาวด์มาที่ตัวเครื่อง
+**ผู้เชี่ยวชาญด้าน AI:** ความสามารถรัน MoE ขนาดใหญ่บนอุปกรณ์พกพาสะท้อนความก้าวหน้าทั้งด้าน quantization และ NPU ไม่ใช่แค่ raw compute เพิ่มขึ้นอย่างเดียว
+**โปรแกรมเมอร์มืออาชีพ:** นักพัฒนาแอปมือถือควรเริ่มทดสอบ on-device inference API ของ Qualcomm สำหรับฟีเจอร์ที่ต้องการ privacy/latency ต่ำ แทนที่จะยิง request ไป cloud API ทุกครั้ง
 
-## 5. Samsung ให้พนักงานทั้งหมดในเกาหลีใต้ใช้ ChatGPT Enterprise และ Codex
-**อาจารย์ (มหาวิทยาลัย):** ดีลระดับนี้บ่งชี้ว่า generative AI กำลังถูก institutionalize เข้า corporate workflow ของบริษัทเทคโนโลยีชั้นนำ — คำถามสำหรับชั้นเรียนคือผลต่อ job redesign, skill requirement และ accountability เมื่อ AI เข้ามาอยู่ในกระบวนการทำงานจริง
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy ทั้ง ChatGPT Enterprise (knowledge work) และ Codex (engineering) พร้อมกันสะท้อน comprehensive AI adoption ไม่ใช่ pilot เฉพาะจุด — น่าติดตามว่า Samsung จะวัด productivity gain และจัดการกับ model output quality อย่างไรในระดับองค์กรหลายแสนคน
-**โปรแกรมเมอร์มืออาชีพ:** Codex deployment ในองค์กรขนาดใหญ่ตั้งคำถามสำคัญเรื่อง code data residency, security boundary และ IP ownership ของ code ที่ AI ช่วยเขียน — ทีมที่กำลัง evaluate enterprise AI coding tools ควรตรวจสอบ enterprise agreements ในประเด็นเหล่านี้ก่อน adopt ใน sensitive projects
+## 5. นักวิจัยใช้ Claude ของ Anthropic แฮ็กเข้าระบบของ OpenAI สำเร็จผ่านโครงการ bug bounty
+**อาจารย์ (มหาวิทยาลัย):** ควรสอนว่านี่คือตัวอย่าง responsible disclosure ที่ถูกต้อง — ทีมวิจัยรายงานผ่านโครงการ bug bounty อย่างเป็นทางการ ไม่ได้เผยแพร่ exploit สู่สาธารณะ
+**ผู้เชี่ยวชาญด้าน AI:** เหตุการณ์นี้เป็นส่วนหนึ่งของกระแสใหญ่กว่าที่ AI agent (ทั้งจาก Anthropic, OpenAI, Google) เริ่มถูกใช้เป็นเครื่องมือแฮ็กทั้งฝ่ายป้องกันและฝ่ายทดสอบความปลอดภัยในเดือนเดียวกัน สะท้อนว่า agentic red-teaming กำลังกลายเป็นมาตรฐานใหม่
+**โปรแกรมเมอร์มืออาชีพ:** ทีม security ควรพิจารณานำ AI agent มาช่วยงาน penetration testing ภายในองค์กร แต่ต้องมี sandbox และขอบเขตการทำงานที่ชัดเจน เพราะรางวัลเพียง 6,500 ดอลลาร์เทียบกับความเสียหายที่อาจเกิดขึ้นหากช่องโหว่ถูกใช้ในทางร้ายนั้นต่างกันมาก

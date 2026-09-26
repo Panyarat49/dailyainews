@@ -1,65 +1,62 @@
-# Sources — 2026-06-23 (ainews)
+# Sources — 2026-09-26 (ainews)
 
-Generated: 2026-06-23 (Asia/Bangkok)
+Generated: 2026-09-26 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Verification mode: funnel
+Verification mode: search   # no funnel JSON for 2026-09-26; WebFetch blocked in-session → Tier-2 WebSearch snippets only
 Model: claude-opus-4-8
 Freshness window: rolling 7d (Asia/Bangkok)
-Dedup against: last 7 ainews briefs (18 URLs loaded from last 3 briefs — Jun 20, 21, 22; Jun 17–19 unread but no collision risk — all 35 candidates are Jun 22 articles not previously covered)
-Source mix: 1 Thai-language (Blognone), 1 Thai-regional (The Standard), 2 international tech press (TechCrunch, The Verge), 1 hardware press (Tom's Hardware)
-Universe pre-load: 35 candidates from universe_2026-06-23_ainews.json (generated_at 2026-06-23T06:30:17+07:00) — WebSearch skipped (≥ 8 candidates after gates)
+Dedup against: last 7 ainews briefs (36 URLs loaded; most recent brief on disk: 2026-08-14 — dedup window still applied per engine rule, no overlap found)
+Source mix: 4 international (Google primary, CNBC, TechCrunch x2) — no fresh in-window Thai-language AI story surfaced this run despite targeted search; flagged below.
 
 ## Selected stories
-1. **Anthropic's powerful Mythos AI reportedly breached 'almost all' NSA classified systems within a few hours during red-team test**
-   - Publisher: Tom's Hardware
-   - URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models
-   - Published: Mon, 22 Jun 2026 17:26:29 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.1h at funnel generation)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered The Register article on the broader ban; this is a distinct URL and angle — the specific NSA red-team result)
-   - Verification: Tier 1 — funnel body (body_text from candidate #12, GNews-resolved entry, extract_status ok; body confirms NSA breach claim, Sen. Mark Warner / Gen. Joshua Rudd quote, June 14 Economist source, immediate ban on Fable 5 + Mythos 5 for foreign nationals)
-   - Summary: Anthropic's Mythos AI broke into "almost all" NSA classified systems within hours during a controlled security evaluation, per a June 14 Economist report that went viral a week later. Sen. Warner cited NSA chief Gen. Rudd: "not in weeks, but in hours." Provides context for the US government's subsequent model ban.
+1. **Google's Project Suncatcher puts TPUs in orbit for the first time**
+   - Publisher: Google (blog.google) — Primary
+   - URL: https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/
+   - Published: September 24–25, 2026 (announcement ahead of the October 1 launch)
+   - FreshnessCheck: ✅ within rolling 7d window via search-result dating (multiple outlets datelined Sept 24–25 covering the announcement)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet (primary source, but WebFetch blocked so summarized from snippet, not fetched body)
+   - Summary: Google announced its first Project Suncatcher test flight — a prototype satellite carrying four Trillium-generation TPUs, built with Planet, launching October 1 on a SpaceX Transporter-18 rideshare to test whether AI chips can survive and operate in orbit.
 
-2. **AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire deal**
+2. **Alibaba unveils Zhenwu V900, its most powerful AI chip**
+   - Publisher: CNBC
+   - URL: https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html
+   - Published: September 22, 2026
+   - FreshnessCheck: ✅ within rolling 7d window (Sept 22, dated headline)
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At Alibaba's Apsara conference, CEO Eddie Wu unveiled the Zhenwu V900 AI accelerator (216GB memory, FP8/FP4 support), claiming 3x the performance of its predecessor and mass production in Q1 2027, alongside plans for 20GW of data-center capacity by 2032 and models up to 10 trillion parameters.
+
+3. **Qualcomm launches Snapdragon 8 Elite Gen 6 chips with AI focus**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
-   - Published: Mon, 22 Jun 2026 20:13:58 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 3.3h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms $650M raise, Nvidia non-exclusive LPU IP license, Jonathan Ross + Sunny Madra departure, new CEO Doug Wightman, last valuation $6.9B after Sep $750M round, neocloud pivot)
-   - Summary: Groq confirmed a $650M funding round six months after Nvidia licensed its LPU IP and hired away founder/CEO Jonathan Ross and president Sunny Madra. Co-founder Doug Wightman is now CEO. Groq is pivoting to a neocloud business model.
+   - URL: https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/
+   - Published: September 22, 2026
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At its Snapdragon Summit, Qualcomm announced the Snapdragon 8 Elite Gen 6 and 8 Elite Extreme Gen 6 flagship smartphone processors, emphasizing on-device AI personalization and better support for AI agents.
 
-3. **Google invests in A24 to build AI movie tools**
-   - Publisher: The Verge
-   - URL: https://www.theverge.com/entertainment/953596/google-deepmind-a24-studio-ai-partnership
-   - Published: 2026-06-22T13:18:13-04:00 (= 17:18 UTC Jun 22)
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 6.2h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 1 — funnel body (body_text confirms ~$75M Google investment in A24, first Google stake in a film studio, DeepMind R&D research partnership, non-exclusive deal across multiple projects, goal of helping filmmakers "expand their storytelling possibilities")
-   - Summary: Google DeepMind is partnering with indie studio A24 with a ~$75M investment to develop AI filmmaking tools — the first time Google has taken a stake in a film studio.
+4. **Meta puts its Muse AI agent at the center of Connect 2026**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/
+   - Published: September 23, 2026
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At Connect 2026, Meta expanded its Muse AI agent with a wearable "Charm" pendant, integration into its smart-glasses line, and new abilities (workout guidance, meal logging, shopping assistance, Mac support), positioning Muse as one of its biggest consumer-AI bets.
 
-4. **อว. เปิดมหกรรมวิจัย 69 ชูยุทธศาสตร์ Siam Silica ดันโครงการชิปแห่งชาติ ปั้นไทยสู่ฮับ Deep Tech อาเซียน**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/siam-silica-chip-deep-tech-hub/
-   - Published: Mon, 22 Jun 2026 10:56:39 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 12.6h)
-   - DedupCheck: ✅ URL not in last-7-day set (Jun 22 brief covered IMEC Thailand from a different article/angle)
-   - Verification: Tier 1 — funnel body (Thai body_text confirms National Research Congress 2026, formal Siam Silica + National Chip Project launch, ASML/imec/PhotonDelta discussions, JV + chip design centre plans, Thai engineer overseas training, BOI incentives, Valley of Death bridging focus, Deep Tech ASEAN Hub ambition)
-   - Summary: Thailand's Ministry of Higher Education formally launched the Siam Silica semiconductor strategy and National Chip Project at National Research Congress 2026, including partnerships with ASML, imec, and PhotonDelta to build a chip design hub — targeting ASEAN's Deep Tech Hub status.
-
-5. **Samsung นำ ChatGPT Enterprise และ Codex ให้พนักงานใช้ — OpenAI บอกเป็นดีลลูกค้าองค์กรใหญ่ที่สุดครั้งหนึ่ง**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150960
-   - Published: Mon, 22 Jun 2026 22:06:00 +0000
-   - FreshnessCheck: ✅ within last 24h via published_raw (age_h 1.4h)
-   - DedupCheck: ✅ URL not in last-7-day set
-   - Verification: Tier 2 — funnel snippet (extract_status skipped; RSS description + published_raw from Blognone confirms Samsung-OpenAI deal, ChatGPT Enterprise + Codex for all Samsung employees in South Korea, OpenAI describes as one of its largest enterprise customer deals)
-   - Summary: OpenAI and Samsung agreed to deploy ChatGPT Enterprise and Codex for all Samsung employees in South Korea. OpenAI calls this one of its largest enterprise customer deals.
+5. **YouTube adds AI tools to Studio: draft feedback, dynamic thumbnails**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/
+   - Published: September 23, 2026
+   - FreshnessCheck: ✅ within rolling 7d window
+   - DedupCheck: ✅ URL not in last-7-brief set
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At its Made On YouTube event, YouTube announced AI-powered Draft Feedback (pacing/structure suggestions on unpublished videos), an expanded Ask Studio on iOS/Android, AI-generated dynamic thumbnails/titles, and a new research feed for creators.
 
 ## Dropped
-- https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent... — Tier-2 evidence unusable (description field contains only an image URL, no text snippet; body_text is premium paywall registration wall)
-- Candidate #11 (Tom's Hardware direct RSS) — same URL as Story #1 but with paywalled body_text; candidate #12 (GNews-resolved, extract_status ok) used instead
-- TechCrunch + Engadget A24 articles — same story as Story #3 (The Verge kept as highest-scored with Tier-1 body)
-- ZDNet AI troubleshooting PC article — tips/how-to, below significance threshold
-- Oracle Agentic AI Foundations (blogs.oracle.com) — body_text is a site error page; no citeable evidence
-- Nvidia Rubin liquid cooling (The Verge) + Nvidia agentic supercomputing (The Register) — both solid Tier-1 but capped at 5 stories; Nvidia already covered in prior days; deprioritised for topic breadth
-- 20+ remaining candidates — lower scored; story cap of 5 reached
+- https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html — Gate A (>7d): underlying Gemini 3.8 Flash Cyber / GPT Astra cyber-model launches dated to September 2, 2026, outside the rolling window; also off-allowlist outlet.
+- Alibaba/Qualcomm coverage on nbcnews.com, abcnews.com, washingtontimes.com, clickondetroit.com, ksat.com — off-allowlist; same story cited instead via CNBC/TechCrunch.
+- https://www.theneuron.ai/digest/... and other AI-newsletter aggregator recaps (Sept 24) — off-allowlist (newsletter/aggregator, not a listed outlet); underlying stories (Suncatcher, Feather robot, Taskflow fuzzer, Revolut Pay-with-Smile) cross-matched to trusted outlets where possible.
+- https://nielseniq.com/... "51% of US consumers use AI to shop" — Gate: no listed trusted-source outlet found carrying this story within window; nielseniq.com and syndication sites (salestechstar, stocktitan, daily.dev, etc.) are not on the allow-list.
+- Grok 4.7 (xAI), Claude Fable/Mythos 5.1, Gemini 3.8 Flash — all dated September 1–21; several fall outside or at the edge of the 7d window and were superseded by fresher, clearly in-window picks above.
